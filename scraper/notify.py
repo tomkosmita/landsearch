@@ -1,5 +1,6 @@
 import logging
-from typing import Optional
+import time
+from typing import Dict, Optional, Tuple
 
 from curl_cffi import requests
 
@@ -32,31 +33,64 @@ def _fmt_utilities(u: dict) -> str:
     )
 
 
-def format_message(listing: Listing) -> str:
+def format_message(
+    listing: Listing,
+    changes: Optional[Dict[str, Tuple[Optional[int], Optional[int]]]] = None,
+) -> str:
     source_label = listing.source.upper()
+
+    if changes:
+        header = f"🔄 Zmiana ogłoszenia — {source_label}"
+        change_lines = []
+        if "price" in changes:
+            old, new = changes["price"]
+            change_lines.append(f"💰 {_fmt_price(new)}  <s>{_fmt_price(old)}</s>")
+        else:
+            change_lines.append(f"💰 {_fmt_price(listing.price)}")
+        if "area" in changes:
+            old, new = changes["area"]
+            change_lines.append(f"📐 {_fmt_area(new)}  <s>{_fmt_area(old)}</s>")
+        else:
+            change_lines.append(f"📐 {_fmt_area(listing.area)}")
+        details = "\n".join(change_lines)
+    else:
+        header = f"🆕 Nowa działka — {source_label}"
+        details = f"💰 {_fmt_price(listing.price)}\n📐 {_fmt_area(listing.area)}"
+
     return (
-        f"<b>Nowa działka — {source_label}</b>\n"
+        f"<b>{header}</b>\n"
         f"📍 {listing.location}\n"
-        f"💰 {_fmt_price(listing.price)}\n"
-        f"📐 {_fmt_area(listing.area)}\n"
+        f"{details}\n"
         f"{_fmt_utilities(listing.utilities)}\n\n"
         f'<a href="{listing.url}">Zobacz ogłoszenie ›</a>'
     )
 
 
-def send_telegram(listing: Listing, token: str, chat_id: str) -> bool:
-    message = format_message(listing)
+def send_telegram(
+    listing: Listing,
+    token: str,
+    chat_id: str,
+    changes: Optional[Dict[str, Tuple[Optional[int], Optional[int]]]] = None,
+) -> bool:
+    message = format_message(listing, changes)
     url = f"https://api.telegram.org/bot{token}/sendMessage"
-    try:
-        resp = requests.post(
-            url,
-            json={"chat_id": chat_id, "text": message, "parse_mode": "HTML"},
-            timeout=15,
-        )
-        if resp.ok:
-            return True
-        logger.error("Telegram error %d: %s", resp.status_code, resp.text[:200])
-        return False
-    except requests.RequestException as e:
-        logger.error("Telegram request failed: %s", e)
-        return False
+    for attempt in range(3):
+        try:
+            resp = requests.post(
+                url,
+                json={"chat_id": chat_id, "text": message, "parse_mode": "HTML"},
+                timeout=15,
+            )
+            if resp.ok:
+                return True
+            if resp.status_code == 429:
+                retry_after = resp.json().get("parameters", {}).get("retry_after", 15)
+                logger.warning("Telegram rate limit, sleeping %ds", retry_after)
+                time.sleep(retry_after + 1)
+                continue
+            logger.error("Telegram error %d: %s", resp.status_code, resp.text[:200])
+            return False
+        except Exception as e:
+            logger.error("Telegram request failed: %s", e)
+            return False
+    return False

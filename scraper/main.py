@@ -3,7 +3,7 @@ import os
 import sys
 
 from scraper.notify import send_telegram
-from scraper.seen import load_seen, save_seen
+from scraper.seen import get_changes, load_seen, make_snapshot, save_seen
 from scraper.sources.olx import OlxSource
 from scraper.sources.otodom import OtodomSource
 
@@ -26,7 +26,7 @@ def main() -> None:
     logger.info("Loaded %d seen listing IDs", len(seen))
 
     sources = [OlxSource(), OtodomSource()]
-    new_count = 0
+    sent_count = 0
 
     for source in sources:
         logger.info("Fetching from %s", type(source).__name__)
@@ -37,27 +37,35 @@ def main() -> None:
             continue
 
         logger.info("Fetched %d listings", len(listings))
-        new_listings = [l for l in listings if l.id not in seen]
-        logger.info("%d new listings", len(new_listings))
 
-        for listing in new_listings:
-            # Fetch utilities for each new listing
-            if hasattr(source, "fetch_utilities"):
+        for listing in listings:
+            snapshot = make_snapshot(listing)
+
+            if listing.id not in seen:
                 listing.utilities = source.fetch_utilities(listing.url)
-                logger.info(
-                    "Utilities for %s: %s", listing.id, listing.utilities
-                )
-
-            sent = send_telegram(listing, token, chat_id)
-            if sent:
-                seen.add(listing.id)
-                new_count += 1
-                logger.info("Sent listing %s: %s", listing.id, listing.title)
+                logger.info("Utilities for %s: %s", listing.id, listing.utilities)
+                seen[listing.id] = snapshot
+                sent = send_telegram(listing, token, chat_id)
+                if sent:
+                    sent_count += 1
+                    logger.info("Sent new listing %s: %s", listing.id, listing.title)
+                else:
+                    logger.warning("Failed to send new listing %s", listing.id)
             else:
-                logger.warning("Failed to send listing %s", listing.id)
+                changes = get_changes(seen[listing.id], snapshot)
+                if changes:
+                    listing.utilities = source.fetch_utilities(listing.url)
+                    logger.info("Utilities for %s: %s", listing.id, listing.utilities)
+                    seen[listing.id] = snapshot
+                    sent = send_telegram(listing, token, chat_id, changes=changes)
+                    if sent:
+                        sent_count += 1
+                        logger.info("Sent modified listing %s (changes: %s)", listing.id, changes)
+                    else:
+                        logger.warning("Failed to send modified listing %s", listing.id)
 
     save_seen(seen)
-    logger.info("Done. Sent %d new listings. Total seen: %d", new_count, len(seen))
+    logger.info("Done. Sent %d notifications. Total seen: %d", sent_count, len(seen))
 
 
 if __name__ == "__main__":
