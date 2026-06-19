@@ -1,6 +1,5 @@
 import json
 import logging
-import os
 import re
 import time
 from typing import Dict, List, Optional
@@ -53,9 +52,6 @@ class OlxSource(BaseSource):
     def __init__(self) -> None:
         self.session = requests.Session(impersonate="chrome120")
         self.session.headers.update(HEADERS)
-        proxy = os.environ.get("HTTP_PROXY")
-        if proxy:
-            self.session.proxies = {"http": proxy, "https": proxy}
 
     def fetch_listings(self) -> List[Listing]:
         html = self._get_html(OLX_HOME)
