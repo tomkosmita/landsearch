@@ -57,6 +57,6 @@ def send_telegram(listing: Listing, token: str, chat_id: str) -> bool:
             return True
         logger.error("Telegram error %d: %s", resp.status_code, resp.text[:200])
         return False
-    except requests.RequestException as e:
+    except Exception as e:
         logger.error("Telegram request failed: %s", e)
         return False

@@ -84,7 +84,7 @@ class OtodomSource(BaseSource):
                 logger.warning("Otodom returned %d for %s", resp.status_code, url)
                 if attempt < retries - 1:
                     time.sleep(delays[attempt])
-            except requests.RequestException as e:
+            except Exception as e:
                 logger.warning("Request error for %s: %s", url, e)
                 if attempt < retries - 1:
                     time.sleep(delays[attempt])
