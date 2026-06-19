@@ -32,8 +32,16 @@ def _fmt_utilities(u: dict) -> str:
     )
 
 
+_SOURCE_LABELS = {
+    "olx": "OLX",
+    "otodom": "Otodom",
+    "licytacje": "⚖️ Licytacja komornicza",
+    "bip_wroclaw": "🏛️ Przetarg gminny (Wrocław BIP)",
+}
+
+
 def format_message(listing: Listing) -> str:
-    source_label = listing.source.upper()
+    source_label = _SOURCE_LABELS.get(listing.source, listing.source.upper())
     return (
         f"<b>Nowa działka — {source_label}</b>\n"
         f"📍 {listing.location}\n"

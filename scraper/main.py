@@ -4,6 +4,8 @@ import sys
 
 from scraper.notify import send_telegram
 from scraper.seen import load_seen, save_seen
+from scraper.sources.bip_wroclaw import BipWroclawSource
+from scraper.sources.licytacje import LicytacjeSource
 from scraper.sources.olx import OlxSource
 from scraper.sources.otodom import OtodomSource
 
@@ -25,7 +27,7 @@ def main() -> None:
     seen = load_seen()
     logger.info("Loaded %d seen listing IDs", len(seen))
 
-    sources = [OlxSource(), OtodomSource()]
+    sources = [OlxSource(), OtodomSource(), LicytacjeSource(), BipWroclawSource()]
     new_count = 0
 
     for source in sources:
