@@ -98,10 +98,15 @@ class BipWroclawSource(BaseSource):
         # BIP Wrocław uses table or list-based layouts — try both
         items = self._find_listing_items(soup)
 
+        logged = 0
         for item in items:
             listing = self._parse_item(item)
-            if listing and self._is_plot(listing.title):
-                listings.append(listing)
+            if listing:
+                if logged < 5:
+                    logger.info("BIP row title: %r", listing.title[:80])
+                    logged += 1
+                if self._is_plot(listing.title):
+                    listings.append(listing)
 
         next_url = self._find_next_page(soup)
         return listings, next_url
