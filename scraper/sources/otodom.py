@@ -15,13 +15,10 @@ logger = logging.getLogger(__name__)
 # URL provided by user — geometry parameter already constrains to western Wrocław area.
 # Switched viewType=map → viewType=listing so the page renders listing cards with __NEXT_DATA__.
 SEARCH_URL = (
-    "https://www.otodom.pl/pl/wyniki/sprzedaz/dom/cala-polska"
-    "?ownerTypeSingleSelect=ALL"
-    "&viewType=listing"
-    "&mapBounds=17.029403425966603%2C51.246682386894%2C16.714491525627942%2C51.01633555581966"
-    "&geometry=aecwHgxifBojBmkD%7B%7B%40mlAil%40__%40gXaAaStTeZhiB%7C%40llAgc%40poBo%5B%7CzCyZ%60aAaHnnAjIpoAtt%40lkDxhAttCn%7C%40xw%40vvBcB%7EdA%7D%5ClRuT%7CgBwuDhMmkBha%40yyAzDec%40%7DMkkBso%40a%60Ckw%40igAsWkKqd%40%3F"
-    "&by=LATEST"
-    "&direction=DESC"
+    "https://www.otodom.pl/pl/wyniki/sprzedaz/dzialka/cala-polska"
+    "?viewType=listing"
+    "&mapBounds=17.12135731877514%2C51.31916348667864%2C16.66014337460222%2C50.98819061688593"
+    "&geometry=e_cwHg%7CifBg%5EoMkj%40_k%40sjDsgG%7DWcQgm%40_Om%5ClDoq%40lWcVxX_Qd%5Cy%5EfkBkZrdEp_%40rtHziBr%7EG%7Cb%40tr%40faAjm%40jfAhFfzAoWj%7DEenBlu%40is%40%7CcDihGrGgd%40qEimAoc%40wiBeSaYqr%40_QamCpEacB_V"
 )
 
 HEADERS = {
