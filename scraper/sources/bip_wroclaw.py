@@ -13,8 +13,8 @@ from scraper.sources.base import BaseSource
 logger = logging.getLogger(__name__)
 
 BASE_URL = "https://bip.um.wroc.pl"
-# Property auction listings from Wrocław city BIP
-SEARCH_URL = f"{BASE_URL}/przetargi-nieruchomosci/"
+# /4/10 = active property tenders listing (discovered from live BIP search results)
+SEARCH_URL = f"{BASE_URL}/przetargi-nieruchomosci/4/10"
 
 HEADERS = {
     "User-Agent": (
