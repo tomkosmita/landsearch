@@ -48,9 +48,9 @@ def main() -> None:
                     "Utilities for %s: %s", listing.id, listing.utilities
                 )
 
+            seen.add(listing.id)  # always mark seen to avoid infinite retry loops
             sent = send_telegram(listing, token, chat_id)
             if sent:
-                seen.add(listing.id)
                 new_count += 1
                 logger.info("Sent listing %s: %s", listing.id, listing.title)
             else:
