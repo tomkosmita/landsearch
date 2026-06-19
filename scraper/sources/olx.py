@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 import re
 import time
 from typing import Dict, List, Optional
@@ -50,7 +51,13 @@ UTILITY_PATTERNS = {
 
 class OlxSource(BaseSource):
     def __init__(self) -> None:
-        self.session = requests.Session(impersonate="chrome120")
+        proxy = os.environ.get("HTTP_PROXY", "").strip()
+        if proxy:
+            # Residential proxy provides a legitimate IP — TLS impersonation not needed
+            self.session = requests.Session()
+            self.session.proxies = {"http": proxy, "https": proxy}
+        else:
+            self.session = requests.Session(impersonate="chrome120")
         self.session.headers.update(HEADERS)
 
     def fetch_listings(self) -> List[Listing]:
