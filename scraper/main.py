@@ -5,6 +5,7 @@ import sys
 from scraper.notify import send_telegram
 from scraper.seen import load_seen, save_seen
 from scraper.sources.olx import OlxSource
+from scraper.sources.otodom import OtodomSource
 
 logging.basicConfig(
     level=logging.INFO,
@@ -24,7 +25,7 @@ def main() -> None:
     seen = load_seen()
     logger.info("Loaded %d seen listing IDs", len(seen))
 
-    sources = [OlxSource()]
+    sources = [OlxSource(), OtodomSource()]
     new_count = 0
 
     for source in sources:
