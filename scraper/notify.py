@@ -33,11 +33,19 @@ def _fmt_utilities(u: dict) -> str:
     )
 
 
+_SOURCE_LABELS = {
+    "olx": "OLX",
+    "otodom": "Otodom",
+    "licytacje": "⚖️ Licytacja komornicza",
+    "bip_wroclaw": "🏛️ Przetarg gminny (Wrocław BIP)",
+}
+
+
 def format_message(
     listing: Listing,
     changes: Optional[Dict[str, Tuple[Optional[int], Optional[int]]]] = None,
 ) -> str:
-    source_label = listing.source.upper()
+    source_label = _SOURCE_LABELS.get(listing.source, listing.source.upper())
 
     if changes:
         header = f"🔄 Zmiana ogłoszenia — {source_label}"
