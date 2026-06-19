@@ -1,4 +1,5 @@
 import logging
+import time
 from typing import Optional
 
 from curl_cffi import requests
@@ -47,16 +48,23 @@ def format_message(listing: Listing) -> str:
 def send_telegram(listing: Listing, token: str, chat_id: str) -> bool:
     message = format_message(listing)
     url = f"https://api.telegram.org/bot{token}/sendMessage"
-    try:
-        resp = requests.post(
-            url,
-            json={"chat_id": chat_id, "text": message, "parse_mode": "HTML"},
-            timeout=15,
-        )
-        if resp.ok:
-            return True
-        logger.error("Telegram error %d: %s", resp.status_code, resp.text[:200])
-        return False
-    except Exception as e:
-        logger.error("Telegram request failed: %s", e)
-        return False
+    for attempt in range(3):
+        try:
+            resp = requests.post(
+                url,
+                json={"chat_id": chat_id, "text": message, "parse_mode": "HTML"},
+                timeout=15,
+            )
+            if resp.ok:
+                return True
+            if resp.status_code == 429:
+                retry_after = resp.json().get("parameters", {}).get("retry_after", 15)
+                logger.warning("Telegram rate limit, sleeping %ds", retry_after)
+                time.sleep(retry_after + 1)
+                continue
+            logger.error("Telegram error %d: %s", resp.status_code, resp.text[:200])
+            return False
+        except Exception as e:
+            logger.error("Telegram request failed: %s", e)
+            return False
+    return False
