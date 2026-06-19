@@ -1,6 +1,5 @@
 import json
 import logging
-import os
 import re
 import time
 from typing import Dict, List, Optional
@@ -17,8 +16,12 @@ logger = logging.getLogger(__name__)
 # Switched viewType=map → viewType=listing so the page renders listing cards with __NEXT_DATA__.
 SEARCH_URL = (
     "https://www.otodom.pl/pl/wyniki/sprzedaz/dzialka/cala-polska"
-    "?viewType=listing"
-    "&mapBounds=17.12135731877514%2C51.31916348667864%2C16.66014337460222%2C50.98819061688593"
+    "?limit=36"
+    "&priceMax=600000"
+    "&plotType=%5BBUILDING%5D"
+    "&by=DEFAULT&direction=DESC"
+    "&viewType=listing"
+    "&mapBounds=17.06485494854292%2C51.26690848997079%2C16.737325051457084%2C51.03259538286027"
     "&geometry=e_cwHg%7CifBg%5EoMkj%40_k%40sjDsgG%7DWcQgm%40_Om%5ClDoq%40lWcVxX_Qd%5Cy%5EfkBkZrdEp_%40rtHziBr%7EG%7Cb%40tr%40faAjm%40jfAhFfzAoWj%7DEenBlu%40is%40%7CcDihGrGgd%40qEimAoc%40wiBeSaYqr%40_QamCpEacB_V"
 )
 
@@ -44,13 +47,7 @@ UTILITY_PATTERNS = {
 
 class OtodomSource(BaseSource):
     def __init__(self) -> None:
-        proxy = os.environ.get("HTTP_PROXY", "").strip()
-        if proxy:
-            # Residential proxy provides a legitimate IP — TLS impersonation not needed
-            self.session = requests.Session()
-            self.session.proxies = {"http": proxy, "https": proxy}
-        else:
-            self.session = requests.Session(impersonate="chrome120")
+        self.session = requests.Session(impersonate="chrome120")
         self.session.headers.update(HEADERS)
 
     def fetch_listings(self) -> List[Listing]:
