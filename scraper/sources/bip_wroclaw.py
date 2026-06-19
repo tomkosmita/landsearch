@@ -31,9 +31,9 @@ HEADERS = {
 
 # Keywords identifying land plots vs other property types
 PLOT_KEYWORDS = [
-    "działka", "dzialka", "grunt", "grunty", "teren",
-    "nieruchomość gruntowa", "nieruchomosc gruntowa",
-    "budowlana", "niezabudowana",
+    "działk", "działek", "grunt", "teren",
+    "nieruchomość gruntow", "nieruchomosc gruntow",
+    "budowlan", "niezabudowan",
 ]
 
 # Exclude non-land listings
