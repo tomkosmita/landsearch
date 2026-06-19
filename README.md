@@ -1,6 +1,12 @@
-# LandSearch — OLX Działki Wrocław
+# LandSearch — Działki Wrocław
 
-Automatyczny scraper działek budowlanych z OLX.pl. Sprawdza co 4 godziny nowe ogłoszenia w okolicach Wrocławia (zachodnia strona, do 15 km, max 500 000 zł, min 800 m²) i wysyła powiadomienia na kanał Telegram.
+Automatyczny scraper działek budowlanych z OLX.pl i Otodom.pl. Sprawdza co 6 godzin nowe ogłoszenia w okolicach zachodniej części Wrocławia i wysyła powiadomienia na kanał Telegram. Wysyła tylko nowe ogłoszenia lub te ze zmienioną ceną/powierzchnią.
+
+## Filtry
+
+**OLX**: zachodnia strona Wrocławia (`lon < 17.04`), działki budowlane, max 500 000 zł, min 800 m²
+
+**Otodom**: obszar geograficzny zachodniego Wrocławia (polygon), `plotType=BUILDING`, max 600 000 zł, limit 36
 
 ## Konfiguracja (jednorazowo)
 
@@ -27,6 +33,15 @@ Aby pobrać Chat ID kanału:
 
 Actions → **Land Plot Scraper** → Run workflow
 
+## Jak to działa
+
+1. Co 6 godzin GitHub Actions uruchamia scraper
+2. Pobiera listę ogłoszeń z OLX i Otodom
+3. Porównuje z `data/seen_ids.json` (przechowuje ID + cena + powierzchnia)
+4. Dla nowych ogłoszeń: pobiera stronę szczegółową, sprawdza media, wysyła na Telegram
+5. Dla zmienionych ogłoszeń (cena / powierzchnia): wysyła alert ze starą i nową wartością
+6. Zapisuje `seen_ids.json` z powrotem do repo (commit `[skip ci]`)
+
 ## Dodanie kolejnego źródła
 
 1. Utwórz `scraper/sources/gratka.py` implementujące `BaseSource`
@@ -38,13 +53,14 @@ Actions → **Land Plot Scraper** → Run workflow
 scraper/
   main.py          # Orkiestrator
   models.py        # Listing dataclass
-  seen.py          # Śledzenie widzianych ogłoszeń
-  notify.py        # Telegram
+  seen.py          # Śledzenie widzianych ogłoszeń (ID + snapshot ceny/powierzchni)
+  notify.py        # Telegram (HTML, obsługa 429, format zmian)
   sources/
     base.py        # Abstrakcja źródła
-    olx.py         # OLX scraper
+    olx.py         # OLX scraper (curl_cffi Chrome impersonation)
+    otodom.py      # Otodom scraper (__NEXT_DATA__ JSON)
 data/
   seen_ids.json    # Auto-aktualizowany po każdym uruchomieniu
 .github/workflows/
-  scrape.yml       # Cron co 4h
+  scrape.yml       # Cron co 6h
 ```

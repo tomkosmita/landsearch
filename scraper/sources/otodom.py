@@ -1,6 +1,5 @@
 import json
 import logging
-import os
 import re
 import time
 from typing import Dict, List, Optional
@@ -16,13 +15,14 @@ logger = logging.getLogger(__name__)
 # URL provided by user — geometry parameter already constrains to western Wrocław area.
 # Switched viewType=map → viewType=listing so the page renders listing cards with __NEXT_DATA__.
 SEARCH_URL = (
-    "https://www.otodom.pl/pl/wyniki/sprzedaz/dom/cala-polska"
-    "?ownerTypeSingleSelect=ALL"
+    "https://www.otodom.pl/pl/wyniki/sprzedaz/dzialka/cala-polska"
+    "?limit=36"
+    "&priceMax=600000"
+    "&plotType=%5BBUILDING%5D"
+    "&by=DEFAULT&direction=DESC"
     "&viewType=listing"
-    "&mapBounds=17.029403425966603%2C51.246682386894%2C16.714491525627942%2C51.01633555581966"
-    "&geometry=aecwHgxifBojBmkD%7B%7B%40mlAil%40__%40gXaAaStTeZhiB%7C%40llAgc%40poBo%5B%7CzCyZ%60aAaHnnAjIpoAtt%40lkDxhAttCn%7C%40xw%40vvBcB%7EdA%7D%5ClRuT%7CgBwuDhMmkBha%40yyAzDec%40%7DMkkBso%40a%60Ckw%40igAsWkKqd%40%3F"
-    "&by=LATEST"
-    "&direction=DESC"
+    "&mapBounds=17.06485494854292%2C51.26690848997079%2C16.737325051457084%2C51.03259538286027"
+    "&geometry=e_cwHg%7CifBg%5EoMkj%40_k%40sjDsgG%7DWcQgm%40_Om%5ClDoq%40lWcVxX_Qd%5Cy%5EfkBkZrdEp_%40rtHziBr%7EG%7Cb%40tr%40faAjm%40jfAhFfzAoWj%7DEenBlu%40is%40%7CcDihGrGgd%40qEimAoc%40wiBeSaYqr%40_QamCpEacB_V"
 )
 
 HEADERS = {
@@ -49,9 +49,6 @@ class OtodomSource(BaseSource):
     def __init__(self) -> None:
         self.session = requests.Session(impersonate="chrome120")
         self.session.headers.update(HEADERS)
-        proxy = os.environ.get("HTTP_PROXY")
-        if proxy:
-            self.session.proxies = {"http": proxy, "https": proxy}
 
     def fetch_listings(self) -> List[Listing]:
         # Otodom uses cookies set on homepage
@@ -84,7 +81,7 @@ class OtodomSource(BaseSource):
                 logger.warning("Otodom returned %d for %s", resp.status_code, url)
                 if attempt < retries - 1:
                     time.sleep(delays[attempt])
-            except requests.RequestException as e:
+            except Exception as e:
                 logger.warning("Request error for %s: %s", url, e)
                 if attempt < retries - 1:
                     time.sleep(delays[attempt])
