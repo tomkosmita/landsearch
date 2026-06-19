@@ -1,7 +1,7 @@
 import logging
 from typing import Optional
 
-import requests
+from curl_cffi import requests
 
 from scraper.models import Listing
 

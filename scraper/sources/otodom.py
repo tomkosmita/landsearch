@@ -4,7 +4,7 @@ import re
 import time
 from typing import Dict, List, Optional
 
-import requests
+from curl_cffi import requests
 from bs4 import BeautifulSoup
 
 from scraper.models import Listing
@@ -46,7 +46,7 @@ UTILITY_PATTERNS = {
 
 class OtodomSource(BaseSource):
     def __init__(self) -> None:
-        self.session = requests.Session()
+        self.session = requests.Session(impersonate="chrome120")
         self.session.headers.update(HEADERS)
 
     def fetch_listings(self) -> List[Listing]:
