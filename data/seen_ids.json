@@ -75,5 +75,37 @@
   "96726398500067": {
     "price": 600000,
     "area": 1093
+  },
+  "bip_wroclaw_zetarg_nieruchomosci_89234_ul_pilczycka_dz_nr_14_4_14_6_14_8": {
+    "price": 2500000,
+    "area": null
+  },
+  "bip_wroclaw_ruchomosci_88819_ul_miloszycka_rejon_dz_nr_10_13_10_14_10_15": {
+    "price": 3820000,
+    "area": null
+  },
+  "bip_wroclaw_targ_nieruchomosci_87811_ul_malezyjska_rejon_dz_nr_5_7_i_6_6": {
+    "price": 585000,
+    "area": null
+  },
+  "bip_wroclaw_dz_nr_41_5_41_6_41_8_41_11_42_4_42_6_43_20_43_21_43_24_43_25": {
+    "price": 8500000,
+    "area": null
+  },
+  "bip_wroclaw_targ_nieruchomosci_87878_ul_malezyjska_rejon_dz_nr_3_8_i_4_6": {
+    "price": 525000,
+    "area": null
+  },
+  "bip_wroclaw_wroc_pl_przetarg_nieruchomosci_89490_ul_grajewska_dz_nr_34_1": {
+    "price": 210000,
+    "area": null
+  },
+  "bip_wroclaw_l_przetarg_nieruchomosci_87808_ul_malezyjska_dz_nr_1_5_i_2_4": {
+    "price": 575000,
+    "area": null
+  },
+  "bip_wroclaw_ka_rejon_dz_nr_5_9_i_6_7_uwaga_zmiana_ogloszenia_o_przetargu": {
+    "price": 580000,
+    "area": null
   }
 }
