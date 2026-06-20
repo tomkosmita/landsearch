@@ -317,14 +317,52 @@ class BipWroclawSource(BaseSource):
             return href if href.startswith("http") else f"{BASE_URL}{href}"
         return None
 
-    def fetch_utilities(self, url: str) -> Dict[str, bool]:
+    def fetch_utilities(self, url: str) -> dict:
         time.sleep(1)
         html = self._get_html(url)
         if html is None:
             return {}
         soup = BeautifulSoup(html, "lxml")
-        text = soup.get_text(" ", strip=True).lower()
-        return {
-            utility: any(kw in text for kw in keywords)
+        text = soup.get_text(" ", strip=True)
+        text_lower = text.lower()
+
+        result: dict = {
+            utility: any(kw in text_lower for kw in keywords)
             for utility, keywords in UTILITY_PATTERNS.items()
         }
+
+        # Extract structured fields from the detail page table
+        price = self._extract_table_field(soup, ["cena wywoławcza", "cena wywolawcza"])
+        if price:
+            parsed = self._parse_price(price)
+            if parsed is not None:
+                result["_price"] = parsed
+
+        address = self._extract_table_field(soup, ["adres nieruchomości", "adres nieruchomosci"])
+        if address:
+            result["_location"] = f"Wrocław, {address.strip()}"
+
+        area_text = self._extract_table_field(soup, ["powierzchnia"])
+        if area_text:
+            parsed_area = self._parse_area(area_text)
+            if parsed_area is not None:
+                result["_area"] = parsed_area
+
+        return result
+
+    def _extract_table_field(self, soup: BeautifulSoup, label_variants: list) -> Optional[str]:
+        """Find a value cell in the BIP detail table by matching its label cell."""
+        for row in soup.find_all("tr"):
+            cells = row.find_all(["th", "td"])
+            if len(cells) >= 2:
+                label = cells[0].get_text(strip=True).lower()
+                if any(lv in label for lv in label_variants):
+                    return cells[1].get_text(strip=True)
+        # Also try dl/dt/dd pattern
+        for dt in soup.find_all("dt"):
+            label = dt.get_text(strip=True).lower()
+            if any(lv in label for lv in label_variants):
+                dd = dt.find_next_sibling("dd")
+                if dd:
+                    return dd.get_text(strip=True)
+        return None

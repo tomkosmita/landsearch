@@ -17,6 +17,17 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+def _enrich_from_utilities(listing) -> None:
+    """Pull _price/_location/_area inserted by BIP source and apply to listing."""
+    u = listing.utilities
+    if "_price" in u:
+        listing.price = u.pop("_price")
+    if "_location" in u:
+        listing.location = u.pop("_location")
+    if "_area" in u:
+        listing.area = u.pop("_area")
+
+
 def main() -> None:
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "")
@@ -48,6 +59,7 @@ def main() -> None:
 
             if listing.id not in seen:
                 listing.utilities = source.fetch_utilities(listing.url)
+                _enrich_from_utilities(listing)
                 logger.info("Utilities for %s: %s", listing.id, listing.utilities)
                 seen[listing.id] = snapshot
                 sent = send_telegram(listing, token, chat_id)
@@ -60,6 +72,7 @@ def main() -> None:
                 changes = get_changes(seen[listing.id], snapshot)
                 if changes:
                     listing.utilities = source.fetch_utilities(listing.url)
+                    _enrich_from_utilities(listing)
                     logger.info("Utilities for %s: %s", listing.id, listing.utilities)
                     seen[listing.id] = snapshot
                     sent = send_telegram(listing, token, chat_id, changes=changes)
