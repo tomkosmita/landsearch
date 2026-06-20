@@ -111,13 +111,22 @@ class BipWroclawSource(BaseSource):
         # Strategy 1: table rows with links
         rows = soup.select("table.views-table tbody tr, table tbody tr")
         if rows:
+            logger.info("BIP: found %d table rows", len(rows))
+            for r in rows[:3]:
+                logger.info("BIP row sample: %r", r.get_text(" ", strip=True)[:80])
             return rows
         # Strategy 2: article/div listing cards
         cards = soup.select("article, .views-row, .node--type-przetarg, .tender-item")
         if cards:
+            logger.info("BIP: found %d card items", len(cards))
             return cards
-        # Strategy 3: any li with a link to a przetarg page
-        return soup.select("li:has(a[href*='przetarg']), li:has(a[href*='nieruchomosc'])")
+        # Strategy 3: any li with przetarg link
+        items = [li for li in soup.find_all("li") if li.find("a", href=re.compile(r"przetarg|nieruchomosc"))]
+        if items:
+            logger.info("BIP: found %d li items", len(items))
+            return items
+        logger.warning("BIP: no items found. Title: %s", soup.title.string if soup.title else "N/A")
+        return []
 
     def _parse_item(self, item) -> Optional[Listing]:
         try:
@@ -209,8 +218,13 @@ class BipWroclawSource(BaseSource):
 
     def _find_next_page(self, soup: BeautifulSoup) -> Optional[str]:
         next_link = soup.select_one(
-            "a[rel='next'], li.pager__item--next a, .pager-next a, a:contains('Następna')"
+            "a[rel='next'], li.pager__item--next a, .pager-next a"
         )
+        if not next_link:
+            for a in soup.find_all("a"):
+                if "następna" in (a.get_text(strip=True) or "").lower():
+                    next_link = a
+                    break
         if next_link:
             href = next_link.get("href", "")
             return href if href.startswith("http") else f"{BASE_URL}{href}"
