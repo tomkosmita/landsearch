@@ -24,6 +24,13 @@ Scraper działek budowlanych z OLX.pl i Otodom.pl w okolicach zachodniej częśc
 - Sekrety GitHub: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`
 - Format: HTML parse_mode, emoji, `<s>stara wartość</s>` przy zmianach
 
+## Signal
+
+- Zameldowanie po każdym skanie (nawet gdy 0 nowych ogłoszeń)
+- Integracja przez CallMeBot API (`api.callmebot.com/signal/send.php`)
+- Sekrety GitHub: `SIGNAL_PHONE` (numer z +48...), `SIGNAL_API_KEY` (klucz z callmebot.com)
+- Wysyła: liczba ogłoszeń per źródło + łączna liczba powiadomień
+
 ## Pliki kluczowe
 
 | Plik | Opis |
