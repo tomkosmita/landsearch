@@ -18,6 +18,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Guard — block execution on main
+        run: |
+          if [ "$GITHUB_REF_NAME" = "main" ]; then
+            echo "ERROR: This workflow must not run on main branch."
+            exit 1
+          fi
+
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
