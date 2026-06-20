@@ -13,9 +13,10 @@ from scraper.sources.base import BaseSource
 logger = logging.getLogger(__name__)
 
 BASE_URL = "https://bip.um.wroc.pl"
-# kind_id=1 = grunty/działki (discovered via BIP search form: ?kind_id=1)
-# URL pattern: /przetargi-nieruchomosci/{kind_id}/{page_size}
-SEARCH_URL = f"{BASE_URL}/przetargi-nieruchomosci/1/10"
+# kind_id=1 = grunty/działki per search form; try search endpoint first,
+# then fall back to category listing /3/10 (candidate for grunty, different from /4/10=lokale)
+SEARCH_URL = f"{BASE_URL}/przetargi-nieruchomosci/szukaj?kind_id=1&type_id=-1&status=0"
+SEARCH_URL_FALLBACK = f"{BASE_URL}/przetargi-nieruchomosci/3/10"
 
 HEADERS = {
     "User-Agent": (
@@ -61,8 +62,15 @@ class BipWroclawSource(BaseSource):
             self.session.proxies = {"http": proxy, "https": proxy}
 
     def fetch_listings(self) -> List[Listing]:
+        results = self._fetch_from_url(SEARCH_URL)
+        if not results:
+            logger.info("BIP: search URL returned 0 results, trying fallback %s", SEARCH_URL_FALLBACK)
+            results = self._fetch_from_url(SEARCH_URL_FALLBACK)
+        return results
+
+    def _fetch_from_url(self, start_url: str) -> List[Listing]:
         results: List[Listing] = []
-        url = SEARCH_URL
+        url = start_url
         for page in range(1, MAX_PAGES + 1):
             html = self._get_html(url)
             if html is None:
