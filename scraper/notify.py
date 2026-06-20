@@ -1,6 +1,7 @@
 import logging
 import time
-from typing import Dict, Optional, Tuple
+import urllib.parse
+from typing import Dict, List, Optional, Tuple
 
 from curl_cffi import requests
 
@@ -33,11 +34,19 @@ def _fmt_utilities(u: dict) -> str:
     )
 
 
+_SOURCE_LABELS = {
+    "olx": "OLX",
+    "otodom": "Otodom",
+    "licytacje": "⚖️ Licytacja komornicza",
+    "bip_wroclaw": "🏛️ Przetarg gminny (Wrocław BIP)",
+}
+
+
 def format_message(
     listing: Listing,
     changes: Optional[Dict[str, Tuple[Optional[int], Optional[int]]]] = None,
 ) -> str:
-    source_label = listing.source.upper()
+    source_label = _SOURCE_LABELS.get(listing.source, listing.source.upper())
 
     if changes:
         header = f"🔄 Zmiana ogłoszenia — {source_label}"
@@ -64,6 +73,36 @@ def format_message(
         f"{_fmt_utilities(listing.utilities)}\n\n"
         f'<a href="{listing.url}">Zobacz ogłoszenie ›</a>'
     )
+
+
+def send_signal_summary(
+    source_counts: Dict[str, int],
+    sent_count: int,
+    phone: str,
+    api_key: str,
+) -> bool:
+    """Send a scan summary via Signal (CallMeBot API)."""
+    lines = ["🔍 Skan działek zakończony"]
+    for source, count in source_counts.items():
+        label = _SOURCE_LABELS.get(source, source)
+        lines.append(f"  {label}: {count} ogłoszeń")
+    lines.append(f"📬 Nowe/zmienione: {sent_count}")
+    text = "\n".join(lines)
+
+    url = (
+        f"https://api.callmebot.com/signal/send.php"
+        f"?phone={urllib.parse.quote(phone)}"
+        f"&apikey={urllib.parse.quote(api_key)}"
+        f"&text={urllib.parse.quote(text)}"
+    )
+    try:
+        resp = requests.get(url, timeout=15)
+        if resp.ok:
+            return True
+        logger.warning("Signal/CallMeBot error %d: %s", resp.status_code, resp.text[:200])
+    except Exception as e:
+        logger.warning("Signal request failed: %s", e)
+    return False
 
 
 def send_telegram(
