@@ -1,7 +1,6 @@
 import logging
 import time
-import urllib.parse
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, Optional, Tuple
 
 from curl_cffi import requests
 
@@ -75,34 +74,30 @@ def format_message(
     )
 
 
-def send_signal_summary(
+def send_scan_summary(
     source_counts: Dict[str, int],
     sent_count: int,
-    phone: str,
-    api_key: str,
-) -> bool:
-    """Send a scan summary via Signal (CallMeBot API)."""
-    lines = ["🔍 Skan działek zakończony"]
+    token: str,
+    chat_id: str,
+) -> None:
+    lines = ["🔍 <b>Skan zakończony</b>"]
     for source, count in source_counts.items():
         label = _SOURCE_LABELS.get(source, source)
-        lines.append(f"  {label}: {count} ogłoszeń")
+        lines.append(f"  {label}: {count}")
     lines.append(f"📬 Nowe/zmienione: {sent_count}")
-    text = "\n".join(lines)
+    message = "\n".join(lines)
 
-    url = (
-        f"https://api.callmebot.com/signal/send.php"
-        f"?phone={urllib.parse.quote(phone)}"
-        f"&apikey={urllib.parse.quote(api_key)}"
-        f"&text={urllib.parse.quote(text)}"
-    )
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
     try:
-        resp = requests.get(url, timeout=15)
-        if resp.ok:
-            return True
-        logger.warning("Signal/CallMeBot error %d: %s", resp.status_code, resp.text[:200])
+        resp = requests.post(
+            url,
+            json={"chat_id": chat_id, "text": message, "parse_mode": "HTML"},
+            timeout=15,
+        )
+        if not resp.ok:
+            logger.warning("Summary send failed %d: %s", resp.status_code, resp.text[:100])
     except Exception as e:
-        logger.warning("Signal request failed: %s", e)
-    return False
+        logger.warning("Summary request failed: %s", e)
 
 
 def send_telegram(

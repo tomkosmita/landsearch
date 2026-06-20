@@ -2,7 +2,7 @@ import logging
 import os
 import sys
 
-from scraper.notify import send_signal_summary, send_telegram
+from scraper.notify import send_scan_summary, send_telegram
 from scraper.seen import get_changes, load_seen, make_snapshot, save_seen
 from scraper.sources.bip_wroclaw import BipWroclawSource
 from scraper.sources.licytacje import LicytacjeSource
@@ -20,9 +20,6 @@ logger = logging.getLogger(__name__)
 def main() -> None:
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "")
-    signal_phone = os.environ.get("SIGNAL_PHONE", "")
-    signal_api_key = os.environ.get("SIGNAL_API_KEY", "")
-
     if not token or not chat_id:
         logger.error("TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID must be set")
         sys.exit(1)
@@ -35,16 +32,15 @@ def main() -> None:
     source_counts: dict = {}
 
     for source in sources:
-        source_name = type(source).__name__
-        logger.info("Fetching from %s", source_name)
+        logger.info("Fetching from %s", type(source).__name__)
         try:
             listings = source.fetch_listings()
         except Exception as e:
-            logger.error("Error fetching from %s: %s", source_name, e)
+            logger.error("Error fetching from %s: %s", type(source).__name__, e)
             continue
 
         logger.info("Fetched %d listings", len(listings))
-        source_key = listings[0].source if listings else source_name.lower().replace("source", "")
+        source_key = listings[0].source if listings else type(source).__name__.lower().replace("source", "")
         source_counts[source_key] = len(listings)
 
         for listing in listings:
@@ -76,11 +72,7 @@ def main() -> None:
     save_seen(seen)
     logger.info("Done. Sent %d notifications. Total seen: %d", sent_count, len(seen))
 
-    if signal_phone and signal_api_key:
-        send_signal_summary(source_counts, sent_count, signal_phone, signal_api_key)
-        logger.info("Signal summary sent")
-    else:
-        logger.debug("Signal not configured (SIGNAL_PHONE/SIGNAL_API_KEY not set)")
+    send_scan_summary(source_counts, sent_count, token, chat_id)
 
 
 if __name__ == "__main__":

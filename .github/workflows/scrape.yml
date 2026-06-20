@@ -33,8 +33,6 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          SIGNAL_PHONE: ${{ secrets.SIGNAL_PHONE }}
-          SIGNAL_API_KEY: ${{ secrets.SIGNAL_API_KEY }}
         run: python -m scraper.main
 
       - name: Commit updated seen_ids.json
