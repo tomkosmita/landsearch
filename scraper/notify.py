@@ -38,6 +38,7 @@ _SOURCE_LABELS = {
     "otodom": "Otodom",
     "licytacje": "⚖️ Licytacja komornicza",
     "bip_wroclaw": "🏛️ Przetarg gminny (Wrocław BIP)",
+    "bipwroclaw": "🏛️ Przetarg gminny (Wrocław BIP)",  # fallback when source returns 0 listings
 }
 
 
