@@ -30,16 +30,17 @@ HEADERS = {
     "Referer": "https://bip.um.wroc.pl/",
 }
 
-# Keywords identifying land plots vs other property types
+# Plot keywords — BIP titles are addresses so "dz. nr" (działka numer) is the key indicator
 PLOT_KEYWORDS = [
-    "działk", "działek", "grunt", "teren",
-    "nieruchomość gruntow", "nieruchomosc gruntow",
-    "budowlan", "niezabudowan",
+    "dz. nr", "dz.nr",     # parcel number abbreviation — always present in plot listings
+    "działk", "działek",
+    "grunt", "nieruchomość gruntow", "nieruchomosc gruntow",
+    "niezabudowan", "budowlan",
 ]
 
 # Exclude non-land listings
 EXCLUDE_KEYWORDS = [
-    "lokal", "mieszkan", "garaż", "garaz", "budynek", "kamienica",
+    "lokal", "lokl", "mieszkan", "garaż", "garaz", "budynek", "kamienica",
 ]
 
 UTILITY_PATTERNS = {
@@ -109,14 +110,24 @@ class BipWroclawSource(BaseSource):
         next_url = self._find_next_page(soup)
         return listings, next_url
 
-    # Navigation link texts to exclude (BIP sidebar/header links)
+    # Exact nav link texts (lowercased, stripped)
     _NAV_TEXTS = frozenset([
         "instrukcja obsługi", "urząd miejski", "zespół redakcyjny bip",
-        "strona główna", "poprzednia", "następna", "bip",
+        "strona główna", "bip",
     ])
+    # Regex patterns for pagination/nav links
+    _NAV_PATTERNS = [
+        re.compile(r"^strona\s*\d+$", re.IGNORECASE),
+        re.compile(r"^pokaż\s*\d+", re.IGNORECASE),
+        re.compile(r"^poprzedni", re.IGNORECASE),
+        re.compile(r"^następn", re.IGNORECASE),
+    ]
 
     def _is_nav_link(self, text: str) -> bool:
-        return text.lower().strip() in self._NAV_TEXTS
+        lower = text.lower().strip()
+        if lower in self._NAV_TEXTS:
+            return True
+        return any(p.match(lower) for p in self._NAV_PATTERNS)
 
     def _find_listing_items(self, soup: BeautifulSoup) -> list:
         # BIP renders a calendar view — table rows are date rows, not listing rows.
@@ -166,7 +177,9 @@ class BipWroclawSource(BaseSource):
                 continue
             if self._is_nav_link(text):
                 continue
-            if not re.search(r"/content/|/node/\d+|przetarg", href, re.IGNORECASE):
+            # Match only actual tender pages: /przetarg-nieruchomosci/{numeric-id}/{word-slug}
+            # Avoids pagination URLs like /przetargi-nieruchomosci/3/10 (plural, all-numeric)
+            if not re.search(r"/przetarg-nieruchomosci/\d+/[a-z]", href, re.IGNORECASE):
                 continue
             if href in seen_hrefs:
                 continue
@@ -208,9 +221,7 @@ class BipWroclawSource(BaseSource):
             if item.name == "a":
                 link = item
             else:
-                link = item.select_one(
-                    "a[href*='przetarg-nieruchomosci'], a[href*='/content/'], a[href*='/node/']"
-                )
+                link = item.select_one("a[href*='przetarg-nieruchomosci']")
                 if not link:
                     link = item.find("a")
             if not link:
@@ -287,10 +298,10 @@ class BipWroclawSource(BaseSource):
         return None
 
     def _is_plot(self, title: str) -> bool:
-        # BIP titles are property addresses ("ul. X dz. nr Y"), not keyword-rich descriptions.
-        # Use exclusion-only: if it's not an apartment/garage/lokal, treat it as land.
         lower = title.lower()
-        return not any(kw in lower for kw in EXCLUDE_KEYWORDS)
+        if any(kw in lower for kw in EXCLUDE_KEYWORDS):
+            return False
+        return any(kw in lower for kw in PLOT_KEYWORDS)
 
     def _find_next_page(self, soup: BeautifulSoup) -> Optional[str]:
         next_link = soup.select_one(
