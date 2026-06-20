@@ -13,10 +13,9 @@ from scraper.sources.base import BaseSource
 logger = logging.getLogger(__name__)
 
 BASE_URL = "https://bip.um.wroc.pl"
-# kind_id=1 = grunty/działki per search form; try search endpoint first,
-# then fall back to category listing /3/10 (candidate for grunty, different from /4/10=lokale)
-SEARCH_URL = f"{BASE_URL}/przetargi-nieruchomosci/szukaj?kind_id=1&type_id=-1&status=0"
-SEARCH_URL_FALLBACK = f"{BASE_URL}/przetargi-nieruchomosci/3/10"
+# /3/10 = all property tenders (plots + lokale mixed), 10 per page.
+# The search URL (/szukaj?kind_id=1) returns a calendar widget, not a list — skip it.
+LISTING_URL = f"{BASE_URL}/przetargi-nieruchomosci/3/10"
 
 HEADERS = {
     "User-Agent": (
@@ -62,11 +61,7 @@ class BipWroclawSource(BaseSource):
             self.session.proxies = {"http": proxy, "https": proxy}
 
     def fetch_listings(self) -> List[Listing]:
-        results = self._fetch_from_url(SEARCH_URL)
-        if not results:
-            logger.info("BIP: search URL returned 0 results, trying fallback %s", SEARCH_URL_FALLBACK)
-            results = self._fetch_from_url(SEARCH_URL_FALLBACK)
-        return results
+        return self._fetch_from_url(LISTING_URL)
 
     def _fetch_from_url(self, start_url: str) -> List[Listing]:
         results: List[Listing] = []
@@ -213,7 +208,9 @@ class BipWroclawSource(BaseSource):
             if item.name == "a":
                 link = item
             else:
-                link = item.select_one("a[href*='/content/'], a[href*='/node/']")
+                link = item.select_one(
+                    "a[href*='przetarg-nieruchomosci'], a[href*='/content/'], a[href*='/node/']"
+                )
                 if not link:
                     link = item.find("a")
             if not link:
@@ -290,10 +287,10 @@ class BipWroclawSource(BaseSource):
         return None
 
     def _is_plot(self, title: str) -> bool:
+        # BIP titles are property addresses ("ul. X dz. nr Y"), not keyword-rich descriptions.
+        # Use exclusion-only: if it's not an apartment/garage/lokal, treat it as land.
         lower = title.lower()
-        if any(kw in lower for kw in EXCLUDE_KEYWORDS):
-            return False
-        return any(kw in lower for kw in PLOT_KEYWORDS)
+        return not any(kw in lower for kw in EXCLUDE_KEYWORDS)
 
     def _find_next_page(self, soup: BeautifulSoup) -> Optional[str]:
         next_link = soup.select_one(
