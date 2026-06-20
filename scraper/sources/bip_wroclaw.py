@@ -115,34 +115,58 @@ class BipWroclawSource(BaseSource):
         return listings, next_url
 
     def _find_listing_items(self, soup: BeautifulSoup) -> list:
-        # Strategy 1: table rows with links
-        rows = soup.select("table.views-table tbody tr, table tbody tr")
-        if rows:
-            logger.info("BIP: found %d table rows", len(rows))
-            for r in rows[:3]:
-                logger.info("BIP row sample: %r", r.get_text(" ", strip=True)[:80])
-            return rows
-        # Strategy 2: article/div listing cards
-        cards = soup.select("article, .views-row, .node--type-przetarg, .tender-item")
+        # BIP uses a calendar view — table rows are week-date rows, not listings.
+        # Instead, find all links to individual tender pages and return their parent
+        # containers so _parse_item can extract surrounding text (price, area, etc.).
+        seen_hrefs: set = set()
+        containers = []
+
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            text = a.get_text(strip=True)
+            # Skip calendar date cells ("1", "25", "30", etc.)
+            if re.match(r"^\d{1,2}$", text):
+                continue
+            if not text or len(text) < 5:
+                continue
+            # Only links to individual content/node pages
+            if not re.search(r"/content/|/node/\d+", href):
+                continue
+            if href in seen_hrefs:
+                continue
+            seen_hrefs.add(href)
+            parent = a.parent if a.parent else a
+            containers.append(parent)
+
+        if containers:
+            logger.info("BIP: found %d content links", len(containers))
+            for c in containers[:3]:
+                logger.info("BIP link sample: %r", c.get_text(" ", strip=True)[:80])
+            return containers
+
+        # Fallback: article/div cards (Drupal list view)
+        cards = soup.select("article, .views-row, .node--type-przetarg")
         if cards:
             logger.info("BIP: found %d card items", len(cards))
             return cards
-        # Strategy 3: any li with przetarg link
-        items = [li for li in soup.find_all("li") if li.find("a", href=re.compile(r"przetarg|nieruchomosc"))]
-        if items:
-            logger.info("BIP: found %d li items", len(items))
-            return items
-        logger.warning("BIP: no items found. Title: %s", soup.title.string if soup.title else "N/A")
-        logger.warning("BIP: top-level tags: %s", [t.name for t in soup.body.children if hasattr(t, "name") and t.name][:10] if soup.body else "no body")
+
+        h1 = soup.find("h1")
+        logger.warning(
+            "BIP: no items found. Page title: %s | H1: %s",
+            soup.title.string if soup.title else "N/A",
+            h1.get_text(strip=True)[:80] if h1 else "N/A",
+        )
         return []
 
     def _parse_item(self, item) -> Optional[Listing]:
         try:
-            link = item.select_one(
-                "a[href*='przetarg'], a[href*='nieruchomosc'], a[href*='/content/'], h2 a, h3 a, td a"
-            )
-            if not link:
-                link = item.find("a")
+            # item is the parent container of a tender link (td/div/li/a)
+            if item.name == "a":
+                link = item
+            else:
+                link = item.select_one("a[href*='/content/'], a[href*='/node/']")
+                if not link:
+                    link = item.find("a")
             if not link:
                 return None
 
@@ -153,9 +177,7 @@ class BipWroclawSource(BaseSource):
             path = re.sub(r"[^\w]", "_", href.strip("/"))
             listing_id = f"bip_wroclaw_{path[-60:]}"
 
-            title = link.get_text(strip=True)
-            if not title:
-                title = item.get_text(" ", strip=True)[:120]
+            title = link.get_text(strip=True) or item.get_text(" ", strip=True)[:120]
 
             # Extract price from text — "cena wywoławcza: 500 000 zł"
             full_text = item.get_text(" ", strip=True)
