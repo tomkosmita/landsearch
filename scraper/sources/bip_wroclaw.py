@@ -114,42 +114,91 @@ class BipWroclawSource(BaseSource):
         next_url = self._find_next_page(soup)
         return listings, next_url
 
-    def _find_listing_items(self, soup: BeautifulSoup) -> list:
-        # BIP uses a calendar view — table rows are week-date rows, not listings.
-        # Instead, find all links to individual tender pages and return their parent
-        # containers so _parse_item can extract surrounding text (price, area, etc.).
-        seen_hrefs: set = set()
-        containers = []
+    # Navigation link texts to exclude (BIP sidebar/header links)
+    _NAV_TEXTS = frozenset([
+        "instrukcja obsługi", "urząd miejski", "zespół redakcyjny bip",
+        "strona główna", "poprzednia", "następna", "bip",
+    ])
 
+    def _is_nav_link(self, text: str) -> bool:
+        return text.lower().strip() in self._NAV_TEXTS
+
+    def _find_listing_items(self, soup: BeautifulSoup) -> list:
+        # BIP renders a calendar view — table rows are date rows, not listing rows.
+        # Strategy 1: find links whose text contains tender keywords.
+        # Strategy 2: find links to /content/ or /node/ pages, minus known nav links.
+        # Strategy 3: log all hrefs for diagnosis.
+
+        seen_hrefs: set = set()
+
+        # Strategy 1: text-based tender keyword matching
+        text_matches = []
         for a in soup.find_all("a", href=True):
             href = a["href"]
             text = a.get_text(strip=True)
-            # Skip calendar date cells ("1", "25", "30", etc.)
-            if re.match(r"^\d{1,2}$", text):
+            if re.match(r"^\d{1,2}$", text) or len(text) < 8:
                 continue
-            if not text or len(text) < 5:
+            if self._is_nav_link(text):
                 continue
-            # Only links to individual content/node pages
-            if not re.search(r"/content/|/node/\d+", href):
+            if not re.search(
+                r"przetarg|sprzedaż|sprzedaz|nieruchom|działk|grunt|teren",
+                text, re.IGNORECASE,
+            ):
                 continue
             if href in seen_hrefs:
                 continue
             seen_hrefs.add(href)
-            parent = a.parent if a.parent else a
-            containers.append(parent)
+            text_matches.append(a.parent if a.parent else a)
 
-        if containers:
-            logger.info("BIP: found %d content links", len(containers))
-            for c in containers[:3]:
-                logger.info("BIP link sample: %r", c.get_text(" ", strip=True)[:80])
-            return containers
+        if text_matches:
+            logger.info("BIP: found %d tender links (by text)", len(text_matches))
+            for c in text_matches[:3]:
+                a = c.find("a") or c
+                logger.info(
+                    "BIP tender: %r -> %s",
+                    a.get_text(strip=True)[:60],
+                    a.get("href", "")[:80],
+                )
+            return text_matches
 
-        # Fallback: article/div cards (Drupal list view)
+        # Strategy 2: URL pattern, excluding known nav links
+        url_matches = []
+        seen_hrefs = set()
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            text = a.get_text(strip=True)
+            if re.match(r"^\d{1,2}$", text) or len(text) < 5:
+                continue
+            if self._is_nav_link(text):
+                continue
+            if not re.search(r"/content/|/node/\d+|przetarg", href, re.IGNORECASE):
+                continue
+            if href in seen_hrefs:
+                continue
+            seen_hrefs.add(href)
+            url_matches.append(a.parent if a.parent else a)
+
+        if url_matches:
+            logger.info("BIP: found %d tender links (by URL)", len(url_matches))
+            for c in url_matches[:3]:
+                a = c.find("a") or c
+                logger.info("BIP URL link: %r -> %s", a.get_text(strip=True)[:60], a.get("href", "")[:80])
+            return url_matches
+
+        # Fallback: Drupal view cards
         cards = soup.select("article, .views-row, .node--type-przetarg")
         if cards:
             logger.info("BIP: found %d card items", len(cards))
             return cards
 
+        # Diagnostic: dump all non-trivial hrefs so we can learn the URL pattern
+        all_links = [
+            (a.get_text(strip=True)[:50], a["href"][:80])
+            for a in soup.find_all("a", href=True)
+            if a.get_text(strip=True) and not re.match(r"^\d{1,2}$", a.get_text(strip=True))
+        ]
+        for text, href in all_links[:15]:
+            logger.warning("BIP href: %r -> %s", text, href)
         h1 = soup.find("h1")
         logger.warning(
             "BIP: no items found. Page title: %s | H1: %s",
