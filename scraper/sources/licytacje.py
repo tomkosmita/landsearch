@@ -31,16 +31,11 @@ HEADERS = {
 # Municipalities and districts in/around western Wrocław
 WROCLAW_KEYWORDS = [
     "wrocław", "wroclaw",
-    "długołęka", "dlugoleka",
     "kobierzyce",
-    "siechnice",
-    "czernica",
     "kąty wrocławskie", "katy wroclawskie",
     "miękinia", "miekinia",
-    "żórawina", "zorawina",
     "sobótka", "sobotka",
     "jordanów śląski",
-    "dolnośląsk", "dolnoslaski",
 ]
 
 UTILITY_PATTERNS = {

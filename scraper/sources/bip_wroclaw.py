@@ -43,6 +43,23 @@ EXCLUDE_KEYWORDS = [
     "lokal", "lokl", "mieszkan", "garaż", "garaz", "budynek", "kamienica",
 ]
 
+# Eastern Wrocław neighbourhoods — skip BIP tenders explicitly mentioning these
+EASTERN_WROCLAW_AREAS = [
+    "psie pole",
+    "różanka", "rozanka",
+    "sołtysowice", "soltysowice",
+    "karłowice", "karlowice",
+    "kowale",
+    "wojnów", "wojnow",
+    "brochów", "brochow",
+    "nowy dwór", "nowy dwor",
+    "strachocin",
+    "swojczyce",
+    "zakrzów", "zakrzow",
+    "sępolno", "sepolno",
+    "bieńkowice", "bienkowice",
+]
+
 UTILITY_PATTERNS = {
     "water": ["woda", "wodociąg", "wodociag", "wodna"],
     "gas": ["gaz"],
@@ -104,7 +121,9 @@ class BipWroclawSource(BaseSource):
 
         for item in items:
             listing = self._parse_item(item)
-            if listing and self._is_plot(listing.title):
+            if listing and self._is_plot(listing.title) and not self._is_eastern_wroclaw(
+                listing.title + " " + listing.location
+            ):
                 listings.append(listing)
 
         next_url = self._find_next_page(soup)
@@ -302,6 +321,10 @@ class BipWroclawSource(BaseSource):
         if any(kw in lower for kw in EXCLUDE_KEYWORDS):
             return False
         return any(kw in lower for kw in PLOT_KEYWORDS)
+
+    def _is_eastern_wroclaw(self, text: str) -> bool:
+        lower = text.lower()
+        return any(kw in lower for kw in EASTERN_WROCLAW_AREAS)
 
     def _find_next_page(self, soup: BeautifulSoup) -> Optional[str]:
         next_link = soup.select_one(
