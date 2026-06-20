@@ -60,6 +60,7 @@ def main() -> None:
             if listing.id not in seen:
                 listing.utilities = source.fetch_utilities(listing.url)
                 _enrich_from_utilities(listing)
+                snapshot = make_snapshot(listing)  # re-make after enrichment to capture real price/area
                 logger.info("Utilities for %s: %s", listing.id, listing.utilities)
                 seen[listing.id] = snapshot
                 sent = send_telegram(listing, token, chat_id)
