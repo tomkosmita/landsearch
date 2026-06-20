@@ -6,7 +6,7 @@ Scraper działek budowlanych z OLX.pl i Otodom.pl w okolicach zachodniej częśc
 
 ## Branch roboczy
 
-`claude/olx-land-scraper-8pek3l` — to jest **domyślny branch** repo (nie `main`).
+**Cały development idzie bezpośrednio na `main`.** Nie twórz feature branchy — commituj i pushuj wprost na `main`. Wyjątek: jeśli użytkownik wyraźnie poprosi o PR.
 
 ## Kluczowe decyzje techniczne
 

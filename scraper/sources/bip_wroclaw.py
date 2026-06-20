@@ -13,8 +13,9 @@ from scraper.sources.base import BaseSource
 logger = logging.getLogger(__name__)
 
 BASE_URL = "https://bip.um.wroc.pl"
-# /4/10 = active property tenders listing (confirmed from live BIP search results)
-SEARCH_URL = f"{BASE_URL}/przetargi-nieruchomosci/4/10"
+# kind_id=1 = grunty/działki (discovered via BIP search form: ?kind_id=1)
+# URL pattern: /przetargi-nieruchomosci/{kind_id}/{page_size}
+SEARCH_URL = f"{BASE_URL}/przetargi-nieruchomosci/1/10"
 
 HEADERS = {
     "User-Agent": (
@@ -95,18 +96,12 @@ class BipWroclawSource(BaseSource):
         soup = BeautifulSoup(html, "lxml")
         listings: List[Listing] = []
 
-        # BIP Wrocław uses table or list-based layouts — try both
         items = self._find_listing_items(soup)
 
-        logged = 0
         for item in items:
             listing = self._parse_item(item)
-            if listing:
-                if logged < 5:
-                    logger.info("BIP row title: %r", listing.title[:80])
-                    logged += 1
-                if self._is_plot(listing.title):
-                    listings.append(listing)
+            if listing and self._is_plot(listing.title):
+                listings.append(listing)
 
         next_url = self._find_next_page(soup)
         return listings, next_url
@@ -116,6 +111,8 @@ class BipWroclawSource(BaseSource):
         rows = soup.select("table.views-table tbody tr, table tbody tr")
         if rows:
             logger.info("BIP: found %d table rows", len(rows))
+            for r in rows[:3]:
+                logger.info("BIP row sample: %r", r.get_text(" ", strip=True)[:80])
             return rows
         # Strategy 2: article/div listing cards
         cards = soup.select("article, .views-row, .node--type-przetarg, .tender-item")
@@ -127,9 +124,8 @@ class BipWroclawSource(BaseSource):
         if items:
             logger.info("BIP: found %d li items", len(items))
             return items
-        # Log what we see for debugging
-        logger.warning("BIP: no items found. Page title: %s", soup.title.string if soup.title else "N/A")
-        logger.warning("BIP: top-level tags: %s", [t.name for t in soup.body.children if hasattr(t, 'name') and t.name][:10] if soup.body else "no body")
+        logger.warning("BIP: no items found. Title: %s", soup.title.string if soup.title else "N/A")
+        logger.warning("BIP: top-level tags: %s", [t.name for t in soup.body.children if hasattr(t, "name") and t.name][:10] if soup.body else "no body")
         return []
 
     def _parse_item(self, item) -> Optional[Listing]:
@@ -225,7 +221,6 @@ class BipWroclawSource(BaseSource):
             "a[rel='next'], li.pager__item--next a, .pager-next a"
         )
         if not next_link:
-            # Text-based fallback without deprecated :contains pseudo-class
             for a in soup.find_all("a"):
                 if "następna" in (a.get_text(strip=True) or "").lower():
                     next_link = a
