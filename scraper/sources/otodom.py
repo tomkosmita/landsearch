@@ -164,6 +164,9 @@ class OtodomSource(BaseSource):
 
             location = self._extract_location(raw)
             title = raw.get("title", "Dom / działka na sprzedaż")
+            coords = (raw.get("location") or {}).get("coordinates") or {}
+            lat = coords.get("latitude")
+            lon = coords.get("longitude")
 
             return Listing(
                 id=listing_id,
@@ -174,6 +177,8 @@ class OtodomSource(BaseSource):
                 price=int(price) if price else None,
                 area=area,
                 utilities={},
+                lat=float(lat) if lat is not None else None,
+                lon=float(lon) if lon is not None else None,
             )
         except Exception as e:
             logger.debug("Failed to build Otodom listing from %s: %s", raw.get("id"), e)

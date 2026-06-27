@@ -207,6 +207,9 @@ class OlxSource(BaseSource):
             title = raw.get("title", "Działka budowlana")
             location = self._extract_location(raw)
             area = self._extract_area(raw)
+            map_data = raw.get("map", {})
+            lat = (map_data.get("lat") or map_data.get("latitude")) if isinstance(map_data, dict) else None
+            lon = (map_data.get("lon") or map_data.get("longitude")) if isinstance(map_data, dict) else None
 
             return Listing(
                 id=listing_id,
@@ -217,6 +220,8 @@ class OlxSource(BaseSource):
                 price=int(price) if price else None,
                 area=area,
                 utilities={},
+                lat=float(lat) if lat is not None else None,
+                lon=float(lon) if lon is not None else None,
             )
         except Exception as e:
             logger.debug("Failed to build listing from %s: %s", raw.get("id"), e)

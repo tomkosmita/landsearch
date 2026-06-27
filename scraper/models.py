@@ -12,3 +12,5 @@ class Listing:
     price: Optional[int] = None
     area: Optional[int] = None
     utilities: dict = field(default_factory=dict)
+    lat: Optional[float] = None
+    lon: Optional[float] = None

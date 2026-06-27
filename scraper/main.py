@@ -50,6 +50,7 @@ def main() -> None:
     ]
     sent_count = 0
     source_counts: dict = {}
+    notified_listings: list = []
 
     for source in sources:
         logger.info("Fetching from %s", type(source).__name__)
@@ -75,6 +76,7 @@ def main() -> None:
                 sent = send_telegram(listing, token, chat_id)
                 if sent:
                     sent_count += 1
+                    notified_listings.append(listing)
                     logger.info("Sent new listing %s: %s", listing.id, listing.title)
                 else:
                     logger.warning("Failed to send new listing %s", listing.id)
@@ -88,6 +90,7 @@ def main() -> None:
                     sent = send_telegram(listing, token, chat_id, changes=changes)
                     if sent:
                         sent_count += 1
+                        notified_listings.append(listing)
                         logger.info("Sent modified listing %s (changes: %s)", listing.id, changes)
                     else:
                         logger.warning("Failed to send modified listing %s", listing.id)
@@ -95,7 +98,7 @@ def main() -> None:
     save_seen(seen)
     logger.info("Done. Sent %d notifications. Total seen: %d", sent_count, len(seen))
 
-    send_scan_summary(source_counts, sent_count, token, chat_id)
+    send_scan_summary(source_counts, sent_count, token, chat_id, notified_listings)
 
 
 if __name__ == "__main__":

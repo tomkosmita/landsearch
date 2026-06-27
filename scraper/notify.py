@@ -1,6 +1,8 @@
+import json
 import logging
 import time
-from typing import Dict, Optional, Tuple
+import urllib.parse
+from typing import Dict, List, Optional, Tuple
 
 from curl_cffi import requests
 
@@ -77,17 +79,44 @@ def format_message(
     )
 
 
+def _make_map_url(listings: list) -> Optional[str]:
+    features = [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": l.title,
+                "price": f"{l.price:,} zł".replace(",", " ") if l.price else "brak ceny",
+                "url": l.url,
+            },
+            "geometry": {"type": "Point", "coordinates": [l.lon, l.lat]},
+        }
+        for l in listings
+        if l.lat is not None and l.lon is not None
+    ]
+    if not features:
+        return None
+    geojson = json.dumps({"type": "FeatureCollection", "features": features}, ensure_ascii=False)
+    return f"http://geojson.io/#data=data:application/json,{urllib.parse.quote(geojson)}"
+
+
 def send_scan_summary(
     source_counts: Dict[str, int],
     sent_count: int,
     token: str,
     chat_id: str,
+    notified_listings: Optional[List] = None,
 ) -> None:
     lines = ["🔍 <b>Skan zakończony</b>"]
     for source, count in source_counts.items():
         label = _SOURCE_LABELS.get(source, source)
         lines.append(f"  {label}: {count}")
     lines.append(f"📬 Nowe/zmienione: {sent_count}")
+
+    if notified_listings:
+        map_url = _make_map_url(notified_listings)
+        if map_url:
+            lines.append(f'🗺 <a href="{map_url}">Mapa nowych działek</a>')
+
     message = "\n".join(lines)
 
     url = f"https://api.telegram.org/bot{token}/sendMessage"
