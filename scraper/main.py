@@ -60,7 +60,7 @@ def main() -> None:
             continue
 
         logger.info("Fetched %d listings", len(listings))
-        source_key = listings[0].source if listings else type(source).__name__.lower().replace("source", "")
+        source_key = listings[0].source if listings else getattr(source, "_source_name", type(source).__name__.lower().replace("source", ""))
         source_counts[source_key] = len(listings)
 
         for listing in listings:
