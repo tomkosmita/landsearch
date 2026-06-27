@@ -23,6 +23,16 @@ SEARCH_URL = (
     "&search%5Bfilter_float_m%3Afrom%5D=800"
 )
 
+BB_SEARCH_URL = (
+    "https://www.olx.pl/nieruchomosci/dzialki/sprzedaz/bielsko-biala/"
+    "?search%5Bdist%5D=15"
+    "&search%5Bprivate_business%5D=private"
+    "&search%5Border%5D=created_at%3Adesc"
+    "&search%5Bfilter_float_price%3Ato%5D=500000"
+    "&search%5Bfilter_enum_type%5D%5B0%5D=dzialki-budowlane"
+    "&search%5Bfilter_float_m%3Afrom%5D=800"
+)
+
 OLX_HOME = "https://www.olx.pl/"
 
 HEADERS = {
@@ -49,7 +59,10 @@ UTILITY_PATTERNS = {
 
 
 class OlxSource(BaseSource):
-    def __init__(self) -> None:
+    def __init__(self, search_url: str = SEARCH_URL, source_name: str = "olx", filter_geo: bool = True) -> None:
+        self._search_url = search_url
+        self._source_name = source_name
+        self._filter_geo = filter_geo
         self.session = requests.Session(impersonate="chrome120")
         self.session.headers.update(HEADERS)
 
@@ -58,7 +71,7 @@ class OlxSource(BaseSource):
         if html is None:
             return []
 
-        html = self._get_html(SEARCH_URL)
+        html = self._get_html(self._search_url)
         if html is None:
             return []
 
@@ -72,7 +85,7 @@ class OlxSource(BaseSource):
             listing = self._build_listing(raw)
             if listing is None:
                 continue
-            if not self._is_west_of_wroclaw(raw):
+            if self._filter_geo and not self._is_west_of_wroclaw(raw):
                 logger.debug("Skipping eastern listing: %s", listing.location)
                 continue
             results.append(listing)
@@ -200,7 +213,7 @@ class OlxSource(BaseSource):
                 title=title,
                 url=url,
                 location=location,
-                source="olx",
+                source=self._source_name,
                 price=int(price) if price else None,
                 area=area,
                 utilities={},

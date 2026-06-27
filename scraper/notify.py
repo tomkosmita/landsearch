@@ -34,8 +34,10 @@ def _fmt_utilities(u: dict) -> str:
 
 
 _SOURCE_LABELS = {
-    "olx": "OLX",
-    "otodom": "Otodom",
+    "olx": "OLX (Wrocław)",
+    "otodom": "Otodom (Wrocław)",
+    "olx_bb": "OLX (Bielsko-Biała)",
+    "otodom_bb": "Otodom (Bielsko-Biała)",
     "licytacje": "⚖️ Licytacja komornicza",
     "bip_wroclaw": "🏛️ Przetarg gminny (Wrocław BIP)",
     "bipwroclaw": "🏛️ Przetarg gminny (Wrocław BIP)",  # fallback when source returns 0 listings

@@ -6,7 +6,9 @@ from scraper.notify import send_scan_summary, send_telegram
 from scraper.seen import get_changes, load_seen, make_snapshot, save_seen
 from scraper.sources.bip_wroclaw import BipWroclawSource
 from scraper.sources.licytacje import LicytacjeSource
+from scraper.sources.olx import BB_SEARCH_URL as OLX_BB_URL
 from scraper.sources.olx import OlxSource
+from scraper.sources.otodom import BB_SEARCH_URL as OTODOM_BB_URL
 from scraper.sources.otodom import OtodomSource
 
 logging.basicConfig(
@@ -38,7 +40,14 @@ def main() -> None:
     seen = load_seen()
     logger.info("Loaded %d seen listing IDs", len(seen))
 
-    sources = [OlxSource(), OtodomSource(), LicytacjeSource(), BipWroclawSource()]
+    sources = [
+        OlxSource(),
+        OtodomSource(),
+        OlxSource(search_url=OLX_BB_URL, source_name="olx_bb", filter_geo=False),
+        OtodomSource(search_url=OTODOM_BB_URL, source_name="otodom_bb"),
+        LicytacjeSource(),
+        BipWroclawSource(),
+    ]
     sent_count = 0
     source_counts: dict = {}
 

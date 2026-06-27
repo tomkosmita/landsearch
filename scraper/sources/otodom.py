@@ -25,6 +25,17 @@ SEARCH_URL = (
     "&geometry=e_cwHg%7CifBg%5EoMkj%40_k%40sjDsgG%7DWcQgm%40_Om%5ClDoq%40lWcVxX_Qd%5Cy%5EfkBkZrdEp_%40rtHziBr%7EG%7Cb%40tr%40faAjm%40jfAhFfzAoWj%7DEenBlu%40is%40%7CcDihGrGgd%40qEimAoc%40wiBeSaYqr%40_QamCpEacB_V"
 )
 
+# mapBounds: ~30km radius around Bielsko-Biała center (49.82°N, 19.04°E)
+BB_SEARCH_URL = (
+    "https://www.otodom.pl/pl/wyniki/sprzedaz/dzialka/cala-polska"
+    "?limit=36"
+    "&priceMax=600000"
+    "&plotType=%5BBUILDING%5D"
+    "&by=DEFAULT&direction=DESC"
+    "&viewType=listing"
+    "&mapBounds=19.5%2C50.1%2C18.6%2C49.5"
+)
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -46,7 +57,9 @@ UTILITY_PATTERNS = {
 
 
 class OtodomSource(BaseSource):
-    def __init__(self) -> None:
+    def __init__(self, search_url: str = SEARCH_URL, source_name: str = "otodom") -> None:
+        self._search_url = search_url
+        self._source_name = source_name
         self.session = requests.Session(impersonate="chrome120")
         self.session.headers.update(HEADERS)
 
@@ -54,7 +67,7 @@ class OtodomSource(BaseSource):
         # Otodom uses cookies set on homepage
         self._get_html("https://www.otodom.pl/")
 
-        html = self._get_html(SEARCH_URL)
+        html = self._get_html(self._search_url)
         if html is None:
             return []
 
@@ -157,7 +170,7 @@ class OtodomSource(BaseSource):
                 title=title,
                 url=url,
                 location=location,
-                source="otodom",
+                source=self._source_name,
                 price=int(price) if price else None,
                 area=area,
                 utilities={},
