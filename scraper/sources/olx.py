@@ -24,8 +24,8 @@ SEARCH_URL = (
 )
 
 BB_SEARCH_URL = (
-    "https://www.olx.pl/nieruchomosci/dzialki/sprzedaz/bielsko-biala/"
-    "?search%5Bdist%5D=15"
+    "https://www.olx.pl/nieruchomosci/dzialki/sprzedaz/bielsko-biala/q-dzia%C5%82ki-budowlane/"
+    "?search%5Bdist%5D=10"
     "&search%5Bprivate_business%5D=private"
     "&search%5Border%5D=created_at%3Adesc"
     "&search%5Bfilter_float_price%3Ato%5D=500000"
@@ -59,10 +59,10 @@ UTILITY_PATTERNS = {
 
 
 class OlxSource(BaseSource):
-    def __init__(self, search_url: str = SEARCH_URL, source_name: str = "olx", filter_geo: bool = True) -> None:
+    def __init__(self, search_url: str = SEARCH_URL, source_name: str = "olx", geo_filter=None) -> None:
         self._search_url = search_url
         self._source_name = source_name
-        self._filter_geo = filter_geo
+        self._geo_filter = geo_filter if geo_filter is not None else self._is_west_of_wroclaw
         self.session = requests.Session(impersonate="chrome120")
         self.session.headers.update(HEADERS)
 
@@ -85,8 +85,8 @@ class OlxSource(BaseSource):
             listing = self._build_listing(raw)
             if listing is None:
                 continue
-            if self._filter_geo and not self._is_west_of_wroclaw(raw):
-                logger.debug("Skipping eastern listing: %s", listing.location)
+            if not self._geo_filter(raw):
+                logger.debug("Skipping listing (geo filter): %s", listing.location)
                 continue
             results.append(listing)
 
@@ -252,14 +252,25 @@ class OlxSource(BaseSource):
                     return int(val) if val else None
         return None
 
-    def _is_west_of_wroclaw(self, raw: dict) -> bool:
+    @staticmethod
+    def _is_west_of_wroclaw(raw: dict) -> bool:
         """Return True if listing is west of Wrocław center (or location unknown)."""
         map_data = raw.get("map", {})
         if isinstance(map_data, dict):
             lon = map_data.get("lon") or map_data.get("longitude")
             if lon is not None:
                 return float(lon) < WROCLAW_CENTER_LON
-        # No coordinates — allow through (better to include than miss)
+        return True
+
+    @staticmethod
+    def _is_in_bb_area(raw: dict) -> bool:
+        """Return True if listing is within bounding box covering BB + adjacent powiats."""
+        map_data = raw.get("map", {})
+        if isinstance(map_data, dict):
+            lat = map_data.get("lat") or map_data.get("latitude")
+            lon = map_data.get("lon") or map_data.get("longitude")
+            if lat is not None and lon is not None:
+                return 49.4 <= float(lat) <= 50.2 and 18.4 <= float(lon) <= 19.6
         return True
 
     def fetch_utilities(self, url: str) -> Dict[str, bool]:

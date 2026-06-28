@@ -43,7 +43,7 @@ def main() -> None:
     sources = [
         OlxSource(),
         OtodomSource(),
-        OlxSource(search_url=OLX_BB_URL, source_name="olx_bb", filter_geo=False),
+        OlxSource(search_url=OLX_BB_URL, source_name="olx_bb", geo_filter=OlxSource._is_in_bb_area),
         OtodomSource(search_url=OTODOM_BB_URL, source_name="otodom_bb"),
         LicytacjeSource(),
         BipWroclawSource(),
