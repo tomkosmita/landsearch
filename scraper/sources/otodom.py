@@ -25,15 +25,15 @@ SEARCH_URL = (
     "&geometry=e_cwHg%7CifBg%5EoMkj%40_k%40sjDsgG%7DWcQgm%40_Om%5ClDoq%40lWcVxX_Qd%5Cy%5EfkBkZrdEp_%40rtHziBr%7EG%7Cb%40tr%40faAjm%40jfAhFfzAoWj%7DEenBlu%40is%40%7CcDihGrGgd%40qEimAoc%40wiBeSaYqr%40_QamCpEacB_V"
 )
 
-# mapBounds: ~30km radius around Bielsko-Biała center (49.82°N, 19.04°E)
 BB_SEARCH_URL = (
-    "https://www.otodom.pl/pl/wyniki/sprzedaz/dzialka/cala-polska"
-    "?limit=36"
-    "&priceMax=600000"
+    "https://www.otodom.pl/pl/wyniki/sprzedaz/dzialka"
+    "/slaskie/bielsko--biala/bielsko--biala/bielsko--biala"
+    "?distanceRadius=10"
+    "&limit=36"
+    "&areaMin=1000"
     "&plotType=%5BBUILDING%5D"
     "&by=DEFAULT&direction=DESC"
     "&viewType=listing"
-    "&mapBounds=19.5%2C50.1%2C18.6%2C49.5"
 )
 
 HEADERS = {
