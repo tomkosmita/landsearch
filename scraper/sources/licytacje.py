@@ -43,6 +43,16 @@ WROCLAW_KEYWORDS = [
     "dolnośląsk", "dolnoslaski",
 ]
 
+# Locations outside the area of interest — explicitly excluded even if a whitelist keyword matches
+EXCLUDE_LOCATIONS = [
+    "bielsko", "bielsko-biała", "bielsko biała",
+    "cieszyn", "żywiec", "zywiec",
+    "czechowice", "andrychów", "andrychow",
+    "kęty", "kety", "oświęcim", "oswiecim",
+    "tychy", "katowice", "gliwice", "bytom", "zabrze", "rybnik",
+    "częstochowa", "czestochowa",
+]
+
 UTILITY_PATTERNS = {
     "water": ["woda", "wodociąg", "wodociag", "wodna"],
     "gas": ["gaz"],
@@ -205,6 +215,8 @@ class LicytacjeSource(BaseSource):
 
     def _is_wroclaw_area(self, text: str) -> bool:
         lower = text.lower()
+        if any(kw in lower for kw in EXCLUDE_LOCATIONS):
+            return False
         return any(kw in lower for kw in WROCLAW_KEYWORDS)
 
     def fetch_utilities(self, url: str) -> Dict[str, bool]:
