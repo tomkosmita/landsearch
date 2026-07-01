@@ -241,7 +241,19 @@
     "area": 885
   },
   "bip_wroclaw__nieruchomosci_89807_ul_leona_petrazyckiego_rejon_dz_nr_38_7": {
-    "price": 415000,
+    "price": null,
     "area": null
+  },
+  "14Ji4p": {
+    "price": 160000,
+    "area": null
+  },
+  "68163476": {
+    "price": 580000,
+    "area": 800
+  },
+  "96816347600067": {
+    "price": 580000,
+    "area": 800
   }
 }
