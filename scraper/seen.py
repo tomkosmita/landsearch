@@ -28,7 +28,11 @@ def save_seen(seen: Dict[str, Snapshot]) -> None:
 
 
 def make_snapshot(listing) -> Snapshot:
-    return {"price": listing.price, "area": listing.area}
+    return {
+        "price": listing.price,
+        "area": listing.area,
+        "type": getattr(listing, "property_type", "dzialka"),
+    }
 
 
 def get_changes(old: Snapshot, new: Snapshot) -> Dict[str, Tuple[Optional[int], Optional[int]]]:

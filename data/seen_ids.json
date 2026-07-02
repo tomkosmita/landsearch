@@ -75,5 +75,620 @@
   "96726398500067": {
     "price": 600000,
     "area": 1093
+  },
+  "bip_wroclaw_zetarg_nieruchomosci_89234_ul_pilczycka_dz_nr_14_4_14_6_14_8": {
+    "price": null,
+    "area": null
+  },
+  "bip_wroclaw_ruchomosci_88819_ul_miloszycka_rejon_dz_nr_10_13_10_14_10_15": {
+    "price": null,
+    "area": null
+  },
+  "bip_wroclaw_targ_nieruchomosci_87811_ul_malezyjska_rejon_dz_nr_5_7_i_6_6": {
+    "price": null,
+    "area": null
+  },
+  "bip_wroclaw_dz_nr_41_5_41_6_41_8_41_11_42_4_42_6_43_20_43_21_43_24_43_25": {
+    "price": null,
+    "area": null
+  },
+  "bip_wroclaw_targ_nieruchomosci_87878_ul_malezyjska_rejon_dz_nr_3_8_i_4_6": {
+    "price": null,
+    "area": null
+  },
+  "bip_wroclaw_wroc_pl_przetarg_nieruchomosci_89490_ul_grajewska_dz_nr_34_1": {
+    "price": null,
+    "area": null
+  },
+  "bip_wroclaw_l_przetarg_nieruchomosci_87808_ul_malezyjska_dz_nr_1_5_i_2_4": {
+    "price": null,
+    "area": null
+  },
+  "bip_wroclaw_ka_rejon_dz_nr_5_9_i_6_7_uwaga_zmiana_ogloszenia_o_przetargu": {
+    "price": null,
+    "area": null
+  },
+  "1bapmF": {
+    "price": 439000,
+    "area": null
+  },
+  "1ba9i3": {
+    "price": 430000,
+    "area": null
+  },
+  "96520293300067": {
+    "price": 380000,
+    "area": 900
+  },
+  "1baqur": {
+    "price": 450000,
+    "area": null
+  },
+  "1baIid": {
+    "price": 300000,
+    "area": null
+  },
+  "18gboE": {
+    "price": 207000,
+    "area": null
+  },
+  "96784512400067": {
+    "price": 299000,
+    "area": 1004
+  },
+  "1bbaCi": {
+    "price": 500000,
+    "area": null
+  },
+  "1b84fh": {
+    "price": 250000,
+    "area": null
+  },
+  "1aqGp1": {
+    "price": 295000,
+    "area": null
+  },
+  "1bdP3c": {
+    "price": 419000,
+    "area": null
+  },
+  "96792806700067": {
+    "price": 283440,
+    "area": 744
+  },
+  "1bdVjF": {
+    "price": 407000,
+    "area": null
+  },
+  "widokowa-dzialka-budowlana-1200-m-z-mediami-nowa-cena-ID4B5KM": {
+    "price": 275000,
+    "area": null
+  },
+  "dzialki-budowlane-pod-lasem-przedmoscie-kadlub-gmina-miekinia-ID4556g": {
+    "price": 199000,
+    "area": null
+  },
+  "dzialka-o-powierzchni-0-2889-ha-w-klimatycznym-bialkowie-ID4BV7M": {
+    "price": 399999,
+    "area": null
+  },
+  "68079522": {
+    "price": 599000,
+    "area": 1613
+  },
+  "1aK5uc": {
+    "price": 133998,
+    "area": null
+  },
+  "1arPEw": {
+    "price": 212500,
+    "area": null
+  },
+  "1bg90O": {
+    "price": 390000,
+    "area": null
+  },
+  "19Hb0s": {
+    "price": 160000,
+    "area": null
+  },
+  "rezerwacja-dzialka-budowlana-uzbrojona-w-prad-30min-od-wroclawia-zalew-ID4BOTE": {
+    "price": 129999,
+    "area": null
+  },
+  "1bgL8p": {
+    "price": 500000,
+    "area": null
+  },
+  "1bgRdf": {
+    "price": 176000,
+    "area": null
+  },
+  "1bgQzH": {
+    "price": 250000,
+    "area": null
+  },
+  "dzialka-budowlana-blisko-wroclawia-ID4z9Rq": {
+    "price": 264000,
+    "area": null
+  },
+  "68156177": {
+    "price": 444000,
+    "area": 1200
+  },
+  "96804848900067": {
+    "price": 399000,
+    "area": 766
+  },
+  "wroclaw-sroda-slaska-lutynia-dzialka-budowlana-bez-prowizji-ID4AFCj": {
+    "price": 385000,
+    "area": null
+  },
+  "1bh6ee": {
+    "price": 330000,
+    "area": null
+  },
+  "1a1HVF": {
+    "price": 312000,
+    "area": null
+  },
+  "68159825": {
+    "price": 329000,
+    "area": 885
+  },
+  "96815982500067": {
+    "price": 329000,
+    "area": 885
+  },
+  "bip_wroclaw__nieruchomosci_89807_ul_leona_petrazyckiego_rejon_dz_nr_38_7": {
+    "price": null,
+    "area": null
+  },
+  "14Ji4p": {
+    "price": 160000,
+    "area": null
+  },
+  "68163476": {
+    "price": 580000,
+    "area": 800
+  },
+  "96816347600067": {
+    "price": 580000,
+    "area": 800
+  },
+  "malowniczo-polozona-dzialka-budowlana-30-km-od-wroclawskiego-rynku-ID4Byjy": {
+    "price": 219000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "szczodre-domy-dom-4-pok-2-24-ID4AKjI": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "zadbany-dom-w-zielonej-okolicy-pegow-ID4BnDM": {
+    "price": 1350000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-dom-z-garazem-i-ogrodem-okolica-wroclawia-ID4nKiC": {
+    "price": 779000,
+    "area": null,
+    "type": "dom"
+  },
+  "parterowy-dom-z-ogrodem-wygoda-na-kazdym-etapie-ID4BBNS": {
+    "price": 499000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-oryginalny-2-ID4yCY2": {
+    "price": 740000,
+    "area": null,
+    "type": "dom"
+  },
+  "3-pokojowy-dom-62m2-balkon-bezposrednio-ID4AFys": {
+    "price": 584680,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesne-domy-w-zabudowie-blizniaczej-wroclaw-ul-lutynska-ID4BFOj": {
+    "price": 690000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-do-kapitalnego-remontu-dz-791m2-maslice-ul-zamojska-ID4BR6E": {
+    "price": 600000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-na-zamknietym-osiedlu-przy-lesie-ID4Ao0V": {
+    "price": 690000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-klimatycznym-ogrodem-obok-lasu-ID4B0DL": {
+    "price": 949000,
+    "area": null,
+    "type": "dom"
+  },
+  "kamienica-z-potencjalem-strzeszow-pod-wroclawiem-ID4BHkP": {
+    "price": 295000,
+    "area": null,
+    "type": "dom"
+  },
+  "funkcjonalny-dom-z-dodatkowym-pokojem-na-parterze-ID4vPQZ": {
+    "price": 1099000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-atrialny-ID4BVRl": {
+    "price": 1490000,
+    "area": null,
+    "type": "dom"
+  },
+  "kameralny-dom-ogrodek-projektant-wnetrz-w-cenie-prezent-ID4yZ4r": {
+    "price": 540000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-164-mkw-z-garazem-2-stanowiskowym-we-wroclawiu-zapytaj-o-rabat-ID4ykFs": {
+    "price": 1749000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-duzy-dom-ogrod-275m2-pompa-ciepla-fotowoltaika-ID4ssRd": {
+    "price": 950000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-do-odbioru-dom-180-m-garaz-dwustanowiskowy-ID4Am0t": {
+    "price": 1378000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-4-sypialnie-dzialka-1016-m-15-min-od-wroclawia-lozina-ID4BOJy": {
+    "price": 899000,
+    "area": null,
+    "type": "dom"
+  },
+  "przestronny-dom-z-ogrodem-150-17-m-5-pokoi-ID4BWTz": {
+    "price": 1495000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-klimatem-i-duzym-ogrodem-ID4ByY3": {
+    "price": 1290000,
+    "area": null,
+    "type": "dom"
+  },
+  "jedyny-dom-w-promocyjnej-cenie-799tys-zl-ID4B8YR": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowy-etap-dom-96m2-za-799tys-ID4zurp": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-dom-z-basenem-i-sauna-ID4BFjY": {
+    "price": 3199000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-nowy-bardzo-energooszczedny-dom-wolnostojacy-ID4BQNb": {
+    "price": 920000,
+    "area": null,
+    "type": "dom"
+  },
+  "wyjatkowy-dom-wolnostojacy-7m-ogrod-z-sadem-garaz-tylko-u-nas-ID4BLpm": {
+    "price": 1250000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowe-do-wprowadzenia-ogrodek-2025-ID4BTGp": {
+    "price": 965000,
+    "area": null,
+    "type": "dom"
+  },
+  "1akvZ0": {
+    "price": 1300000,
+    "area": null,
+    "type": "dom"
+  },
+  "mozliwosc-kupna-spoza-ue-bez-pcc-bez-prowizji-cisza-i-spokoj-ID4BOSr": {
+    "price": 1449000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-z-zadbanym-ogrodem-kielczow-ID4BvPy": {
+    "price": 1790000,
+    "area": null,
+    "type": "dom"
+  },
+  "przestronny-dom-z-zabudowa-uslugowa-ID4BlvG": {
+    "price": 1800000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-cenie-mieszkania-bez-czynszu-ID4BE1V": {
+    "price": 819000,
+    "area": null,
+    "type": "dom"
+  },
+  "sprzedam-dom-we-wroclawiu-ID4ATSw": {
+    "price": 1295000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-z-ogrodem-przy-lesie-ID4m2Rn": {
+    "price": 769000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-dom-z-duza-dzialka-i-2020-rok-ID4BULB": {
+    "price": 4999900,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-dom-z-basenem-wysoki-standard-eng-ID4znsL": {
+    "price": 2799000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-cenie-mieszkania-wilczyce-ogrod-128-m2-ID4BQyF": {
+    "price": 649000,
+    "area": null,
+    "type": "dom"
+  },
+  "piekny-drewniany-dom-z-duza-11-a-dzialka-ID4Bp0Y": {
+    "price": 749000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-181m2-dzialka-9ar-siechnice-ID4zGvF": {
+    "price": 1750000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-116-m-5-pokoi-dzialka-828-m-taras-ID4ATc1": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-niemal-500-m-firma-inwestycja-lub-rodzina-2-min-od-wroclawia-ID4BT1g": {
+    "price": 2900000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-w-karwianach-660-m-dzialki-blisko-wroclawia-ID4BKDu": {
+    "price": 889200,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-niemal-500-m-firma-inwestycja-lub-rodzina-2-min-od-wroclawia-ID4BVOi": {
+    "price": 2200000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-do-remontu-i-duza-dzialka-i-centrum-zernik-wr-ID4zxZz": {
+    "price": 500000,
+    "area": null,
+    "type": "dom"
+  },
+  "lepsze-niz-mieszkanie-dom-w-kultowych-dobrzykowicach-ID4Bxzn": {
+    "price": 1145000,
+    "area": null,
+    "type": "dom"
+  },
+  "wyjatkowy-dom-z-historia-na-wroclawskim-oporowie-ID4A3iw": {
+    "price": 1650000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-na-sprzedaz-w-radwanicach-219m2-ID4zq2H": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "klimatyczny-dom-w-otoczeniu-zieleni-biskupin-240-m2-803-m2-ID4BNxK": {
+    "price": 5499000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-do-zamieszkania-dom-z-duzym-ogrodem-zakrzow-ID4BMD0": {
+    "price": 1370000,
+    "area": null,
+    "type": "dom"
+  },
+  "1a74TU": {
+    "price": 1060000,
+    "area": null,
+    "type": "dom"
+  },
+  "1bilCo": {
+    "price": 2060000,
+    "area": null,
+    "type": "dom"
+  },
+  "19c3WM": {
+    "price": 875000,
+    "area": null,
+    "type": "dom"
+  },
+  "13PzE3": {
+    "price": 1060000,
+    "area": null,
+    "type": "dom"
+  },
+  "14LdtV": {
+    "price": 1060000,
+    "area": null,
+    "type": "dom"
+  },
+  "16I3yI": {
+    "price": 1060000,
+    "area": null,
+    "type": "dom"
+  },
+  "w-utrzymaniu-jak-mieszkanie-dom-z-dz-1076-m2-pompa-pv-kominek-ID4Bos2": {
+    "price": 2449750,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-dom-mokronos-dolny-5-pokoi-wysoki-standard-bez-pcc-ID4B1LM": {
+    "price": 1499000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowy-parterowy-dom-wolnostojacy-na-kameralnym-zamknietym-osiedlu-ID4BD3E": {
+    "price": 895000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-na-zamknietym-osiedlu-tuz-za-oltaszynem-ID4yygh": {
+    "price": 1799000,
+    "area": null,
+    "type": "dom"
+  },
+  "68134604": {
+    "price": null,
+    "area": null,
+    "type": "dom"
+  },
+  "68165978": {
+    "price": 840080,
+    "area": 104,
+    "type": "dom"
+  },
+  "68165940": {
+    "price": 840080,
+    "area": 104,
+    "type": "dom"
+  },
+  "67842284": {
+    "price": 900000,
+    "area": 78,
+    "type": "dom"
+  },
+  "65944565": {
+    "price": 1099000,
+    "area": 128,
+    "type": "dom"
+  },
+  "68165168": {
+    "price": 840000,
+    "area": 104,
+    "type": "dom"
+  },
+  "67996131": {
+    "price": 1349000,
+    "area": 201,
+    "type": "dom"
+  },
+  "67559146": {
+    "price": null,
+    "area": null,
+    "type": "dom"
+  },
+  "65740852": {
+    "price": 1350000,
+    "area": 170,
+    "type": "dom"
+  },
+  "67826067": {
+    "price": null,
+    "area": null,
+    "type": "dom"
+  },
+  "67136860": {
+    "price": null,
+    "area": null,
+    "type": "dom"
+  },
+  "68163668": {
+    "price": 1450000,
+    "area": 120,
+    "type": "dom"
+  },
+  "68163047": {
+    "price": 835000,
+    "area": 101,
+    "type": "dom"
+  },
+  "68047856": {
+    "price": 725000,
+    "area": 83,
+    "type": "dom"
+  },
+  "67575704": {
+    "price": 1389000,
+    "area": 125,
+    "type": "dom"
+  },
+  "68161697": {
+    "price": 899000,
+    "area": 121,
+    "type": "dom"
+  },
+  "67356415": {
+    "price": 1099000,
+    "area": 117,
+    "type": "dom"
+  },
+  "67801333": {
+    "price": 949000,
+    "area": 93,
+    "type": "dom"
+  },
+  "67936393": {
+    "price": 1049000,
+    "area": 165,
+    "type": "dom"
+  },
+  "68159876": {
+    "price": 1499000,
+    "area": 65,
+    "type": "dom"
+  },
+  "67864876": {
+    "price": 520000,
+    "area": 75,
+    "type": "dom"
+  },
+  "67358684": {
+    "price": 1394001,
+    "area": 111,
+    "type": "dom"
+  },
+  "68142800": {
+    "price": 1150000,
+    "area": 90,
+    "type": "dom"
+  },
+  "68159110": {
+    "price": 829000,
+    "area": 117,
+    "type": "dom"
+  },
+  "68049382": {
+    "price": 699037,
+    "area": 83,
+    "type": "dom"
+  },
+  "68108250": {
+    "price": 849998,
+    "area": 100,
+    "type": "dom"
+  },
+  "68158145": {
+    "price": 1149000,
+    "area": 110,
+    "type": "dom"
+  },
+  "96816597800067": {
+    "price": 840080,
+    "area": 104,
+    "type": "dom"
   }
 }

@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 # URL provided by user — geometry parameter already constrains to western Wrocław area.
 # Switched viewType=map → viewType=listing so the page renders listing cards with __NEXT_DATA__.
-SEARCH_URL = (
+PLOT_SEARCH_URL = (
     "https://www.otodom.pl/pl/wyniki/sprzedaz/dzialka/cala-polska"
     "?limit=36"
     "&priceMax=600000"
@@ -23,6 +23,19 @@ SEARCH_URL = (
     "&viewType=listing"
     "&mapBounds=17.06485494854292%2C51.26690848997079%2C16.737325051457084%2C51.03259538286027"
     "&geometry=e_cwHg%7CifBg%5EoMkj%40_k%40sjDsgG%7DWcQgm%40_Om%5ClDoq%40lWcVxX_Qd%5Cy%5EfkBkZrdEp_%40rtHziBr%7EG%7Cb%40tr%40faAjm%40jfAhFfzAoWj%7DEenBlu%40is%40%7CcDihGrGgd%40qEimAoc%40wiBeSaYqr%40_QamCpEacB_V"
+)
+
+# URL provided by user for detached houses (second, corrected area — the first
+# geometry returned 404). viewType switched map → listing, same as PLOT_SEARCH_URL.
+HOUSE_SEARCH_URL = (
+    "https://www.otodom.pl/pl/wyniki/sprzedaz/dom/cala-polska"
+    "?limit=36"
+    "&ownerTypeSingleSelect=ALL"
+    "&priceMax=1800000"
+    "&by=DEFAULT&direction=DESC"
+    "&viewType=listing"
+    "&mapBounds=17.145940264782965%2C51.23543964672582%2C16.682532954866534%2C51.01302540949307"
+    "&geometry=mafwHyvlfB%7BtA%3Fun%40fQsp%40pf%40un%40~dAooBxaEk_%40~gA_Tj%7DAxBbtC%60R~dAvl%40~gAhv%40~aAf%60BdtAliArl%40nfCto%40hlChQp%5DcHfz%40si%40%7C_AsrB~tAsaInJkfDsr%40ezCot%40gtAcg%40m%5DycAiW%7B%60CgQyW%3F%7C%40bHoJ%3FogAizAzU%60E"
 )
 
 HEADERS = {
@@ -46,7 +59,13 @@ UTILITY_PATTERNS = {
 
 
 class OtodomSource(BaseSource):
-    def __init__(self) -> None:
+    def __init__(
+        self,
+        search_url: str = PLOT_SEARCH_URL,
+        property_type: str = "dzialka",
+    ) -> None:
+        self.search_url = search_url
+        self.property_type = property_type
         self.session = requests.Session(impersonate="chrome120")
         self.session.headers.update(HEADERS)
 
@@ -54,7 +73,7 @@ class OtodomSource(BaseSource):
         # Otodom uses cookies set on homepage
         self._get_html("https://www.otodom.pl/")
 
-        html = self._get_html(SEARCH_URL)
+        html = self._get_html(self.search_url)
         if html is None:
             return []
 
@@ -161,6 +180,7 @@ class OtodomSource(BaseSource):
                 price=int(price) if price else None,
                 area=area,
                 utilities={},
+                property_type=self.property_type,
             )
         except Exception as e:
             logger.debug("Failed to build Otodom listing from %s: %s", raw.get("id"), e)
