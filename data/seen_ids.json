@@ -690,5 +690,45 @@
     "price": 840080,
     "area": 104,
     "type": "dom"
+  },
+  "dzialka-budowlana-szymanow-10-ar-ID4C1k8": {
+    "price": 500000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "15Q80w": {
+    "price": 1060000,
+    "area": null,
+    "type": "dom"
+  },
+  "blizniak-z-garazem-w-kielczowku-wykonczony-ID4BBMs": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "18FwnS": {
+    "price": 940000,
+    "area": null,
+    "type": "dom"
+  },
+  "uroczy-dom-z-zagospodarowana-dzialka-i-sadem-bezposrednio-klima-ID4C0tU": {
+    "price": 820000,
+    "area": null,
+    "type": "dom"
+  },
+  "67452354": {
+    "price": 1790000,
+    "area": 220,
+    "type": "dom"
+  },
+  "68166510": {
+    "price": 1449000,
+    "area": 156,
+    "type": "dom"
+  },
+  "96804938200067": {
+    "price": 699037,
+    "area": 83,
+    "type": "dom"
   }
 }
