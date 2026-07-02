@@ -25,8 +25,8 @@ PLOT_SEARCH_URL = (
     "&geometry=e_cwHg%7CifBg%5EoMkj%40_k%40sjDsgG%7DWcQgm%40_Om%5ClDoq%40lWcVxX_Qd%5Cy%5EfkBkZrdEp_%40rtHziBr%7EG%7Cb%40tr%40faAjm%40jfAhFfzAoWj%7DEenBlu%40is%40%7CcDihGrGgd%40qEimAoc%40wiBeSaYqr%40_QamCpEacB_V"
 )
 
-# URL provided by user for detached houses — own mapBounds/geometry area, viewType
-# switched map → listing (required for __NEXT_DATA__ searchAds.items to be present).
+# URL provided by user for detached houses (second, corrected area — the first
+# geometry returned 404). viewType switched map → listing, same as PLOT_SEARCH_URL.
 HOUSE_SEARCH_URL = (
     "https://www.otodom.pl/pl/wyniki/sprzedaz/dom/cala-polska"
     "?limit=36"
@@ -34,8 +34,8 @@ HOUSE_SEARCH_URL = (
     "&priceMax=1800000"
     "&by=DEFAULT&direction=DESC"
     "&viewType=listing"
-    "&mapBounds=17.063355859933033%2C51.22390766223489%2C16.76933414006696%2C50.97302235048535"
-    "&geometry=gyhwHcypfB%7B%7C%40ecHikCijFsgBbgAkg%40vvCvCnnOru%40~rCjqD%60uKbkAtaBjjDviDdoDz%7DAh~AdNh%7DD%3FvrHazAjaDycCtfAoeBhx%40stBnTyvCjAy7ELcRwvCwn%40a%60CwyAunAueBqYgcB%3Fa%7CAhp%40ix%40%60%60CcaD%60nFewAnrAi~Aj%5DacB%7Dd%40cwAw%7B%40coDk~C"
+    "&mapBounds=17.145940264782965%2C51.23543964672582%2C16.682532954866534%2C51.01302540949307"
+    "&geometry=mafwHyvlfB%7BtA%3Fun%40fQsp%40pf%40un%40~dAooBxaEk_%40~gA_Tj%7DAxBbtC%60R~dAvl%40~gAhv%40~aAf%60BdtAliArl%40nfCto%40hlChQp%5DcHfz%40si%40%7C_AsrB~tAsaInJkfDsr%40ezCot%40gtAcg%40m%5DycAiW%7B%60CgQyW%3F%7C%40bHoJ%3FogAizAzU%60E"
 )
 
 HEADERS = {
