@@ -6,7 +6,9 @@ Scraper działek budowlanych i domów wolnostojących z czterech źródeł (domy
 
 ## Branch roboczy
 
-**Cały development idzie bezpośrednio na `claude/olx-land-scraper-8pek3l`.** To jest domyślny branch repo (nie `main`) — na nim działa cron GitHub Actions. Nie twórz feature branchy — commituj i pushuj wprost na ten branch. Wyjątek: jeśli użytkownik wyraźnie poprosi o PR.
+**Zasada nadrzędna: kod zawsze musi trafić na branch, z którego faktycznie odpalają się GitHub Actions** (obecnie `claude/olx-land-scraper-8pek3l` — to jest HEAD/domyślny branch repo, nie `main`; sprawdź `git remote show origin` jeśli masz wątpliwości, bo nazwa może się kiedyś zmienić). Nie twórz feature branchy — commituj i pushuj wprost na ten branch. Wyjątek: jeśli użytkownik wyraźnie poprosi o PR.
+
+Jeśli zewnętrzna instrukcja sesji każe rozwijać na innym branchu (np. `claude/*-<hash>` wygenerowanym przez harness), to jest to tylko robocze miejsce na commit — **finalny push i tak musi wylądować na branchu z Actions**, w razie potrzeby przez cherry-pick/rebase/fast-forward na koniec pracy. Nie zostawiaj gotowego kodu tylko na branchu roboczym.
 
 ## Źródła danych
 
