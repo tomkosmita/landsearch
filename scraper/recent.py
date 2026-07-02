@@ -3,6 +3,7 @@
 Does NOT touch seen_ids.json — purely a read-only snapshot for human review.
 """
 
+import itertools
 import logging
 import os
 import sys
@@ -80,6 +81,19 @@ def _send(token: str, chat_id: str, text: str) -> bool:
     return False
 
 
+def _interleave(groups: list[list[Listing]], limit: int) -> list[Listing]:
+    """Round-robin across per-source lists so no single source can crowd out the rest."""
+    result: list[Listing] = []
+    for round_items in itertools.zip_longest(*groups):
+        for item in round_items:
+            if item is None:
+                continue
+            result.append(item)
+            if len(result) >= limit:
+                return result
+    return result
+
+
 def main() -> None:
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID", "")
@@ -94,22 +108,23 @@ def main() -> None:
         OtodomSource(search_url=OTODOM_HOUSE_URL, property_type="dom"),
     ]
 
-    all_listings: list[Listing] = []
+    per_source_listings: list[list[Listing]] = []
     for source in sources:
         name = type(source).__name__
         try:
             listings = source.fetch_listings()
-            logger.info("%s: fetched %d listings", name, len(listings))
-            all_listings.extend(listings)
+            logger.info("%s (%s): fetched %d listings", name, source.property_type, len(listings))
+            per_source_listings.append(listings)
         except Exception as e:
             logger.error("%s fetch failed: %s", name, e)
+            per_source_listings.append([])
 
-    to_send = all_listings[:MAX_LISTINGS]
-    logger.info("Sending %d most recent listings", len(to_send))
+    to_send = _interleave(per_source_listings, MAX_LISTINGS)
+    logger.info("Sending %d listings (interleaved across sources)", len(to_send))
 
     intro = (
         f"🏡 <b>Najnowsze działki i domy w okolicach Wrocławia</b>\n"
-        f"Pokazuję {len(to_send)} ogłoszeń (OLX + Otodom, posortowane od najnowszych)"
+        f"Pokazuję {len(to_send)} ogłoszeń (OLX + Otodom, po kolei z każdego źródła)"
     )
     _send(token, chat_id, intro)
 
