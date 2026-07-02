@@ -11,8 +11,8 @@ import time
 from curl_cffi import requests as cffi_requests
 
 from scraper.models import Listing
-from scraper.sources.olx import OlxSource
-from scraper.sources.otodom import OtodomSource
+from scraper.sources.olx import OlxSource, HOUSE_SEARCH_URL as OLX_HOUSE_URL
+from scraper.sources.otodom import OtodomSource, HOUSE_SEARCH_URL as OTODOM_HOUSE_URL
 
 logging.basicConfig(
     level=logging.INFO,
@@ -28,6 +28,11 @@ _SOURCE_LABELS = {
     "otodom": "Otodom",
 }
 
+_TYPE_ICON = {
+    "dzialka": "🌳",
+    "dom": "🏡",
+}
+
 
 def _fmt_price(price) -> str:
     if price is None:
@@ -41,8 +46,9 @@ def _fmt_area(area) -> str:
 
 def _format_message(listing: Listing) -> str:
     label = _SOURCE_LABELS.get(listing.source, listing.source.upper())
+    icon = _TYPE_ICON.get(getattr(listing, "property_type", "dzialka"), "📋")
     return (
-        f"<b>📋 {label}</b>\n"
+        f"<b>{icon} {label}</b>\n"
         f"📍 {listing.location}\n"
         f"💰 {_fmt_price(listing.price)}\n"
         f"📐 {_fmt_area(listing.area)}\n"
@@ -81,10 +87,16 @@ def main() -> None:
         logger.error("TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID must be set")
         sys.exit(1)
 
+    sources = [
+        OlxSource(),
+        OtodomSource(),
+        OlxSource(search_url=OLX_HOUSE_URL, property_type="dom", default_title="Dom wolnostojący"),
+        OtodomSource(search_url=OTODOM_HOUSE_URL, property_type="dom"),
+    ]
+
     all_listings: list[Listing] = []
-    for source_cls in (OlxSource, OtodomSource):
-        source = source_cls()
-        name = source_cls.__name__
+    for source in sources:
+        name = type(source).__name__
         try:
             listings = source.fetch_listings()
             logger.info("%s: fetched %d listings", name, len(listings))
@@ -96,7 +108,7 @@ def main() -> None:
     logger.info("Sending %d most recent listings", len(to_send))
 
     intro = (
-        f"🏡 <b>Najnowsze działki w okolicach Wrocławia</b>\n"
+        f"🏡 <b>Najnowsze działki i domy w okolicach Wrocławia</b>\n"
         f"Pokazuję {len(to_send)} ogłoszeń (OLX + Otodom, posortowane od najnowszych)"
     )
     _send(token, chat_id, intro)

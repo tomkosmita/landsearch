@@ -6,8 +6,8 @@ from scraper.notify import send_scan_summary, send_telegram
 from scraper.seen import get_changes, load_seen, make_snapshot, save_seen
 from scraper.sources.bip_wroclaw import BipWroclawSource
 from scraper.sources.licytacje import LicytacjeSource
-from scraper.sources.olx import OlxSource
-from scraper.sources.otodom import OtodomSource
+from scraper.sources.olx import OlxSource, HOUSE_SEARCH_URL as OLX_HOUSE_URL
+from scraper.sources.otodom import OtodomSource, HOUSE_SEARCH_URL as OTODOM_HOUSE_URL
 
 logging.basicConfig(
     level=logging.INFO,
@@ -38,7 +38,14 @@ def main() -> None:
     seen = load_seen()
     logger.info("Loaded %d seen listing IDs", len(seen))
 
-    sources = [OlxSource(), OtodomSource(), LicytacjeSource(), BipWroclawSource()]
+    sources = [
+        OlxSource(),
+        OtodomSource(),
+        OlxSource(search_url=OLX_HOUSE_URL, property_type="dom", default_title="Dom wolnostojący"),
+        OtodomSource(search_url=OTODOM_HOUSE_URL, property_type="dom"),
+        LicytacjeSource(),
+        BipWroclawSource(),
+    ]
     sent_count = 0
     source_counts: dict = {}
 
@@ -51,8 +58,9 @@ def main() -> None:
             continue
 
         logger.info("Fetched %d listings", len(listings))
+        prop_type = getattr(source, "property_type", "dzialka")
         source_key = listings[0].source if listings else type(source).__name__.lower().replace("source", "")
-        source_counts[source_key] = len(listings)
+        source_counts[(source_key, prop_type)] = len(listings)
 
         for listing in listings:
             snapshot = make_snapshot(listing)
