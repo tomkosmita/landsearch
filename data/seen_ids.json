@@ -846,5 +846,25 @@
     "price": 935000,
     "area": 148,
     "type": "dom"
+  },
+  "1bjuFM": {
+    "price": 450000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "ostatni-wolny-mpk-wroclawskie-szkola-rolety-elektryczne-gotowy-ID4BVND": {
+    "price": 649000,
+    "area": null,
+    "type": "dom"
+  },
+  "67777466": {
+    "price": 690000,
+    "area": 150,
+    "type": "dom"
+  },
+  "96777746600067": {
+    "price": 690000,
+    "area": 150,
+    "type": "dom"
   }
 }
