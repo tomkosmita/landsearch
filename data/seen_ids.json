@@ -562,7 +562,7 @@
     "type": "dom"
   },
   "68165940": {
-    "price": 840080,
+    "price": 840000,
     "area": 104,
     "type": "dom"
   },
@@ -729,6 +729,46 @@
   "96804938200067": {
     "price": 699037,
     "area": 83,
+    "type": "dom"
+  },
+  "68167851": {
+    "price": 380000,
+    "area": 1150,
+    "type": "dzialka"
+  },
+  "96816785100067": {
+    "price": 380000,
+    "area": 1150,
+    "type": "dzialka"
+  },
+  "15BCu9": {
+    "price": 875000,
+    "area": null,
+    "type": "dom"
+  },
+  "sprzedaz-dom-dwurodzinny-brzeg-dolny-fabryczne-ID4BVrT": {
+    "price": 670000,
+    "area": null,
+    "type": "dom"
+  },
+  "atrakcyjna-lokalizacja-dom-do-remontu-ID4BxO8": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "68167684": {
+    "price": 1235000,
+    "area": 128,
+    "type": "dom"
+  },
+  "68167583": {
+    "price": 1112000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96816768400067": {
+    "price": 1235000,
+    "area": 128,
     "type": "dom"
   }
 }
