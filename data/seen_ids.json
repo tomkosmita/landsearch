@@ -113,8 +113,9 @@
     "area": null
   },
   "1ba9i3": {
-    "price": 430000,
-    "area": null
+    "price": 419000,
+    "area": null,
+    "type": "dzialka"
   },
   "96520293300067": {
     "price": 380000,
@@ -769,6 +770,36 @@
   "96816768400067": {
     "price": 1235000,
     "area": 128,
+    "type": "dom"
+  },
+  "bez-posrednikow-i-dom-po-remoncie-i-fotowoltaika-i-idealny-na-biznes-ID4zxvI": {
+    "price": 1389000,
+    "area": null,
+    "type": "dom"
+  },
+  "67559154": {
+    "price": 1496425,
+    "area": 176,
+    "type": "dom"
+  },
+  "67299283": {
+    "price": 1079000,
+    "area": 140,
+    "type": "dom"
+  },
+  "65643978": {
+    "price": null,
+    "area": null,
+    "type": "dom"
+  },
+  "68134611": {
+    "price": 1787040,
+    "area": 122,
+    "type": "dom"
+  },
+  "96755915400067": {
+    "price": 1496425,
+    "area": 176,
     "type": "dom"
   }
 }
