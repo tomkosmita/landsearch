@@ -801,5 +801,50 @@
     "price": 1496425,
     "area": 176,
     "type": "dom"
+  },
+  "na-sprzedaz-3-atrakcyjne-dzialki-budowlane-trzebnica-ul-chrobrego-ID4BzkZ": {
+    "price": 336000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "NTdvP": {
+    "price": 114000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1a4Mxo": {
+    "price": 339000,
+    "area": null,
+    "type": "dom"
+  },
+  "67806105": {
+    "price": 935000,
+    "area": 148,
+    "type": "dom"
+  },
+  "68169402": {
+    "price": 1349800,
+    "area": 111,
+    "type": "dom"
+  },
+  "68168724": {
+    "price": 759000,
+    "area": 91,
+    "type": "dom"
+  },
+  "68168690": {
+    "price": 1387000,
+    "area": 100,
+    "type": "dom"
+  },
+  "67801280": {
+    "price": 819000,
+    "area": 80,
+    "type": "dom"
+  },
+  "96780610500067": {
+    "price": 935000,
+    "area": 148,
+    "type": "dom"
   }
 }
