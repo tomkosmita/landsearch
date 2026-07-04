@@ -916,5 +916,30 @@
     "price": 985000,
     "area": null,
     "type": "dom"
+  },
+  "68172474": {
+    "price": 599000,
+    "area": 1613,
+    "type": "dzialka"
+  },
+  "96817247400067": {
+    "price": 599000,
+    "area": 1613,
+    "type": "dzialka"
+  },
+  "dom-bezczynszowy-ogrod-95-32m2-wojszyce-wroclaw-ID4AhPj": {
+    "price": 999000,
+    "area": null,
+    "type": "dom"
+  },
+  "68065148": {
+    "price": 1110000,
+    "area": 180,
+    "type": "dom"
+  },
+  "96806514800067": {
+    "price": 1110000,
+    "area": 180,
+    "type": "dom"
   }
 }
