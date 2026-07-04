@@ -906,5 +906,15 @@
     "price": 1349000,
     "area": 201,
     "type": "dom"
+  },
+  "1bk6Eu": {
+    "price": 330000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-wolnostojacy-z-warsztatem-garazem-dzialka-1300m2-ID4ymfl": {
+    "price": 985000,
+    "area": null,
+    "type": "dom"
   }
 }
