@@ -413,7 +413,7 @@
     "type": "dom"
   },
   "dom-w-cenie-mieszkania-bez-czynszu-ID4BE1V": {
-    "price": 819000,
+    "price": 809000,
     "area": null,
     "type": "dom"
   },
@@ -875,6 +875,36 @@
   "dom-wolnostojacy-z-duza-dzialka-8-min-od-wroclawia-ID4C1iL": {
     "price": 2080000,
     "area": null,
+    "type": "dom"
+  },
+  "68136735": {
+    "price": 1690000,
+    "area": 190,
+    "type": "dom"
+  },
+  "68171668": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "67299162": {
+    "price": null,
+    "area": null,
+    "type": "dom"
+  },
+  "67192691": {
+    "price": 1350000,
+    "area": 170,
+    "type": "dom"
+  },
+  "67826105": {
+    "price": 639000,
+    "area": 86,
+    "type": "dom"
+  },
+  "96799613100067": {
+    "price": 1349000,
+    "area": 201,
     "type": "dom"
   }
 }
