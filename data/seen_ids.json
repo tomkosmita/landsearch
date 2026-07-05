@@ -971,5 +971,35 @@
     "price": 829000,
     "area": 117,
     "type": "dom"
+  },
+  "1bkUGi": {
+    "price": 250000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "18GzbI": {
+    "price": 230000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "narozny-dom-160m-z-ogrodem-i-parkingiem-smolec-ID4B8kn": {
+    "price": 1398000,
+    "area": null,
+    "type": "dom"
+  },
+  "68149585": {
+    "price": 1498000,
+    "area": 156,
+    "type": "dom"
+  },
+  "67800680": {
+    "price": null,
+    "area": null,
+    "type": "dom"
+  },
+  "96814958500067": {
+    "price": 1498000,
+    "area": 156,
+    "type": "dom"
   }
 }
