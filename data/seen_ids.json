@@ -941,5 +941,30 @@
     "price": 1110000,
     "area": 180,
     "type": "dom"
+  },
+  "blizniak-3-pokoje-ogrod-200-m-garaz-2-balkony-do-remontu-ID4BNkW": {
+    "price": 599000,
+    "area": null,
+    "type": "dom"
+  },
+  "przestronny-dom-blisko-wroclawia-ID4vQ8F": {
+    "price": 519000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-cenie-promocyjnej-krzyki-oltaszyn-wysoka-3-min-od-wroclawia-ID4BV2s": {
+    "price": 659000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-z-duza-dzialka-1km-od-smolca-8-min-od-wroclawia-ID4C1iL": {
+    "price": 2080000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-pasikurowice-bez-prowizji-ID4zu55": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
   }
 }
