@@ -1001,5 +1001,30 @@
     "price": 1498000,
     "area": 156,
     "type": "dom"
+  },
+  "1blhb4": {
+    "price": 230000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68174210": {
+    "price": 1250000,
+    "area": 97,
+    "type": "dom"
+  },
+  "68174066": {
+    "price": 839000,
+    "area": 129,
+    "type": "dom"
+  },
+  "67941892": {
+    "price": 690000,
+    "area": 97,
+    "type": "dom"
+  },
+  "96817421000067": {
+    "price": 1250000,
+    "area": 97,
+    "type": "dom"
   }
 }
