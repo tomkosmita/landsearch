@@ -1121,5 +1121,15 @@
     "price": 1199000,
     "area": 100,
     "type": "dom"
+  },
+  "dzialka-budowlana-przy-lesie-ID4BfnB": {
+    "price": 129000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "64359557": {
+    "price": 769000,
+    "area": 111,
+    "type": "dom"
   }
 }
