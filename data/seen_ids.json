@@ -1026,5 +1026,45 @@
     "price": 1250000,
     "area": 97,
     "type": "dom"
+  },
+  "dzialka-budowlana-800m-plus-fundamenty-rozpoczela-budowa-domu-ID4C3my": {
+    "price": 375000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-do-wlasnej-aranzacji-cicha-okolica-z-szybkim-dojazdem-do-centrum-ID4B8k7": {
+    "price": 559000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowy-dom-nad-jeziorem-z-prywatna-plaza-12-min-od-wroclawia-0-prowizji-ID4C3b9": {
+    "price": 1999000,
+    "area": null,
+    "type": "dom"
+  },
+  "68174805": {
+    "price": 990000,
+    "area": 73,
+    "type": "dom"
+  },
+  "67955479": {
+    "price": 559000,
+    "area": 85,
+    "type": "dom"
+  },
+  "67826108": {
+    "price": 659000,
+    "area": 86,
+    "type": "dom"
+  },
+  "67137864": {
+    "price": 1500000,
+    "area": 132,
+    "type": "dom"
+  },
+  "96817480500067": {
+    "price": 990000,
+    "area": 73,
+    "type": "dom"
   }
 }
