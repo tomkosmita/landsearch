@@ -693,7 +693,7 @@
     "type": "dom"
   },
   "dzialka-budowlana-szymanow-10-ar-ID4C1k8": {
-    "price": 500000,
+    "price": 480000,
     "area": null,
     "type": "dzialka"
   },
@@ -719,7 +719,7 @@
   },
   "67452354": {
     "price": 1790000,
-    "area": 220,
+    "area": 240,
     "type": "dom"
   },
   "68166510": {
@@ -1090,6 +1090,36 @@
   "96790044300067": {
     "price": 899000,
     "area": 121,
+    "type": "dom"
+  },
+  "1bd83C": {
+    "price": 470000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "17Omj9": {
+    "price": 189000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68177735": {
+    "price": 1199000,
+    "area": 100,
+    "type": "dom"
+  },
+  "68063778": {
+    "price": 1590000,
+    "area": 138,
+    "type": "dom"
+  },
+  "68149212": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96817773500067": {
+    "price": 1199000,
+    "area": 100,
     "type": "dom"
   }
 }
