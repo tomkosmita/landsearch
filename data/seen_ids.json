@@ -1136,5 +1136,45 @@
     "price": 329000,
     "area": null,
     "type": "dzialka"
+  },
+  "1bmu5c": {
+    "price": 330000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "rezerwacja-dzialka-budowlana-szymanow-10-ar-ID4C1k8": {
+    "price": 480000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "ostatnie-wolne-jak-wolnostojacy-blisko-las-zielona-prawie-gotowy-ID4BVOr": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "68179817": {
+    "price": 1049000,
+    "area": 140,
+    "type": "dom"
+  },
+  "68179707": {
+    "price": 1180000,
+    "area": 78,
+    "type": "dom"
+  },
+  "68179022": {
+    "price": 1489500,
+    "area": 161,
+    "type": "dom"
+  },
+  "68179020": {
+    "price": 1489000,
+    "area": 161,
+    "type": "dom"
+  },
+  "96817981700067": {
+    "price": 1049000,
+    "area": 140,
+    "type": "dom"
   }
 }
