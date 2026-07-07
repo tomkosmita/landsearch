@@ -1176,5 +1176,50 @@
     "price": 1049000,
     "area": 140,
     "type": "dom"
+  },
+  "68180175": {
+    "price": 580000,
+    "area": 2416,
+    "type": "dzialka"
+  },
+  "96776991600067": {
+    "price": 499000,
+    "area": 2209,
+    "type": "dzialka"
+  },
+  "nowy-parterowy-dom-wolnostojacy-na-kameralnym-zamknietym-osiedlu-ID4C47u": {
+    "price": 895000,
+    "area": null,
+    "type": "dom"
+  },
+  "68181345": {
+    "price": 1112800,
+    "area": 104,
+    "type": "dom"
+  },
+  "68180791": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68124718": {
+    "price": 1350000,
+    "area": 156,
+    "type": "dom"
+  },
+  "68124717": {
+    "price": 1049000,
+    "area": 152,
+    "type": "dom"
+  },
+  "67801347": {
+    "price": 919000,
+    "area": 93,
+    "type": "dom"
+  },
+  "96818134500067": {
+    "price": 1112800,
+    "area": 104,
+    "type": "dom"
   }
 }
