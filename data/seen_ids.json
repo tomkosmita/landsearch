@@ -1131,5 +1131,10 @@
     "price": 769000,
     "area": 111,
     "type": "dom"
+  },
+  "1aF8Vn": {
+    "price": 329000,
+    "area": null,
+    "type": "dzialka"
   }
 }
