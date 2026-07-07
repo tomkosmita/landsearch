@@ -1221,5 +1221,30 @@
     "price": 1112800,
     "area": 104,
     "type": "dom"
+  },
+  "malownicza-dzialka-budowlana-1190-m-blisko-lasu-nadolice-wielkie-ID4C4uI": {
+    "price": 370000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "karlowicedom-wolnostojacypo-czesciowym-remoncie-ID4C596": {
+    "price": 1649000,
+    "area": null,
+    "type": "dom"
+  },
+  "68081879": {
+    "price": 1050000,
+    "area": 141,
+    "type": "dom"
+  },
+  "68134614": {
+    "price": 1664640,
+    "area": 122,
+    "type": "dom"
+  },
+  "96808187900067": {
+    "price": 1050000,
+    "area": 141,
+    "type": "dom"
   }
 }
