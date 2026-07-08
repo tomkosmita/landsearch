@@ -1323,7 +1323,12 @@
     "type": "dom"
   },
   "bip_wroclaw_rzetarg_nieruchomosci_89860_ul_wloscianska_rejon_dz_nr_82_12": {
-    "price": 1520000,
+    "price": null,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-mu-1006-m-objeta-mpzp-mirkow-ID4C7NE": {
+    "price": 450000,
     "area": null,
     "type": "dzialka"
   }
