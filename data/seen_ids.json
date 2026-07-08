@@ -1246,5 +1246,35 @@
     "price": 1050000,
     "area": 141,
     "type": "dom"
+  },
+  "1bn8tG": {
+    "price": 180000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "66906732": {
+    "price": 400000,
+    "area": 1011,
+    "type": "dzialka"
+  },
+  "96690673200067": {
+    "price": 400000,
+    "area": 1011,
+    "type": "dzialka"
+  },
+  "1biLP2": {
+    "price": 800000,
+    "area": null,
+    "type": "dom"
+  },
+  "66933764": {
+    "price": 930000,
+    "area": 69,
+    "type": "dom"
+  },
+  "96693376400067": {
+    "price": 930000,
+    "area": 69,
+    "type": "dom"
   }
 }
