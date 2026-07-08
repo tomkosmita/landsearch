@@ -1286,5 +1286,45 @@
     "price": 1690000,
     "area": 190,
     "type": "dom"
+  },
+  "11obFL": {
+    "price": 350000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialki-1400-2500m2-prywatnosc-zielen-woda-miejska-energia-swiatlowod-ID4C7mJ": {
+    "price": 455000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68190155": {
+    "price": 365000,
+    "area": 1011,
+    "type": "dzialka"
+  },
+  "96819015500067": {
+    "price": 365000,
+    "area": 1011,
+    "type": "dzialka"
+  },
+  "wolnostojacy-dom-218m2-na-dzialce-1000m2-ID4AQtz": {
+    "price": 999000,
+    "area": null,
+    "type": "dom"
+  },
+  "67483248": {
+    "price": 1200000,
+    "area": 195,
+    "type": "dom"
+  },
+  "96748324800067": {
+    "price": 1200000,
+    "area": 195,
+    "type": "dom"
+  },
+  "bip_wroclaw_rzetarg_nieruchomosci_89860_ul_wloscianska_rejon_dz_nr_82_12": {
+    "price": 1520000,
+    "area": null,
+    "type": "dzialka"
   }
 }
