@@ -1331,5 +1331,30 @@
     "price": 450000,
     "area": null,
     "type": "dzialka"
+  },
+  "1bnZB4": {
+    "price": 220000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "komfortowy-dom-w-sercu-krzykow-ID4C0Gj": {
+    "price": 2190000,
+    "area": null,
+    "type": "dom"
+  },
+  "1am55q": {
+    "price": 1999999,
+    "area": null,
+    "type": "dom"
+  },
+  "1bhshC": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-jednorodzinny-165-75-m-garaz-duza-dzialka-i-wilkszyn-miloszyn-ID4B3mh": {
+    "price": 1049000,
+    "area": null,
+    "type": "dom"
   }
 }
