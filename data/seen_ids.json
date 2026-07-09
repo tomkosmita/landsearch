@@ -1348,7 +1348,7 @@
     "type": "dom"
   },
   "1bhshC": {
-    "price": 799000,
+    "price": 569000,
     "area": null,
     "type": "dom"
   },
@@ -1370,6 +1370,56 @@
   "96735641500067": {
     "price": 1099000,
     "area": 117,
+    "type": "dom"
+  },
+  "96810868800067": {
+    "price": 399000,
+    "area": 846,
+    "type": "dzialka"
+  },
+  "domy-w-zabudowie-szeregowej-we-wroclawiu-przy-ul-przejazdowej-ID4ztyB": {
+    "price": 1350000,
+    "area": null,
+    "type": "dom"
+  },
+  "piekny-dom-z-zielonym-ogrodem-tuz-przy-lesie-230m2-sauna-balia-ID4C4Mq": {
+    "price": 2199000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-hala-idealna-nieruchomosc-dla-twojej-firmy-ID4APct": {
+    "price": 1349000,
+    "area": null,
+    "type": "dom"
+  },
+  "68108498": {
+    "price": 1799000,
+    "area": 183,
+    "type": "dom"
+  },
+  "67980594": {
+    "price": 1399000,
+    "area": 115,
+    "type": "dom"
+  },
+  "68194323": {
+    "price": 1099999,
+    "area": 169,
+    "type": "dom"
+  },
+  "68081083": {
+    "price": 1790000,
+    "area": 198,
+    "type": "dom"
+  },
+  "67559156": {
+    "price": 1392336,
+    "area": 158,
+    "type": "dom"
+  },
+  "96810849800067": {
+    "price": 1799000,
+    "area": 183,
     "type": "dom"
   }
 }
