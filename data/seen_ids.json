@@ -1421,5 +1421,25 @@
     "price": 1799000,
     "area": 183,
     "type": "dom"
+  },
+  "malownicza-dzialka-budowlana-1133-m-blisko-lasu-nadolice-wielkie-ID4C4uI": {
+    "price": 365000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "przytulny-dom-3-km-od-wroclawia-bez-prowizji-gotowy-do-wprowadzenia-ID4C8tA": {
+    "price": 1299000,
+    "area": null,
+    "type": "dom"
+  },
+  "1bbVIa": {
+    "price": 1099000,
+    "area": null,
+    "type": "dom"
+  },
+  "komfortowy-dom-rodzinny-z-ogrodem-ID4BmxG": {
+    "price": 985000,
+    "area": null,
+    "type": "dom"
   }
 }
