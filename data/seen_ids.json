@@ -1441,5 +1441,30 @@
     "price": 985000,
     "area": null,
     "type": "dom"
+  },
+  "dom-240-m2-po-kapitalnym-remoncie-z-piwnica-ID4C984": {
+    "price": 1650000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-dla-rodziny-128m-wroclaw-2km-ogrod-7arow-ID4mH87": {
+    "price": 799999,
+    "area": null,
+    "type": "dom"
+  },
+  "lokalizacja-lokalizacja-lokalizacja-ID4C9b1": {
+    "price": 1750000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-w-cenie-blizniaka-czernica-gajkow-ID4BWXL": {
+    "price": 899000,
+    "area": null,
+    "type": "dom"
+  },
+  "68196904": {
+    "price": 1650000,
+    "area": 240,
+    "type": "dom"
   }
 }
