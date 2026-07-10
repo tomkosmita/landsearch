@@ -1478,12 +1478,72 @@
     "type": "dom"
   },
   "bip_wroclaw__pl_przetarg_nieruchomosci_90076_ul_ceglana_rejon_dz_nr_31_4": {
-    "price": 695000,
+    "price": null,
     "area": null,
     "type": "dzialka"
   },
   "bip_wroclaw_nieruchomosci_89805_ul_kosmonautow_rejon_dz_nr_2_3_3_3_i_4_3": {
-    "price": 940000,
+    "price": null,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1aIwkC": {
+    "price": 420000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-z-mpzp-dojazd-asfaltowy-media-w-drodze-ID4C9rm": {
+    "price": 320000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-mirkow-1006-m-mu-ID4C7NE": {
+    "price": 450000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68198459": {
+    "price": 380000,
+    "area": 1150,
+    "type": "dzialka"
+  },
+  "dom-428m-8-pokoi-dz-1670m-pod-dzialalnosc-zerniki-wroclawskie-ID4C9mv": {
+    "price": 2100000,
+    "area": null,
+    "type": "dom"
+  },
+  "68200342": {
+    "price": 1299000,
+    "area": 201,
+    "type": "dom"
+  },
+  "68043210": {
+    "price": 934000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68096694": {
+    "price": 1100000,
+    "area": 89,
+    "type": "dom"
+  },
+  "68198538": {
+    "price": 1690000,
+    "area": 1065,
+    "type": "dom"
+  },
+  "67801249": {
+    "price": 839000,
+    "area": 80,
+    "type": "dom"
+  },
+  "96820034200067": {
+    "price": 1299000,
+    "area": 201,
+    "type": "dom"
+  },
+  "bip_wroclaw_l_kamiennogorska_rejon_dz_nr_51_5_53_2_54_2_55_2_66_5_i_68_3": {
+    "price": 3680000,
     "area": null,
     "type": "dzialka"
   }
