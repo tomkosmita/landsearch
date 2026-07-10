@@ -1466,5 +1466,25 @@
     "price": 1650000,
     "area": 240,
     "type": "dom"
+  },
+  "68197813": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96666334500067": {
+    "price": 1399000,
+    "area": 110,
+    "type": "dom"
+  },
+  "bip_wroclaw__pl_przetarg_nieruchomosci_90076_ul_ceglana_rejon_dz_nr_31_4": {
+    "price": 695000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "bip_wroclaw_nieruchomosci_89805_ul_kosmonautow_rejon_dz_nr_2_3_3_3_i_4_3": {
+    "price": 940000,
+    "area": null,
+    "type": "dzialka"
   }
 }
