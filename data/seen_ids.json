@@ -1543,8 +1543,48 @@
     "type": "dom"
   },
   "bip_wroclaw_l_kamiennogorska_rejon_dz_nr_51_5_53_2_54_2_55_2_66_5_i_68_3": {
-    "price": 3680000,
+    "price": null,
     "area": null,
     "type": "dzialka"
+  },
+  "dzialki-budowlane-jedyne-uzbrojone-w-wojczycach-ID4Bhe8": {
+    "price": 150000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-872-m2-prad-dojazd-bez-posrednikow-ID4Biqk": {
+    "price": 270000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "wyjatkowy-dom-i-smolec-ID4C5dg": {
+    "price": 2999500,
+    "area": null,
+    "type": "dom"
+  },
+  "1blMoU": {
+    "price": 1900000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-premium-2025-156-72-m-6-pokoi-i-ogrod-230-m-garaz-i-scadni-ID4Ca90": {
+    "price": 2285000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-pod-lasem-w-mrozowie-142-m2-dzialka-400-m2-ID3SW3V": {
+    "price": 860000,
+    "area": null,
+    "type": "dom"
+  },
+  "6-pok-dom-po-kapitalnym-remoncie-wysoki-standard-ID4C8X3": {
+    "price": 2265000,
+    "area": null,
+    "type": "dom"
+  },
+  "66298292": {
+    "price": 1296886,
+    "area": 95,
+    "type": "dom"
   }
 }
