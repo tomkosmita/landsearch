@@ -1626,5 +1626,15 @@
     "price": 1449000,
     "area": 156,
     "type": "dom"
+  },
+  "188Jy5": {
+    "price": 240000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68202544": {
+    "price": 1150000,
+    "area": 122,
+    "type": "dom"
   }
 }
