@@ -1348,7 +1348,7 @@
     "type": "dom"
   },
   "1bhshC": {
-    "price": 569000,
+    "price": 630000,
     "area": null,
     "type": "dom"
   },
@@ -1605,6 +1605,26 @@
   "96723812500067": {
     "price": 870000,
     "area": 103,
+    "type": "dom"
+  },
+  "dzialka-budowlana-1000-m-w-poblizu-lasu-wilczyn-k-obornik-slaskich-ID4CauJ": {
+    "price": 360000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "wolnostojacy-dom-z-duzym-ogrodem-800-m-wroclaw-wojszyce-ID4CapV": {
+    "price": 2000000,
+    "area": null,
+    "type": "dom"
+  },
+  "68202023": {
+    "price": 1199999,
+    "area": 168,
+    "type": "dom"
+  },
+  "96816651000067": {
+    "price": 1449000,
+    "area": 156,
     "type": "dom"
   }
 }
