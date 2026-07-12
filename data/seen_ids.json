@@ -1686,5 +1686,20 @@
     "price": 827000,
     "area": 104,
     "type": "dom"
+  },
+  "dom-szeregowy-srodkowy-taras-ogrod-garaz-park-szkola-ID4CaW6": {
+    "price": 1900000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-125m2-z-duzym-ogrodem-pod-wroclawiem-ID4BLhp": {
+    "price": 1229000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-rezerwacja-ID4BmpQ": {
+    "price": 1450000,
+    "area": null,
+    "type": "dom"
   }
 }
