@@ -908,7 +908,7 @@
     "type": "dom"
   },
   "1bk6Eu": {
-    "price": 330000,
+    "price": 310000,
     "area": null,
     "type": "dzialka"
   },
@@ -1655,6 +1655,36 @@
   "67801112": {
     "price": 899000,
     "area": 93,
+    "type": "dom"
+  },
+  "-ID4CaMI": {
+    "price": 249000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1bqgsc": {
+    "price": 120000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "piekny-dom-z-dobra-energia-i-dusza-zadbany-i-zaprojektowany-z-gustem-ID4CaB2": {
+    "price": 1150000,
+    "area": null,
+    "type": "dom"
+  },
+  "68203142": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68040017": {
+    "price": 1590000,
+    "area": 194,
+    "type": "dom"
+  },
+  "96820314200067": {
+    "price": 827000,
+    "area": 104,
     "type": "dom"
   }
 }
