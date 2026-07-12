@@ -1646,5 +1646,15 @@
     "price": 1430000,
     "area": null,
     "type": "dom"
+  },
+  "1bqcFO": {
+    "price": 315000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "67801112": {
+    "price": 899000,
+    "area": 93,
+    "type": "dom"
   }
 }
