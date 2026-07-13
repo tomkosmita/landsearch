@@ -1701,5 +1701,25 @@
     "price": 1450000,
     "area": null,
     "type": "dom"
+  },
+  "dzialka-budowlana-blisko-wroclawia-bez-pcc-faktura-ID4zLNu": {
+    "price": 229000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-914m2-pozwolenie-na-budowe-material-ogrodzona-budynek-ID4Bb4T": {
+    "price": 309000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68204557": {
+    "price": 1200000,
+    "area": 133,
+    "type": "dom"
+  },
+  "96820455700067": {
+    "price": 1200000,
+    "area": 133,
+    "type": "dom"
   }
 }
