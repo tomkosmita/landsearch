@@ -178,8 +178,9 @@
     "area": 1613
   },
   "1aK5uc": {
-    "price": 133998,
-    "area": null
+    "price": 133997,
+    "area": null,
+    "type": "dzialka"
   },
   "1arPEw": {
     "price": 212500,
@@ -1725,6 +1726,41 @@
   "96817902000067": {
     "price": 1489000,
     "area": 161,
+    "type": "dom"
+  },
+  "1brhLx": {
+    "price": 230000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialki-budowlane-nowa-wies-kacka-5-min-katy-wr-25-min-wroclaw-ID4uRnM": {
+    "price": 222000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68205491": {
+    "price": 280000,
+    "area": 1000,
+    "type": "dzialka"
+  },
+  "96815617700067": {
+    "price": 444000,
+    "area": 1200,
+    "type": "dzialka"
+  },
+  "solidny-dom-wolnostojacy-z-potencjalem-i-ogrodem-ID4C0Au": {
+    "price": 1395000,
+    "area": null,
+    "type": "dom"
+  },
+  "68206199": {
+    "price": 750000,
+    "area": 83,
+    "type": "dom"
+  },
+  "96798059400067": {
+    "price": 1399000,
+    "area": 115,
     "type": "dom"
   }
 }
