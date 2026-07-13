@@ -1762,5 +1762,25 @@
     "price": 1399000,
     "area": 115,
     "type": "dom"
+  },
+  "dzialka-spokojna-cicha-i-kameralna-okolica-cena-do-negocjacji-ID4CbTA": {
+    "price": 395000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "wilczkow-gm-zorawina-806m2-budowlana-ID4AuDX": {
+    "price": 253890,
+    "area": null,
+    "type": "dzialka"
+  },
+  "blizniak-4m-taras-ogrod-40m2-garaz-tylko-u-nas-ID4CbNU": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
+  },
+  "96816304700067": {
+    "price": 835000,
+    "area": 101,
+    "type": "dom"
   }
 }
