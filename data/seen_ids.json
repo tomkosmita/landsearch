@@ -1869,8 +1869,28 @@
     "type": "dom"
   },
   "bip_wroclaw_targ_nieruchomosci_90263_ul_malezyjska_rejon_dz_nr_5_9_i_6_7": {
-    "price": 580000,
+    "price": null,
     "area": null,
     "type": "dzialka"
+  },
+  "68210732": {
+    "price": 449000,
+    "area": 366,
+    "type": "dzialka"
+  },
+  "96821073200067": {
+    "price": 449000,
+    "area": 366,
+    "type": "dzialka"
+  },
+  "dom-dla-pracownikow-10-pokoi-roi-10-eng-ua-ID4Ccxc": {
+    "price": 1549000,
+    "area": null,
+    "type": "dom"
+  },
+  "blizniak-4m-taras-ogrod-garaz-tylko-u-nas-ID4CbNU": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
   }
 }
