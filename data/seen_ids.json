@@ -894,7 +894,7 @@
     "type": "dom"
   },
   "67192691": {
-    "price": 1350000,
+    "price": 1390000,
     "area": 170,
     "type": "dom"
   },
@@ -1299,7 +1299,7 @@
     "type": "dzialka"
   },
   "68190155": {
-    "price": 365000,
+    "price": 400000,
     "area": 1011,
     "type": "dzialka"
   },
@@ -1806,6 +1806,21 @@
   "68208072": {
     "price": 1290000,
     "area": 127,
+    "type": "dom"
+  },
+  "dzialka-spokojna-cicha-i-kameralna-okolica-miekinia-ID4CbTA": {
+    "price": 395000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68208507": {
+    "price": 849999,
+    "area": 100,
+    "type": "dom"
+  },
+  "96719269100067": {
+    "price": 1390000,
+    "area": 170,
     "type": "dom"
   }
 }
