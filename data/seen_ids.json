@@ -1729,7 +1729,7 @@
     "type": "dom"
   },
   "1brhLx": {
-    "price": 230000,
+    "price": 200000,
     "area": null,
     "type": "dzialka"
   },
@@ -1822,5 +1822,55 @@
     "price": 1390000,
     "area": 170,
     "type": "dom"
+  },
+  "sprzedam-dom-5-pokoi-duza-dzialka-zamiana-ID4tqdS": {
+    "price": 2450000,
+    "area": null,
+    "type": "dom"
+  },
+  "5-pokojowy-dom-118m2-bezposrednio-ID4Ccwd": {
+    "price": 896800,
+    "area": null,
+    "type": "dom"
+  },
+  "68210579": {
+    "price": 1299000,
+    "area": 201,
+    "type": "dom"
+  },
+  "67905540": {
+    "price": 1320000,
+    "area": 150,
+    "type": "dom"
+  },
+  "62496418": {
+    "price": 769000,
+    "area": 110,
+    "type": "dom"
+  },
+  "68209292": {
+    "price": 1320000,
+    "area": 130,
+    "type": "dom"
+  },
+  "68209106": {
+    "price": 1200000,
+    "area": 139,
+    "type": "dom"
+  },
+  "68208973": {
+    "price": 1430000,
+    "area": 137,
+    "type": "dom"
+  },
+  "96821057900067": {
+    "price": 1299000,
+    "area": 201,
+    "type": "dom"
+  },
+  "bip_wroclaw_targ_nieruchomosci_90263_ul_malezyjska_rejon_dz_nr_5_9_i_6_7": {
+    "price": 580000,
+    "area": null,
+    "type": "dzialka"
   }
 }
