@@ -1782,5 +1782,30 @@
     "price": 835000,
     "area": 101,
     "type": "dom"
+  },
+  "17Hi6m": {
+    "price": 286000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1brCKJ": {
+    "price": 2000000,
+    "area": null,
+    "type": "dom"
+  },
+  "parterowy-wolnostojacy-dom-dzialka-970-m2-brzezina-3km-od-wroclawia-ID4Cc2c": {
+    "price": 1290000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-zabudowie-blizniaczej-z-garazem-uzytkowym-poddaszem-i-ogrodem-ID4CbPz": {
+    "price": 1070000,
+    "area": null,
+    "type": "dom"
+  },
+  "68208072": {
+    "price": 1290000,
+    "area": 127,
+    "type": "dom"
   }
 }
