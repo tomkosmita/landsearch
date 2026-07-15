@@ -1897,5 +1897,35 @@
     "price": 879000,
     "area": 93,
     "type": "dom"
+  },
+  "16y0ve": {
+    "price": 215000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "domy-96m2-w-cenie-799tys-ID4B8Ye": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "68127624": {
+    "price": 560000,
+    "area": 102,
+    "type": "dom"
+  },
+  "68213839": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68213349": {
+    "price": 1049000,
+    "area": 152,
+    "type": "dom"
+  },
+  "67461849": {
+    "price": 769700,
+    "area": 89,
+    "type": "dom"
   }
 }
