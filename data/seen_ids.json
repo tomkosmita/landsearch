@@ -1789,7 +1789,7 @@
     "type": "dzialka"
   },
   "1brCKJ": {
-    "price": 2000000,
+    "price": 2200000,
     "area": null,
     "type": "dom"
   },
@@ -1926,6 +1926,31 @@
   "67461849": {
     "price": 769700,
     "area": 89,
+    "type": "dom"
+  },
+  "skrajny-szereg-blizniak-gotowy-do-zamieszkania-ID4C7MB": {
+    "price": 1299000,
+    "area": null,
+    "type": "dom"
+  },
+  "67138828": {
+    "price": 1175000,
+    "area": 131,
+    "type": "dom"
+  },
+  "66455388": {
+    "price": 899000,
+    "area": 121,
+    "type": "dom"
+  },
+  "68215237": {
+    "price": 870000,
+    "area": 130,
+    "type": "dom"
+  },
+  "96713882800067": {
+    "price": 1175000,
+    "area": 131,
     "type": "dom"
   }
 }
