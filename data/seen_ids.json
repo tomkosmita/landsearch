@@ -1892,5 +1892,10 @@
     "price": 1200000,
     "area": null,
     "type": "dom"
+  },
+  "67801123": {
+    "price": 879000,
+    "area": 93,
+    "type": "dom"
   }
 }
