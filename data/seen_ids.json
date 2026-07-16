@@ -714,7 +714,7 @@
     "type": "dom"
   },
   "uroczy-dom-z-zagospodarowana-dzialka-i-sadem-bezposrednio-klima-ID4C0tU": {
-    "price": 820000,
+    "price": 795000,
     "area": null,
     "type": "dom"
   },
@@ -1991,6 +1991,41 @@
   "96790554000067": {
     "price": 1320000,
     "area": 150,
+    "type": "dom"
+  },
+  "dzialka-budowlana-w-cichej-okolicy-owsianka-droga-utwardzona-ID4CeXw": {
+    "price": 290000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-z-ogrodem-4-pokoje-2-lazienki-2-miejsca-postojowe-marszowice-ID4BfTu": {
+    "price": 719000,
+    "area": null,
+    "type": "dom"
+  },
+  "klimatyczny-dom-na-wroclawskich-osobowicach-ID4BsLf": {
+    "price": 1820000,
+    "area": null,
+    "type": "dom"
+  },
+  "68219537": {
+    "price": 1049000,
+    "area": 119,
+    "type": "dom"
+  },
+  "67984800": {
+    "price": 859000,
+    "area": 93,
+    "type": "dom"
+  },
+  "67984580": {
+    "price": 719000,
+    "area": 80,
+    "type": "dom"
+  },
+  "96821953700067": {
+    "price": 1049000,
+    "area": 119,
     "type": "dom"
   }
 }
