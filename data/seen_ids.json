@@ -1952,5 +1952,30 @@
     "price": 1175000,
     "area": 131,
     "type": "dom"
+  },
+  "dom-z-dzialka-1011-mkw-wroclaw-kamienskiego-ID4Ce0m": {
+    "price": 995000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-201-m-kw-parter-i-pietro-dwa-osobne-wejscia-duzy-garaz-ID4CcGD": {
+    "price": 1299000,
+    "area": null,
+    "type": "dom"
+  },
+  "68063351": {
+    "price": 920000,
+    "area": 148,
+    "type": "dom"
+  },
+  "68142819": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96806335100067": {
+    "price": 920000,
+    "area": 148,
+    "type": "dom"
   }
 }
