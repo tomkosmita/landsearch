@@ -1349,7 +1349,7 @@
     "type": "dom"
   },
   "1bhshC": {
-    "price": 630000,
+    "price": 660000,
     "area": null,
     "type": "dom"
   },
@@ -2041,6 +2041,61 @@
   "96821980100067": {
     "price": 1099000,
     "area": 97,
+    "type": "dom"
+  },
+  "68221297": {
+    "price": 590000,
+    "area": 1000,
+    "type": "dzialka"
+  },
+  "96822129700067": {
+    "price": 590000,
+    "area": 1000,
+    "type": "dzialka"
+  },
+  "dom-225-mkw-z-duza-dzialka-4700-mkw-budowlana-900-mkw-opatowice-ID4CfBR": {
+    "price": 1890000,
+    "area": null,
+    "type": "dom"
+  },
+  "68221753": {
+    "price": 1650000,
+    "area": 116,
+    "type": "dom"
+  },
+  "68221499": {
+    "price": 1150000,
+    "area": 182,
+    "type": "dom"
+  },
+  "68147949": {
+    "price": 1149999,
+    "area": 139,
+    "type": "dom"
+  },
+  "68124001": {
+    "price": 1376514,
+    "area": 158,
+    "type": "dom"
+  },
+  "68124002": {
+    "price": 1478820,
+    "area": 176,
+    "type": "dom"
+  },
+  "68138462": {
+    "price": 950000,
+    "area": 118,
+    "type": "dom"
+  },
+  "68220418": {
+    "price": 1200000,
+    "area": 139,
+    "type": "dom"
+  },
+  "96822175300067": {
+    "price": 1650000,
+    "area": 116,
     "type": "dom"
   }
 }
