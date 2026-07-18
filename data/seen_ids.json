@@ -2152,5 +2152,15 @@
     "price": 1190000,
     "area": 96,
     "type": "dom"
+  },
+  "pelczyce-gmina-kobierzyce-dzialaka-budowlana-mozliwe-raty-ID4vA6P": {
+    "price": 415000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "skrajny-szereg-z-2020-roku-premium-karwiany-ID4C3Bf": {
+    "price": 1194000,
+    "area": null,
+    "type": "dom"
   }
 }
