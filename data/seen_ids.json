@@ -2112,5 +2112,20 @@
     "price": 1600000,
     "area": null,
     "type": "dom"
+  },
+  "1b1LNo": {
+    "price": 995000,
+    "area": null,
+    "type": "dom"
+  },
+  "68134612": {
+    "price": 1647072,
+    "area": 127,
+    "type": "dom"
+  },
+  "96629829200067": {
+    "price": 1296886,
+    "area": 95,
+    "type": "dom"
   }
 }
