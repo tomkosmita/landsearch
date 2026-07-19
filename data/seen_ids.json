@@ -2162,5 +2162,60 @@
     "price": 1194000,
     "area": null,
     "type": "dom"
+  },
+  "1bwCme": {
+    "price": 120000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68224473": {
+    "price": 548000,
+    "area": 538,
+    "type": "dzialka"
+  },
+  "96822447300067": {
+    "price": 548000,
+    "area": 538,
+    "type": "dzialka"
+  },
+  "bezczynszowy-dom-z-ogrodkiem-radwanice-4-pokoje-ID4BJU0": {
+    "price": 995000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowy-dom-w-zabudowie-atrialnej-wysoki-standard-bez-prowizji-ID4Cgy8": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "68225363": {
+    "price": 1049000,
+    "area": 152,
+    "type": "dom"
+  },
+  "68225360": {
+    "price": 999000,
+    "area": 118,
+    "type": "dom"
+  },
+  "68225352": {
+    "price": 1390000,
+    "area": 156,
+    "type": "dom"
+  },
+  "68225358": {
+    "price": 1149000,
+    "area": 138,
+    "type": "dom"
+  },
+  "68120385": {
+    "price": 850000,
+    "area": 100,
+    "type": "dom"
+  },
+  "96822536300067": {
+    "price": 1049000,
+    "area": 152,
+    "type": "dom"
   }
 }
