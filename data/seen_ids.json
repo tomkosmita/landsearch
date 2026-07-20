@@ -2242,5 +2242,40 @@
     "price": 799000,
     "area": null,
     "type": "dom"
+  },
+  "1bvndW": {
+    "price": 350000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "96791996500067": {
+    "price": 280000,
+    "area": 700,
+    "type": "dzialka"
+  },
+  "bezposrednio-dom-z-potencjalem-6-pokoi-garaz-muchobor-maly-ID4CgNw": {
+    "price": 1490000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-zabudowie-blizniaczej-800-m2-ogrodu-ID4z9tu": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
+  },
+  "68228468": {
+    "price": 1049000,
+    "area": 152,
+    "type": "dom"
+  },
+  "68227009": {
+    "price": 979000,
+    "area": 240,
+    "type": "dom"
+  },
+  "96822846800067": {
+    "price": 1049000,
+    "area": 152,
+    "type": "dom"
   }
 }
