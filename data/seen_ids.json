@@ -2227,5 +2227,10 @@
     "price": 1300000,
     "area": null,
     "type": "dom"
+  },
+  "16kyhc": {
+    "price": 235000,
+    "area": null,
+    "type": "dzialka"
   }
 }
