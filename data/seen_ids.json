@@ -203,8 +203,9 @@
     "area": null
   },
   "1bgRdf": {
-    "price": 176000,
-    "area": null
+    "price": 165000,
+    "area": null,
+    "type": "dzialka"
   },
   "1bgQzH": {
     "price": 250000,
@@ -2276,6 +2277,26 @@
   "96822846800067": {
     "price": 1049000,
     "area": 152,
+    "type": "dom"
+  },
+  "nowoczesny-energooszczedny-dom-280m-mieszkanie-z-tarasem-pompa-ciep-pv-ID4CfS7": {
+    "price": 1670000,
+    "area": null,
+    "type": "dom"
+  },
+  "68229675": {
+    "price": 899000,
+    "area": 127,
+    "type": "dom"
+  },
+  "67876198": {
+    "price": 1099000,
+    "area": 147,
+    "type": "dom"
+  },
+  "96820807200067": {
+    "price": 1290000,
+    "area": 127,
     "type": "dom"
   }
 }
