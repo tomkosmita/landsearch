@@ -299,7 +299,7 @@
     "type": "dom"
   },
   "dom-do-kapitalnego-remontu-dz-791m2-maslice-ul-zamojska-ID4BR6E": {
-    "price": 600000,
+    "price": 560000,
     "area": null,
     "type": "dom"
   },
@@ -2232,5 +2232,15 @@
     "price": 235000,
     "area": null,
     "type": "dzialka"
+  },
+  "stylowe-domy-w-dobrzykowicach-bez-pozwolenia-mswia-ID4zRVc": {
+    "price": 940000,
+    "area": null,
+    "type": "dom"
+  },
+  "promocja-dom-pod-wroclawiem-799-tys-zl-nowe-karwiany-96-m-ID4B8YR": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
   }
 }
