@@ -1875,7 +1875,7 @@
     "type": "dzialka"
   },
   "68210732": {
-    "price": 449000,
+    "price": 389000,
     "area": 366,
     "type": "dzialka"
   },
@@ -2337,6 +2337,46 @@
   "96823221400067": {
     "price": 826999,
     "area": 105,
+    "type": "dom"
+  },
+  "dzialka-z-domem-w-budowie-prezyce-1600-m2-ID4zMRc": {
+    "price": 380000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "nowoczesny-dom-z-ogrodem-4-pokoje-garaz-oferta-dewelopera-ID4BgkP": {
+    "price": 827000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-blizniaczy-z-garazem-pompa-ciepla-fotowoltaika-rekuperacja-ID4CgTX": {
+    "price": 1299000,
+    "area": null,
+    "type": "dom"
+  },
+  "68093422": {
+    "price": 1290000,
+    "area": 110,
+    "type": "dom"
+  },
+  "68235137": {
+    "price": 827001,
+    "area": 104,
+    "type": "dom"
+  },
+  "68235093": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "67986275": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96809342200067": {
+    "price": 1290000,
+    "area": 110,
     "type": "dom"
   }
 }
