@@ -2378,5 +2378,35 @@
     "price": 1290000,
     "area": 110,
     "type": "dom"
+  },
+  "nowoczesny-dom-6pokoi-garaz-ogrod-wysoka-ID4yRTp": {
+    "price": 2650000,
+    "area": null,
+    "type": "dom"
+  },
+  "okazja-inwestycyjna-dom-166-m-kw-dzialka-700-m-kw-za-75-wartosci-ID4CiJm": {
+    "price": 1125000,
+    "area": null,
+    "type": "dom"
+  },
+  "67407080": {
+    "price": 749000,
+    "area": 103,
+    "type": "dom"
+  },
+  "66827688": {
+    "price": 1600000,
+    "area": 168,
+    "type": "dom"
+  },
+  "67137812": {
+    "price": 1540000,
+    "area": 141,
+    "type": "dom"
+  },
+  "96740708000067": {
+    "price": 749000,
+    "area": 103,
+    "type": "dom"
   }
 }
