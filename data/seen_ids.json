@@ -515,7 +515,7 @@
     "type": "dom"
   },
   "19c3WM": {
-    "price": 875000,
+    "price": 830000,
     "area": null,
     "type": "dom"
   },
@@ -710,7 +710,7 @@
     "type": "dom"
   },
   "18FwnS": {
-    "price": 940000,
+    "price": 870000,
     "area": null,
     "type": "dom"
   },
@@ -745,7 +745,7 @@
     "type": "dzialka"
   },
   "15BCu9": {
-    "price": 875000,
+    "price": 870000,
     "area": null,
     "type": "dom"
   },
@@ -1550,7 +1550,7 @@
     "type": "dzialka"
   },
   "dzialki-budowlane-jedyne-uzbrojone-w-wojczycach-ID4Bhe8": {
-    "price": 150000,
+    "price": 70000,
     "area": null,
     "type": "dzialka"
   },
@@ -2235,7 +2235,7 @@
     "type": "dzialka"
   },
   "stylowe-domy-w-dobrzykowicach-bez-pozwolenia-mswia-ID4zRVc": {
-    "price": 940000,
+    "price": 870000,
     "area": null,
     "type": "dom"
   },
@@ -2307,6 +2307,36 @@
   "96823114800067": {
     "price": 827000,
     "area": 104,
+    "type": "dom"
+  },
+  "dzialka-900-m-polakowice-prad-cisza-szybki-dojazd-do-wroclawia-ID4Cih2": {
+    "price": 210000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68232214": {
+    "price": 826999,
+    "area": 105,
+    "type": "dom"
+  },
+  "66508963": {
+    "price": 795000,
+    "area": 123,
+    "type": "dom"
+  },
+  "67812259": {
+    "price": 948253,
+    "area": 105,
+    "type": "dom"
+  },
+  "68231949": {
+    "price": 849998,
+    "area": 100,
+    "type": "dom"
+  },
+  "96823221400067": {
+    "price": 826999,
+    "area": 105,
     "type": "dom"
   }
 }
