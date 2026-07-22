@@ -2418,5 +2418,30 @@
     "price": 779000,
     "area": null,
     "type": "dom"
+  },
+  "dzialki-budowlane-ksieginice-gmina-kobierzyce-ID4BRwj": {
+    "price": 439000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-w-cichej-okolicy-1000-m-ID4BtxR": {
+    "price": 475000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1bohiP": {
+    "price": 1488000,
+    "area": null,
+    "type": "dom"
+  },
+  "67550565": {
+    "price": null,
+    "area": null,
+    "type": "dom"
+  },
+  "67802869": {
+    "price": 839000,
+    "area": 80,
+    "type": "dom"
   }
 }
