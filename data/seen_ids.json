@@ -130,8 +130,9 @@
     "area": null
   },
   "18gboE": {
-    "price": 207000,
-    "area": null
+    "price": 210000,
+    "area": null,
+    "type": "dzialka"
   },
   "96784512400067": {
     "price": 299000,
@@ -2442,6 +2443,21 @@
   "67802869": {
     "price": 839000,
     "area": 80,
+    "type": "dom"
+  },
+  "dzialka-budowlana-dobrzykowice-1108m2-ID4B3s8": {
+    "price": 500000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68239717": {
+    "price": 1149000,
+    "area": 140,
+    "type": "dom"
+  },
+  "67515388": {
+    "price": 1290000,
+    "area": 132,
     "type": "dom"
   }
 }
