@@ -2544,5 +2544,50 @@
     "price": 1499000,
     "area": 98,
     "type": "dom"
+  },
+  "1byVTA": {
+    "price": 315000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68243975": {
+    "price": 510000,
+    "area": 1650,
+    "type": "dzialka"
+  },
+  "96824397500067": {
+    "price": 510000,
+    "area": 1650,
+    "type": "dzialka"
+  },
+  "ladny-dom-z-pieknym-ogrodem-ID4A9Fd": {
+    "price": 1950000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-cenie-mieszkania-wilczyce-ogrod-102-m2-ID4BQyF": {
+    "price": 659000,
+    "area": null,
+    "type": "dom"
+  },
+  "68245136": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "66931169": {
+    "price": 1099000,
+    "area": 128,
+    "type": "dom"
+  },
+  "67801296": {
+    "price": 899000,
+    "area": 93,
+    "type": "dom"
+  },
+  "bip_wroclaw__pl_przetarg_nieruchomosci_90075_ul_ceglana_rejon_dz_nr_31_7": {
+    "price": 740000,
+    "area": null,
+    "type": "dzialka"
   }
 }
