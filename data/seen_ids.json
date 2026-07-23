@@ -2514,5 +2514,35 @@
     "price": 1790000,
     "area": 198,
     "type": "dom"
+  },
+  "dom-na-zach-przedmiesciach-wroclawia-w-wilkszynie-ID4ClbT": {
+    "price": 1390000,
+    "area": null,
+    "type": "dom"
+  },
+  "68153925": {
+    "price": 1499000,
+    "area": 98,
+    "type": "dom"
+  },
+  "68243409": {
+    "price": 1399000,
+    "area": 240,
+    "type": "dom"
+  },
+  "68119480": {
+    "price": 1039000,
+    "area": 124,
+    "type": "dom"
+  },
+  "68243248": {
+    "price": 1100000,
+    "area": 87,
+    "type": "dom"
+  },
+  "96815392500067": {
+    "price": 1499000,
+    "area": 98,
+    "type": "dom"
   }
 }
