@@ -2586,8 +2586,28 @@
     "type": "dom"
   },
   "bip_wroclaw__pl_przetarg_nieruchomosci_90075_ul_ceglana_rejon_dz_nr_31_7": {
-    "price": 740000,
+    "price": null,
     "area": null,
     "type": "dzialka"
+  },
+  "zpWPM": {
+    "price": 300000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-300-m-od-jeziora-i-lasu-45-min-od-wroclawia-ID4Byvq": {
+    "price": 146700,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-89-84-mskajny-ogrod-ok-252-mosiedle-zamknietewysoki-standard-ID4z3Ul": {
+    "price": 796700,
+    "area": null,
+    "type": "dom"
+  },
+  "67812218": {
+    "price": 948253,
+    "area": 105,
+    "type": "dom"
   }
 }
