@@ -2474,5 +2474,45 @@
     "price": 1649000,
     "area": 190,
     "type": "dom"
+  },
+  "dzialki-budowlane-jedyne-uzbrojone-w-wojczycach-ID4Cl6s": {
+    "price": 170000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-lubnow-1600-m-media-ID4BtMG": {
+    "price": 320000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "od-dewelopera-bez-prowizji-dom-ogrod-mrozow-etap-iv-ostatni-dom-gotowy-ID4BvKG": {
+    "price": 699037,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-cichej-okolicy-finansowanie-wykonczenie-pod-klucz-ID4CkFZ": {
+    "price": 1169000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-dom-z-duzym-ogrodem-ID4CkV4": {
+    "price": 2700000,
+    "area": null,
+    "type": "dom"
+  },
+  "blizniak-z-ogrodkiem-spokojna-okolica-bez-posrednikow-bez-czynszu-ID4CjBZ": {
+    "price": 849000,
+    "area": null,
+    "type": "dom"
+  },
+  "67812273": {
+    "price": 1114330,
+    "area": 113,
+    "type": "dom"
+  },
+  "96808108300067": {
+    "price": 1790000,
+    "area": 198,
+    "type": "dom"
   }
 }
