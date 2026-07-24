@@ -2699,5 +2699,20 @@
     "price": 1478820,
     "area": 176,
     "type": "dom"
+  },
+  "dzialki-z-mpzp-blisko-wroclawia-i-obornik-slaskich-ID4CmSJ": {
+    "price": 200000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68249772": {
+    "price": 840000,
+    "area": 123,
+    "type": "dom"
+  },
+  "96824977200067": {
+    "price": 840000,
+    "area": 123,
+    "type": "dom"
   }
 }
