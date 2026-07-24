@@ -2546,7 +2546,7 @@
     "type": "dom"
   },
   "1byVTA": {
-    "price": 315000,
+    "price": 378000,
     "area": null,
     "type": "dzialka"
   },
@@ -2628,6 +2628,11 @@
   "96824681200067": {
     "price": 898915,
     "area": 101,
+    "type": "dom"
+  },
+  "68119390": {
+    "price": null,
+    "area": null,
     "type": "dom"
   }
 }
