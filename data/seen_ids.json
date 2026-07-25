@@ -122,8 +122,9 @@
     "area": 900
   },
   "1baqur": {
-    "price": 450000,
-    "area": null
+    "price": 430000,
+    "area": null,
+    "type": "dzialka"
   },
   "1baIid": {
     "price": 300000,
@@ -2713,6 +2714,21 @@
   "96824977200067": {
     "price": 840000,
     "area": 123,
+    "type": "dom"
+  },
+  "dom-88-mwykonczenie-do-stanu-deweloperskiego-ID4Cjw1": {
+    "price": 499000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-widokiem-ktory-zostaje-w-pamieci-123-m-lutynia-dzialka-350-m-ID4CmSM": {
+    "price": 840000,
+    "area": null,
+    "type": "dom"
+  },
+  "rodzinny-dom-z-ogrodem-garaz-5-pokoi-poswietne-ID4BgZH": {
+    "price": 1649000,
+    "area": null,
     "type": "dom"
   }
 }
