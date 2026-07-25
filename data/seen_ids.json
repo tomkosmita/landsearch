@@ -2740,5 +2740,20 @@
     "price": 319000,
     "area": null,
     "type": "dzialka"
+  },
+  "dzialka-budowlana-ID4CnhN": {
+    "price": 357600,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-wolnostojacy-duza-dzialka-marszowice-ID4z1rc": {
+    "price": 1790000,
+    "area": null,
+    "type": "dom"
+  },
+  "67812289": {
+    "price": 1114330,
+    "area": 113,
+    "type": "dom"
   }
 }
