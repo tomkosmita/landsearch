@@ -1712,7 +1712,7 @@
     "type": "dzialka"
   },
   "dzialka-914m2-pozwolenie-na-budowe-material-ogrodzona-budynek-ID4Bb4T": {
-    "price": 309000,
+    "price": 299900,
     "area": null,
     "type": "dzialka"
   },
@@ -2729,6 +2729,11 @@
   "rodzinny-dom-z-ogrodem-garaz-5-pokoi-poswietne-ID4BgZH": {
     "price": 1649000,
     "area": null,
+    "type": "dom"
+  },
+  "96822362800067": {
+    "price": 1190000,
+    "area": 96,
     "type": "dom"
   }
 }
