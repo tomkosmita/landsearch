@@ -2830,5 +2830,10 @@
     "price": 1099000,
     "area": 152,
     "type": "dom"
+  },
+  "1bBM4y": {
+    "price": 985000,
+    "area": null,
+    "type": "dom"
   }
 }
