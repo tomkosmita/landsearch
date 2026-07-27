@@ -2775,5 +2775,10 @@
     "price": 2750000,
     "area": null,
     "type": "dom"
+  },
+  "1bBrbv": {
+    "price": 178000,
+    "area": null,
+    "type": "dzialka"
   }
 }
