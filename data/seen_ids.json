@@ -2785,5 +2785,50 @@
     "price": 1150000,
     "area": 110,
     "type": "dom"
+  },
+  "dzialka-budowlana-ksieginice-gmina-kobierzyce-20-min-od-wroclawia-ID4BRwj": {
+    "price": 439000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68254054": {
+    "price": 490000,
+    "area": 875,
+    "type": "dzialka"
+  },
+  "96825405400067": {
+    "price": 490000,
+    "area": 875,
+    "type": "dzialka"
+  },
+  "68254870": {
+    "price": 1099000,
+    "area": 152,
+    "type": "dom"
+  },
+  "68254148": {
+    "price": 1150000,
+    "area": 90,
+    "type": "dom"
+  },
+  "68122709": {
+    "price": 1200000,
+    "area": 139,
+    "type": "dom"
+  },
+  "68254089": {
+    "price": 1399000,
+    "area": 110,
+    "type": "dom"
+  },
+  "68253963": {
+    "price": 849999,
+    "area": 100,
+    "type": "dom"
+  },
+  "96825487000067": {
+    "price": 1099000,
+    "area": 152,
+    "type": "dom"
   }
 }
