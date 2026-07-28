@@ -2855,5 +2855,30 @@
     "price": 1580000,
     "area": 190,
     "type": "dom"
+  },
+  "1bCLFE": {
+    "price": 274000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "pietro-domu-z-ogrodem-przy-parku-zlotnickim-dodatkowy-lokal-i-garaz-ID4CoSi": {
+    "price": 1089000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesna-rezydencja-w-urazie-ID4Cc23": {
+    "price": 3500000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-na-sprzedaz-w-radwanicach-219m2-rezerwacja-ID4zq2H": {
+    "price": 899000,
+    "area": null,
+    "type": "dom"
+  },
+  "68257430": {
+    "price": 1089000,
+    "area": 100,
+    "type": "dom"
   }
 }
