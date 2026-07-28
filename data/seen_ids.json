@@ -597,7 +597,7 @@
     "type": "dom"
   },
   "65740852": {
-    "price": 1350000,
+    "price": 1390000,
     "area": 170,
     "type": "dom"
   },
@@ -2839,6 +2839,21 @@
   "dom-parterowy-wolnostojacy-z-pieknym-ogrodem-ID4BxHN": {
     "price": 2290000,
     "area": null,
+    "type": "dom"
+  },
+  "68257144": {
+    "price": 1580000,
+    "area": 190,
+    "type": "dom"
+  },
+  "68257080": {
+    "price": 1099900,
+    "area": 118,
+    "type": "dom"
+  },
+  "96825714400067": {
+    "price": 1580000,
+    "area": 190,
     "type": "dom"
   }
 }
