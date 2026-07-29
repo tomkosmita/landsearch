@@ -2935,5 +2935,10 @@
     "price": 950000,
     "area": 147,
     "type": "dom"
+  },
+  "1bDNxN": {
+    "price": 1050000,
+    "area": null,
+    "type": "dom"
   }
 }
