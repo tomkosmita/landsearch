@@ -2895,5 +2895,15 @@
     "price": 1190000,
     "area": null,
     "type": "dom"
+  },
+  "dom-150-m2-dzialka-700m2-stodola-300-m2-dz-600-m-ID4CpFG": {
+    "price": 490000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-ssz-na-dzialce-1200-m2-waly-ID4CoHN": {
+    "price": 690000,
+    "area": null,
+    "type": "dom"
   }
 }
