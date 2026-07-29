@@ -2292,7 +2292,7 @@
     "type": "dom"
   },
   "67876198": {
-    "price": 1099000,
+    "price": 950000,
     "area": 147,
     "type": "dom"
   },
@@ -2877,7 +2877,7 @@
     "type": "dom"
   },
   "68257430": {
-    "price": 1089000,
+    "price": 990000,
     "area": 100,
     "type": "dom"
   },
@@ -2904,6 +2904,36 @@
   "dom-wolnostojacy-ssz-na-dzialce-1200-m2-waly-ID4CoHN": {
     "price": 690000,
     "area": null,
+    "type": "dom"
+  },
+  "1bDmME": {
+    "price": 199000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-148-m-bez-pcc-smart-home-klimatyzacja-garaz-ogrod-ID4CkFZ": {
+    "price": 1169000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-obiekt-z-historyczna-dusza-i-potencjalem-10-min-od-wroclawia-ID4B5NU": {
+    "price": 2999000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-bali-i-z-duza-dzialka-zrodla-ID4Bp0Y": {
+    "price": 749000,
+    "area": null,
+    "type": "dom"
+  },
+  "68261516": {
+    "price": 1250000,
+    "area": 141,
+    "type": "dom"
+  },
+  "96787619800067": {
+    "price": 950000,
+    "area": 147,
     "type": "dom"
   }
 }
