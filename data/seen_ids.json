@@ -2970,5 +2970,40 @@
     "price": 1796144,
     "area": 183,
     "type": "dom"
+  },
+  "1bExHw": {
+    "price": 392000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "nowoczesny-dom-183-m-z-duzym-tarasem-i-garazem-bez-posrednikow-ID4CnIp": {
+    "price": 1796144,
+    "area": null,
+    "type": "dom"
+  },
+  "atrakcyjny-dom-z-potencjalem-w-centrum-ID4zGpl": {
+    "price": 1499900,
+    "area": null,
+    "type": "dom"
+  },
+  "68265959": {
+    "price": 1152000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68265593": {
+    "price": 827000,
+    "area": 105,
+    "type": "dom"
+  },
+  "68265541": {
+    "price": 850000,
+    "area": 250,
+    "type": "dom"
+  },
+  "68034771": {
+    "price": 649000,
+    "area": 80,
+    "type": "dom"
   }
 }
