@@ -417,7 +417,7 @@
     "type": "dom"
   },
   "dom-w-cenie-mieszkania-bez-czynszu-ID4BE1V": {
-    "price": 809000,
+    "price": 819000,
     "area": null,
     "type": "dom"
   },
@@ -2940,5 +2940,10 @@
     "price": 1050000,
     "area": null,
     "type": "dom"
+  },
+  "dzialka-budowlana-15-arow-budziszow-gm-kostomloty-powiat-sroda-sl-ID4CqFf": {
+    "price": 165000,
+    "area": null,
+    "type": "dzialka"
   }
 }
