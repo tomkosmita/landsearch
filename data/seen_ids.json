@@ -2945,5 +2945,30 @@
     "price": 165000,
     "area": null,
     "type": "dzialka"
+  },
+  "1aK6el": {
+    "price": 200000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "komfortowy-dom-z-pieknym-ogrodem-w-pelczycach-bez-prowizji-ID4Cjo8": {
+    "price": 1850000,
+    "area": null,
+    "type": "dom"
+  },
+  "komfortowy-dom-w-dobrej-lokalizacji-ID4CqCo": {
+    "price": 1820000,
+    "area": null,
+    "type": "dom"
+  },
+  "68252973": {
+    "price": 1796144,
+    "area": 183,
+    "type": "dom"
+  },
+  "96825297300067": {
+    "price": 1796144,
+    "area": 183,
+    "type": "dom"
   }
 }
