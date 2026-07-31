@@ -3050,5 +3050,20 @@
     "price": 970000,
     "area": 159,
     "type": "dom"
+  },
+  "dom-gajkow-z-garazem-dzialka-497-m-pompa-ciepla-pv-3-sypialnie-ID4Cpkp": {
+    "price": 690000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-do-odbioru-blizniak-jak-wolnostojacy-5min-od-marino-ostatni-dom-ID4Crt2": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "68067007": {
+    "price": 1099000,
+    "area": 198,
+    "type": "dom"
   }
 }
