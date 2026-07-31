@@ -3065,5 +3065,30 @@
     "price": 1099000,
     "area": 198,
     "type": "dom"
+  },
+  "nowoczesny-dom-126-m-ogrod-klimatyzacja-zgorzelisko-ID4CrHE": {
+    "price": 1500000,
+    "area": null,
+    "type": "dom"
+  },
+  "solidny-dom-wolnostojacy-z-potencjalem-i-ogrodem-ID4CslL": {
+    "price": 1395000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-200-m-z-basenem-i-dzialka-970-m-wroclaw-stablowice-fabryczna-ID4ALOc": {
+    "price": 1890000,
+    "area": null,
+    "type": "dom"
+  },
+  "68270083": {
+    "price": 899000,
+    "area": 121,
+    "type": "dom"
+  },
+  "96827008300067": {
+    "price": 899000,
+    "area": 121,
+    "type": "dom"
   }
 }
