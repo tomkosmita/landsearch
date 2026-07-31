@@ -417,7 +417,7 @@
     "type": "dom"
   },
   "dom-w-cenie-mieszkania-bez-czynszu-ID4BE1V": {
-    "price": 819000,
+    "price": 790000,
     "area": null,
     "type": "dom"
   },
@@ -3034,6 +3034,21 @@
   "96826763500067": {
     "price": 920000,
     "area": 148,
+    "type": "dom"
+  },
+  "marszowice-dom-180m2-garaz-dwustanowiskowy-ID4AmfQ": {
+    "price": 1478000,
+    "area": null,
+    "type": "dom"
+  },
+  "zadbany-szereg-w-swietnej-lokalizacji-ID4BltH": {
+    "price": 1799000,
+    "area": null,
+    "type": "dom"
+  },
+  "68267248": {
+    "price": 970000,
+    "area": 159,
     "type": "dom"
   }
 }
