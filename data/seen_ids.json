@@ -3115,5 +3115,30 @@
     "price": 1650000,
     "area": 240,
     "type": "dom"
+  },
+  "WgbFq": {
+    "price": 263200,
+    "area": null,
+    "type": "dzialka"
+  },
+  "66600142": {
+    "price": 259990,
+    "area": 800,
+    "type": "dzialka"
+  },
+  "dom-w-cenie-mieszkania-bez-czynszu-pilne-ID4BE1V": {
+    "price": 779000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-na-oporowie-jest-przyznane-dofinansowanie-na-zlobek-1-3-mln-zl-ID4Csg8": {
+    "price": 4999999,
+    "area": null,
+    "type": "dom"
+  },
+  "68271739": {
+    "price": 1770000,
+    "area": 188,
+    "type": "dom"
   }
 }
