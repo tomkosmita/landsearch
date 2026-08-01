@@ -3140,5 +3140,45 @@
     "price": 1770000,
     "area": 188,
     "type": "dom"
+  },
+  "68272122": {
+    "price": 599000,
+    "area": 1613,
+    "type": "dzialka"
+  },
+  "96827212200067": {
+    "price": 599000,
+    "area": 1613,
+    "type": "dzialka"
+  },
+  "dom-z-wlasnym-debem-jerzmanowo-ID4oJQC": {
+    "price": 956000,
+    "area": null,
+    "type": "dom"
+  },
+  "wolnostojacy-dom-na-zernikach-pompa-ciepla-bez-posrednikow-ID4CsB5": {
+    "price": 1770000,
+    "area": null,
+    "type": "dom"
+  },
+  "65001458": {
+    "price": 956000,
+    "area": 110,
+    "type": "dom"
+  },
+  "68272192": {
+    "price": 1150000,
+    "area": 113,
+    "type": "dom"
+  },
+  "68272067": {
+    "price": 1349799,
+    "area": 111,
+    "type": "dom"
+  },
+  "96822967500067": {
+    "price": 899000,
+    "area": 127,
+    "type": "dom"
   }
 }
