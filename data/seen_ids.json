@@ -3090,5 +3090,30 @@
     "price": 899000,
     "area": 121,
     "type": "dom"
+  },
+  "dzialka-budowlana-ogrodzona-mpzp-media-blisko-las-analiza-arch-ID4wxax": {
+    "price": 460000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "rezerwacja-nowoczesny-energooszczedny-dom-ID4CfS7": {
+    "price": 1670000,
+    "area": null,
+    "type": "dom"
+  },
+  "na-sprzedaz-nowoczesny-dom-w-zabudowie-blizniaczej-brzezina-ID4CpVc": {
+    "price": 1250000,
+    "area": null,
+    "type": "dom"
+  },
+  "duza-dzialka-mozliwosc-rozbudowy-uzytkowy-strych-ID4BBkX": {
+    "price": 1099000,
+    "area": null,
+    "type": "dom"
+  },
+  "96819690400067": {
+    "price": 1650000,
+    "area": 240,
+    "type": "dom"
   }
 }
