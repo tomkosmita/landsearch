@@ -517,17 +517,17 @@
     "type": "dom"
   },
   "19c3WM": {
-    "price": 830000,
+    "price": 835000,
     "area": null,
     "type": "dom"
   },
   "13PzE3": {
-    "price": 1060000,
+    "price": 1065000,
     "area": null,
     "type": "dom"
   },
   "14LdtV": {
-    "price": 1060000,
+    "price": 1065000,
     "area": null,
     "type": "dom"
   },
@@ -712,7 +712,7 @@
     "type": "dom"
   },
   "18FwnS": {
-    "price": 870000,
+    "price": 875000,
     "area": null,
     "type": "dom"
   },
@@ -747,7 +747,7 @@
     "type": "dzialka"
   },
   "15BCu9": {
-    "price": 870000,
+    "price": 875000,
     "area": null,
     "type": "dom"
   },
@@ -3184,6 +3184,36 @@
   "67299285": {
     "price": 1099000,
     "area": 140,
+    "type": "dom"
+  },
+  "1bHdLM": {
+    "price": 400000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "sprzedam-dzialke-budowlana-piotrkowiczki-gm-wisznia-mala-ID4Ct48": {
+    "price": 270000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1bGZTL": {
+    "price": 390000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "wyjatkowa-oferta-dla-najbardziej-wymagajacego-klienta-ID4BXHw": {
+    "price": 2490000,
+    "area": null,
+    "type": "dom"
+  },
+  "smolec-fotowoltaika-pompa-ciepla-nowe-okna-z-rolet-ID4BKRH": {
+    "price": 1499000,
+    "area": null,
+    "type": "dom"
+  },
+  "5-pokojowy-dom-123m2-ogrodek-bez-posrednikow-ID4Bcpa": {
+    "price": 1107270,
+    "area": null,
     "type": "dom"
   }
 }
