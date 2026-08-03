@@ -2312,7 +2312,7 @@
     "type": "dom"
   },
   "dzialka-900-m-polakowice-prad-cisza-szybki-dojazd-do-wroclawia-ID4Cih2": {
-    "price": 210000,
+    "price": 202000,
     "area": null,
     "type": "dzialka"
   },
@@ -3294,6 +3294,31 @@
   "96780289300067": {
     "price": 819000,
     "area": 80,
+    "type": "dom"
+  },
+  "bez-prowizji-mirkow-top-komunikacja-do-wejscia-ID4CsIx": {
+    "price": 950000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-pod-wroclawiem-15-min-do-miasta-145-m-ID4BmYY": {
+    "price": 1299999,
+    "area": null,
+    "type": "dom"
+  },
+  "68278006": {
+    "price": 1400000,
+    "area": 278,
+    "type": "dom"
+  },
+  "68277226": {
+    "price": 799000,
+    "area": 88,
+    "type": "dom"
+  },
+  "96827800600067": {
+    "price": 1400000,
+    "area": 278,
     "type": "dom"
   }
 }
