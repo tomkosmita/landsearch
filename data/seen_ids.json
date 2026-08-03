@@ -3255,5 +3255,45 @@
     "price": 827000,
     "area": 104,
     "type": "dom"
+  },
+  "-ID4CrZz": {
+    "price": 1940000,
+    "area": null,
+    "type": "dom"
+  },
+  "przestronny-dom-z-zaaranzowanym-ogrodem-ID4Croe": {
+    "price": 1590000,
+    "area": null,
+    "type": "dom"
+  },
+  "wysoki-standard-garaz-ogrodek-ID4CclV": {
+    "price": 1350000,
+    "area": null,
+    "type": "dom"
+  },
+  "67802893": {
+    "price": 819000,
+    "area": 80,
+    "type": "dom"
+  },
+  "67207547": {
+    "price": 960000,
+    "area": 130,
+    "type": "dom"
+  },
+  "68275562": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "67749221": {
+    "price": 1249000,
+    "area": 166,
+    "type": "dom"
+  },
+  "96780289300067": {
+    "price": 819000,
+    "area": 80,
+    "type": "dom"
   }
 }
