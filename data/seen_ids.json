@@ -3230,5 +3230,30 @@
     "price": 1249000,
     "area": null,
     "type": "dom"
+  },
+  "68274475": {
+    "price": 313500,
+    "area": 570,
+    "type": "dzialka"
+  },
+  "96827447500067": {
+    "price": 313500,
+    "area": 570,
+    "type": "dzialka"
+  },
+  "dom-z-przestrzenia-i-jakoscia-ID4Ce6D": {
+    "price": 2700000,
+    "area": null,
+    "type": "dom"
+  },
+  "68274858": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96827485800067": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
   }
 }
