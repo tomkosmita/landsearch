@@ -3410,5 +3410,25 @@
     "price": 1099000,
     "area": 118,
     "type": "dom"
+  },
+  "-ID4vM6S": {
+    "price": 487000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68281912": {
+    "price": 810000,
+    "area": 130,
+    "type": "dom"
+  },
+  "67299318": {
+    "price": 939000,
+    "area": 131,
+    "type": "dom"
+  },
+  "96828191200067": {
+    "price": 810000,
+    "area": 130,
+    "type": "dom"
   }
 }
