@@ -912,7 +912,7 @@
     "type": "dom"
   },
   "1bk6Eu": {
-    "price": 310000,
+    "price": 299000,
     "area": null,
     "type": "dzialka"
   },
@@ -3344,6 +3344,26 @@
   "96827841300067": {
     "price": 990000,
     "area": 73,
+    "type": "dom"
+  },
+  "dom-z-lokalem-uzytkowym-ID4Ch5f": {
+    "price": 2500000,
+    "area": null,
+    "type": "dom"
+  },
+  "rezerwacja-przytulny-dom-3-km-od-wroclawia-bez-prowizji-ID4C8tA": {
+    "price": 1299000,
+    "area": null,
+    "type": "dom"
+  },
+  "68278767": {
+    "price": 1148999,
+    "area": 140,
+    "type": "dom"
+  },
+  "96827876700067": {
+    "price": 1148999,
+    "area": 140,
     "type": "dom"
   }
 }
