@@ -3320,5 +3320,30 @@
     "price": 1400000,
     "area": 278,
     "type": "dom"
+  },
+  "gotowy-do-zamieszkania-84-m-wykonczony-pod-klucz-sadkow-ID4BYmt": {
+    "price": 1069000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-6-pokoi-dzialka-900-m-wilkszyn-ID4AWkE": {
+    "price": 1320000,
+    "area": null,
+    "type": "dom"
+  },
+  "68278413": {
+    "price": 990000,
+    "area": 73,
+    "type": "dom"
+  },
+  "68278171": {
+    "price": 1450000,
+    "area": 98,
+    "type": "dom"
+  },
+  "96827841300067": {
+    "price": 990000,
+    "area": 73,
+    "type": "dom"
   }
 }
