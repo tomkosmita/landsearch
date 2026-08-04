@@ -3365,5 +3365,50 @@
     "price": 1148999,
     "area": 140,
     "type": "dom"
+  },
+  "dzialka-budowlana-w-obornikach-slaskich-ID4CuGt": {
+    "price": 400000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "-ID4BPev": {
+    "price": 500000,
+    "area": null,
+    "type": "dom"
+  },
+  "warsztat-samochodowy-z-lakiernia-ID4Ch5i": {
+    "price": 2300000,
+    "area": null,
+    "type": "dom"
+  },
+  "olsztynska-blizniak-garaz-piwnica-ID4Ccmb": {
+    "price": 1399000,
+    "area": null,
+    "type": "dom"
+  },
+  "68280715": {
+    "price": 1099000,
+    "area": 118,
+    "type": "dom"
+  },
+  "68280663": {
+    "price": 1387000,
+    "area": 100,
+    "type": "dom"
+  },
+  "67939153": {
+    "price": 1590000,
+    "area": 324,
+    "type": "dom"
+  },
+  "67987834": {
+    "price": 919900,
+    "area": 100,
+    "type": "dom"
+  },
+  "96828071500067": {
+    "price": 1099000,
+    "area": 118,
+    "type": "dom"
   }
 }
