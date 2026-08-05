@@ -2182,7 +2182,7 @@
     "type": "dzialka"
   },
   "bezczynszowy-dom-z-ogrodkiem-radwanice-4-pokoje-ID4BJU0": {
-    "price": 995000,
+    "price": 975000,
     "area": null,
     "type": "dom"
   },
@@ -3429,6 +3429,11 @@
   "96828191200067": {
     "price": 810000,
     "area": 130,
+    "type": "dom"
+  },
+  "przestronny-dom-6-pokoi-z-garazem-i-ogrzewaniem-gazowym-ID4yjmN": {
+    "price": 1079000,
+    "area": null,
     "type": "dom"
   }
 }
