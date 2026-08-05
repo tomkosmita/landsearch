@@ -3127,7 +3127,7 @@
     "type": "dzialka"
   },
   "dom-w-cenie-mieszkania-bez-czynszu-pilne-ID4BE1V": {
-    "price": 779000,
+    "price": 769000,
     "area": null,
     "type": "dom"
   },
@@ -3459,6 +3459,26 @@
   "96828278800067": {
     "price": 798000,
     "area": 83,
+    "type": "dom"
+  },
+  "1a1som": {
+    "price": 920000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-dom-super-lokalizacja-bez-prowizji-bez-pcc-ID4Cwfa": {
+    "price": 810000,
+    "area": null,
+    "type": "dom"
+  },
+  "68284079": {
+    "price": 1350000,
+    "area": 148,
+    "type": "dom"
+  },
+  "96828407900067": {
+    "price": 1350000,
+    "area": 148,
     "type": "dom"
   }
 }
