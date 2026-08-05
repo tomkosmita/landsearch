@@ -3480,5 +3480,10 @@
     "price": 1350000,
     "area": 148,
     "type": "dom"
+  },
+  "1bJDx4": {
+    "price": 720000,
+    "area": null,
+    "type": "dom"
   }
 }
