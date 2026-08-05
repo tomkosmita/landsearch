@@ -2477,7 +2477,7 @@
     "type": "dom"
   },
   "dzialki-budowlane-jedyne-uzbrojone-w-wojczycach-ID4Cl6s": {
-    "price": 170000,
+    "price": 180000,
     "area": null,
     "type": "dzialka"
   },
@@ -3434,6 +3434,31 @@
   "przestronny-dom-6-pokoi-z-garazem-i-ogrzewaniem-gazowym-ID4yjmN": {
     "price": 1079000,
     "area": null,
+    "type": "dom"
+  },
+  "68282826": {
+    "price": 580000,
+    "area": 2416,
+    "type": "dzialka"
+  },
+  "96828282600067": {
+    "price": 580000,
+    "area": 2416,
+    "type": "dzialka"
+  },
+  "68282788": {
+    "price": 798000,
+    "area": 83,
+    "type": "dom"
+  },
+  "68282689": {
+    "price": 809999,
+    "area": 100,
+    "type": "dom"
+  },
+  "96828278800067": {
+    "price": 798000,
+    "area": 83,
     "type": "dom"
   }
 }
