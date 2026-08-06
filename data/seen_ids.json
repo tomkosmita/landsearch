@@ -3505,5 +3505,30 @@
     "price": 1450000,
     "area": null,
     "type": "dom"
+  },
+  "duza-dzialka-budowlana-spokojna-okolica-blisko-olawy-i-wroclawia-ID4wDWr": {
+    "price": 350000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "gotowy-dom-z-funkcjonalnym-ukladem-wroclaw-kameralna-zabudowa-ID4C14E": {
+    "price": 827000,
+    "area": null,
+    "type": "dom"
+  },
+  "67855129": {
+    "price": 749000,
+    "area": 146,
+    "type": "dom"
+  },
+  "96825708000067": {
+    "price": 1099900,
+    "area": 118,
+    "type": "dom"
+  },
+  "bip_wroclaw_l_przetarg_nieruchomosci_90491_ul_malezyjska_dz_nr_3_8_i_4_6": {
+    "price": 525000,
+    "area": null,
+    "type": "dzialka"
   }
 }
