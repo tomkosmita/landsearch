@@ -3527,8 +3527,28 @@
     "type": "dom"
   },
   "bip_wroclaw_l_przetarg_nieruchomosci_90491_ul_malezyjska_dz_nr_3_8_i_4_6": {
-    "price": 525000,
+    "price": null,
     "area": null,
     "type": "dzialka"
+  },
+  "dom-z-kameralna-dzialka-ogrod-102-m2-wilczyce-ID4CoMM": {
+    "price": 659000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-160-m-2-km-od-wroclawia-fotowoltaika-pompa-ciepla-rekuperacja-ID4wl9N": {
+    "price": 1500000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-pod-wroclawiem-121-m2-z-garazem-gm-kobierzyce-ID4CccH": {
+    "price": 1300000,
+    "area": null,
+    "type": "dom"
+  },
+  "96816366800067": {
+    "price": 1399000,
+    "area": 120,
+    "type": "dom"
   }
 }
