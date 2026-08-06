@@ -2447,7 +2447,7 @@
     "type": "dom"
   },
   "dzialka-budowlana-dobrzykowice-1108m2-ID4B3s8": {
-    "price": 500000,
+    "price": 495000,
     "area": null,
     "type": "dzialka"
   },
@@ -3432,7 +3432,7 @@
     "type": "dom"
   },
   "przestronny-dom-6-pokoi-z-garazem-i-ogrzewaniem-gazowym-ID4yjmN": {
-    "price": 1079000,
+    "price": 1199000,
     "area": null,
     "type": "dom"
   },
@@ -3499,6 +3499,11 @@
   "96828592600067": {
     "price": 839000,
     "area": 129,
+    "type": "dom"
+  },
+  "wolnostojacy-dom-z-duza-dzialka-ID4CugP": {
+    "price": 1450000,
+    "area": null,
     "type": "dom"
   }
 }
