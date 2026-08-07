@@ -127,8 +127,9 @@
     "type": "dzialka"
   },
   "1baIid": {
-    "price": 300000,
-    "area": null
+    "price": 299000,
+    "area": null,
+    "type": "dzialka"
   },
   "18gboE": {
     "price": 210000,
@@ -507,7 +508,7 @@
     "type": "dom"
   },
   "1a74TU": {
-    "price": 1060000,
+    "price": 1065000,
     "area": null,
     "type": "dom"
   },
@@ -647,7 +648,7 @@
     "type": "dom"
   },
   "67936393": {
-    "price": 1049000,
+    "price": 999000,
     "area": 165,
     "type": "dom"
   },
@@ -1972,7 +1973,7 @@
     "type": "dom"
   },
   "68142819": {
-    "price": 827000,
+    "price": 840080,
     "area": 104,
     "type": "dom"
   },
@@ -3550,5 +3551,35 @@
     "price": 1399000,
     "area": 120,
     "type": "dom"
+  },
+  "68292594": {
+    "price": 510000,
+    "area": 1650,
+    "type": "dzialka"
+  },
+  "96829259400067": {
+    "price": 510000,
+    "area": 1650,
+    "type": "dzialka"
+  },
+  "nowy-dom-165-75-m-garaz-duza-dzialka-5-min-od-wroclawia-ID4B3mh": {
+    "price": 999000,
+    "area": null,
+    "type": "dom"
+  },
+  "68291749": {
+    "price": 950000,
+    "area": 103,
+    "type": "dom"
+  },
+  "68021301": {
+    "price": 1495313,
+    "area": 126,
+    "type": "dom"
+  },
+  "bip_wroclaw_zetarg_nieruchomosci_90492_ul_jana_zizki_3_i_5_dz_nr_57_i_58": {
+    "price": 10500000,
+    "area": null,
+    "type": "dzialka"
   }
 }
