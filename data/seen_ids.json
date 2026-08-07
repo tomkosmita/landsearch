@@ -1928,7 +1928,7 @@
     "type": "dom"
   },
   "67461849": {
-    "price": 796700,
+    "price": 849500,
     "area": 89,
     "type": "dom"
   },
@@ -3578,8 +3578,38 @@
     "type": "dom"
   },
   "bip_wroclaw_zetarg_nieruchomosci_90492_ul_jana_zizki_3_i_5_dz_nr_57_i_58": {
-    "price": 10500000,
+    "price": null,
     "area": null,
     "type": "dzialka"
+  },
+  "1bLdum": {
+    "price": 260000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-szeregowy-do-remontu-200-m-ul-mikolowska-ID4ClHQ": {
+    "price": 897000,
+    "area": null,
+    "type": "dom"
+  },
+  "skrajny-segment-z-2002-roku-do-remontu-wroclaw-pracze-odrzanskie-ID4Cy6f": {
+    "price": 969000,
+    "area": null,
+    "type": "dom"
+  },
+  "68158634": {
+    "price": 1800000,
+    "area": 150,
+    "type": "dom"
+  },
+  "68293215": {
+    "price": 1199000,
+    "area": 128,
+    "type": "dom"
+  },
+  "68292891": {
+    "price": 969000,
+    "area": 150,
+    "type": "dom"
   }
 }
