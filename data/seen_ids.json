@@ -3626,5 +3626,40 @@
     "price": 659000,
     "area": 86,
     "type": "dom"
+  },
+  "sprzedam-dzialke-budowlana-w-kobierzycach-blisko-parku-ID45xDE": {
+    "price": 382550,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1bLKTy": {
+    "price": 360000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-ogrodem-domaszczyn-gotowy-do-zamieszkania-ID4BWvd": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
+  },
+  "67559152": {
+    "price": 1376514,
+    "area": 158,
+    "type": "dom"
+  },
+  "68294388": {
+    "price": 1740000,
+    "area": 290,
+    "type": "dom"
+  },
+  "67604503": {
+    "price": 1379999,
+    "area": 157,
+    "type": "dom"
+  },
+  "96793915300067": {
+    "price": 1590000,
+    "area": 324,
+    "type": "dom"
   }
 }
