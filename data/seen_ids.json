@@ -3686,5 +3686,15 @@
     "price": 950000,
     "area": 103,
     "type": "dom"
+  },
+  "-ID4CyWe": {
+    "price": 1850000,
+    "area": null,
+    "type": "dom"
+  },
+  "96798480000067": {
+    "price": 859000,
+    "area": 93,
+    "type": "dom"
   }
 }
