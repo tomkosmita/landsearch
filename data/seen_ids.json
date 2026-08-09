@@ -3666,5 +3666,25 @@
     "price": 840080,
     "area": null,
     "type": "dom"
+  },
+  "1bMjmK": {
+    "price": 148800,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1bMc6c": {
+    "price": 898000,
+    "area": null,
+    "type": "dom"
+  },
+  "67137799": {
+    "price": 1500000,
+    "area": 134,
+    "type": "dom"
+  },
+  "96829174900067": {
+    "price": 950000,
+    "area": 103,
+    "type": "dom"
   }
 }
