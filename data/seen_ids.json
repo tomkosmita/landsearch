@@ -703,7 +703,7 @@
     "type": "dzialka"
   },
   "15Q80w": {
-    "price": 1060000,
+    "price": 1065000,
     "area": null,
     "type": "dom"
   },
@@ -1023,7 +1023,7 @@
     "type": "dom"
   },
   "67941892": {
-    "price": 690000,
+    "price": 738000,
     "area": 97,
     "type": "dom"
   },
@@ -3700,6 +3700,21 @@
   "96798627500067": {
     "price": 827000,
     "area": 104,
+    "type": "dom"
+  },
+  "1bNamG": {
+    "price": 350000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-przy-lesie-z-sauna-tarasem-i-basenem-ID4Cwuf": {
+    "price": 2900000,
+    "area": null,
+    "type": "dom"
+  },
+  "96794189200067": {
+    "price": 738000,
+    "area": 97,
     "type": "dom"
   }
 }
