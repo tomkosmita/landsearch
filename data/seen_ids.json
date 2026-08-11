@@ -3726,5 +3726,30 @@
     "price": 2049000,
     "area": null,
     "type": "dom"
+  },
+  "szereg-we-wroclawiu-z-garazem-i-podworkiem-ID4CreB": {
+    "price": 1600000,
+    "area": null,
+    "type": "dom"
+  },
+  "68303397": {
+    "price": 1430000,
+    "area": 137,
+    "type": "dom"
+  },
+  "68303387": {
+    "price": 1320000,
+    "area": 130,
+    "type": "dom"
+  },
+  "68303277": {
+    "price": 1112800,
+    "area": 104,
+    "type": "dom"
+  },
+  "96830339700067": {
+    "price": 1430000,
+    "area": 137,
+    "type": "dom"
   }
 }
