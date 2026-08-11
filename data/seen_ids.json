@@ -3008,7 +3008,7 @@
     "type": "dom"
   },
   "68267098": {
-    "price": 1590000,
+    "price": 1540000,
     "area": 194,
     "type": "dom"
   },
@@ -3750,6 +3750,36 @@
   "96830339700067": {
     "price": 1430000,
     "area": 137,
+    "type": "dom"
+  },
+  "duzy-dom-z-zaaranzowanym-ogrodem-dzialka-9a-ID4Croe": {
+    "price": 1540000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowe-do-wprowadzenia-ogrodek-2025-ID4CAGN": {
+    "price": 965000,
+    "area": null,
+    "type": "dom"
+  },
+  "piekny-ogrod-21ar-funkcjonalny-dom-dobry-dojazd-ID4CmsC": {
+    "price": 1499990,
+    "area": null,
+    "type": "dom"
+  },
+  "blizniak-przy-parku-borek-do-remontu-ID4CofX": {
+    "price": 1790000,
+    "area": null,
+    "type": "dom"
+  },
+  "68304473": {
+    "price": 822900,
+    "area": 123,
+    "type": "dom"
+  },
+  "96830447300067": {
+    "price": 822900,
+    "area": 123,
     "type": "dom"
   }
 }
