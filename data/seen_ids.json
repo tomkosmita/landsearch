@@ -3339,7 +3339,7 @@
   },
   "68278171": {
     "price": 1450000,
-    "area": 98,
+    "area": 114,
     "type": "dom"
   },
   "96827841300067": {
@@ -3715,6 +3715,16 @@
   "96794189200067": {
     "price": 738000,
     "area": 97,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-z-2020-swietna-komunikacja-zielona-okolica-ID4CA5l": {
+    "price": 2600000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-lokalem-pod-dzialalnosc-9-pokoi-dz-1670m-zerniki-wroclawskie-ID4CAbq": {
+    "price": 2049000,
+    "area": null,
     "type": "dom"
   }
 }
