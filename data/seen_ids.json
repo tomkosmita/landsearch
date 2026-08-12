@@ -3816,5 +3816,30 @@
     "price": 798990,
     "area": 95,
     "type": "dom"
+  },
+  "1bn9Cn": {
+    "price": 145000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "przestronny-dom-z-ogrodem-w-radwanicach-na-granicy-wroclawia-ID4CyYR": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "rezerwacja-dom-z-potencjalem-6-pokoi-garaz-muchobor-maly-ID4CgNw": {
+    "price": 1490000,
+    "area": null,
+    "type": "dom"
+  },
+  "67429259": {
+    "price": 1190000,
+    "area": 95,
+    "type": "dom"
+  },
+  "96742925900067": {
+    "price": 1190000,
+    "area": 95,
+    "type": "dom"
   }
 }
