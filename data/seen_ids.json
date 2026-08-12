@@ -3796,5 +3796,25 @@
     "price": 1990000,
     "area": null,
     "type": "dom"
+  },
+  "dzialka-budowlana-1340-m-kotowice-k-wroclawia-ID4CBLo": {
+    "price": 400000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "przestronny-dom-z-ogrodem-w-radwanicach-tylko-3-km-od-wroclawia-ID4CyYR": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "68306501": {
+    "price": 798990,
+    "area": 95,
+    "type": "dom"
+  },
+  "96830650100067": {
+    "price": 798990,
+    "area": 95,
+    "type": "dom"
   }
 }
