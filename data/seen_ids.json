@@ -3866,5 +3866,20 @@
     "price": 1770000,
     "area": 188,
     "type": "dom"
+  },
+  "dzialka-budowlana-szewce-ID4CaNu": {
+    "price": 385000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1bPvqO": {
+    "price": 429000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68311332": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
   }
 }
