@@ -2928,7 +2928,7 @@
     "type": "dom"
   },
   "68261516": {
-    "price": 1250000,
+    "price": 1350000,
     "area": 141,
     "type": "dom"
   },
@@ -3103,7 +3103,7 @@
     "type": "dom"
   },
   "na-sprzedaz-nowoczesny-dom-w-zabudowie-blizniaczej-brzezina-ID4CpVc": {
-    "price": 1250000,
+    "price": 1350000,
     "area": null,
     "type": "dom"
   },
@@ -3840,6 +3840,31 @@
   "96742925900067": {
     "price": 1190000,
     "area": 95,
+    "type": "dom"
+  },
+  "1bP9oJ": {
+    "price": 1350000,
+    "area": null,
+    "type": "dom"
+  },
+  "67667060": {
+    "price": 1799999,
+    "area": 290,
+    "type": "dom"
+  },
+  "68310017": {
+    "price": 849000,
+    "area": 78,
+    "type": "dom"
+  },
+  "68309723": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96827173900067": {
+    "price": 1770000,
+    "area": 188,
     "type": "dom"
   }
 }
