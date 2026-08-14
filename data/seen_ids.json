@@ -3881,5 +3881,15 @@
     "price": 827000,
     "area": 104,
     "type": "dom"
+  },
+  "1bPKZx": {
+    "price": 1000000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacykarlowice-ID4CCQt": {
+    "price": 1550000,
+    "area": null,
+    "type": "dom"
   }
 }
