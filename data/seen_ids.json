@@ -3896,5 +3896,30 @@
     "price": 1499000,
     "area": 133,
     "type": "dom"
+  },
+  "domy-z-wyjatkowa-elewacja-bez-pozwolenia-od-mswia-w-dobrzykowice-ID4vmYe": {
+    "price": 875000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowy-dom-136-m-garaz-dzialka-4-ary-inwestycja-pod-wroclawiem-ID4BXXU": {
+    "price": 1148000,
+    "area": null,
+    "type": "dom"
+  },
+  "68313234": {
+    "price": 1200000,
+    "area": 96,
+    "type": "dom"
+  },
+  "68313185": {
+    "price": 1549000,
+    "area": 194,
+    "type": "dom"
+  },
+  "96755915100067": {
+    "price": 1478820,
+    "area": 176,
+    "type": "dom"
   }
 }
