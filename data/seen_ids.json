@@ -1798,7 +1798,7 @@
     "type": "dom"
   },
   "parterowy-wolnostojacy-dom-dzialka-970-m2-brzezina-3km-od-wroclawia-ID4Cc2c": {
-    "price": 1290000,
+    "price": 1249000,
     "area": null,
     "type": "dom"
   },
@@ -3920,6 +3920,26 @@
   "96755915100067": {
     "price": 1478820,
     "area": 176,
+    "type": "dom"
+  },
+  "widokowa-dzialka-1127-m-w-piotrkowiczkach-wzgorza-trzebnickie-ID4CDRp": {
+    "price": 349000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1bQeww": {
+    "price": 410580,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68314099": {
+    "price": 990000,
+    "area": 80,
+    "type": "dom"
+  },
+  "96831409900067": {
+    "price": 990000,
+    "area": 80,
     "type": "dom"
   }
 }
