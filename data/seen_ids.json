@@ -1638,7 +1638,7 @@
     "type": "dzialka"
   },
   "68202544": {
-    "price": 1150000,
+    "price": 1098000,
     "area": 122,
     "type": "dom"
   },
@@ -1673,7 +1673,7 @@
     "type": "dzialka"
   },
   "piekny-dom-z-dobra-energia-i-dusza-zadbany-i-zaprojektowany-z-gustem-ID4CaB2": {
-    "price": 1150000,
+    "price": 1098000,
     "area": null,
     "type": "dom"
   },
@@ -3956,5 +3956,20 @@
     "price": 475000,
     "area": 1000,
     "type": "dzialka"
+  },
+  "1bQBM7": {
+    "price": 390000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-z-ogrodem-rekuperacja-klimatyzacja-ID4Ce9M": {
+    "price": 1050000,
+    "area": null,
+    "type": "dom"
+  },
+  "96751538800067": {
+    "price": 1290000,
+    "area": 132,
+    "type": "dom"
   }
 }
