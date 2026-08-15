@@ -823,7 +823,7 @@
     "type": "dom"
   },
   "67806105": {
-    "price": 935000,
+    "price": 925000,
     "area": 148,
     "type": "dom"
   },
@@ -3970,6 +3970,11 @@
   "96751538800067": {
     "price": 1290000,
     "area": 132,
+    "type": "dom"
+  },
+  "gotowy-dom-129m2-w-podwyzszonym-standardzie-sprawdz-ID4Csnh": {
+    "price": 890000,
+    "area": null,
     "type": "dom"
   }
 }
