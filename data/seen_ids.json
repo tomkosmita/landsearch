@@ -113,7 +113,7 @@
     "area": null
   },
   "1ba9i3": {
-    "price": 415000,
+    "price": 409000,
     "area": null,
     "type": "dzialka"
   },
@@ -3903,7 +3903,7 @@
     "type": "dom"
   },
   "nowy-dom-136-m-garaz-dzialka-4-ary-inwestycja-pod-wroclawiem-ID4BXXU": {
-    "price": 1148000,
+    "price": 1190000,
     "area": null,
     "type": "dom"
   },
@@ -3975,6 +3975,21 @@
   "gotowy-dom-129m2-w-podwyzszonym-standardzie-sprawdz-ID4Csnh": {
     "price": 890000,
     "area": null,
+    "type": "dom"
+  },
+  "1bRRIw": {
+    "price": 179000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68317341": {
+    "price": 1550000,
+    "area": 150,
+    "type": "dom"
+  },
+  "96831734100067": {
+    "price": 1550000,
+    "area": 150,
     "type": "dom"
   }
 }
