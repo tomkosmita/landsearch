@@ -1379,7 +1379,7 @@
   },
   "96810868800067": {
     "price": 399000,
-    "area": 846,
+    "area": 857,
     "type": "dzialka"
   },
   "domy-w-zabudowie-szeregowej-we-wroclawiu-przy-ul-przejazdowej-ID4ztyB": {
@@ -4020,6 +4020,36 @@
   "gotowy-dom-dla-rodziny-157-m-z-ogrodem-15-min-do-wroclawia-ID4CEIV": {
     "price": 1575000,
     "area": null,
+    "type": "dom"
+  },
+  "dzialka-budowlana-studnia-ogrodzenie-przy-samej-granicy-miasta-815m2-ID4CEN9": {
+    "price": 235000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "szereg-81-8-m-z-ogrodem-wroclaw-borek-ID4CEGr": {
+    "price": 1499000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-do-remontu-na-wroclawskich-krzykach-ID4CwGX": {
+    "price": 1600000,
+    "area": null,
+    "type": "dom"
+  },
+  "68319471": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "67559229": {
+    "price": 1330000,
+    "area": 145,
+    "type": "dom"
+  },
+  "96784228400067": {
+    "price": 900000,
+    "area": 78,
     "type": "dom"
   }
 }
