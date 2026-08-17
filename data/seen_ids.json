@@ -1413,7 +1413,7 @@
     "type": "dom"
   },
   "68081083": {
-    "price": 1790000,
+    "price": 1739000,
     "area": 198,
     "type": "dom"
   },
@@ -3198,7 +3198,7 @@
     "type": "dzialka"
   },
   "1bGZTL": {
-    "price": 390000,
+    "price": 350000,
     "area": null,
     "type": "dzialka"
   },
@@ -4050,6 +4050,41 @@
   "96784228400067": {
     "price": 900000,
     "area": 78,
+    "type": "dom"
+  },
+  "1bTjQ6": {
+    "price": 283800,
+    "area": null,
+    "type": "dzialka"
+  },
+  "nowy-dom-116-m-ok-19-m-strych-garaz-ogrod-z-widokiem-na-sleze-ID4CBTO": {
+    "price": 1250000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-garazem-ogrod-widok-na-gore-sleze-gotowy-do-odbioru-ID4CBRW": {
+    "price": 1150000,
+    "area": null,
+    "type": "dom"
+  },
+  "designerska-polowka-blizniaka-zamkniete-osiedle-ID4BKvY": {
+    "price": 1450000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-potencjalem-biznesowym-duza-dzialka-1649-m2-poswietne-ID4CDMX": {
+    "price": 2550000,
+    "area": null,
+    "type": "dom"
+  },
+  "68322079": {
+    "price": 1250000,
+    "area": 152,
+    "type": "dom"
+  },
+  "96832207900067": {
+    "price": 1250000,
+    "area": 152,
     "type": "dom"
   }
 }
