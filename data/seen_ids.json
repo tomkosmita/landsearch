@@ -3996,5 +3996,25 @@
     "price": 111433050,
     "area": null,
     "type": "dom"
+  },
+  "dom-wolnostojacy-krzemieniecka-mozliwosc-dokupienia-dzialki-2100-m-ID4CEsM": {
+    "price": 1490000,
+    "area": null,
+    "type": "dom"
+  },
+  "68318264": {
+    "price": 1340000,
+    "area": 110,
+    "type": "dom"
+  },
+  "68318142": {
+    "price": 1099000,
+    "area": 97,
+    "type": "dom"
+  },
+  "96831826400067": {
+    "price": 1340000,
+    "area": 110,
+    "type": "dom"
   }
 }
