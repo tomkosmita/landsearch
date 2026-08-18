@@ -3873,7 +3873,7 @@
     "type": "dzialka"
   },
   "1bPvqO": {
-    "price": 429000,
+    "price": 414900,
     "area": null,
     "type": "dzialka"
   },
@@ -4085,6 +4085,26 @@
   "96832207900067": {
     "price": 1250000,
     "area": 152,
+    "type": "dom"
+  },
+  "1bTCRC": {
+    "price": 380000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "parterowy-dom-z-basenem-dzialka-1832m-6-min-wroclaw-ID4CFM0": {
+    "price": 3399000,
+    "area": null,
+    "type": "dom"
+  },
+  "piekny-dom-z-zielonym-ogrodem-tuz-przy-lesie-230m2-sauna-balia-ID4CF97": {
+    "price": 2199000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-cenie-dzialki-kostka-do-remontu-ID4Cn2D": {
+    "price": 999000,
+    "area": null,
     "type": "dom"
   }
 }
