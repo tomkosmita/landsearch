@@ -255,8 +255,9 @@
     "area": null
   },
   "68163476": {
-    "price": 580000,
-    "area": 800
+    "price": 500000,
+    "area": 800,
+    "type": "dzialka"
   },
   "96816347600067": {
     "price": 580000,
@@ -4145,6 +4146,26 @@
   "96832531400067": {
     "price": 639000,
     "area": 86,
+    "type": "dom"
+  },
+  "nowy-dom-108-m-garaz-ogrod-widok-na-gore-sleze-gotowy-ID4CBRW": {
+    "price": 1150000,
+    "area": null,
+    "type": "dom"
+  },
+  "68326292": {
+    "price": 1350000,
+    "area": 108,
+    "type": "dom"
+  },
+  "68325714": {
+    "price": 1500000,
+    "area": 180,
+    "type": "dom"
+  },
+  "96809669400067": {
+    "price": 1080000,
+    "area": 89,
     "type": "dom"
   }
 }
