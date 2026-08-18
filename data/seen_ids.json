@@ -638,7 +638,7 @@
     "type": "dom"
   },
   "67356415": {
-    "price": 1099000,
+    "price": 1069000,
     "area": 117,
     "type": "dom"
   },
@@ -4105,6 +4105,46 @@
   "dom-w-cenie-dzialki-kostka-do-remontu-ID4Cn2D": {
     "price": 999000,
     "area": null,
+    "type": "dom"
+  },
+  "19JwaR": {
+    "price": 370000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68325290": {
+    "price": 597000,
+    "area": 2130,
+    "type": "dzialka"
+  },
+  "96832529000067": {
+    "price": 597000,
+    "area": 2130,
+    "type": "dzialka"
+  },
+  "dom-funkcjonalny-w-zurawincu-ID4CGu2": {
+    "price": 899000,
+    "area": null,
+    "type": "dom"
+  },
+  "68325314": {
+    "price": 639000,
+    "area": 86,
+    "type": "dom"
+  },
+  "68325118": {
+    "price": 899000,
+    "area": 140,
+    "type": "dom"
+  },
+  "67356674": {
+    "price": 1140000,
+    "area": 100,
+    "type": "dom"
+  },
+  "96832531400067": {
+    "price": 639000,
+    "area": 86,
     "type": "dom"
   }
 }
