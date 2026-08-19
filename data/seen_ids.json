@@ -979,7 +979,7 @@
     "type": "dom"
   },
   "1bkUGi": {
-    "price": 250000,
+    "price": 230000,
     "area": null,
     "type": "dzialka"
   },
@@ -4166,6 +4166,31 @@
   "96809669400067": {
     "price": 1080000,
     "area": 89,
+    "type": "dom"
+  },
+  "1bUbB9": {
+    "price": 299000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "nowy-dom-w-zabudowie-szeregowej-tuz-przy-klinie-wojszyckim-ID4CG9U": {
+    "price": 1299000,
+    "area": null,
+    "type": "dom"
+  },
+  "promocja-dom102-6-m-z-ogrodem-garazem-na-zamknietym-osiedlu-psary-ID4yTn1": {
+    "price": 1039000,
+    "area": null,
+    "type": "dom"
+  },
+  "68327356": {
+    "price": 1199000,
+    "area": 83,
+    "type": "dom"
+  },
+  "96832735600067": {
+    "price": 1199000,
+    "area": 83,
     "type": "dom"
   }
 }
