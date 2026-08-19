@@ -2269,7 +2269,7 @@
     "type": "dom"
   },
   "68228468": {
-    "price": 1049000,
+    "price": 1250000,
     "area": 152,
     "type": "dom"
   },
@@ -4221,6 +4221,36 @@
   "68327597": {
     "price": 999000,
     "area": 87,
+    "type": "dom"
+  },
+  "dom-premium-gmina-miekinia-ID4CH81": {
+    "price": 999000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-na-dzialce-803m2-ID4CHiN": {
+    "price": 1975000,
+    "area": null,
+    "type": "dom"
+  },
+  "szczodre-eco-domy-dom-4-pok-2-mp-2-lazienki-ID4tbLS": {
+    "price": 820000,
+    "area": null,
+    "type": "dom"
+  },
+  "domy-willowe-od-dewelopera-nowy-etap-8-5e-2-ID4zwuJ": {
+    "price": 769000,
+    "area": null,
+    "type": "dom"
+  },
+  "68328250": {
+    "price": 1350000,
+    "area": 131,
+    "type": "dom"
+  },
+  "96832825000067": {
+    "price": 1350000,
+    "area": 131,
     "type": "dom"
   }
 }
