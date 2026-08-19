@@ -4192,5 +4192,10 @@
     "price": 1199000,
     "area": 83,
     "type": "dom"
+  },
+  "wolnostojacy-dom-pod-wroclawiem-ID4Cw9W": {
+    "price": 1950000,
+    "area": null,
+    "type": "dom"
   }
 }
