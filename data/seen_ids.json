@@ -574,7 +574,7 @@
     "type": "dom"
   },
   "67842284": {
-    "price": 900000,
+    "price": 895000,
     "area": 78,
     "type": "dom"
   },
@@ -4049,7 +4049,7 @@
     "type": "dom"
   },
   "96784228400067": {
-    "price": 900000,
+    "price": 895000,
     "area": 78,
     "type": "dom"
   },
@@ -4196,6 +4196,31 @@
   "wolnostojacy-dom-pod-wroclawiem-ID4Cw9W": {
     "price": 1950000,
     "area": null,
+    "type": "dom"
+  },
+  "dom-w-wysokim-standardzie-finansowanie-pompa-ciepla-klimatyzacja-ID4CdRb": {
+    "price": 1169000,
+    "area": null,
+    "type": "dom"
+  },
+  "duzy-dom-wroclaw-pow-148m2-strych-43m2-5-pokoi-2-lazienki-ogrod-ID4BN5Z": {
+    "price": 1419000,
+    "area": null,
+    "type": "dom"
+  },
+  "68112207": {
+    "price": 1419000,
+    "area": 148,
+    "type": "dom"
+  },
+  "68327661": {
+    "price": 1069000,
+    "area": 118,
+    "type": "dom"
+  },
+  "68327597": {
+    "price": 999000,
+    "area": 87,
     "type": "dom"
   }
 }
