@@ -2794,7 +2794,7 @@
     "type": "dzialka"
   },
   "68254054": {
-    "price": 490000,
+    "price": 530000,
     "area": 875,
     "type": "dzialka"
   },
@@ -4271,6 +4271,36 @@
   "96781231600067": {
     "price": 1114330,
     "area": 113,
+    "type": "dom"
+  },
+  "dom-88-mmozliwe-wykonczenie-do-stanu-dewelopers-ID4Cjw1": {
+    "price": 499000,
+    "area": null,
+    "type": "dom"
+  },
+  "szczodre-domy-dom-4-pok-1-13-ID4vS7U": {
+    "price": 820000,
+    "area": null,
+    "type": "dom"
+  },
+  "68332866": {
+    "price": 1649000,
+    "area": 190,
+    "type": "dom"
+  },
+  "68131957": {
+    "price": 689000,
+    "area": 133,
+    "type": "dom"
+  },
+  "68331992": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68331753": {
+    "price": 827000,
+    "area": 105,
     "type": "dom"
   }
 }
