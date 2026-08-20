@@ -1809,7 +1809,7 @@
     "type": "dom"
   },
   "68208072": {
-    "price": 1290000,
+    "price": 1249000,
     "area": 127,
     "type": "dom"
   },
@@ -2299,7 +2299,7 @@
     "type": "dom"
   },
   "96820807200067": {
-    "price": 1290000,
+    "price": 1249000,
     "area": 127,
     "type": "dom"
   },
@@ -4251,6 +4251,16 @@
   "96832825000067": {
     "price": 1350000,
     "area": 131,
+    "type": "dom"
+  },
+  "szczodre-domy-dom-4-pok-1-11-ID4vS7n": {
+    "price": 820000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-dom-315-m-1000-m-dzialki-polanowice-wroclaw-ID4CI0Z": {
+    "price": 3900000,
+    "area": null,
     "type": "dom"
   }
 }
