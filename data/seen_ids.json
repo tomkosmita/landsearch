@@ -181,7 +181,7 @@
     "area": 1613
   },
   "1aK5uc": {
-    "price": 133997,
+    "price": 140000,
     "area": null,
     "type": "dzialka"
   },
@@ -494,7 +494,7 @@
     "type": "dom"
   },
   "dom-na-sprzedaz-w-radwanicach-219m2-ID4zq2H": {
-    "price": 799000,
+    "price": 899000,
     "area": null,
     "type": "dom"
   },
@@ -4301,6 +4301,21 @@
   "68331753": {
     "price": 827000,
     "area": 105,
+    "type": "dom"
+  },
+  "1bVGtO": {
+    "price": 600,
+    "area": null,
+    "type": "dzialka"
+  },
+  "67358290": {
+    "price": 740000,
+    "area": 134,
+    "type": "dom"
+  },
+  "67487907": {
+    "price": 720000,
+    "area": 133,
     "type": "dom"
   }
 }
