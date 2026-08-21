@@ -4332,5 +4332,30 @@
     "price": 529000,
     "area": null,
     "type": "dom"
+  },
+  "16LEAt": {
+    "price": 160000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "premium-dom-wroclaw-pow-148m2-strych-43m2-5-pokoi-2-lazienki-ogrod-ID4BN5Z": {
+    "price": 1419000,
+    "area": null,
+    "type": "dom"
+  },
+  "68336632": {
+    "price": 1399000,
+    "area": 98,
+    "type": "dom"
+  },
+  "68336187": {
+    "price": 1199000,
+    "area": 118,
+    "type": "dom"
+  },
+  "68335462": {
+    "price": 1149000,
+    "area": 140,
+    "type": "dom"
   }
 }
