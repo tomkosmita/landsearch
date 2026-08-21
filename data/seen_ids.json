@@ -113,7 +113,7 @@
     "area": null
   },
   "1ba9i3": {
-    "price": 409000,
+    "price": 419000,
     "area": null,
     "type": "dzialka"
   },
@@ -2859,7 +2859,7 @@
     "type": "dom"
   },
   "1bCLFE": {
-    "price": 274000,
+    "price": 249000,
     "area": null,
     "type": "dzialka"
   },
@@ -4316,6 +4316,21 @@
   "67487907": {
     "price": 720000,
     "area": 133,
+    "type": "dom"
+  },
+  "1bVJib": {
+    "price": 2000000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-szeregowy-premium-z-garazem-i-ogrodem-ID4CbJJ": {
+    "price": 975000,
+    "area": null,
+    "type": "dom"
+  },
+  "mieszkanie-2-pokoje-z-ogrodem-blisko-wroclawia-ID4ClEY": {
+    "price": 529000,
+    "area": null,
     "type": "dom"
   }
 }
