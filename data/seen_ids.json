@@ -4357,5 +4357,40 @@
     "price": 1149000,
     "area": 140,
     "type": "dom"
+  },
+  "ogrod-21ar-funkcjonalny-dom-kolej-w-poblizu-ID4CJe0": {
+    "price": 1500000,
+    "area": null,
+    "type": "dom"
+  },
+  "59956531": {
+    "price": 1129000,
+    "area": 170,
+    "type": "dom"
+  },
+  "68338046": {
+    "price": 639000,
+    "area": 86,
+    "type": "dom"
+  },
+  "68337933": {
+    "price": 1149000,
+    "area": 140,
+    "type": "dom"
+  },
+  "67812322": {
+    "price": 948253,
+    "area": 105,
+    "type": "dom"
+  },
+  "bip_wroclaw_rzetarg_nieruchomosci_90587_ul_strzegomska_rejon_dz_nr_12_53": {
+    "price": 1450000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "bip_wroclaw_zetarg_nieruchomosci_90627_ul_malezyjska_rejon_dz_nr_5_7_6_6": {
+    "price": 585000,
+    "area": null,
+    "type": "dzialka"
   }
 }
