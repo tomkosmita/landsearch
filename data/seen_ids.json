@@ -4402,5 +4402,25 @@
     "price": 1330000,
     "area": 145,
     "type": "dom"
+  },
+  "twoj-nowy-dom-zaczyna-sie-tutaj-ID4BZdQ": {
+    "price": 685000,
+    "area": null,
+    "type": "dom"
+  },
+  "wolnostojacy-dom-z-duzym-ogrodem-wojszyce-ID4CD1q": {
+    "price": 1749000,
+    "area": null,
+    "type": "dom"
+  },
+  "okazja-bielany-wr-dom-w-zabudowie-blizniaczej-ID4Cbsk": {
+    "price": 1390000,
+    "area": null,
+    "type": "dom"
+  },
+  "68339199": {
+    "price": 1470000,
+    "area": 183,
+    "type": "dom"
   }
 }
