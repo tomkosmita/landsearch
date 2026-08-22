@@ -4339,7 +4339,7 @@
     "type": "dzialka"
   },
   "premium-dom-wroclaw-pow-148m2-strych-43m2-5-pokoi-2-lazienki-ogrod-ID4BN5Z": {
-    "price": 1419000,
+    "price": 1450000,
     "area": null,
     "type": "dom"
   },
@@ -4384,13 +4384,18 @@
     "type": "dom"
   },
   "bip_wroclaw_rzetarg_nieruchomosci_90587_ul_strzegomska_rejon_dz_nr_12_53": {
-    "price": 1450000,
+    "price": null,
     "area": null,
     "type": "dzialka"
   },
   "bip_wroclaw_zetarg_nieruchomosci_90627_ul_malezyjska_rejon_dz_nr_5_7_6_6": {
-    "price": 585000,
+    "price": null,
     "area": null,
     "type": "dzialka"
+  },
+  "14Ti4d": {
+    "price": 849000,
+    "area": null,
+    "type": "dom"
   }
 }
