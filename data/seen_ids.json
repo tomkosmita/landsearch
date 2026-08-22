@@ -4397,5 +4397,10 @@
     "price": 849000,
     "area": null,
     "type": "dom"
+  },
+  "67559230": {
+    "price": 1330000,
+    "area": 145,
+    "type": "dom"
   }
 }
