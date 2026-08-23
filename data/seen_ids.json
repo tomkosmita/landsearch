@@ -153,8 +153,9 @@
     "area": null
   },
   "1bdP3c": {
-    "price": 419000,
-    "area": null
+    "price": 369000,
+    "area": null,
+    "type": "dzialka"
   },
   "96792806700067": {
     "price": 283440,
@@ -4445,6 +4446,21 @@
   },
   "klimatyczny-dom-wolnostojacy-5km-do-wroclawia-ID4CFga": {
     "price": 1470000,
+    "area": null,
+    "type": "dom"
+  },
+  "1bZfH0": {
+    "price": 260000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-na-zach-przedmiesciach-wroclawia-w-wilkszynie-ID4ClbP": {
+    "price": 1390000,
+    "area": null,
+    "type": "dom"
+  },
+  "bezposrednio-dom-wroclaw-148m2-duzy-strych-5-pokoi-2-lazienki-ogrod-ID4BN5Z": {
+    "price": 1450000,
     "area": null,
     "type": "dom"
   }
