@@ -754,7 +754,7 @@
     "type": "dom"
   },
   "sprzedaz-dom-dwurodzinny-brzeg-dolny-fabryczne-ID4BVrT": {
-    "price": 670000,
+    "price": 660000,
     "area": null,
     "type": "dom"
   },
@@ -4431,6 +4431,21 @@
   "67707796": {
     "price": 1420853,
     "area": 132,
+    "type": "dom"
+  },
+  "przytulny-dom-z-ogrodem-czeka-ID4rmgC": {
+    "price": 967460,
+    "area": null,
+    "type": "dom"
+  },
+  "duzy-dom-178-m-5-sypialni-2-miejsca-w-cenie-i-karwiany-oltaszyn-ID4BNaP": {
+    "price": 1249000,
+    "area": null,
+    "type": "dom"
+  },
+  "klimatyczny-dom-wolnostojacy-5km-do-wroclawia-ID4CFga": {
+    "price": 1470000,
+    "area": null,
     "type": "dom"
   }
 }
