@@ -2375,7 +2375,7 @@
     "type": "dom"
   },
   "67986275": {
-    "price": 827000,
+    "price": 799000,
     "area": 104,
     "type": "dom"
   },
@@ -2616,7 +2616,7 @@
   },
   "68246812": {
     "price": 898915,
-    "area": 101,
+    "area": 85,
     "type": "dom"
   },
   "68246813": {
@@ -3665,7 +3665,7 @@
     "type": "dom"
   },
   "nowoczesny-dom-z-garazem-i-ogrodem-ID4BW3J": {
-    "price": 840080,
+    "price": 799000,
     "area": null,
     "type": "dom"
   },
@@ -3685,7 +3685,7 @@
     "type": "dom"
   },
   "96829174900067": {
-    "price": 950000,
+    "price": 899999,
     "area": 103,
     "type": "dom"
   },
@@ -4478,5 +4478,25 @@
     "price": 1760000,
     "area": 370,
     "type": "dom"
+  },
+  "dzialka-budowlana-1098-m-w-atrakcyjnej-lokalizacji-ID4CLhI": {
+    "price": 249000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-86-m2-5-pokoje-garderob-2-lazienki-3-miejsca-parkingowe-ID4v9OU": {
+    "price": 1065000,
+    "area": null,
+    "type": "dom"
+  },
+  "68343307": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "bip_wroclaw_chomosci_90628_ul_miloszycka_rejon_dz_nr_10_13_10_14_i_10_15": {
+    "price": 3056000,
+    "area": null,
+    "type": "dzialka"
   }
 }
