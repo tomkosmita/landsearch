@@ -3875,7 +3875,7 @@
     "type": "dzialka"
   },
   "1bPvqO": {
-    "price": 414900,
+    "price": 409000,
     "area": null,
     "type": "dzialka"
   },
@@ -4495,8 +4495,23 @@
     "type": "dom"
   },
   "bip_wroclaw_chomosci_90628_ul_miloszycka_rejon_dz_nr_10_13_10_14_i_10_15": {
-    "price": 3056000,
+    "price": null,
     "area": null,
     "type": "dzialka"
+  },
+  "nowy-dom-super-oferta-dla-rodzin-ID4BWNc": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-dom-w-zabudowie-blizniaczej-103-m2-energooszczedny-ID4CxNP": {
+    "price": 899999,
+    "area": null,
+    "type": "dom"
+  },
+  "68344866": {
+    "price": 999000,
+    "area": 90,
+    "type": "dom"
   }
 }
