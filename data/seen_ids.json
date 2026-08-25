@@ -4513,5 +4513,10 @@
     "price": 999000,
     "area": 90,
     "type": "dom"
+  },
+  "4m-wolnostojacy-duzy-taras-miejsca-postojowe-tylko-u-nas-ID4CuW1": {
+    "price": 1299000,
+    "area": null,
+    "type": "dom"
   }
 }
