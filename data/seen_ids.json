@@ -4558,5 +4558,20 @@
     "price": 948253,
     "area": 105,
     "type": "dom"
+  },
+  "uwaga-zmiana-ceny-piekny-dom-z-dobra-energia-i-dusza-ID4CaB2": {
+    "price": 1075000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-cenie-mieszkania-619-000-zl-3-km-od-oltaszyn-krzyki-wysoka-ID4CMgD": {
+    "price": 619000,
+    "area": null,
+    "type": "dom"
+  },
+  "96645538800067": {
+    "price": 899000,
+    "area": 121,
+    "type": "dom"
   }
 }
