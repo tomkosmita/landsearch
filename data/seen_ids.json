@@ -3836,7 +3836,7 @@
   },
   "67429259": {
     "price": 1190000,
-    "area": 95,
+    "area": 96,
     "type": "dom"
   },
   "96742925900067": {
@@ -4517,6 +4517,46 @@
   "4m-wolnostojacy-duzy-taras-miejsca-postojowe-tylko-u-nas-ID4CuW1": {
     "price": 1299000,
     "area": null,
+    "type": "dom"
+  },
+  "dzialka-budowlana-891-m-wroclaw-media-blizniak-las-ID4BQre": {
+    "price": 499000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68125056": {
+    "price": 499000,
+    "area": 891,
+    "type": "dzialka"
+  },
+  "96812505600067": {
+    "price": 499000,
+    "area": 891,
+    "type": "dzialka"
+  },
+  "68348096": {
+    "price": 1284000,
+    "area": 108,
+    "type": "dom"
+  },
+  "68346912": {
+    "price": 1200000,
+    "area": 139,
+    "type": "dom"
+  },
+  "68346821": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68032516": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "67707734": {
+    "price": 948253,
+    "area": 105,
     "type": "dom"
   }
 }
