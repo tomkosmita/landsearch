@@ -4573,5 +4573,15 @@
     "price": 899000,
     "area": 121,
     "type": "dom"
+  },
+  "dzialka-budowlana-rogow-sobocki-ID4CMVT": {
+    "price": 299000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1bZSas": {
+    "price": 3950000,
+    "area": null,
+    "type": "dom"
   }
 }
