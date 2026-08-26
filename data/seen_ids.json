@@ -4583,5 +4583,15 @@
     "price": 3950000,
     "area": null,
     "type": "dom"
+  },
+  "68351853": {
+    "price": 799000,
+    "area": 105,
+    "type": "dom"
+  },
+  "bip_wroclaw_arg_nieruchomosci_91680_ul_szczecinska_rejon_dz_nr_61_1_61_2": {
+    "price": 200000,
+    "area": null,
+    "type": "dzialka"
   }
 }
