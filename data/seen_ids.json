@@ -1810,7 +1810,7 @@
     "type": "dom"
   },
   "68208072": {
-    "price": 1249000,
+    "price": 1190000,
     "area": 127,
     "type": "dom"
   },
@@ -2300,7 +2300,7 @@
     "type": "dom"
   },
   "96820807200067": {
-    "price": 1249000,
+    "price": 1190000,
     "area": 127,
     "type": "dom"
   },
@@ -3570,7 +3570,7 @@
     "type": "dom"
   },
   "68291749": {
-    "price": 899999,
+    "price": 869999,
     "area": 103,
     "type": "dom"
   },
@@ -4160,7 +4160,7 @@
     "type": "dom"
   },
   "68325714": {
-    "price": 1500000,
+    "price": 1450000,
     "area": 180,
     "type": "dom"
   },
@@ -4617,6 +4617,46 @@
   "68353845": {
     "price": 1449000,
     "area": 119,
+    "type": "dom"
+  },
+  "wolnostojacy-dom-na-dzialce-2000m2-smardzow-ID4CCdQ": {
+    "price": 1990000,
+    "area": null,
+    "type": "dom"
+  },
+  "1c3dOO": {
+    "price": 3200000,
+    "area": null,
+    "type": "dom"
+  },
+  "blizniak-4m-taras-ogrod-garaz-tylko-u-nas-ID4CDom": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-segment-blizniaka-121-8m2-oltaszyn-wroclaw-ID4ziVm": {
+    "price": 1370000,
+    "area": null,
+    "type": "dom"
+  },
+  "67406645": {
+    "price": 850000,
+    "area": 92,
+    "type": "dom"
+  },
+  "68356292": {
+    "price": 950000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68354996": {
+    "price": 930000,
+    "area": 138,
+    "type": "dom"
+  },
+  "68354825": {
+    "price": 970000,
+    "area": 138,
     "type": "dom"
   }
 }
