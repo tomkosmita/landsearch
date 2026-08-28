@@ -4658,5 +4658,25 @@
     "price": 970000,
     "area": 138,
     "type": "dom"
+  },
+  "dom-w-zabudowie-blizniaczej-92-1-m-w-wilkszynie-ID4yPxX": {
+    "price": 850000,
+    "area": null,
+    "type": "dom"
+  },
+  "68358299": {
+    "price": 1062950,
+    "area": 104,
+    "type": "dom"
+  },
+  "68358298": {
+    "price": 1349790,
+    "area": 111,
+    "type": "dom"
+  },
+  "96835829900067": {
+    "price": 1062950,
+    "area": 104,
+    "type": "dom"
   }
 }
