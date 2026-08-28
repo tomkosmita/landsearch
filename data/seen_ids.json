@@ -1800,7 +1800,7 @@
     "type": "dom"
   },
   "parterowy-wolnostojacy-dom-dzialka-970-m2-brzezina-3km-od-wroclawia-ID4Cc2c": {
-    "price": 1190000,
+    "price": 1249000,
     "area": null,
     "type": "dom"
   },
@@ -1810,7 +1810,7 @@
     "type": "dom"
   },
   "68208072": {
-    "price": 1190000,
+    "price": 1249000,
     "area": 127,
     "type": "dom"
   },
@@ -1861,7 +1861,7 @@
   },
   "68209106": {
     "price": 1200000,
-    "area": 139,
+    "area": 140,
     "type": "dom"
   },
   "68208973": {
@@ -1975,7 +1975,7 @@
     "type": "dom"
   },
   "68142819": {
-    "price": 840080,
+    "price": 799000,
     "area": 104,
     "type": "dom"
   },
@@ -4677,6 +4677,71 @@
   "96835829900067": {
     "price": 1062950,
     "area": 104,
+    "type": "dom"
+  },
+  "wroclaw-lutynia-grunt-budowlany-ID4CPKP": {
+    "price": 299999,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1aI5FW": {
+    "price": 415000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "wroclaw-suchy-dwor-piekny-dom-wolnostojacy-bez-prowizji-ID4CPLp": {
+    "price": 1800000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-156-mkw-duza-dzialka-dochod-pasywny-ID4Ct1R": {
+    "price": 1590000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-charakterem-spokojna-okolica-dzialka-670m2-ID4CPad": {
+    "price": 949000,
+    "area": null,
+    "type": "dom"
+  },
+  "wykonczony-dom-pietrzykowice-2-lazienki-garaz-375-5-m2-ogrodu-ID4COSs": {
+    "price": 1344999,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-wsrod-zieleni-10-min-od-centrum-ID4CP6d": {
+    "price": 3000000,
+    "area": null,
+    "type": "dom"
+  },
+  "ogrod-taras-dom-blizniak-4pok-kielczow-ID4COxO": {
+    "price": 1088999,
+    "area": null,
+    "type": "dom"
+  },
+  "ostatni-dom-premium-129-m-5-pokoi-garaz-ogrod-nowoczesny-ID4CPwD": {
+    "price": 1259000,
+    "area": null,
+    "type": "dom"
+  },
+  "68360899": {
+    "price": 799000,
+    "area": 91,
+    "type": "dom"
+  },
+  "68359371": {
+    "price": 1099000,
+    "area": 152,
+    "type": "dom"
+  },
+  "68355290": {
+    "price": 729000,
+    "area": 78,
+    "type": "dom"
+  },
+  "96836089900067": {
+    "price": 799000,
+    "area": 91,
     "type": "dom"
   }
 }
