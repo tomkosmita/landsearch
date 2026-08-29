@@ -158,8 +158,9 @@
     "type": "dzialka"
   },
   "96792806700067": {
-    "price": 283440,
-    "area": 744
+    "price": 279900,
+    "area": 744,
+    "type": "dzialka"
   },
   "1bdVjF": {
     "price": 407000,
@@ -4110,7 +4111,7 @@
     "type": "dom"
   },
   "19JwaR": {
-    "price": 370000,
+    "price": 369999,
     "area": null,
     "type": "dzialka"
   },
@@ -4762,6 +4763,26 @@
   "96793639300067": {
     "price": 999000,
     "area": 165,
+    "type": "dom"
+  },
+  "dom-w-ktorym-kazdy-znajdzie-swoj-kat-ID4CLgw": {
+    "price": 1589000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-z-pieknym-ogrodem-wroclaw-krzyki-bienkowice-ID4CDVu": {
+    "price": 2750000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-blizniak-wroclaw-pow-calk-193m2-zielona-okolica-spokoj-i-cisza-ID4BN5Z": {
+    "price": 1519000,
+    "area": null,
+    "type": "dom"
+  },
+  "96815863400067": {
+    "price": 1800000,
+    "area": 150,
     "type": "dom"
   }
 }
