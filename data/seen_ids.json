@@ -3915,7 +3915,7 @@
     "type": "dom"
   },
   "68313185": {
-    "price": 1549000,
+    "price": 1495000,
     "area": 194,
     "type": "dom"
   },
@@ -4747,6 +4747,21 @@
   "67604505": {
     "price": 1374999,
     "area": 157,
+    "type": "dom"
+  },
+  "wroclaw-kobierzyce-pelczyce-dom-wolnostojacy-ID4CPMq": {
+    "price": 1850000,
+    "area": null,
+    "type": "dom"
+  },
+  "68361252": {
+    "price": 899000,
+    "area": 121,
+    "type": "dom"
+  },
+  "96793639300067": {
+    "price": 999000,
+    "area": 165,
     "type": "dom"
   }
 }
