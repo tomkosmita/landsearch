@@ -6,6 +6,7 @@ scraper.brussels.config.
 """
 
 import logging
+import re
 import time
 from typing import List, Optional
 from urllib.parse import urljoin, urlparse, urlencode, parse_qsl, urlunparse
@@ -163,6 +164,13 @@ class HtmlSource(KotSource):
             id_attr = self.cfg.get("id_attr")
             if id_attr:
                 raw_id = card.get(id_attr)
+            # Some portals put a stable id mid-path (kotzoeker:
+            # /en/listing/<id>/<slug>), where the last segment is only a slug.
+            id_regex = self.cfg.get("id_url_regex")
+            if not raw_id and id_regex:
+                m = re.search(id_regex, url)
+                if m:
+                    raw_id = m.group(1)
             return KotListing(
                 id=f"{self.name}:{raw_id or self._listing_id(url)}",
                 portal=self.name,

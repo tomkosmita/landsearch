@@ -155,17 +155,23 @@ SOURCES = {
     "kotzoeker": {
         "enabled": True, "kind": "json", "label": "Kotzoeker",
         "base": "https://www.kotzoeker.be",
-        "urls": ["https://www.kotzoeker.be/en/flat-search/bruxelles"],
-        "pages": 2, "page_param": "page",
-        # Next.js app; listings live under initialState.
+        # URLs supplied by the user. Note the city segment is "brussels", not
+        # the French "bruxelles" we had guessed. flat-overview is listed first:
+        # an overview page is the likelier server-rendered list, while
+        # flat-search is the interactive (JS) view.
+        "urls": ["https://www.kotzoeker.be/en/flat-overview/brussels",
+                 "https://www.kotzoeker.be/en/flat-search/brussels"],
+        "pages": 1,
         "json_paths": [["props", "pageProps", "initialState", "api", "listings"],
                        ["props", "pageProps", "initialState", "api", "results"],
                        ["props", "pageProps", "initialState", "api"]],
         "json_fields": {"id": ["id"], "title": ["title"], "url": ["url"],
                         "price": ["price"], "commune": ["city"],
                         "surface": ["surface"]},
-        # HTML fallback: probe found div.chakra-linkbox.css-hszkpb (10 siblings).
-        # The css-* half is an emotion hash that changes on every redeploy, so
+        # Detail URLs look like /en/listing/2JWCUkQkkA/studio-a-louer-a-saint-gilles
+        # — the id is mid-path, so the trailing slug must not be used as the id.
+        "id_url_regex": r"/listing/([^/]+)/",
+        # css-* suffixes are emotion hashes that change on every redeploy, so
         # match only the stable chakra-linkbox part.
         "card": ["div.chakra-linkbox"],
         "fields": {
