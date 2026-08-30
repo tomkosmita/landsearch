@@ -14,7 +14,8 @@ from scraper.brussels import seen as state
 from scraper.brussels.config import (AVAILABLE_FROM, AVAILABLE_TO, MAX_PRICE_EUR,
                                      NOTIFY_CAP_PER_RUN, enabled_sources)
 from scraper.brussels.models import KotListing
-from scraper.brussels.notify import send_listing, send_scan_summary
+from scraper.brussels.notify import (format_message, send_listing,
+                                     send_scan_summary, summary_text)
 from scraper.brussels.sources.html_source import HtmlSource
 from scraper.brussels.sources.json_source import JsonSource
 
@@ -75,6 +76,19 @@ def collect() -> Tuple[List[KotListing], Dict[str, int], List[str]]:
         listings.extend(found)
 
     return listings, counts, failed
+
+
+PREVIEW_COUNT = 6
+
+
+def _preview(kept, counts, failed) -> None:
+    """Render what would actually be sent, so it can be reviewed before going live."""
+    logger.info("--- PREVIEW: first %d messages as they would appear ---",
+                PREVIEW_COUNT)
+    for listing in kept[:PREVIEW_COUNT]:
+        logger.info("\n%s\n%s", "-" * 60, format_message(listing))
+    logger.info("\n%s\nSUMMARY MESSAGE:\n%s",
+                "-" * 60, summary_text(counts, len(kept), 0, seeded=True, failed=failed))
 
 
 def main() -> None:
@@ -157,6 +171,7 @@ def main() -> None:
         logger.info("DRY RUN — state not saved, nothing sent. "
                     "kept=%d, would-notify<=%d, failed=%s", len(kept),
                     min(len(kept), NOTIFY_CAP_PER_RUN), failed or "none")
+        _preview(kept, counts, failed)
         return
 
     state.save(seen)

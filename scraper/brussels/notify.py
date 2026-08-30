@@ -93,16 +93,14 @@ def send_listing(
     return send_message(format_message(listing, changes), token, chat_id)
 
 
-def send_scan_summary(
+def summary_text(
     portal_counts: Dict[str, int],
     kept: int,
     sent: int,
-    token: str,
-    chat_id: str,
     seeded: bool = False,
     deferred: int = 0,
     failed: Optional[List[str]] = None,
-) -> None:
+) -> str:
     if seeded:
         lines = ["🇧🇪 <b>Bruksela — baza zainicjowana</b>",
                  "Pierwszy skan: zapisuję stan, nie wysyłam pojedynczych ofert."]
@@ -119,6 +117,19 @@ def send_scan_summary(
         lines.append(f"⏭️ Odłożone na następny skan (limit): {deferred}")
     if failed:
         lines.append(f"❌ Błąd źródła: {', '.join(sorted(failed))}")
+    return "\n".join(lines)
 
-    if not send_message("\n".join(lines), token, chat_id):
+
+def send_scan_summary(
+    portal_counts: Dict[str, int],
+    kept: int,
+    sent: int,
+    token: str,
+    chat_id: str,
+    seeded: bool = False,
+    deferred: int = 0,
+    failed: Optional[List[str]] = None,
+) -> None:
+    text = summary_text(portal_counts, kept, sent, seeded, deferred, failed)
+    if not send_message(text, token, chat_id):
         logger.warning("Brussels scan summary was not delivered")
