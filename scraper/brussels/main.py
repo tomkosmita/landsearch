@@ -78,15 +78,34 @@ def collect() -> Tuple[List[KotListing], Dict[str, int], List[str]]:
     return listings, counts, failed
 
 
-PREVIEW_COUNT = 6
+PREVIEW_PER_PORTAL = 2
 
 
 def _preview(kept, counts, failed) -> None:
-    """Render what would actually be sent, so it can be reviewed before going live."""
-    logger.info("--- PREVIEW: first %d messages as they would appear ---",
-                PREVIEW_COUNT)
-    for listing in kept[:PREVIEW_COUNT]:
-        logger.info("\n%s\n%s", "-" * 60, format_message(listing))
+    """Render what would actually be sent, so it can be reviewed before going live.
+
+    Samples every portal rather than the first N listings: taking the head of
+    the list only ever shows the portal that happens to run first, which leaves
+    the other parsers unverified — exactly the ones most likely to be wrong.
+    """
+    logger.info("--- PREVIEW: up to %d messages per portal ---", PREVIEW_PER_PORTAL)
+    by_portal: Dict[str, List[KotListing]] = {}
+    for listing in kept:
+        by_portal.setdefault(listing.portal, []).append(listing)
+
+    for portal in sorted(by_portal):
+        group = by_portal[portal]
+        logger.info("\n===== %s (%d listings kept) =====", portal, len(group))
+        for listing in group[:PREVIEW_PER_PORTAL]:
+            logger.info("\n%s\n%s", "-" * 60, format_message(listing))
+        # Field coverage exposes a parser that "works" but returns empty fields.
+        missing_price = sum(1 for x in group if x.price is None)
+        missing_commune = sum(1 for x in group if not x.commune)
+        missing_area = sum(1 for x in group if x.surface is None)
+        missing_date = sum(1 for x in group if x.available_from is None)
+        logger.info("  %s field gaps of %d: price=%d commune=%d area=%d date=%d",
+                    portal, len(group), missing_price, missing_commune,
+                    missing_area, missing_date)
     logger.info("\n%s\nSUMMARY MESSAGE:\n%s",
                 "-" * 60, summary_text(counts, len(kept), 0, seeded=True, failed=failed))
 
