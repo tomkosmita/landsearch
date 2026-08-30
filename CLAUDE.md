@@ -92,31 +92,35 @@ stronę (partner wystawia feed) i nie przyjmuje nowych partnerów.
   jego URL-i. Bez tego 13 niedostępnych portali to ~30 min samego backoffu.
 - `scraper/brussels/seen.py` diffuje `("price", "available")`, nie `("price", "area")`.
 
-### Stan portali — żywy dry-run (run 33284082502, 2026-08-30)
+### Stan portali — żywy dry-run (run 33284767448, 2026-08-30)
 
-**274 oferty z 13 portali, 198 po filtrach.** Cztery źródła dają 271 z 274 ofert.
+**322 oferty z 12 aktywnych portali, 216 po filtrach.** Przebieg 2,5 min, zielony.
 
 | Portal | Ofert | Stan |
 |---|---|---|
-| **Immoweb** | 120 | ✅ Cloudflare **nie** zablokował. JSON się nie znalazł — działa fallback na karty HTML. |
-| **Brukot** | 91 | ✅ `article.listing-teaser` + `data-listing-id`. Cena **bez opłat** („excl. charges"), więc `charges=None`, `price==rent` — oferta za 700 € realnie kosztuje więcej. |
+| **Immoweb** | 120 | ✅ Cloudflare **nie** zablokował. JSON się nie znajduje — działa fallback na karty HTML. |
+| **Brukot** | 91 | ✅ `article.listing-teaser` + `data-listing-id`. Cena **bez opłat** („excl. charges"): `charges=None`, `price==rent`, więc oferta za 700 € realnie kosztuje więcej. |
 | **Immovlan** | 40 | ✅ generyk HTML trafił bez poprawek |
+| **Appartager** | 30 | ✅ `div.listing_item` (znalezione autodetekcją). Uwaga: `li.with-price` to widget „średnia cena w gminie", **nie** oferty. |
 | **Erasmus Play** | 20 | ✅ generyk JSON trafił bez poprawek |
-| Kotplace | 2 | ⚠️ `/en` łapie 2 karty; `/annonces` bez kart, `/fr/annonces` 404. `robots.txt` **zabrania `/annonces-json`** — nie ruszamy. Brak właściwego URL-a listy. |
-| Spotahome | 1 | ⚠️ tylko 1 karta — selektor prawie na pewno łapie coś innego niż oferty |
+| Kotzoeker | ? | ⚠️ Next.js + Chakra. `div.chakra-linkbox` jako fallback — celowo **bez** sufiksu `css-*`, bo to hash emotion zmieniany przy każdym deployu. |
+| Kotplace | 0–2 | ⚠️ Pierwszy probe przeszedł, drugi dał **timeout na każdym żądaniu** łącznie z `robots.txt` → throttling IP runnera. Fast-fail ogranicza koszt do jednej wolnej próby. `robots.txt` zabrania `/annonces-json` i `?prix_max=` — używamy gołej ścieżki `/en/ads/brussels` i filtrujemy cenę u siebie. |
+| Spotahome | 1 | ⚠️ selektor łapie coś innego niż oferty |
 | Zimmo | 0 | ❌ **403** już na stronie głównej |
 | 2ememain | 0 | ❌ **404** — zły URL kategorii |
-| Skot | 0 | ❌ klasy zaciemnione (`class="G"`, `class="M"`), oferty renderowane przez JS. `robots.txt` zabrania `/json`. |
-| Kotzoeker | 0 | ❌ brak trafień selektorów |
-| Student.be | 0 | ❌ React-on-Rails. Klucz `ads` w payloadzie to **reklamy**, nie oferty. `robots.txt` **zabrania URL-i z query stringiem** (`disallow: /*?`) → `pages: 1`, paginacja przez ścieżkę. |
+| Student.be | 0 | ❌ React-on-Rails. Klucz `ads` w payloadzie to **reklamy**. `robots.txt` zabrania URL-i z query stringiem → `pages: 1`. |
 | HousingAnywhere | 0 | ❌ brak JSON-a i brak trafień selektorów |
+| ~~Skot~~ | — | 🚫 `enabled: False`. Autodetekcja nie znalazła **żadnej** powtarzalnej struktury serwerowej → oferty renderuje JS (klasy zaciemnione do pojedynczych liter). Wymaga Playwrighta. `robots.txt` zabrania `/json`. |
 
 **Zasada: przed dopisaniem selektorów przeczytaj `robots.txt` z logu probe'a.**
-Trzy portale mają zakazy wykluczające oczywiste podejście (endpoint JSON u Kotplace
-i Skot, paginacja przez query string u Student.be).
+Kilka portali ma zakazy wykluczające oczywiste podejście (endpoint JSON u Kotplace
+i Skot, query string u Student.be i Kotplace).
 
-Portal, który zostaje na 0 po kolejnym podejściu, ustawiamy na `enabled: False`
-zamiast zostawiać go, żeby marnował czas przebiegu.
+**Autodetekcja siatki ofert** (`find_repeated_structures` w `probe.py`) rozgryzła
+Appartager i Kotzoeker bez ręcznego oglądania HTML-a: szuka rodzeństwa o wspólnym
+`tag.klasa`, gdzie każdy element ma link, i promuje grupy zawierające cenę. Uwaga —
+promowanie po cenie potrafi wypchnąć na górę widget cenowy zamiast ofert, więc
+wynik trzeba przejrzeć, a nie brać pierwszy z brzegu.
 
 ### Zmiany w kodzie współdzielonym (wstecznie zgodne)
 
