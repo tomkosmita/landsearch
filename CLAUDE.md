@@ -92,9 +92,10 @@ stronę (partner wystawia feed) i nie przyjmuje nowych partnerów.
   jego URL-i. Bez tego 13 niedostępnych portali to ~30 min samego backoffu.
 - `scraper/brussels/seen.py` diffuje `("price", "available")`, nie `("price", "area")`.
 
-### Stan portali — żywy dry-run (run 33284767448, 2026-08-30)
+### Stan portali — żywy dry-run (run 33285192295, 2026-08-30)
 
-**322 oferty z 12 aktywnych portali, 216 po filtrach.** Przebieg 2,5 min, zielony.
+**205 ofert po filtrach z 11 aktywnych portali.** Przebieg 4,5 min, zielony.
+Spadek z 216 to działanie nowego filtru gminy — odsiewa oferty spoza Brukseli.
 
 | Portal | Ofert | Stan |
 |---|---|---|
@@ -103,14 +104,27 @@ stronę (partner wystawia feed) i nie przyjmuje nowych partnerów.
 | **Immovlan** | 40 | ✅ generyk HTML trafił bez poprawek |
 | **Appartager** | 30 | ✅ `div.listing_item` (znalezione autodetekcją). Uwaga: `li.with-price` to widget „średnia cena w gminie", **nie** oferty. |
 | **Erasmus Play** | 20 | ✅ generyk JSON trafił bez poprawek |
-| Kotzoeker | ? | ⚠️ Next.js + Chakra. `div.chakra-linkbox` jako fallback — celowo **bez** sufiksu `css-*`, bo to hash emotion zmieniany przy każdym deployu. |
+| ~~Kotzoeker~~ | — | 🚫 `enabled: False`. Probe sprawdził też `flat-overview` (URL od użytkownika) — `__NEXT_DATA__` niesie **pusty** `initialState.api`, oferty dociągane po stronie klienta. Tak samo jak Skot. |
 | Kotplace | 0–2 | ⚠️ Pierwszy probe przeszedł, drugi dał **timeout na każdym żądaniu** łącznie z `robots.txt` → throttling IP runnera. Fast-fail ogranicza koszt do jednej wolnej próby. `robots.txt` zabrania `/annonces-json` i `?prix_max=` — używamy gołej ścieżki `/en/ads/brussels` i filtrujemy cenę u siebie. |
 | Spotahome | 1 | ⚠️ selektor łapie coś innego niż oferty |
-| Zimmo | 0 | ❌ **403** już na stronie głównej |
+| Zimmo | 0 | ❌ **403** już na stronie głównej. URL wyszukiwania od użytkownika wpisany (filtr base64: wynajem, Bruksela, APARTMENT+ROOM, 300–1000 €, bez parametrów sesyjnych), ale blokada dotyczy żądania, nie ścieżki. |
 | 2ememain | 0 | ❌ **404** — zły URL kategorii |
 | Student.be | 0 | ❌ React-on-Rails. Klucz `ads` w payloadzie to **reklamy**. `robots.txt` zabrania URL-i z query stringiem → `pages: 1`. |
 | HousingAnywhere | 0 | ❌ brak JSON-a i brak trafień selektorów |
 | ~~Skot~~ | — | 🚫 `enabled: False`. Autodetekcja nie znalazła **żadnej** powtarzalnej struktury serwerowej → oferty renderuje JS (klasy zaciemnione do pojedynczych liter). Wymaga Playwrighta. `robots.txt` zabrania `/json`. |
+
+### Filtr lokalizacji
+
+`parsing.is_outside_brussels()` odsiewa oferty spoza Brukseli. **Celowo
+asymetryczny**: odrzuca tylko to, co da się jednoznacznie rozpoznać jako gdzie
+indziej (belgijski kod pocztowy poza 1000–1210 albo nazwa innego miasta
+studenckiego bez żadnej brukselskiej gminy obok). Nieznana lokalizacja
+przechodzi — spójnie z zasadą „brak danych nie odrzuca". Zna wszystkie 19 gmin
+Regionu Stołecznego w obu językach urzędowych.
+
+Jest potrzebny, bo `robots.txt` Student.be zabrania URL-i z query stringiem, więc
+jedyny dozwolony adres zwraca oferty z **całej Belgii** — bez tego filtru pokoje
+z Leuven i Gandawy szłyby na Telegram jako trafienia.
 
 **Zasada: przed dopisaniem selektorów przeczytaj `robots.txt` z logu probe'a.**
 Kilka portali ma zakazy wykluczające oczywiste podejście (endpoint JSON u Kotplace
