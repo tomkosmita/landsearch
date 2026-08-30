@@ -36,7 +36,41 @@ def looks_like_listing(item: dict) -> bool:
         return False
     return any(k in item for k in _PRICE_MARKERS)
 
-_NUXT_RE = re.compile(r"window\.__NUXT__\s*=\s*(\{.*?\});?\s*</script>", re.DOTALL)
+# JS assignments that carry a page's data payload. window.classified is what
+# Immoweb injects on a listing detail page.
+_JS_ASSIGN_RES = (
+    re.compile(r"window\.__NUXT__\s*=\s*(\{.*?\});?\s*</script>", re.DOTALL),
+    re.compile(r"window\.classified\s*=\s*(\{.*?\});?\s*</script>", re.DOTALL),
+    re.compile(r"window\.__INITIAL_STATE__\s*=\s*(\{.*?\});?\s*</script>", re.DOTALL),
+)
+
+
+def iter_json_blobs(html: str):
+    """Yield every JSON payload embedded in the page.
+
+    Shared with probe.py so reconnaissance and scraping look at exactly the
+    same places — a blob the probe cannot see is one the scraper cannot use.
+    """
+    soup = BeautifulSoup(html, "lxml")
+    for script in soup.find_all("script"):
+        text = (script.string or script.get_text() or "").strip()
+        if not text:
+            continue
+        script_type = (script.get("type") or "").lower()
+        if script.get("id") == "__NEXT_DATA__" or script_type in (
+            "application/json", "application/ld+json"
+        ):
+            try:
+                yield json.loads(text), f"script id={script.get('id')!r} type={script_type!r}"
+            except (json.JSONDecodeError, ValueError):
+                continue
+    for regex in _JS_ASSIGN_RES:
+        m = regex.search(html)
+        if m:
+            try:
+                yield json.loads(m.group(1)), f"js assignment {regex.pattern[:28]}"
+            except (json.JSONDecodeError, ValueError):
+                continue
 
 
 def dig(obj: Any, path: List[str]) -> Any:
@@ -79,26 +113,8 @@ class JsonSource(HtmlSource):
         return []
 
     def _json_blobs(self, html: str):
-        soup = BeautifulSoup(html, "lxml")
-        for script in soup.find_all("script"):
-            text = script.string or script.get_text() or ""
-            text = text.strip()
-            script_type = (script.get("type") or "").lower()
-            if not text:
-                continue
-            if script.get("id") == "__NEXT_DATA__" or script_type in (
-                "application/json", "application/ld+json"
-            ):
-                try:
-                    yield json.loads(text)
-                except (json.JSONDecodeError, ValueError):
-                    continue
-        m = _NUXT_RE.search(html)
-        if m:
-            try:
-                yield json.loads(m.group(1))
-            except (json.JSONDecodeError, ValueError):
-                pass
+        for blob, _origin in iter_json_blobs(html):
+            yield blob
 
     def _find_listing_list(self, obj: Any, depth: int = 0) -> List[dict]:
         """Recursive hunt for a list of listing-shaped dicts."""

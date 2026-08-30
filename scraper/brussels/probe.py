@@ -21,6 +21,7 @@ from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 
 from scraper.brussels.config import REQUEST_DELAY_SEC, SOURCES
+from scraper.brussels.sources.json_source import iter_json_blobs
 from scraper.http import get_html, make_session
 
 logging.basicConfig(level=logging.INFO,
@@ -146,20 +147,13 @@ def probe_url(session, name: str, cfg: dict, url: str) -> None:
 
     print("\n-- JSON key paths (depth 2) --")
     found_any = False
-    for s in scripts:
-        body = (s.string or s.get_text() or "").strip()
-        if not body or not body.startswith(("{", "[")):
-            continue
-        try:
-            data = json.loads(body)
-        except (json.JSONDecodeError, ValueError):
-            continue
+    for blob, origin in iter_json_blobs(html):
         found_any = True
-        print(f"  [script id={s.get('id')!r} type={s.get('type')!r}]")
-        for line in key_paths(data)[:60]:
+        print(f"  [{origin}]")
+        for line in key_paths(blob)[:60]:
             print(line)
     if not found_any:
-        print("  no parseable JSON in any script tag")
+        print("  no parseable JSON anywhere (script tags or JS assignments)")
 
     print("\n-- candidate CSS selectors --")
     for selector in cfg.get("card", []):
@@ -168,39 +162,62 @@ def probe_url(session, name: str, cfg: dict, url: str) -> None:
         except Exception as e:
             print(f"  {selector!r}: bad selector ({e})")
             continue
-        if hits:
-            print(f"  {selector!r}: {len(hits)} cards with links")
+        if not hits:
+            continue
+        # A selector matching many "cards" none of which contain a price is a
+        # false trail: it is hitting page furniture, not offers.
+        priced = sum(1 for c in hits if "€" in c.get_text() or "EUR" in c.get_text())
+        flag = "  <-- NO PRICES, almost certainly not offers" if priced == 0 else ""
+        print(f"  {selector!r}: {len(hits)} cards with links, {priced} with a price{flag}")
+
+    # Always run the detector, not only when no candidate matched. Immoweb's
+    # candidates DID match — 60 priceless elements — so a "no hits" trigger
+    # would have stayed silent on exactly the portal that needed it.
+    print("\n-- repeated structures (auto-detected listing grids) --")
+    guesses = find_repeated_structures(soup)
+    if guesses:
+        for sel, count in guesses[:8]:
+            try:
+                nodes = soup.select(sel)
+            except Exception:
+                nodes = []
+            priced = sum(1 for n in nodes[:40] if "€" in n.get_text() or "EUR" in n.get_text())
+            print(f"  {sel!r}: {count} siblings with links, {priced} with a price")
+    else:
+        print("  none found — the list is probably rendered client-side by JS")
 
     print("\n-- sample cards --")
-    samples = []
-    for selector in cfg.get("card", []):
+    samples, chosen = [], None
+    # Prefer a group whose elements actually carry prices, whatever its source.
+    for selector in list(cfg.get("card", [])) + [g[0] for g in guesses[:5]]:
         try:
             hits = [c for c in soup.select(selector) if c.find("a", href=True)]
         except Exception:
             continue
-        if len(hits) >= 2:
-            samples = hits[:MAX_SAMPLES]
-            print(f"(from selector {selector!r})")
+        priced = sum(1 for c in hits if "€" in c.get_text() or "EUR" in c.get_text())
+        if len(hits) >= 2 and priced:
+            samples, chosen = hits[:MAX_SAMPLES], selector
             break
     if not samples:
-        print("  no candidate selector matched >=2 linked cards")
-        print("\n-- repeated structures (auto-detected listing grids) --")
-        guesses = find_repeated_structures(soup)
-        if guesses:
-            for sel, count in guesses[:8]:
-                print(f"  {sel!r}: {count} sibling elements with links")
-            best_sel, _ = guesses[0]
-            example = soup.select(best_sel)
-            if example:
-                print(f"\n  --- example of {best_sel!r} ---")
-                print("  " + str(example[0])[:MAX_SAMPLE_CHARS].replace("\n", "\n  "))
-        else:
-            print("  none found — the list is probably rendered client-side by JS")
-            body_tag = soup.find("body")
-            print(str(body_tag)[:MAX_SAMPLE_CHARS] if body_tag else html[:MAX_SAMPLE_CHARS])
-    for i, card in enumerate(samples, 1):
-        print(f"\n  --- card {i} ---")
-        print("  " + str(card)[:MAX_SAMPLE_CHARS].replace("\n", "\n  "))
+        # Fall back to any group with links, so there is still something to read.
+        for selector in list(cfg.get("card", [])) + [g[0] for g in guesses[:5]]:
+            try:
+                hits = [c for c in soup.select(selector) if c.find("a", href=True)]
+            except Exception:
+                continue
+            if len(hits) >= 2:
+                samples, chosen = hits[:MAX_SAMPLES], selector
+                break
+
+    if samples:
+        print(f"(from selector {chosen!r})")
+        for i, card in enumerate(samples, 1):
+            print(f"\n  --- card {i} ---")
+            print("  " + str(card)[:MAX_SAMPLE_CHARS].replace("\n", "\n  "))
+    else:
+        print("  nothing usable matched — raw body below")
+        body_tag = soup.find("body")
+        print(str(body_tag)[:MAX_SAMPLE_CHARS] if body_tag else html[:MAX_SAMPLE_CHARS])
 
 
 def main() -> None:

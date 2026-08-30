@@ -233,8 +233,17 @@ SOURCES = {
     "immovlan": {
         "enabled": True, "kind": "html", "label": "Immovlan",
         "base": "https://www.immovlan.be",
-        "urls": ["https://www.immovlan.be/en/real-estate?transactiontypes=for-rent"
-                 "&propertytypes=student-accommodation&towns=brussels"],
+        # Search URL from the user. The previous one used parameter names and
+        # values that do not exist on the site (towns= instead of municipals=,
+        # student-accommodation instead of student-housing), so it most likely
+        # returned a default page rather than results — which is why the parser
+        # was scraping page furniture and finding no prices.
+        # isrented=no also drops already-let listings, i.e. dead alerts.
+        "urls": ["https://immovlan.be/en/real-estate?transactiontypes=for-rent"
+                 "&propertytypes=apartment,student-housing"
+                 "&propertysubtypes=apartment,ground-floor,penthouse,duplex,triplex,"
+                 "studio,loft,student-flat"
+                 "&municipals=brussels&issold=no&isoption=no&isrented=no"],
         "pages": 2, "page_param": "page",
         "card": _CARD_CANDIDATES,
         "fields": {
