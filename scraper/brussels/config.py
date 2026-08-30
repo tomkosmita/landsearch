@@ -243,8 +243,12 @@ SOURCES = {
                  "studio,loft,student-flat"
                  "&municipals=brussels&issold=no&isoption=no&isrented=no"],
         "pages": 2, "page_param": "page",
-        # Confirmed by probe 33297678073: 20 cards, all 20 carrying a price.
-        "card": ["article.list-view-item"],
+        # Probe 33297678073 saw article.list-view-item, but a live run right
+        # after got no match on the same URL — the site serves different markup
+        # once the session has touched the homepage. Bare "article" matched the
+        # 20 real cards in the probe, so keep it as a fallback; the price
+        # selector below is specific enough that a looser card selector is safe.
+        "card": ["article.list-view-item", "article"],
         # /en/detail/studio/for-rent/1000/brussels/vbe61437
         "id_url_regex": r"/detail/[^/]+/for-rent/\d+/[^/]+/([^/?#]+)",
         "commune_url_regex": r"/for-rent/(\d{4})/([^/]+)/",
@@ -291,9 +295,12 @@ SOURCES = {
         # Probe found div.listing_item (15 siblings). Note li.with-price ranked
         # higher there but is the "average price per commune" widget, not offers.
         "card": ["div.listing_item"],
+        # /colocation-ixelles-elsene/lacation-courte-duree-a-ixelles/H0704011091519
+        "commune_url_regex": r"/colocation-([^/]+)/",
+        "title_url_regex": r"/colocation-[^/]+/([^/]+)/",
         "fields": {
             "url": {"sel": "a[href]", "attr": "href"},
-            "title": {"sel": "h2, h3, [class*='title']"},
+            "title": {"sel": "h2 a, h3 a, h2, h3"},
             "price": {"sel": "span.price, [class*='price']", "parse": "rent_charges"},
             "commune": {"sel": "[class*='location'], [class*='city'], [class*='address']"},
             "avail": {"sel": "[class*='avail'], [class*='date']", "parse": "date"},

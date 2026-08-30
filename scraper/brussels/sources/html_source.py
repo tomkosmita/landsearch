@@ -142,7 +142,17 @@ class HtmlSource(KotSource):
 
             title = (self._text(card, fields.get("title"))
                      or self._text(card, fields.get("title_fallback"))
-                     or card.get_text(" ", strip=True)[:120])
+                     or "")
+            # Falling back to the whole card text produces a wall of description
+            # ("655 € pm Belle chambre à Waterloo Bonjour ,je propose..."), so
+            # prefer a readable title built from the URL slug where one exists.
+            title_regex = self.cfg.get("title_url_regex")
+            if not title and title_regex:
+                m = re.search(title_regex, url)
+                if m:
+                    title = m.group(1).replace("-", " ").strip().capitalize()
+            if not title:
+                title = card.get_text(" ", strip=True)[:120]
 
             rent = charges = None
             # Some portals carry the price as JSON inside an attribute rather

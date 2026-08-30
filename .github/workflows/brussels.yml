@@ -40,6 +40,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # Before scraping, not after: a broken parser should fail the job rather
+      # than quietly sending rubbish to the channel.
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
       - name: Run Brussels monitor
         env:
           TELEGRAM_BRUSSELS_BOT_TOKEN: ${{ secrets.TELEGRAM_BRUSSELS_BOT_TOKEN }}

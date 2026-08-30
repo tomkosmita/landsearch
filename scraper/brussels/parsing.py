@@ -238,6 +238,13 @@ _OTHER_BE_CITIES = (
     "brugge", "bruges", "hasselt", "mons", "bergen", "kortrijk", "courtrai",
     "louvain-la-neuve", "wavre", "mechelen", "malines", "aalst", "alost",
     "tournai", "doornik", "arlon", "diepenbeek", "geel", "genk",
+    # Commuter towns ringing Brussels. They are not in the Capital Region and
+    # are a long trip from a city-centre campus, but their listings surface in
+    # Brussels searches — Waterloo came through as a hit before this.
+    "waterloo", "braine-l'alleud", "braine-le-comte", "la hulpe", "rixensart",
+    "overijse", "tervuren", "kraainem", "wezembeek", "zaventem", "dilbeek",
+    "grimbergen", "vilvoorde", "halle", "asse", "meise", "wemmel", "beersel",
+    "sint-pieters-leeuw", "hoeilaart", "lasne", "genval", "ottignies", "nivelles",
 )
 
 
