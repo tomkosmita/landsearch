@@ -92,18 +92,31 @@ stronę (partner wystawia feed) i nie przyjmuje nowych partnerów.
   jego URL-i. Bez tego 13 niedostępnych portali to ~30 min samego backoffu.
 - `scraper/brussels/seen.py` diffuje `("price", "available")`, nie `("price", "area")`.
 
-### Ustalenia z probe'a (run 33283870881) — stan portali
+### Stan portali — żywy dry-run (run 33284082502, 2026-08-30)
 
-| Portal | Stan | Uwagi |
+**274 oferty z 13 portali, 198 po filtrach.** Cztery źródła dają 271 z 274 ofert.
+
+| Portal | Ofert | Stan |
 |---|---|---|
-| **Brukot** | ✅ działa, 24 karty | `article.listing-teaser` + `data-listing-id`. Cena w `span.listing-rent--rent-wo-charges` i jest **bez opłat** („excl. charges") — czyli oferta za 700 € realnie kosztuje więcej. `charges` zostaje `None`, `price == rent`. |
-| **Kotplace** | ⚠️ URL do ustalenia | `/en/search` daje 404. `robots.txt` **zabrania `/annonces-json`** — tego endpointu nie ruszamy, choć istnieje. Ścieżki są francuskie; kandydaci w configu do potwierdzenia następnym probe'em. |
-| **Student.be** | ⚠️ React-on-Rails | Dane w `script.js-react-on-rails-component` (`data-component-name="KotIndexPage"`). **Klucz `ads` w tym payloadzie to reklamy, nie oferty** — heurystyka `JsonSource` wymaga teraz klucza cenowego i odrzuca obiekty z `campaign_name`/`iframe_tag`. `robots.txt` **zabrania URL-i z query stringiem** (`disallow: /*?`), więc paginacja `?page=` jest wykluczona — stąd `pages: 1`. |
-| **Skot** | ⚠️ klasy zaciemnione | Strona się pobiera (156 KB), ale klasy to pojedyncze litery (`class="G"`, `class="M"`) i oferty najpewniej renderuje JS. `robots.txt` zabrania `/json`. Wymaga głębszego rozpoznania. |
+| **Immoweb** | 120 | ✅ Cloudflare **nie** zablokował. JSON się nie znalazł — działa fallback na karty HTML. |
+| **Brukot** | 91 | ✅ `article.listing-teaser` + `data-listing-id`. Cena **bez opłat** („excl. charges"), więc `charges=None`, `price==rent` — oferta za 700 € realnie kosztuje więcej. |
+| **Immovlan** | 40 | ✅ generyk HTML trafił bez poprawek |
+| **Erasmus Play** | 20 | ✅ generyk JSON trafił bez poprawek |
+| Kotplace | 2 | ⚠️ `/en` łapie 2 karty; `/annonces` bez kart, `/fr/annonces` 404. `robots.txt` **zabrania `/annonces-json`** — nie ruszamy. Brak właściwego URL-a listy. |
+| Spotahome | 1 | ⚠️ tylko 1 karta — selektor prawie na pewno łapie coś innego niż oferty |
+| Zimmo | 0 | ❌ **403** już na stronie głównej |
+| 2ememain | 0 | ❌ **404** — zły URL kategorii |
+| Skot | 0 | ❌ klasy zaciemnione (`class="G"`, `class="M"`), oferty renderowane przez JS. `robots.txt` zabrania `/json`. |
+| Kotzoeker | 0 | ❌ brak trafień selektorów |
+| Student.be | 0 | ❌ React-on-Rails. Klucz `ads` w payloadzie to **reklamy**, nie oferty. `robots.txt` **zabrania URL-i z query stringiem** (`disallow: /*?`) → `pages: 1`, paginacja przez ścieżkę. |
+| HousingAnywhere | 0 | ❌ brak JSON-a i brak trafień selektorów |
 
-**Zasada: przed dopisaniem selektorów przeczytaj `robots.txt` z logu probe'a.** Dwa
-z czterech zbadanych portali mają zakazy, które wykluczają oczywiste podejście
-(endpoint JSON u Kotplace, paginacja przez query string u Student.be).
+**Zasada: przed dopisaniem selektorów przeczytaj `robots.txt` z logu probe'a.**
+Trzy portale mają zakazy wykluczające oczywiste podejście (endpoint JSON u Kotplace
+i Skot, paginacja przez query string u Student.be).
+
+Portal, który zostaje na 0 po kolejnym podejściu, ustawiamy na `enabled: False`
+zamiast zostawiać go, żeby marnował czas przebiegu.
 
 ### Zmiany w kodzie współdzielonym (wstecznie zgodne)
 
