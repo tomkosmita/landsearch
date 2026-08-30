@@ -95,26 +95,48 @@ stronę (partner wystawia feed) i nie przyjmuje nowych partnerów.
   jego URL-i. Bez tego 13 niedostępnych portali to ~30 min samego backoffu.
 - `scraper/brussels/seen.py` diffuje `("price", "available")`, nie `("price", "area")`.
 
-### Stan portali — żywy dry-run (run 33285192295, 2026-08-30)
+### Stan portali — żywy dry-run (run 33298338982, 2026-08-30)
 
-**205 ofert po filtrach z 11 aktywnych portali.** Przebieg 4,5 min, zielony.
-Spadek z 216 to działanie nowego filtru gminy — odsiewa oferty spoza Brukseli.
+**242 oferty z 5 działających portali, 125 po filtrach.** Zielony, 2 min.
+**Cena wypełniona w 100% na każdym aktywnym źródle.**
 
-| Portal | Ofert | Stan |
-|---|---|---|
-| **Immoweb** | 120 | ✅ Cloudflare **nie** zablokował. JSON się nie znajduje — działa fallback na karty HTML. |
-| **Brukot** | 91 | ✅ `article.listing-teaser` + `data-listing-id`. Cena **bez opłat** („excl. charges"): `charges=None`, `price==rent`, więc oferta za 700 € realnie kosztuje więcej. |
-| **Immovlan** | 40 | ✅ generyk HTML trafił bez poprawek |
-| **Appartager** | 30 | ✅ `div.listing_item` (znalezione autodetekcją). Uwaga: `li.with-price` to widget „średnia cena w gminie", **nie** oferty. |
-| **Erasmus Play** | 20 | ✅ generyk JSON trafił bez poprawek |
-| ~~Kotzoeker~~ | — | 🚫 `enabled: False`. Probe sprawdził też `flat-overview` (URL od użytkownika) — `__NEXT_DATA__` niesie **pusty** `initialState.api`, oferty dociągane po stronie klienta. Tak samo jak Skot. |
-| Kotplace | 0–2 | ⚠️ Pierwszy probe przeszedł, drugi dał **timeout na każdym żądaniu** łącznie z `robots.txt` → throttling IP runnera. Fast-fail ogranicza koszt do jednej wolnej próby. `robots.txt` zabrania `/annonces-json` i `?prix_max=` — używamy gołej ścieżki `/en/ads/brussels` i filtrujemy cenę u siebie. |
-| Spotahome | 1 | ⚠️ selektor łapie coś innego niż oferty |
-| Zimmo | 0 | ❌ **403** już na stronie głównej. URL wyszukiwania od użytkownika wpisany (filtr base64: wynajem, Bruksela, APARTMENT+ROOM, 300–1000 €, bez parametrów sesyjnych), ale blokada dotyczy żądania, nie ścieżki. |
-| 2ememain | 0 | ❌ **404** — zły URL kategorii |
-| Student.be | 0 | ❌ React-on-Rails. Klucz `ads` w payloadzie to **reklamy**. `robots.txt` zabrania URL-i z query stringiem → `pages: 1`. |
-| HousingAnywhere | 0 | ❌ brak JSON-a i brak trafień selektorów |
-| ~~Skot~~ | — | 🚫 `enabled: False`. Autodetekcja nie znalazła **żadnej** powtarzalnej struktury serwerowej → oferty renderuje JS (klasy zaciemnione do pojedynczych liter). Wymaga Playwrighta. `robots.txt` zabrania `/json`. |
+| Portal | Ofert | Braki pól (po filtrach) | Jak czytane |
+|---|---|---|---|
+| **Brukot** | 92 | cena 0, gmina 0, metraż 0, data 22/81 | `article.listing-teaser` + `data-listing-id`. Cena **bez opłat** („excl. charges"), więc `charges=None` i realny koszt bywa wyższy. |
+| **Immoweb** | 60 | cena 0, gmina 0, metraż i data brak | `article.card--result`. **Cena w atrybucie, nie w tekście**: `<iw-price :price='{"mainValue":450,"additionalValue":100}'>` — `get_text()` atrybutów nie widzi, stąd wcześniejsze 67/69 bez ceny. `mainValue`/`additionalValue` to czynsz i opłaty **osobno**, więc suma jest uczciwa. ID i gmina ze ścieżki URL-a. |
+| **Immovlan** | 40 | cena 0, gmina 0 | `article.list-view-item` **z fallbackiem na `article`** — probe widział pierwszą klasę, a żywy przebieg minutę później już nie; serwis zmienia markup po wizycie na stronie głównej. Cena w `strong.list-item-price`. |
+| **Appartager** | 30 | cena 0, gmina 0 | `div.listing_item`. Tytuł i gmina ze sluga URL-a (`/colocation-ixelles-elsene/studio-a-ixelles/`), bo w karcie tytułu nie ma — bez tego tytuł był ścianą opisu. |
+| **Erasmus Play** | 20 | cena 0, gmina 10/11 | `ld+json` Schema.org, tablica `offers[]`: `sku`, `name`, `url`, `price`, `availabilityStarts`. Pewniejsze niż markup Nuxta, którego klasy to hashe builda. |
+
+Wyłączone lub niedziałające: Skot i Kotzoeker (JS, wymagają Playwrighta),
+Spotahome (jedna „oferta" to nagłówek strony), Zimmo (403), 2ememain (404),
+Student.be (React-on-Rails), HousingAnywhere, Kotplace (throttluje IP runnera —
+zamiast tego jego darmowy alert mailowy).
+
+**Bramka jakości** (`drop_mis_parsed_sources` w `main.py`): źródło z ≥5 ofertami,
+z których mniej niż połowa ma cenę, jest **wstrzymywane** i nazwane w
+podsumowaniu jako problem parsera. „Brak danych nie odrzuca" jest słuszne dla
+pojedynczej luki i błędne dla zepsutego parsera — to rozróżnia te przypadki.
+Małych próbek nie ocenia.
+
+### Testy
+
+`tests/` — 50 przypadków na stdlib `unittest`, bez nowych zależności,
+uruchamiane w `brussels.yml` **przed** krokiem scrapującym, żeby zepsuty parser
+wywalił joba zamiast po cichu wysłać śmieci.
+
+```bash
+python -m unittest discover -s tests
+```
+
+Testy sprawdzają **wartości pól** na markupie z logów probe'a, nie samo „nie
+rzuciło wyjątkiem". To rozróżnienie jest sednem: każda awaria parsera w tej
+sesji wyglądała zdrowo w liczniku ofert. Dwa przypadki pilnują `format_message`
+i domyślnych `get_changes` monitora działek, żeby prace nad Brukselą nie
+zmieniły po cichu tego, co wysyła stary monitor.
+
+Testy chronią przed regresją **kodu**, nie przed zmianą stron — od tego jest ⚠️
+przy zerze w podsumowaniu Telegram i ponowny probe.
 
 ### Filtr lokalizacji
 
