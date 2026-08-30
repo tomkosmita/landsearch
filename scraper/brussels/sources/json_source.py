@@ -22,9 +22,19 @@ from scraper.http import get_html
 
 logger = logging.getLogger(__name__)
 
-# Keys whose presence marks a list element as a real listing rather than, say,
-# a nav item or a breadcrumb.
-_LISTING_MARKERS = ("price", "priceInfo", "pricing", "rent", "url", "slug", "vipUrl")
+# A listing must look priced. Matching on "url"/"id" alone is not enough:
+# student.be ships an `ads` array of ADVERTS carrying exactly those keys, and
+# the probe duly mistook them for offers.
+_PRICE_MARKERS = ("price", "priceInfo", "pricing", "rent", "rentPrice",
+                  "monthlyPrice", "priceCents", "amount")
+# Adverts and tracking payloads carry these; never treat such a list as offers.
+_NOT_LISTING_MARKERS = ("campaign_name", "iframe_tag", "javascript_tag", "cloudinary_key")
+
+
+def looks_like_listing(item: dict) -> bool:
+    if any(k in item for k in _NOT_LISTING_MARKERS):
+        return False
+    return any(k in item for k in _PRICE_MARKERS)
 
 _NUXT_RE = re.compile(r"window\.__NUXT__\s*=\s*(\{.*?\});?\s*</script>", re.DOTALL)
 
@@ -95,9 +105,7 @@ class JsonSource(HtmlSource):
         if depth > 8:
             return []
         if isinstance(obj, list):
-            if obj and isinstance(obj[0], dict) and any(
-                k in obj[0] for k in _LISTING_MARKERS
-            ):
+            if obj and isinstance(obj[0], dict) and looks_like_listing(obj[0]):
                 return obj
             for item in obj[:20]:
                 found = self._find_listing_list(item, depth + 1)

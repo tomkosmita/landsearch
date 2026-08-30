@@ -92,6 +92,19 @@ stronę (partner wystawia feed) i nie przyjmuje nowych partnerów.
   jego URL-i. Bez tego 13 niedostępnych portali to ~30 min samego backoffu.
 - `scraper/brussels/seen.py` diffuje `("price", "available")`, nie `("price", "area")`.
 
+### Ustalenia z probe'a (run 33283870881) — stan portali
+
+| Portal | Stan | Uwagi |
+|---|---|---|
+| **Brukot** | ✅ działa, 24 karty | `article.listing-teaser` + `data-listing-id`. Cena w `span.listing-rent--rent-wo-charges` i jest **bez opłat** („excl. charges") — czyli oferta za 700 € realnie kosztuje więcej. `charges` zostaje `None`, `price == rent`. |
+| **Kotplace** | ⚠️ URL do ustalenia | `/en/search` daje 404. `robots.txt` **zabrania `/annonces-json`** — tego endpointu nie ruszamy, choć istnieje. Ścieżki są francuskie; kandydaci w configu do potwierdzenia następnym probe'em. |
+| **Student.be** | ⚠️ React-on-Rails | Dane w `script.js-react-on-rails-component` (`data-component-name="KotIndexPage"`). **Klucz `ads` w tym payloadzie to reklamy, nie oferty** — heurystyka `JsonSource` wymaga teraz klucza cenowego i odrzuca obiekty z `campaign_name`/`iframe_tag`. `robots.txt` **zabrania URL-i z query stringiem** (`disallow: /*?`), więc paginacja `?page=` jest wykluczona — stąd `pages: 1`. |
+| **Skot** | ⚠️ klasy zaciemnione | Strona się pobiera (156 KB), ale klasy to pojedyncze litery (`class="G"`, `class="M"`) i oferty najpewniej renderuje JS. `robots.txt` zabrania `/json`. Wymaga głębszego rozpoznania. |
+
+**Zasada: przed dopisaniem selektorów przeczytaj `robots.txt` z logu probe'a.** Dwa
+z czterech zbadanych portali mają zakazy, które wykluczają oczywiste podejście
+(endpoint JSON u Kotplace, paginacja przez query string u Student.be).
+
 ### Zmiany w kodzie współdzielonym (wstecznie zgodne)
 
 - `scraper/http.py` — **nowy**, `make_session()` + `get_html()` z backoffem `[2,8,32]`.

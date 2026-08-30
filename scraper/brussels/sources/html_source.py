@@ -138,7 +138,9 @@ class HtmlSource(KotSource):
                 return None
             url = urljoin(page_url, href)
 
-            title = self._text(card, fields.get("title")) or card.get_text(" ", strip=True)[:120]
+            title = (self._text(card, fields.get("title"))
+                     or self._text(card, fields.get("title_fallback"))
+                     or card.get_text(" ", strip=True)[:120])
 
             price_text = self._text(card, fields.get("price"))
             # Fall back to the whole card: many portals put the price in an
@@ -156,8 +158,13 @@ class HtmlSource(KotSource):
             surface = parsing.parse_area(self._text(card, fields.get("surface")) or card_text)
             available = parsing.parse_date(self._text(card, fields.get("avail")))
 
+            # A portal's own id attribute beats a slug guessed from the URL.
+            raw_id = None
+            id_attr = self.cfg.get("id_attr")
+            if id_attr:
+                raw_id = card.get(id_attr)
             return KotListing(
-                id=f"{self.name}:{self._listing_id(url)}",
+                id=f"{self.name}:{raw_id or self._listing_id(url)}",
                 portal=self.name,
                 title=title.strip(),
                 url=url,

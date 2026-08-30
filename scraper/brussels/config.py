@@ -55,14 +55,21 @@ SOURCES = {
         ],
         "pages": 2,
         "page_pattern": "https://www.brukot.be/en/search/{page}",
-        "card": _CARD_CANDIDATES,
+        # Confirmed by probe run 33283870881 (24 cards matched).
+        "card": ["article.listing-teaser", "article"],
+        "id_attr": "data-listing-id",
         "fields": {
-            "url": {"sel": "a[href]", "attr": "href"},
-            "title": {"sel": "h2, h3, .title, [class*='title']"},
-            "price": {"sel": ".price, [class*='price'], [class*='rent']", "parse": "rent_charges"},
-            "commune": {"sel": ".location, [class*='location'], [class*='commune'], [class*='address']"},
-            "avail": {"sel": "[class*='avail'], [class*='date']", "parse": "date"},
-            "surface": {"sel": "[class*='surface'], [class*='area']", "parse": "area"},
+            "url": {"sel": "a.link-to-detail", "attr": "href"},
+            # The <img alt> carries the full description ("Student room 16 m² in
+            # Brussels Woluwe-Saint-Pierre"); the <h2> only carries the type.
+            "title": {"sel": "img.listing-teaser-picture-image", "attr": "alt"},
+            "title_fallback": {"sel": "h2.listing-teaser-type"},
+            # Brukot prints rent EXCLUDING charges, so charges stay unknown and
+            # price == rent. A 700 EUR hit may really cost more once charges land.
+            "price": {"sel": "span.listing-rent--rent-wo-charges", "parse": "rent_charges"},
+            "commune": {"sel": "h3.listing-teaser-neighborhood"},
+            "avail": {"sel": "li.listing-tag-available", "parse": "date"},
+            "surface": {"sel": "span.lm-surface", "parse": "area"},
         },
     },
     "immoweb": {
@@ -106,9 +113,13 @@ SOURCES = {
     "kotplace": {
         "enabled": True, "kind": "html", "label": "Kotplace",
         "base": "https://kotplace.be",
-        "urls": ["https://kotplace.be/en/search?city=brussels",
+        # /en/search 404s (probe 33283870881). robots.txt disallows
+        # /annonces-json, so that endpoint is off limits; these are the
+        # path-based candidates to confirm on the next probe.
+        "urls": ["https://kotplace.be/annonces",
+                 "https://kotplace.be/fr/annonces",
                  "https://kotplace.be/en"],
-        "pages": 2, "page_param": "page",
+        "pages": 1,
         "card": _CARD_CANDIDATES,
         "fields": {
             "url": {"sel": "a[href]", "attr": "href"},
@@ -150,18 +161,23 @@ SOURCES = {
         },
     },
     "student_be": {
-        "enabled": True, "kind": "html", "label": "Student.be",
+        # robots.txt disallows "/*?" and "*?*", so NO query-string pagination.
+        "enabled": True, "kind": "json", "label": "Student.be",
         "base": "https://www.student.be",
         "urls": ["https://www.student.be/en/brussels/student-rooms/"],
-        "pages": 3, "page_param": "page",
+        "pages": 1,
+        # React-on-Rails: the page data sits in a script tagged with the
+        # component name. `ads` in the same payload is ADVERTISING, not offers.
+        "json_paths": [["kots"], ["listings"], ["props", "kots"]],
+        "json_fields": {"id": ["id"], "title": ["title"], "url": ["url"],
+                        "price": ["price"], "commune": ["city"],
+                        "surface": ["surface"], "avail": ["available_at"]},
         "card": _CARD_CANDIDATES,
         "fields": {
             "url": {"sel": "a[href]", "attr": "href"},
             "title": {"sel": "h2, h3, [class*='title']"},
             "price": {"sel": "[class*='price']", "parse": "rent_charges"},
             "commune": {"sel": "[class*='location'], [class*='city'], [class*='address']"},
-            "avail": {"sel": "[class*='avail'], [class*='date']", "parse": "date"},
-            "surface": {"sel": "[class*='surface'], [class*='area']", "parse": "area"},
         },
     },
 
