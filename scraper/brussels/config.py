@@ -153,7 +153,11 @@ SOURCES = {
         },
     },
     "kotzoeker": {
-        "enabled": True, "kind": "json", "label": "Kotzoeker",
+        # DISABLED: probe 33285029792 checked flat-overview too (the likelier
+        # server-rendered page) and still found no repeated structure —
+        # __NEXT_DATA__ carries only an empty initialState.api, so listings are
+        # fetched client-side. Same situation as Skot: needs a headless browser.
+        "enabled": False, "kind": "json", "label": "Kotzoeker",
         "base": "https://www.kotzoeker.be",
         # URLs supplied by the user. Note the city segment is "brussels", not
         # the French "bruxelles" we had guessed. flat-overview is listed first:
@@ -186,7 +190,11 @@ SOURCES = {
         # robots.txt disallows "/*?" and "*?*", so NO query-string pagination.
         "enabled": True, "kind": "json", "label": "Student.be",
         "base": "https://www.student.be",
-        "urls": ["https://www.student.be/en/brussels/student-rooms/"],
+        # The user's link was /en/student-rooms/?location=1000,...&radius=6, but
+        # robots.txt disallows "/*?" — so we request the bare path (all of
+        # Belgium) and drop non-Brussels listings ourselves via is_outside_brussels.
+        "urls": ["https://www.student.be/en/student-rooms/",
+                 "https://www.student.be/en/brussels/student-rooms/"],
         "pages": 1,
         # React-on-Rails: the page data sits in a script tagged with the
         # component name. `ads` in the same payload is ADVERTISING, not offers.
@@ -238,10 +246,23 @@ SOURCES = {
         },
     },
     "zimmo": {
-        "enabled": True, "kind": "html", "label": "Zimmo",
+        "enabled": True, "kind": "json", "label": "Zimmo",
         "base": "https://www.zimmo.be",
-        "urls": ["https://www.zimmo.be/en/brussel-1000/for-rent/student-housing/"],
-        "pages": 2, "page_param": "p",
+        # Search URL from the user. The base64 `search` blob decodes to
+        # {"filter":{"status":{"in":["TO_RENT"]},"placeId":{"in":[1]},
+        #  "category":{"in":["APARTMENT","ROOM"]},
+        #  "price":{"unknown":true,"range":{"min":300,"max":1000}}}}
+        # Session/tracking params (edge_id, ref, newUser) are stripped — they
+        # identify a browser session and do not belong in a scheduled job.
+        # NOTE: Zimmo answered 403 to every previous request, including its bare
+        # homepage, so this is a long shot: the block is on the request, not the
+        # path. Kept enabled for one attempt; the fast-fail caps the cost.
+        "urls": ["https://www.zimmo.be/nl/zoeken/?search=eyJmaWx0ZXIiOnsic3RhdHVzIjp7ImluIjpbIlRPX1JFTlQiXX0sInBsYWNlSWQiOnsiaW4iOlsxXX0sImNhdGVnb3J5Ijp7ImluIjpbIkFQQVJUTUVOVCIsIlJPT00iXX0sInByaWNlIjp7InVua25vd24iOnRydWUsInJhbmdlIjp7Im1pbiI6MzAwLCJtYXgiOjEwMDB9fX19"],
+        "pages": 1,
+        "json_paths": [["props", "pageProps", "results"], ["results"], ["listings"]],
+        "json_fields": {"id": ["id"], "title": ["title"], "url": ["url"],
+                        "price": ["price"], "commune": ["city"],
+                        "surface": ["surface"]},
         "card": _CARD_CANDIDATES,
         "fields": {
             "url": {"sel": "a[href]", "attr": "href"},

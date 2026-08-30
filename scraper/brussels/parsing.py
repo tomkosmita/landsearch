@@ -215,3 +215,53 @@ def classify_kind(text: Optional[str]) -> str:
         if re.search(pattern, low):
             return kind
     return "unknown"
+
+
+# The 19 communes of the Brussels-Capital Region, in both official languages,
+# plus the postal range 1000-1210 that covers them.
+BRUSSELS_COMMUNES = {
+    "brussels", "brussel", "bruxelles", "anderlecht", "auderghem", "oudergem",
+    "berchem-sainte-agathe", "sint-agatha-berchem", "etterbeek", "evere",
+    "forest", "vorst", "ganshoren", "ixelles", "elsene", "jette", "koekelberg",
+    "molenbeek-saint-jean", "sint-jans-molenbeek", "molenbeek",
+    "saint-gilles", "sint-gillis", "saint-josse-ten-noode", "saint-josse",
+    "sint-joost-ten-node", "schaerbeek", "schaarbeek", "uccle", "ukkel",
+    "watermael-boitsfort", "watermaal-bosvoorde", "woluwe-saint-lambert",
+    "sint-lambrechts-woluwe", "woluwe-saint-pierre", "sint-pieters-woluwe",
+    "laeken", "laken", "neder-over-heembeek", "haren",
+}
+
+# Other Belgian student cities. Used only to REJECT — never to accept.
+_OTHER_BE_CITIES = (
+    "leuven", "louvain", "gent", "ghent", "gand", "antwerpen", "antwerp",
+    "anvers", "liege", "liège", "luik", "namur", "namen", "charleroi",
+    "brugge", "bruges", "hasselt", "mons", "bergen", "kortrijk", "courtrai",
+    "louvain-la-neuve", "wavre", "mechelen", "malines", "aalst", "alost",
+    "tournai", "doornik", "arlon", "diepenbeek", "geel", "genk",
+)
+
+
+def is_outside_brussels(text: Optional[str]) -> bool:
+    """True only when we can positively tell this is NOT Brussels.
+
+    Deliberately asymmetric: unknown or unrecognised locations return False and
+    stay in the results. Only a clear signal — a Belgian postal code outside
+    1000-1210, or another Belgian student city named without any Brussels
+    commune alongside it — rejects a listing.
+    """
+    if not text:
+        return False
+    low = text.lower()
+
+    if any(commune in low for commune in BRUSSELS_COMMUNES):
+        return False
+
+    m = re.search(r"\b(\d{4})\b", low)
+    if m:
+        code = int(m.group(1))
+        if 1000 <= code <= 1210:
+            return False
+        if 1000 <= code <= 9999:  # a valid Belgian postal code, but not Brussels
+            return True
+
+    return any(city in low for city in _OTHER_BE_CITIES)

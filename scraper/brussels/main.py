@@ -9,6 +9,7 @@ import os
 import sys
 from typing import Dict, List, Tuple
 
+from scraper.brussels import parsing
 from scraper.brussels import seen as state
 from scraper.brussels.config import (AVAILABLE_FROM, AVAILABLE_TO, MAX_PRICE_EUR,
                                      NOTIFY_CAP_PER_RUN, enabled_sources)
@@ -45,6 +46,11 @@ def passes_filters(listing: KotListing) -> bool:
     if listing.available_from is not None and not (
         AVAILABLE_FROM <= listing.available_from <= AVAILABLE_TO
     ):
+        return False
+    # Some portals can only be queried Belgium-wide (student.be forbids
+    # query-string URLs in robots.txt), so Leuven and Ghent listings arrive too.
+    # This rejects only what is positively identifiable as elsewhere.
+    if parsing.is_outside_brussels(listing.commune or listing.title):
         return False
     return True
 
