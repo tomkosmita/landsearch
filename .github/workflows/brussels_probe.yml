@@ -1,0 +1,39 @@
+name: Brussels Probe (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      portals:
+        description: 'Comma-separated portals (empty = all 13). e.g. brukot,immoweb,kotplace'
+        required: false
+        default: 'brukot,immoweb,kotplace,skot'
+      chat_id_lookup:
+        description: 'Also print the chat_id(s) the Brussels bot can see'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Probe portal structure
+        run: python -m scraper.brussels.probe "${{ github.event.inputs.portals }}"
+
+      - name: Look up Telegram chat_id
+        if: github.event.inputs.chat_id_lookup == 'true'
+        env:
+          TELEGRAM_BRUSSELS_BOT_TOKEN: ${{ secrets.TELEGRAM_BRUSSELS_BOT_TOKEN }}
+        run: python -m scraper.brussels.chatid

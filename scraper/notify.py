@@ -52,6 +52,31 @@ _TYPE_PLURAL = {
 }
 
 
+def send_message(text: str, token: str, chat_id: str) -> bool:
+    """POST one HTML message to Telegram. Retries on 429; used by every sender."""
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
+    for attempt in range(3):
+        try:
+            resp = requests.post(
+                url,
+                json={"chat_id": chat_id, "text": text, "parse_mode": "HTML"},
+                timeout=15,
+            )
+            if resp.ok:
+                return True
+            if resp.status_code == 429:
+                retry_after = resp.json().get("parameters", {}).get("retry_after", 15)
+                logger.warning("Telegram rate limit, sleeping %ds", retry_after)
+                time.sleep(retry_after + 1)
+                continue
+            logger.error("Telegram error %d: %s", resp.status_code, resp.text[:200])
+            return False
+        except Exception as e:
+            logger.error("Telegram request failed: %s", e)
+            return False
+    return False
+
+
 def format_message(
     listing: Listing,
     changes: Optional[Dict[str, Tuple[Optional[int], Optional[int]]]] = None,
@@ -101,17 +126,8 @@ def send_scan_summary(
     lines.append(f"📬 Nowe/zmienione: {sent_count}")
     message = "\n".join(lines)
 
-    url = f"https://api.telegram.org/bot{token}/sendMessage"
-    try:
-        resp = requests.post(
-            url,
-            json={"chat_id": chat_id, "text": message, "parse_mode": "HTML"},
-            timeout=15,
-        )
-        if not resp.ok:
-            logger.warning("Summary send failed %d: %s", resp.status_code, resp.text[:100])
-    except Exception as e:
-        logger.warning("Summary request failed: %s", e)
+    if not send_message(message, token, chat_id):
+        logger.warning("Scan summary was not delivered")
 
 
 def send_telegram(
@@ -120,25 +136,4 @@ def send_telegram(
     chat_id: str,
     changes: Optional[Dict[str, Tuple[Optional[int], Optional[int]]]] = None,
 ) -> bool:
-    message = format_message(listing, changes)
-    url = f"https://api.telegram.org/bot{token}/sendMessage"
-    for attempt in range(3):
-        try:
-            resp = requests.post(
-                url,
-                json={"chat_id": chat_id, "text": message, "parse_mode": "HTML"},
-                timeout=15,
-            )
-            if resp.ok:
-                return True
-            if resp.status_code == 429:
-                retry_after = resp.json().get("parameters", {}).get("retry_after", 15)
-                logger.warning("Telegram rate limit, sleeping %ds", retry_after)
-                time.sleep(retry_after + 1)
-                continue
-            logger.error("Telegram error %d: %s", resp.status_code, resp.text[:200])
-            return False
-        except Exception as e:
-            logger.error("Telegram request failed: %s", e)
-            return False
-    return False
+    return send_message(format_message(listing, changes), token, chat_id)
