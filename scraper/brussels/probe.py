@@ -48,7 +48,7 @@ def probe_feeds(session, base: str) -> None:
     else:
         print("no robots.txt (or an HTML error page was returned)")
 
-    for path in ("/sitemap.xml", "/rss", "/feed", "/en/rss", "/rss.xml"):
+    for path in ("/sitemap.xml", "/rss"):
         time.sleep(1)
         body = get_html(session, base.rstrip("/") + path, retries=1, label="feed")
         if body and any(tag in body[:400].lower() for tag in ("<urlset", "<rss", "<feed", "<sitemapindex")):

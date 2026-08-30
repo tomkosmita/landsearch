@@ -113,6 +113,10 @@ SOURCES = {
     "kotplace": {
         "enabled": True, "kind": "html", "label": "Kotplace",
         "base": "https://kotplace.be",
+        # NOTE: the second probe timed out (curl 28) on every request including
+        # robots.txt, while the first probe reached it fine — it is throttling
+        # the runner IP. Kept enabled: a timeout costs one slow attempt and the
+        # fast-fail then skips the portal.
         # Real listing path supplied by the user. Their link carried
         # ?prix_max=1000, but robots.txt disallows "/*?*prix_max=" — so we
         # request the bare path (allowed) and apply the price cap ourselves,
@@ -130,7 +134,11 @@ SOURCES = {
         },
     },
     "skot": {
-        "enabled": True, "kind": "html", "label": "Skot",
+        # DISABLED: probe 33284421731 found no repeated server-side structure at
+        # all — skot.be renders its results in JS (classes are obfuscated to
+        # single letters). Needs a headless browser, which is out of scope here.
+        # robots.txt also disallows /json. Re-enable only with Playwright.
+        "enabled": False, "kind": "html", "label": "Skot",
         "base": "https://skot.be",
         "urls": ["https://skot.be/kot-brussels"],
         "pages": 2, "page_param": "page",
@@ -145,17 +153,26 @@ SOURCES = {
         },
     },
     "kotzoeker": {
-        "enabled": True, "kind": "html", "label": "Kotzoeker",
+        "enabled": True, "kind": "json", "label": "Kotzoeker",
         "base": "https://www.kotzoeker.be",
         "urls": ["https://www.kotzoeker.be/en/flat-search/bruxelles"],
         "pages": 2, "page_param": "page",
-        "card": _CARD_CANDIDATES,
+        # Next.js app; listings live under initialState.
+        "json_paths": [["props", "pageProps", "initialState", "api", "listings"],
+                       ["props", "pageProps", "initialState", "api", "results"],
+                       ["props", "pageProps", "initialState", "api"]],
+        "json_fields": {"id": ["id"], "title": ["title"], "url": ["url"],
+                        "price": ["price"], "commune": ["city"],
+                        "surface": ["surface"]},
+        # HTML fallback: probe found div.chakra-linkbox.css-hszkpb (10 siblings).
+        # The css-* half is an emotion hash that changes on every redeploy, so
+        # match only the stable chakra-linkbox part.
+        "card": ["div.chakra-linkbox"],
         "fields": {
             "url": {"sel": "a[href]", "attr": "href"},
-            "title": {"sel": "h2, h3, [class*='title']"},
+            "title": {"sel": "h2, h3, p.chakra-text"},
             "price": {"sel": "[class*='price']", "parse": "rent_charges"},
-            "commune": {"sel": "[class*='location'], [class*='city'], [class*='address']"},
-            "avail": {"sel": "[class*='avail'], [class*='date']", "parse": "date"},
+            "commune": {"sel": "[class*='location'], [class*='city']"},
             "surface": {"sel": "[class*='surface'], [class*='area']", "parse": "area"},
         },
     },
@@ -231,13 +248,16 @@ SOURCES = {
     "appartager": {
         "enabled": True, "kind": "html", "label": "Appartager",
         "base": "https://www.appartager.be",
+        # robots.txt allows this path (it disallows /results-room/* etc.)
         "urls": ["https://www.appartager.be/bruxelles/colocation-bruxelles"],
         "pages": 2, "page_param": "page",
-        "card": _CARD_CANDIDATES,
+        # Probe found div.listing_item (15 siblings). Note li.with-price ranked
+        # higher there but is the "average price per commune" widget, not offers.
+        "card": ["div.listing_item"],
         "fields": {
             "url": {"sel": "a[href]", "attr": "href"},
             "title": {"sel": "h2, h3, [class*='title']"},
-            "price": {"sel": "[class*='price']", "parse": "rent_charges"},
+            "price": {"sel": "span.price, [class*='price']", "parse": "rent_charges"},
             "commune": {"sel": "[class*='location'], [class*='city'], [class*='address']"},
             "avail": {"sel": "[class*='avail'], [class*='date']", "parse": "date"},
         },
