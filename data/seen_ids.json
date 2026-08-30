@@ -4819,5 +4819,25 @@
     "price": 920000,
     "area": 148,
     "type": "dom"
+  },
+  "1c69mp": {
+    "price": 180000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "elegancki-dom-blizniak-droga-asfalt-autobus-miejski-3km-od-wroclawia-ID4CryB": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "68363270": {
+    "price": 1290000,
+    "area": 203,
+    "type": "dom"
+  },
+  "96836327000067": {
+    "price": 1290000,
+    "area": 203,
+    "type": "dom"
   }
 }
