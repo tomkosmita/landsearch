@@ -4839,5 +4839,15 @@
     "price": 1290000,
     "area": 203,
     "type": "dom"
+  },
+  "dzialka-budowlana-1048-m-w-mietkowie-blisko-zalewu-i-wroclawia-ID4CQvN": {
+    "price": 169000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "96776974900067": {
+    "price": 1378000,
+    "area": 180,
+    "type": "dom"
   }
 }
