@@ -4784,5 +4784,40 @@
     "price": 1800000,
     "area": 150,
     "type": "dom"
+  },
+  "dzialka-budowlana-1036-m-wroclaw-ratyn-ul-dukielska-mpzp-ID4CQlw": {
+    "price": 500000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1bGPHn": {
+    "price": 225000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68363029": {
+    "price": 500000,
+    "area": 1036,
+    "type": "dzialka"
+  },
+  "68362956": {
+    "price": 599000,
+    "area": 1613,
+    "type": "dzialka"
+  },
+  "96836302900067": {
+    "price": 500000,
+    "area": 1036,
+    "type": "dzialka"
+  },
+  "68362720": {
+    "price": 920000,
+    "area": 148,
+    "type": "dom"
+  },
+  "96836272000067": {
+    "price": 920000,
+    "area": 148,
+    "type": "dom"
   }
 }
