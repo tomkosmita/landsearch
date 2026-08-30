@@ -74,7 +74,7 @@ SOURCES = {
     },
     "immoweb": {
         "enabled": True,
-        "kind": "json",
+        "kind": "html",
         "label": "Immoweb",
         "base": "https://www.immoweb.be",
         "urls": [
@@ -85,31 +85,29 @@ SOURCES = {
         ],
         "pages": 2,
         "page_param": "page",
-        # Immoweb renders an internal JSON API; probe reports the real key path.
-        "json_paths": [
-            ["props", "pageProps", "results"],
-            ["results"],
-            ["data", "results"],
-        ],
-        "json_fields": {
-            "id": ["id"],
-            "title": ["property", "type"],
-            "url": ["url"],
-            "price": ["price", "mainValue"],
-            "commune": ["property", "location", "locality"],
-            "postal": ["property", "location", "postalCode"],
-            "surface": ["property", "netHabitableSurface"],
-        },
-        "card": _CARD_CANDIDATES,
+        # Probe 33297886450. kind is "html", not "json": the search page carries
+        # no listing JSON, but each card embeds its price as JSON in an
+        # attribute — which is why a text-only parser found 67 of 69 priceless.
+        "card": ["article.card--result"],
+        # /en/classified/kot/for-rent/anderlecht/1070/21797743 — anchored to the
+        # end, otherwise re.search takes the leftmost run of digits, which is the
+        # postal code (1070), not the classified id.
+        "id_url_regex": r"/(\d+)(?:[?#].*)?$",
+        "commune_url_regex": r"/for-rent/([^/]+)/(\d{4})/",
+        # <iw-price :price='{"mainValue":450,"additionalValue":100,...}'>
+        # mainValue is rent, additionalValue is charges — separated at source,
+        # so unlike Brukot the total here is honest.
+        "price_json": {"sel": "iw-price", "attr": ":price",
+                       "rent_key": "mainValue", "charges_key": "additionalValue"},
         "fields": {
-            "url": {"sel": "a[href]", "attr": "href"},
-            "title": {"sel": "h2, h3, [class*='title']"},
-            "price": {"sel": "[class*='price']", "parse": "rent_charges"},
-            "commune": {"sel": "[class*='location'], [class*='locality']"},
+            "url": {"sel": "a.card__title-link", "attr": "href"},
+            # The <a> text is just the type ("Kot"); aria-label carries
+            # "Kot to rent, Anderlecht (450 €)".
+            "title": {"sel": "a.card__title-link", "attr": "aria-label"},
+            "title_fallback": {"sel": "h2.card__title"},
+            "surface": {"sel": "[class*='surface'], [class*='area']", "parse": "area"},
         },
     },
-
-    # ---------------- kot-specific, no login ----------------
     "kotplace": {
         "enabled": True, "kind": "html", "label": "Kotplace",
         "base": "https://kotplace.be",

@@ -5,6 +5,7 @@ This class does the shared work and reads everything portal-specific from
 scraper.brussels.config.
 """
 
+import json
 import logging
 import re
 import time
@@ -143,12 +144,31 @@ class HtmlSource(KotSource):
                      or self._text(card, fields.get("title_fallback"))
                      or card.get_text(" ", strip=True)[:120])
 
-            price_text = self._text(card, fields.get("price"))
-            # Fall back to the whole card: many portals put the price in an
-            # element whose class name we have not guessed yet.
-            rent, charges = parsing.parse_rent_and_charges(
-                price_text or card.get_text(" ", strip=True)
-            )
+            rent = charges = None
+            # Some portals carry the price as JSON inside an attribute rather
+            # than as text — Immoweb ships <iw-price :price='{"mainValue":450,
+            # "additionalValue":100}'>. get_text() cannot see attributes, which
+            # is why a text-only parser reports no price at all there.
+            price_json = self.cfg.get("price_json")
+            if price_json:
+                node = card.select_one(price_json["sel"])
+                raw_attr = node.get(price_json["attr"]) if node else None
+                if raw_attr:
+                    try:
+                        data = json.loads(raw_attr)
+                        rent = data.get(price_json.get("rent_key", "mainValue"))
+                        charges = data.get(price_json.get("charges_key", "additionalValue"))
+                        rent = int(rent) if isinstance(rent, (int, float)) else None
+                        charges = int(charges) if isinstance(charges, (int, float)) else None
+                    except (json.JSONDecodeError, ValueError, TypeError):
+                        rent = charges = None
+            if rent is None:
+                price_text = self._text(card, fields.get("price"))
+                # Fall back to the whole card: many portals put the price in an
+                # element whose class name we have not guessed yet.
+                rent, charges = parsing.parse_rent_and_charges(
+                    price_text or card.get_text(" ", strip=True)
+                )
 
             commune = parsing.parse_commune(self._text(card, fields.get("commune")))
             card_text = card.get_text(" ", strip=True)
