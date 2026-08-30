@@ -37,7 +37,10 @@ kanał Telegram, własny workflow. Awaria jednego nie dotyka drugiego.
 
 ### Kanał i sekrety
 
-Bot `@kotobruxbot`, **osobny kanał** od działek. Nowe sekrety:
+Bot `@kotobruxbot`, **osobny kanał** od działek: supergrupa „Brukselka
+mieszkania", w której bot jest administratorem. Uwaga — grupa powstała jako
+zwykła `group`, a Telegram zmigrował ją do `supergroup`; po migracji obowiązuje
+**nowe** id (`-100…`), stare jest martwe. Nowe sekrety:
 `TELEGRAM_BRUSSELS_BOT_TOKEN`, `TELEGRAM_BRUSSELS_CHAT_ID`. Monitor działek dalej
 używa `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` — nie mieszać.
 
