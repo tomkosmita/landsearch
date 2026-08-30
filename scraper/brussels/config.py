@@ -245,12 +245,15 @@ SOURCES = {
                  "studio,loft,student-flat"
                  "&municipals=brussels&issold=no&isoption=no&isrented=no"],
         "pages": 2, "page_param": "page",
-        "card": _CARD_CANDIDATES,
+        # Confirmed by probe 33297678073: 20 cards, all 20 carrying a price.
+        "card": ["article.list-view-item"],
+        # /en/detail/studio/for-rent/1000/brussels/vbe61437
+        "id_url_regex": r"/detail/[^/]+/for-rent/\d+/[^/]+/([^/?#]+)",
+        "commune_url_regex": r"/for-rent/(\d{4})/([^/]+)/",
         "fields": {
             "url": {"sel": "a[href]", "attr": "href"},
-            "title": {"sel": "h2, h3, [class*='title']"},
-            "price": {"sel": "[class*='price']", "parse": "rent_charges"},
-            "commune": {"sel": "[class*='location'], [class*='city'], [class*='address']"},
+            "title": {"sel": "h2.card-title"},
+            "price": {"sel": "strong.list-item-price", "parse": "rent_charges"},
             "surface": {"sel": "[class*='surface'], [class*='area']", "parse": "area"},
         },
     },
@@ -334,13 +337,17 @@ SOURCES = {
     "erasmusplay": {
         "enabled": True, "kind": "json", "label": "Erasmus Play",
         "base": "https://erasmusplay.com",
+        # robots.txt disallows /en/search/ and /en/acc/; this city page is allowed.
         "urls": ["https://erasmusplay.com/en/bruxelles-brussel.html"],
         "pages": 2, "page_param": "page",
-        "json_paths": [["props", "pageProps", "accommodations"], ["accommodations"],
-                       ["results"], ["listings"]],
-        "json_fields": {"id": ["id"], "title": ["title"], "url": ["url"],
-                        "price": ["price"], "commune": ["city"]},
-        "card": _CARD_CANDIDATES,
+        # Probe 33297678073: a Schema.org ld+json block holds offers[] with 20
+        # entries carrying name, url, sku, price and availabilityStarts — far
+        # more reliable than the Nuxt markup, whose class names are build hashes.
+        "json_paths": [["offers"], ["itemListElement"]],
+        "json_fields": {"id": ["sku"], "title": ["name"], "url": ["url"],
+                        "price": ["price"], "avail": ["availabilityStarts"],
+                        "commune": ["addressLocality"]},
+        "card": ["div.acc-card", "div.card"],
         "fields": {"url": {"sel": "a[href]", "attr": "href"},
                    "title": {"sel": "h2, h3, [class*='title']"},
                    "price": {"sel": "[class*='price']", "parse": "rent_charges"},

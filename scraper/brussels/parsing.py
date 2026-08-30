@@ -265,3 +265,20 @@ def is_outside_brussels(text: Optional[str]) -> bool:
             return True
 
     return any(city in low for city in _OTHER_BE_CITIES)
+
+
+def extract_commune(*texts: Optional[str]) -> str:
+    """Find a Brussels commune named anywhere in the given texts.
+
+    Several portals never expose the commune as its own field but do name it in
+    the title or address line. Longest match wins so "Woluwe-Saint-Pierre" is
+    not reported as "Woluwe-Saint-Lambert"'s prefix or as plain "Brussels".
+    """
+    for text in texts:
+        if not text:
+            continue
+        low = text.lower()
+        hits = [c for c in BRUSSELS_COMMUNES if c in low]
+        if hits:
+            return max(hits, key=len).title()
+    return ""

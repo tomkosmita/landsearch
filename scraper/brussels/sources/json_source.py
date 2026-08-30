@@ -157,6 +157,10 @@ class JsonSource(HtmlSource):
             postal = dig(raw, spec.get("postal", ["postalCode"]))
             if not commune and postal:
                 commune = str(postal)
+            if not commune:
+                # Aggregators often name the commune only in the title
+                # ("Private room at Saint-Josse, Brussels").
+                commune = parsing.extract_commune(title)
 
             surface = dig(raw, spec.get("surface", ["surface"]))
             surface = int(surface) if isinstance(surface, (int, float)) and 0 < surface < 1000 else None

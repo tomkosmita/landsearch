@@ -152,9 +152,17 @@ class HtmlSource(KotSource):
 
             commune = parsing.parse_commune(self._text(card, fields.get("commune")))
             card_text = card.get_text(" ", strip=True)
+            # Some portals put the location only in the URL path
+            # (immovlan: /detail/studio/for-rent/1000/brussels/vbe61437).
+            commune_regex = self.cfg.get("commune_url_regex")
+            if not commune and commune_regex:
+                m = re.search(commune_regex, url)
+                if m:
+                    commune = " ".join(g for g in m.groups() if g)
             if not commune:
-                postal = parsing.parse_postal_code(card_text)
-                commune = postal or ""
+                commune = parsing.extract_commune(title, card_text)
+            if not commune:
+                commune = parsing.parse_postal_code(card_text) or ""
 
             surface = parsing.parse_area(self._text(card, fields.get("surface")) or card_text)
             available = parsing.parse_date(self._text(card, fields.get("avail")))
