@@ -113,12 +113,11 @@ SOURCES = {
     "kotplace": {
         "enabled": True, "kind": "html", "label": "Kotplace",
         "base": "https://kotplace.be",
-        # /en/search 404s (probe 33283870881). robots.txt disallows
-        # /annonces-json, so that endpoint is off limits; these are the
-        # path-based candidates to confirm on the next probe.
-        "urls": ["https://kotplace.be/annonces",
-                 "https://kotplace.be/fr/annonces",
-                 "https://kotplace.be/en"],
+        # Real listing path supplied by the user. Their link carried
+        # ?prix_max=1000, but robots.txt disallows "/*?*prix_max=" — so we
+        # request the bare path (allowed) and apply the price cap ourselves,
+        # which yields the same result without ignoring the site's rules.
+        "urls": ["https://kotplace.be/en/ads/brussels"],
         "pages": 1,
         "card": _CARD_CANDIDATES,
         "fields": {

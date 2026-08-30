@@ -77,6 +77,45 @@ def key_paths(obj: Any, prefix: str = "", depth: int = 0, out: List[str] = None)
     return out
 
 
+def find_repeated_structures(soup) -> List[tuple]:
+    """Find sibling groups that look like a listing grid.
+
+    Portals with obfuscated class names (skot.be ships class="G", class="M")
+    defeat guessed selectors, but a results list is still structurally
+    obvious: many sibling elements sharing a tag+class, each holding a link.
+    """
+    from collections import Counter
+
+    counts = Counter()
+    for parent in soup.find_all(True):
+        children = [c for c in parent.find_all(recursive=False) if c.name]
+        if len(children) < 3:
+            continue
+        groups = Counter()
+        for child in children:
+            classes = child.get("class") or []
+            if not child.find("a", href=True):
+                continue
+            key = child.name + ("." + ".".join(classes) if classes else "")
+            groups[key] += 1
+        for key, n in groups.items():
+            if n >= 3:
+                counts[key] = max(counts[key], n)
+
+    # Prefer groups that actually carry a price — that is what a listing is.
+    ranked = []
+    for key, n in counts.items():
+        try:
+            nodes = soup.select(key)
+        except Exception:
+            continue
+        priced = sum(1 for node in nodes[:40]
+                     if "€" in node.get_text() or "EUR" in node.get_text())
+        ranked.append((key, n, priced))
+    ranked.sort(key=lambda t: (t[2] > 0, t[2], t[1]), reverse=True)
+    return [(key, n) for key, n, _ in ranked]
+
+
 def probe_url(session, name: str, cfg: dict, url: str) -> None:
     hr(f"{cfg.get('label', name)} — {url}")
     html = get_html(session, url, label=name)
@@ -144,9 +183,21 @@ def probe_url(session, name: str, cfg: dict, url: str) -> None:
             print(f"(from selector {selector!r})")
             break
     if not samples:
-        print("  no selector matched >=2 linked cards — inspect the raw HTML below")
-        body_tag = soup.find("body")
-        print(str(body_tag)[:MAX_SAMPLE_CHARS] if body_tag else html[:MAX_SAMPLE_CHARS])
+        print("  no candidate selector matched >=2 linked cards")
+        print("\n-- repeated structures (auto-detected listing grids) --")
+        guesses = find_repeated_structures(soup)
+        if guesses:
+            for sel, count in guesses[:8]:
+                print(f"  {sel!r}: {count} sibling elements with links")
+            best_sel, _ = guesses[0]
+            example = soup.select(best_sel)
+            if example:
+                print(f"\n  --- example of {best_sel!r} ---")
+                print("  " + str(example[0])[:MAX_SAMPLE_CHARS].replace("\n", "\n  "))
+        else:
+            print("  none found — the list is probably rendered client-side by JS")
+            body_tag = soup.find("body")
+            print(str(body_tag)[:MAX_SAMPLE_CHARS] if body_tag else html[:MAX_SAMPLE_CHARS])
     for i, card in enumerate(samples, 1):
         print(f"\n  --- card {i} ---")
         print("  " + str(card)[:MAX_SAMPLE_CHARS].replace("\n", "\n  "))
