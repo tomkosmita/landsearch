@@ -306,7 +306,10 @@ SOURCES = {
                    "commune": {"sel": "[class*='location'], [class*='city']"}},
     },
     "spotahome": {
-        "enabled": True, "kind": "json", "label": "Spotahome",
+        # DISABLED: the single "listing" it yields is the page heading ("Most
+        # popular student apartments for rent in Brussels") linking back to the
+        # search page — not an offer. One junk alert is worse than none.
+        "enabled": False, "kind": "json", "label": "Spotahome",
         "base": "https://www.spotahome.com",
         "urls": ["https://www.spotahome.com/for-rent/brussels/student-apartments"],
         "pages": 2, "page_param": "page",

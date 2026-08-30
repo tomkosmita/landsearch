@@ -56,6 +56,39 @@ def passes_filters(listing: KotListing) -> bool:
     return True
 
 
+MIN_PRICE_COVERAGE = 0.5
+QUALITY_GATE_MIN_LISTINGS = 5
+
+
+def drop_mis_parsed_sources(kept: List[KotListing]) -> Tuple[List[KotListing], List[str]]:
+    """Withhold sources whose listings are mostly priceless.
+
+    "Missing data never rejects" is the right rule for an occasional gap, but it
+    is the wrong rule for a broken parser: a source matching elements it does
+    not understand yields listings with no price, no area and no date, which are
+    useless as alerts and would eat the per-run notification cap ahead of good
+    ones. Judging coverage per source separates the two cases.
+    """
+    by_portal: Dict[str, List[KotListing]] = {}
+    for listing in kept:
+        by_portal.setdefault(listing.portal, []).append(listing)
+
+    good: List[KotListing] = []
+    suspect: List[str] = []
+    for portal, group in by_portal.items():
+        priced = sum(1 for x in group if x.price is not None)
+        coverage = priced / len(group)
+        if len(group) >= QUALITY_GATE_MIN_LISTINGS and coverage < MIN_PRICE_COVERAGE:
+            logger.warning(
+                "%s WITHHELD: only %d of %d listings have a price (%.0f%%) — "
+                "the parser is matching elements it does not understand",
+                portal, priced, len(group), coverage * 100)
+            suspect.append(portal)
+            continue
+        good.extend(group)
+    return good, suspect
+
+
 def collect() -> Tuple[List[KotListing], Dict[str, int], List[str]]:
     """Fetch every enabled source. One broken portal never fails the run."""
     listings: List[KotListing] = []
@@ -132,6 +165,8 @@ def main() -> None:
     logger.info("After filters (<= %d EUR, %s..%s): %d",
                 MAX_PRICE_EUR, AVAILABLE_FROM, AVAILABLE_TO, len(kept))
 
+    kept, suspect = drop_mis_parsed_sources(kept)
+
     dup_keys = state.known_dup_keys(seen)
     sent_count = 0
     deferred = 0
@@ -190,7 +225,7 @@ def main() -> None:
         logger.info("DRY RUN — state not saved, nothing sent. "
                     "kept=%d, would-notify<=%d, failed=%s", len(kept),
                     min(len(kept), NOTIFY_CAP_PER_RUN), failed or "none")
-        _preview(kept, counts, failed)
+        _preview(kept, counts, failed + [f'{p} (parser)' for p in suspect])
         return
 
     state.save(seen)
@@ -198,7 +233,8 @@ def main() -> None:
                 sent_count, deferred, len(seen))
 
     send_scan_summary(counts, len(kept), sent_count, token, chat_id,
-                      seeded=seeding, deferred=deferred, failed=failed)
+                      seeded=seeding, deferred=deferred,
+                      failed=failed + [f"{p} (parser)" for p in suspect])
 
 
 if __name__ == "__main__":
