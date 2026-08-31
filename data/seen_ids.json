@@ -4869,5 +4869,40 @@
     "price": 1490000,
     "area": 194,
     "type": "dom"
+  },
+  "widokowa-dzialka-z-mpzp-prad-woda-pod-wroclawiem-ID4CREv": {
+    "price": 249000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "malownicza-dzialka-pod-budowe-komfortowego-domu-ul-ogrodowa-woda-ID4zIYH": {
+    "price": 429000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-105-1-m2-20-min-od-wroclawia-wysoki-standard-ID4AnBv": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "przedsprzedaz-wyjatkowych-bawarskich-domow-z-garazami-w-pelczycach-ID4CRw6": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "1bZFK9": {
+    "price": 275000,
+    "area": null,
+    "type": "dom"
+  },
+  "domy-96m2-w-cenie-809tys-ID4B8Ye": {
+    "price": 809000,
+    "area": null,
+    "type": "dom"
+  },
+  "ostatni-dom-blizniak-wroclaw-pow-calk-193m2-zielona-okolica-ID4BN5Z": {
+    "price": 1519000,
+    "area": null,
+    "type": "dom"
   }
 }
