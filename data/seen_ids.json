@@ -4849,5 +4849,20 @@
     "price": 1378000,
     "area": 180,
     "type": "dom"
+  },
+  "dzialka-budowlana-1169-m-w-zebicach-prad-woda-mpzp-ID4CQCn": {
+    "price": 420840,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68364190": {
+    "price": 1149000,
+    "area": 115,
+    "type": "dom"
+  },
+  "96836419000067": {
+    "price": 1149000,
+    "area": 115,
+    "type": "dom"
   }
 }
