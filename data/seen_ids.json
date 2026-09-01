@@ -113,7 +113,7 @@
     "area": null
   },
   "1ba9i3": {
-    "price": 419000,
+    "price": 405000,
     "area": null,
     "type": "dzialka"
   },
@@ -233,8 +233,9 @@
     "area": null
   },
   "1bh6ee": {
-    "price": 330000,
-    "area": null
+    "price": 310000,
+    "area": null,
+    "type": "dzialka"
   },
   "1a1HVF": {
     "price": 312000,
@@ -2516,7 +2517,7 @@
     "type": "dom"
   },
   "96808108300067": {
-    "price": 1790000,
+    "price": 1739000,
     "area": 198,
     "type": "dom"
   },
@@ -4943,6 +4944,21 @@
   "96824326500067": {
     "price": 1390000,
     "area": 170,
+    "type": "dom"
+  },
+  "atrakcyjna-dzialka-budowlana-pod-wroclawiem-ID4m7j6": {
+    "price": 369000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-szeregowy-z-funkcjonalna-przestrzenia-w-brzegu-dolnym-ID4CRjT": {
+    "price": 864000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-na-sprzedaz-zakrzow-ID4BOoZ": {
+    "price": 1150000,
+    "area": null,
     "type": "dom"
   }
 }
