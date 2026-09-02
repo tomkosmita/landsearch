@@ -1442,7 +1442,7 @@
     "type": "dom"
   },
   "1bbVIa": {
-    "price": 1169000,
+    "price": 1149000,
     "area": null,
     "type": "dom"
   },
@@ -4702,7 +4702,7 @@
     "type": "dom"
   },
   "dom-z-charakterem-spokojna-okolica-dzialka-670m2-ID4CPad": {
-    "price": 949000,
+    "price": 899000,
     "area": null,
     "type": "dom"
   },
@@ -4994,6 +4994,16 @@
   "96804785600067": {
     "price": 725000,
     "area": 83,
+    "type": "dom"
+  },
+  "1c9urg": {
+    "price": 420000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68374461": {
+    "price": 799000,
+    "area": 104,
     "type": "dom"
   }
 }
