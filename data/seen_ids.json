@@ -1377,7 +1377,7 @@
     "type": "dom"
   },
   "96735641500067": {
-    "price": 1099000,
+    "price": 1069000,
     "area": 117,
     "type": "dom"
   },
@@ -4958,6 +4958,21 @@
   },
   "dom-na-sprzedaz-zakrzow-ID4BOoZ": {
     "price": 1150000,
+    "area": null,
+    "type": "dom"
+  },
+  "1c7zde": {
+    "price": 340000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-z-basenem-jacuzzi-i-duzym-ogrodem-458-m-ID4zLmh": {
+    "price": 9500000,
+    "area": null,
+    "type": "dom"
+  },
+  "19QAF2": {
+    "price": 220000,
     "area": null,
     "type": "dom"
   }
