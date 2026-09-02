@@ -4975,5 +4975,15 @@
     "price": 220000,
     "area": null,
     "type": "dom"
+  },
+  "68373029": {
+    "price": 450000,
+    "area": 1440,
+    "type": "dzialka"
+  },
+  "1c8ubw": {
+    "price": 2400000,
+    "area": null,
+    "type": "dom"
   }
 }
