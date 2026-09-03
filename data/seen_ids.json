@@ -5005,5 +5005,10 @@
     "price": 799000,
     "area": 104,
     "type": "dom"
+  },
+  "komfortowy-dom-na-wojszycach-ID4Cbtl": {
+    "price": 2350000,
+    "area": null,
+    "type": "dom"
   }
 }
