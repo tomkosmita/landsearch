@@ -2302,7 +2302,7 @@
     "type": "dom"
   },
   "96820807200067": {
-    "price": 1190000,
+    "price": 1249000,
     "area": 127,
     "type": "dom"
   },
@@ -3667,7 +3667,7 @@
     "type": "dom"
   },
   "nowoczesny-dom-z-garazem-i-ogrodem-ID4BW3J": {
-    "price": 799000,
+    "price": 840000,
     "area": null,
     "type": "dom"
   },
@@ -5049,6 +5049,16 @@
   "68378776": {
     "price": 1069000,
     "area": 117,
+    "type": "dom"
+  },
+  "nowa-cena-gotowy-dom-na-dzialce-478-m-marszowice-ID4CH93": {
+    "price": 1069000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-parterowy-4m-taras-50m2-podjazd-na-mp-tylko-u-nas-ID4CUwk": {
+    "price": 1299000,
+    "area": null,
     "type": "dom"
   }
 }
