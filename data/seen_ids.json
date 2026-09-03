@@ -4112,7 +4112,7 @@
     "type": "dom"
   },
   "19JwaR": {
-    "price": 369999,
+    "price": 370000,
     "area": null,
     "type": "dzialka"
   },
@@ -5029,6 +5029,26 @@
   "96803477100067": {
     "price": 649000,
     "area": 80,
+    "type": "dom"
+  },
+  "palac-park-30-ha-z-folwarkiem-i-gorzelnia-8000m2-pod-dom-seniora-ID4Bg7A": {
+    "price": 4300000,
+    "area": null,
+    "type": "dom"
+  },
+  "1cacH3": {
+    "price": 919000,
+    "area": null,
+    "type": "dom"
+  },
+  "68379014": {
+    "price": 1299000,
+    "area": 100,
+    "type": "dom"
+  },
+  "68378776": {
+    "price": 1069000,
+    "area": 117,
     "type": "dom"
   }
 }
