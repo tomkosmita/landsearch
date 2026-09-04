@@ -5075,5 +5075,25 @@
     "price": 799000,
     "area": null,
     "type": "dom"
+  },
+  "pol-blizniaka-w-kameralnej-i-zielonej-scenerii-na-zachodzie-wroclawia-ID4CU96": {
+    "price": 869000,
+    "area": null,
+    "type": "dom"
+  },
+  "68381767": {
+    "price": 1062950,
+    "area": 104,
+    "type": "dom"
+  },
+  "68381460": {
+    "price": 950000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96838176700067": {
+    "price": 1062950,
+    "area": 104,
+    "type": "dom"
   }
 }
