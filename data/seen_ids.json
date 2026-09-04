@@ -5125,5 +5125,30 @@
     "price": 1399000,
     "area": 119,
     "type": "dom"
+  },
+  "19IECO": {
+    "price": 280000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cb1xZ": {
+    "price": 1590000,
+    "area": null,
+    "type": "dom"
+  },
+  "68384804": {
+    "price": 1390000,
+    "area": 1065,
+    "type": "dom"
+  },
+  "68384632": {
+    "price": 1250000,
+    "area": 135,
+    "type": "dom"
+  },
+  "96838480400067": {
+    "price": 1390000,
+    "area": 1065,
+    "type": "dom"
   }
 }
