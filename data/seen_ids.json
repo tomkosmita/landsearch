@@ -5060,5 +5060,20 @@
     "price": 1299000,
     "area": null,
     "type": "dom"
+  },
+  "dzialka-budowlana-1067-m-keblowice-7-km-od-wroclawia-ID4CUYn": {
+    "price": 420000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "nowoczesny-dom-115-m-garaz-ogrod-ok-80-m-ID4CUyf": {
+    "price": 1249000,
+    "area": null,
+    "type": "dom"
+  },
+  "promocja-gotowy-dom-z-funkcjonalnym-ukladem-wroclaw-ratyn-ID4CM85": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
   }
 }
