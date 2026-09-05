@@ -64,3 +64,32 @@ data/
 .github/workflows/
   scrape.yml       # Cron co 6h
 ```
+
+## Monitor brukselski (mieszkania studenckie)
+
+Drugi, niezależny monitor: pokoje studenckie (kot/studio) w Brukseli, 13 portali,
+do 700 €/mc, dostępność wrzesień–październik 2026. Osobny kanał Telegram, osobny
+plik stanu (`data/brussels_seen.json`), cron co 6 h.
+
+### Sekrety
+
+`TELEGRAM_BRUSSELS_BOT_TOKEN` i `TELEGRAM_BRUSSELS_CHAT_ID` (osobne od tych dla działek).
+
+### Uruchamianie
+
+```bash
+# podgląd bez wysyłki i bez zapisu stanu
+BRUSSELS_DRY_RUN=true python -m scraper.brussels.main
+
+# rozpoznanie struktury portali (wymaga otwartego dostępu do sieci)
+python -m scraper.brussels.probe brukot,immoweb
+```
+
+Workflow `Brussels Probe (manual)` robi to samo na runnerze GitHuba i wypisuje
+wynik do logu — używaj go do ustalania selektorów po zmianie strony portalu.
+
+### Dodanie nowego portalu
+
+Dopisz wpis do `SOURCES` w `scraper/brussels/config.py` (`kind: "html"` albo
+`"json"`, URL-e, kandydujące selektory), odpal na nim probe, popraw selektory
+według logu. Nowy kod jest potrzebny tylko wtedy, gdy oba generyki nie wystarczą.
