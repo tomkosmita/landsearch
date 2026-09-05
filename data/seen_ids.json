@@ -1977,7 +1977,7 @@
     "type": "dom"
   },
   "68142819": {
-    "price": 799000,
+    "price": 840000,
     "area": 104,
     "type": "dom"
   },
@@ -5164,6 +5164,31 @@
   "96831318500067": {
     "price": 1495000,
     "area": 194,
+    "type": "dom"
+  },
+  "68385980": {
+    "price": 444000,
+    "area": 1200,
+    "type": "dzialka"
+  },
+  "96838598000067": {
+    "price": 444000,
+    "area": 1200,
+    "type": "dzialka"
+  },
+  "wyjatkowy-dom-pod-wroclawiem-taras-100-m-jacuz-ID4CV0W": {
+    "price": 1899000,
+    "area": null,
+    "type": "dom"
+  },
+  "68386010": {
+    "price": 849000,
+    "area": 78,
+    "type": "dom"
+  },
+  "96834691200067": {
+    "price": 1200000,
+    "area": 139,
     "type": "dom"
   }
 }
