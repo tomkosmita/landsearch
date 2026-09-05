@@ -183,7 +183,7 @@
     "area": 1613
   },
   "1aK5uc": {
-    "price": 140000,
+    "price": 139999,
     "area": null,
     "type": "dzialka"
   },
@@ -5149,6 +5149,21 @@
   "96838480400067": {
     "price": 1390000,
     "area": 1065,
+    "type": "dom"
+  },
+  "wyjatkowy-dom-w-lesie-mikroklimat-ID4Cyyh": {
+    "price": 1380000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-do-zamieszkania-dom-z-ogrodem-w-karwianach-3-km-od-wroclawia-ID4CE3O": {
+    "price": 1399000,
+    "area": null,
+    "type": "dom"
+  },
+  "96831318500067": {
+    "price": 1495000,
+    "area": 194,
     "type": "dom"
   }
 }
