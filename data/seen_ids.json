@@ -3587,7 +3587,7 @@
     "type": "dzialka"
   },
   "1bLdum": {
-    "price": 260000,
+    "price": 259000,
     "area": null,
     "type": "dzialka"
   },
@@ -5204,6 +5204,16 @@
   "96713718100067": {
     "price": 1430000,
     "area": 128,
+    "type": "dom"
+  },
+  "68008762": {
+    "price": 1450015,
+    "area": 126,
+    "type": "dom"
+  },
+  "96833994000067": {
+    "price": 738000,
+    "area": 97,
     "type": "dom"
   }
 }
