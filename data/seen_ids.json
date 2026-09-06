@@ -5190,5 +5190,20 @@
     "price": 1200000,
     "area": 139,
     "type": "dom"
+  },
+  "16f36N": {
+    "price": 430000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1ccrol": {
+    "price": 299000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "96713718100067": {
+    "price": 1430000,
+    "area": 128,
+    "type": "dom"
   }
 }
