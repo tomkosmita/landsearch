@@ -183,7 +183,7 @@
     "area": 1613
   },
   "1aK5uc": {
-    "price": 139999,
+    "price": 125000,
     "area": null,
     "type": "dzialka"
   },
@@ -5259,6 +5259,16 @@
   "96833804600067": {
     "price": 639000,
     "area": 86,
+    "type": "dom"
+  },
+  "szereg-z-garazem-na-tarnogaju-ID4C7o8": {
+    "price": 1450000,
+    "area": null,
+    "type": "dom"
+  },
+  "157NVt": {
+    "price": 970000,
+    "area": null,
     "type": "dom"
   }
 }
