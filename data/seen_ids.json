@@ -1567,7 +1567,7 @@
     "type": "dzialka"
   },
   "wyjatkowy-dom-i-smolec-ID4C5dg": {
-    "price": 2999500,
+    "price": 2999600,
     "area": null,
     "type": "dom"
   },
@@ -5229,6 +5229,36 @@
   "96838893400067": {
     "price": 990000,
     "area": 73,
+    "type": "dom"
+  },
+  "68389817": {
+    "price": 380000,
+    "area": 1011,
+    "type": "dzialka"
+  },
+  "96838981700067": {
+    "price": 380000,
+    "area": 1011,
+    "type": "dzialka"
+  },
+  "1cdvlZ": {
+    "price": 1230000,
+    "area": null,
+    "type": "dom"
+  },
+  "68390655": {
+    "price": 729000,
+    "area": 114,
+    "type": "dom"
+  },
+  "68390120": {
+    "price": 840000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96833804600067": {
+    "price": 639000,
+    "area": 86,
     "type": "dom"
   }
 }
