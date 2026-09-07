@@ -5270,5 +5270,25 @@
     "price": 970000,
     "area": null,
     "type": "dom"
+  },
+  "68392860": {
+    "price": 459000,
+    "area": 1000,
+    "type": "dzialka"
+  },
+  "96839286000067": {
+    "price": 459000,
+    "area": 1000,
+    "type": "dzialka"
+  },
+  "dom-stworzony-z-pasja-i-dbaloscia-o-detale-idealny-dla-rodziny-ID4CY0I": {
+    "price": 1650000,
+    "area": null,
+    "type": "dom"
+  },
+  "96797180500067": {
+    "price": 779000,
+    "area": 80,
+    "type": "dom"
   }
 }
