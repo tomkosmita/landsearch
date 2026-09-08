@@ -1107,7 +1107,7 @@
     "type": "dzialka"
   },
   "17Omj9": {
-    "price": 189000,
+    "price": 179000,
     "area": null,
     "type": "dzialka"
   },
@@ -5323,6 +5323,31 @@
   },
   "4m-blizniak-dwa-poziomy-taras-ogrod-mp-tylko-u-nas-ID4CYAm": {
     "price": 1099000,
+    "area": null,
+    "type": "dom"
+  },
+  "katy-wroclawskie-czernczyce-wyjatkowa-ID4CfUX": {
+    "price": 3600000,
+    "area": null,
+    "type": "dom"
+  },
+  "zadbany-dom-z-pieknym-ogrodem-ID4CGlu": {
+    "price": 1880000,
+    "area": null,
+    "type": "dom"
+  },
+  "duzy-dom-z-potencjalem-w-centrum-ID4CXWa": {
+    "price": 1539000,
+    "area": null,
+    "type": "dom"
+  },
+  "piekny-dom-kobiecy-oltaszyn-lubinowa-ID4CZ5j": {
+    "price": 3200000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-duza-dzialka-z-pieknym-ogrodem-pompa-ciepla-pv-ID4CZ1c": {
+    "price": 1249000,
     "area": null,
     "type": "dom"
   }
