@@ -527,7 +527,7 @@
     "type": "dom"
   },
   "13PzE3": {
-    "price": 1065000,
+    "price": 835000,
     "area": null,
     "type": "dom"
   },
@@ -4337,7 +4337,7 @@
     "type": "dom"
   },
   "16LEAt": {
-    "price": 170000,
+    "price": 160000,
     "area": null,
     "type": "dzialka"
   },
@@ -5309,6 +5309,21 @@
   "96839485300067": {
     "price": 1149000,
     "area": 140,
+    "type": "dom"
+  },
+  "dzialka-budowlana-z-mediami-1100-m-ID4CYD9": {
+    "price": 330000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "funkcjonalny-dom-szeregowy-z-przestronna-strefa-dzienna-galow-ID4COfV": {
+    "price": 930000,
+    "area": null,
+    "type": "dom"
+  },
+  "4m-blizniak-dwa-poziomy-taras-ogrod-mp-tylko-u-nas-ID4CYAm": {
+    "price": 1099000,
+    "area": null,
     "type": "dom"
   }
 }
