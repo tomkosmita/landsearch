@@ -652,7 +652,7 @@
     "type": "dom"
   },
   "67936393": {
-    "price": 999000,
+    "price": 949000,
     "area": 165,
     "type": "dom"
   },
@@ -5289,6 +5289,26 @@
   "96797180500067": {
     "price": 779000,
     "area": 80,
+    "type": "dom"
+  },
+  "nowy-dom-165-m-dzialka-536-m-garaz-wilkszyn-949-000-zl-ID4B3mh": {
+    "price": 949000,
+    "area": null,
+    "type": "dom"
+  },
+  "68394853": {
+    "price": 1149000,
+    "area": 140,
+    "type": "dom"
+  },
+  "68394702": {
+    "price": 1099000,
+    "area": 96,
+    "type": "dom"
+  },
+  "96839485300067": {
+    "price": 1149000,
+    "area": 140,
     "type": "dom"
   }
 }
