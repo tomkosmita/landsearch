@@ -5405,5 +5405,35 @@
     "price": 840000,
     "area": 104,
     "type": "dom"
+  },
+  "1bIc1w": {
+    "price": 500000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-z-lokalem-pod-dzialalnosc-9-pokoi-dz-1670m-zerniki-wroclawskie-ID4D0Yc": {
+    "price": 2049000,
+    "area": null,
+    "type": "dom"
+  },
+  "68405145": {
+    "price": 1284000,
+    "area": 108,
+    "type": "dom"
+  },
+  "68404769": {
+    "price": 1680000,
+    "area": 116,
+    "type": "dom"
+  },
+  "68404358": {
+    "price": 1350000,
+    "area": 98,
+    "type": "dom"
+  },
+  "96840514500067": {
+    "price": 1284000,
+    "area": 108,
+    "type": "dom"
   }
 }
