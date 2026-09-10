@@ -132,7 +132,7 @@
     "type": "dzialka"
   },
   "18gboE": {
-    "price": 210000,
+    "price": 200000,
     "area": null,
     "type": "dzialka"
   },
@@ -5379,6 +5379,31 @@
   "dom-wolnostojacy-parterowy-121-m2-z-garazem-gm-kobierzyce-ID4CUIH": {
     "price": 1300000,
     "area": null,
+    "type": "dom"
+  },
+  "1cglF9": {
+    "price": 360000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-wolnostojacy-z-zadbanym-ogrodem-w-starej-dzielnicy-willowej-ID4CGoG": {
+    "price": 1750000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-z-garazem-w-spokojnej-okolicy-ID4D0qf": {
+    "price": 1299000,
+    "area": null,
+    "type": "dom"
+  },
+  "68403163": {
+    "price": 840000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96840316300067": {
+    "price": 840000,
+    "area": 104,
     "type": "dom"
   }
 }
