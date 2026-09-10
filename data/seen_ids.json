@@ -1717,7 +1717,7 @@
     "type": "dzialka"
   },
   "dzialka-914m2-pozwolenie-na-budowe-material-ogrodzona-budynek-ID4Bb4T": {
-    "price": 299900,
+    "price": 285000,
     "area": null,
     "type": "dzialka"
   },
@@ -5434,6 +5434,16 @@
   "96840514500067": {
     "price": 1284000,
     "area": 108,
+    "type": "dom"
+  },
+  "krzycka-cichy-dom-ukryty-w-zieleni-blisko-wszystkiego-ID4D1xv": {
+    "price": 2890000,
+    "area": null,
+    "type": "dom"
+  },
+  "67559148": {
+    "price": null,
+    "area": null,
     "type": "dom"
   }
 }
