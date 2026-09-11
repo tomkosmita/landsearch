@@ -2957,7 +2957,7 @@
     "type": "dzialka"
   },
   "komfortowy-dom-z-pieknym-ogrodem-w-pelczycach-bez-prowizji-ID4Cjo8": {
-    "price": 1850000,
+    "price": 1799000,
     "area": null,
     "type": "dom"
   },
@@ -5484,6 +5484,31 @@
   "68406653": {
     "price": 829000,
     "area": 116,
+    "type": "dom"
+  },
+  "bez-posrednikow-dom-148-m-klimatyzacja-garaz-ogrod-ID4CkFZ": {
+    "price": 1169000,
+    "area": null,
+    "type": "dom"
+  },
+  "wykonczony-dom-sauna-fotowoltaika-ladowarka-ID4BAuS": {
+    "price": 1590000,
+    "area": null,
+    "type": "dom"
+  },
+  "68408839": {
+    "price": 1376514,
+    "area": 158,
+    "type": "dom"
+  },
+  "68408832": {
+    "price": 1478820,
+    "area": 176,
+    "type": "dom"
+  },
+  "68408656": {
+    "price": 1392336,
+    "area": 158,
     "type": "dom"
   }
 }
