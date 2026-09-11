@@ -5510,5 +5510,25 @@
     "price": 1392336,
     "area": 158,
     "type": "dom"
+  },
+  "dom-340-m2-z-dzialka-2-455m2-we-wroclawiu-z-altana-drewniana-126-m2-ID4D2yn": {
+    "price": 1100000,
+    "area": null,
+    "type": "dom"
+  },
+  "wroclaw-fabryczna-stablowice-dom-ogrod-bez-prowizji-ID4D2J8": {
+    "price": 1999900,
+    "area": null,
+    "type": "dom"
+  },
+  "68410527": {
+    "price": 1249000,
+    "area": 93,
+    "type": "dom"
+  },
+  "96841052700067": {
+    "price": 1249000,
+    "area": 93,
+    "type": "dom"
   }
 }
