@@ -5232,7 +5232,7 @@
     "type": "dom"
   },
   "68389817": {
-    "price": 380000,
+    "price": 370000,
     "area": 1011,
     "type": "dzialka"
   },
@@ -5459,6 +5459,31 @@
   "96840631200067": {
     "price": 1500000,
     "area": 137,
+    "type": "dom"
+  },
+  "nowy-dom-w-zabudowie-atrialnej-wysoki-standard-bez-prowizji-ID4D1Eu": {
+    "price": 959000,
+    "area": null,
+    "type": "dom"
+  },
+  "szczodre-domy-dom-4-pok-1-11-ID4zfoj": {
+    "price": 820000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-jednorodzinny-dzialka-1011-m2-osada-lubnow-ID4Cm8q": {
+    "price": 1376000,
+    "area": null,
+    "type": "dom"
+  },
+  "68407656": {
+    "price": 1069000,
+    "area": 117,
+    "type": "dom"
+  },
+  "68406653": {
+    "price": 829000,
+    "area": 116,
     "type": "dom"
   }
 }
