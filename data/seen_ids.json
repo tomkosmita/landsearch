@@ -5445,5 +5445,20 @@
     "price": null,
     "area": null,
     "type": "dom"
+  },
+  "nowy-wlasny-dom-parterowy-dom-137-m-bezposrednio-dzialka-1098-m-ID4D1BC": {
+    "price": 1500000,
+    "area": null,
+    "type": "dom"
+  },
+  "68406312": {
+    "price": 1500000,
+    "area": 137,
+    "type": "dom"
+  },
+  "96840631200067": {
+    "price": 1500000,
+    "area": 137,
+    "type": "dom"
   }
 }
