@@ -5530,5 +5530,30 @@
     "price": 1249000,
     "area": 93,
     "type": "dom"
+  },
+  "1chWbJ": {
+    "price": 200000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-przy-lesie-z-duza-dzialka-203m-113-m-przestrzeni-ogrod-148-m-ID4D2K0": {
+    "price": 1450000,
+    "area": null,
+    "type": "dom"
+  },
+  "blizniak-114m-idealne-dla-rodziny-ogrod-440m2-ID4BSex": {
+    "price": 689000,
+    "area": null,
+    "type": "dom"
+  },
+  "68410676": {
+    "price": 1450000,
+    "area": 83,
+    "type": "dom"
+  },
+  "96841067600067": {
+    "price": 1450000,
+    "area": 83,
+    "type": "dom"
   }
 }
