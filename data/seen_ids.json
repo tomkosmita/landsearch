@@ -5565,5 +5565,20 @@
     "price": 1399000,
     "area": 114,
     "type": "dom"
+  },
+  "nowy-dom-na-sprzedaz-z-wiata-pompa-ciepla-i-klimatyzacja-ID4zJUe": {
+    "price": 1399000,
+    "area": null,
+    "type": "dom"
+  },
+  "68412144": {
+    "price": 839000,
+    "area": 116,
+    "type": "dom"
+  },
+  "96841214400067": {
+    "price": 839000,
+    "area": 116,
+    "type": "dom"
   }
 }
