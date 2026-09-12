@@ -2947,7 +2947,7 @@
     "type": "dom"
   },
   "dzialka-budowlana-15-arow-budziszow-gm-kostomloty-powiat-sroda-sl-ID4CqFf": {
-    "price": 165000,
+    "price": 158000,
     "area": null,
     "type": "dzialka"
   },
@@ -5554,6 +5554,16 @@
   "96841067600067": {
     "price": 1450000,
     "area": 83,
+    "type": "dom"
+  },
+  "nowoczesna-dom-parterowy-260-m-dzialka-1200-m-ID4D316": {
+    "price": 4995000,
+    "area": null,
+    "type": "dom"
+  },
+  "67623290": {
+    "price": 1399000,
+    "area": 114,
     "type": "dom"
   }
 }
