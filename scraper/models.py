@@ -12,3 +12,4 @@ class Listing:
     price: Optional[int] = None
     area: Optional[int] = None
     utilities: dict = field(default_factory=dict)
+    property_type: str = "dzialka"  # "dzialka" | "dom"

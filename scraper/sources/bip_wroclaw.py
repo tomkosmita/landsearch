@@ -13,10 +13,9 @@ from scraper.sources.base import BaseSource
 logger = logging.getLogger(__name__)
 
 BASE_URL = "https://bip.um.wroc.pl"
-# kind_id=1 = grunty/działki per search form; try search endpoint first,
-# then fall back to category listing /3/10 (candidate for grunty, different from /4/10=lokale)
-SEARCH_URL = f"{BASE_URL}/przetargi-nieruchomosci/szukaj?kind_id=1&type_id=-1&status=0"
-SEARCH_URL_FALLBACK = f"{BASE_URL}/przetargi-nieruchomosci/3/10"
+# /3/10 = all property tenders (plots + lokale mixed), 10 per page.
+# The search URL (/szukaj?kind_id=1) returns a calendar widget, not a list — skip it.
+LISTING_URL = f"{BASE_URL}/przetargi-nieruchomosci/3/10"
 
 HEADERS = {
     "User-Agent": (
@@ -31,16 +30,17 @@ HEADERS = {
     "Referer": "https://bip.um.wroc.pl/",
 }
 
-# Keywords identifying land plots vs other property types
+# Plot keywords — BIP titles are addresses so "dz. nr" (działka numer) is the key indicator
 PLOT_KEYWORDS = [
-    "działk", "działek", "grunt", "teren",
-    "nieruchomość gruntow", "nieruchomosc gruntow",
-    "budowlan", "niezabudowan",
+    "dz. nr", "dz.nr",     # parcel number abbreviation — always present in plot listings
+    "działk", "działek",
+    "grunt", "nieruchomość gruntow", "nieruchomosc gruntow",
+    "niezabudowan", "budowlan",
 ]
 
 # Exclude non-land listings
 EXCLUDE_KEYWORDS = [
-    "lokal", "mieszkan", "garaż", "garaz", "budynek", "kamienica",
+    "lokal", "lokl", "mieszkan", "garaż", "garaz", "budynek", "kamienica",
 ]
 
 UTILITY_PATTERNS = {
@@ -62,11 +62,7 @@ class BipWroclawSource(BaseSource):
             self.session.proxies = {"http": proxy, "https": proxy}
 
     def fetch_listings(self) -> List[Listing]:
-        results = self._fetch_from_url(SEARCH_URL)
-        if not results:
-            logger.info("BIP: search URL returned 0 results, trying fallback %s", SEARCH_URL_FALLBACK)
-            results = self._fetch_from_url(SEARCH_URL_FALLBACK)
-        return results
+        return self._fetch_from_url(LISTING_URL)
 
     def _fetch_from_url(self, start_url: str) -> List[Listing]:
         results: List[Listing] = []
@@ -114,35 +110,120 @@ class BipWroclawSource(BaseSource):
         next_url = self._find_next_page(soup)
         return listings, next_url
 
+    # Exact nav link texts (lowercased, stripped)
+    _NAV_TEXTS = frozenset([
+        "instrukcja obsługi", "urząd miejski", "zespół redakcyjny bip",
+        "strona główna", "bip",
+    ])
+    # Regex patterns for pagination/nav links
+    _NAV_PATTERNS = [
+        re.compile(r"^strona\s*\d+$", re.IGNORECASE),
+        re.compile(r"^pokaż\s*\d+", re.IGNORECASE),
+        re.compile(r"^poprzedni", re.IGNORECASE),
+        re.compile(r"^następn", re.IGNORECASE),
+    ]
+
+    def _is_nav_link(self, text: str) -> bool:
+        lower = text.lower().strip()
+        if lower in self._NAV_TEXTS:
+            return True
+        return any(p.match(lower) for p in self._NAV_PATTERNS)
+
     def _find_listing_items(self, soup: BeautifulSoup) -> list:
-        # Strategy 1: table rows with links
-        rows = soup.select("table.views-table tbody tr, table tbody tr")
-        if rows:
-            logger.info("BIP: found %d table rows", len(rows))
-            for r in rows[:3]:
-                logger.info("BIP row sample: %r", r.get_text(" ", strip=True)[:80])
-            return rows
-        # Strategy 2: article/div listing cards
-        cards = soup.select("article, .views-row, .node--type-przetarg, .tender-item")
+        # BIP renders a calendar view — table rows are date rows, not listing rows.
+        # Strategy 1: find links whose text contains tender keywords.
+        # Strategy 2: find links to /content/ or /node/ pages, minus known nav links.
+        # Strategy 3: log all hrefs for diagnosis.
+
+        seen_hrefs: set = set()
+
+        # Strategy 1: text-based tender keyword matching
+        text_matches = []
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            text = a.get_text(strip=True)
+            if re.match(r"^\d{1,2}$", text) or len(text) < 8:
+                continue
+            if self._is_nav_link(text):
+                continue
+            if not re.search(
+                r"przetarg|sprzedaż|sprzedaz|nieruchom|działk|grunt|teren",
+                text, re.IGNORECASE,
+            ):
+                continue
+            if href in seen_hrefs:
+                continue
+            seen_hrefs.add(href)
+            text_matches.append(a.parent if a.parent else a)
+
+        if text_matches:
+            logger.info("BIP: found %d tender links (by text)", len(text_matches))
+            for c in text_matches[:3]:
+                a = c.find("a") or c
+                logger.info(
+                    "BIP tender: %r -> %s",
+                    a.get_text(strip=True)[:60],
+                    a.get("href", "")[:80],
+                )
+            return text_matches
+
+        # Strategy 2: URL pattern, excluding known nav links
+        url_matches = []
+        seen_hrefs = set()
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            text = a.get_text(strip=True)
+            if re.match(r"^\d{1,2}$", text) or len(text) < 5:
+                continue
+            if self._is_nav_link(text):
+                continue
+            # Match only actual tender pages: /przetarg-nieruchomosci/{numeric-id}/{word-slug}
+            # Avoids pagination URLs like /przetargi-nieruchomosci/3/10 (plural, all-numeric)
+            if not re.search(r"/przetarg-nieruchomosci/\d+/[a-z]", href, re.IGNORECASE):
+                continue
+            if href in seen_hrefs:
+                continue
+            seen_hrefs.add(href)
+            url_matches.append(a.parent if a.parent else a)
+
+        if url_matches:
+            logger.info("BIP: found %d tender links (by URL)", len(url_matches))
+            for c in url_matches[:3]:
+                a = c.find("a") or c
+                logger.info("BIP URL link: %r -> %s", a.get_text(strip=True)[:60], a.get("href", "")[:80])
+            return url_matches
+
+        # Fallback: Drupal view cards
+        cards = soup.select("article, .views-row, .node--type-przetarg")
         if cards:
             logger.info("BIP: found %d card items", len(cards))
             return cards
-        # Strategy 3: any li with przetarg link
-        items = [li for li in soup.find_all("li") if li.find("a", href=re.compile(r"przetarg|nieruchomosc"))]
-        if items:
-            logger.info("BIP: found %d li items", len(items))
-            return items
-        logger.warning("BIP: no items found. Title: %s", soup.title.string if soup.title else "N/A")
-        logger.warning("BIP: top-level tags: %s", [t.name for t in soup.body.children if hasattr(t, "name") and t.name][:10] if soup.body else "no body")
+
+        # Diagnostic: dump all non-trivial hrefs so we can learn the URL pattern
+        all_links = [
+            (a.get_text(strip=True)[:50], a["href"][:80])
+            for a in soup.find_all("a", href=True)
+            if a.get_text(strip=True) and not re.match(r"^\d{1,2}$", a.get_text(strip=True))
+        ]
+        for text, href in all_links[:15]:
+            logger.warning("BIP href: %r -> %s", text, href)
+        h1 = soup.find("h1")
+        logger.warning(
+            "BIP: no items found. Page title: %s | H1: %s",
+            soup.title.string if soup.title else "N/A",
+            h1.get_text(strip=True)[:80] if h1 else "N/A",
+        )
         return []
 
     def _parse_item(self, item) -> Optional[Listing]:
         try:
-            link = item.select_one(
-                "a[href*='przetarg'], a[href*='nieruchomosc'], a[href*='/content/'], h2 a, h3 a, td a"
-            )
-            if not link:
-                link = item.find("a")
+            # item is the parent container of a tender link (td/div/li/a)
+            if item.name == "a":
+                link = item
+            else:
+                link = item.select_one("a[href*='przetarg-nieruchomosci']")
+                if not link:
+                    link = item.find("a")
             if not link:
                 return None
 
@@ -153,9 +234,7 @@ class BipWroclawSource(BaseSource):
             path = re.sub(r"[^\w]", "_", href.strip("/"))
             listing_id = f"bip_wroclaw_{path[-60:]}"
 
-            title = link.get_text(strip=True)
-            if not title:
-                title = item.get_text(" ", strip=True)[:120]
+            title = link.get_text(strip=True) or item.get_text(" ", strip=True)[:120]
 
             # Extract price from text — "cena wywoławcza: 500 000 zł"
             full_text = item.get_text(" ", strip=True)
@@ -238,14 +317,52 @@ class BipWroclawSource(BaseSource):
             return href if href.startswith("http") else f"{BASE_URL}{href}"
         return None
 
-    def fetch_utilities(self, url: str) -> Dict[str, bool]:
+    def fetch_utilities(self, url: str) -> dict:
         time.sleep(1)
         html = self._get_html(url)
         if html is None:
             return {}
         soup = BeautifulSoup(html, "lxml")
-        text = soup.get_text(" ", strip=True).lower()
-        return {
-            utility: any(kw in text for kw in keywords)
+        text = soup.get_text(" ", strip=True)
+        text_lower = text.lower()
+
+        result: dict = {
+            utility: any(kw in text_lower for kw in keywords)
             for utility, keywords in UTILITY_PATTERNS.items()
         }
+
+        # Extract structured fields from the detail page table
+        price = self._extract_table_field(soup, ["cena wywoławcza", "cena wywolawcza"])
+        if price:
+            parsed = self._parse_price(price)
+            if parsed is not None:
+                result["_price"] = parsed
+
+        address = self._extract_table_field(soup, ["adres nieruchomości", "adres nieruchomosci"])
+        if address:
+            result["_location"] = f"Wrocław, {address.strip()}"
+
+        area_text = self._extract_table_field(soup, ["powierzchnia"])
+        if area_text:
+            parsed_area = self._parse_area(area_text)
+            if parsed_area is not None:
+                result["_area"] = parsed_area
+
+        return result
+
+    def _extract_table_field(self, soup: BeautifulSoup, label_variants: list) -> Optional[str]:
+        """Find a value cell in the BIP detail table by matching its label cell."""
+        for row in soup.find_all("tr"):
+            cells = row.find_all(["th", "td"])
+            if len(cells) >= 2:
+                label = cells[0].get_text(strip=True).lower()
+                if any(lv in label for lv in label_variants):
+                    return cells[1].get_text(strip=True)
+        # Also try dl/dt/dd pattern
+        for dt in soup.find_all("dt"):
+            label = dt.get_text(strip=True).lower()
+            if any(lv in label for lv in label_variants):
+                dd = dt.find_next_sibling("dd")
+                if dd:
+                    return dd.get_text(strip=True)
+        return None

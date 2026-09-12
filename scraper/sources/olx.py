@@ -12,7 +12,7 @@ from scraper.sources.base import BaseSource
 
 logger = logging.getLogger(__name__)
 
-SEARCH_URL = (
+PLOT_SEARCH_URL = (
     "https://www.olx.pl/nieruchomosci/dzialki/sprzedaz/wroclaw/"
     "?search%5Bdistrict_id%5D=393"
     "&search%5Bdist%5D=15"
@@ -21,6 +21,13 @@ SEARCH_URL = (
     "&search%5Bfilter_float_price%3Ato%5D=500000"
     "&search%5Bfilter_enum_type%5D%5B0%5D=dzialki-budowlane"
     "&search%5Bfilter_float_m%3Afrom%5D=800"
+)
+
+# URL provided by user for detached houses — same district, smaller radius (10km).
+HOUSE_SEARCH_URL = (
+    "https://www.olx.pl/nieruchomosci/domy/sprzedaz/wroclaw/q-dom/"
+    "?search%5Bdistrict_id%5D=393"
+    "&search%5Bdist%5D=10"
 )
 
 OLX_HOME = "https://www.olx.pl/"
@@ -49,7 +56,15 @@ UTILITY_PATTERNS = {
 
 
 class OlxSource(BaseSource):
-    def __init__(self) -> None:
+    def __init__(
+        self,
+        search_url: str = PLOT_SEARCH_URL,
+        property_type: str = "dzialka",
+        default_title: str = "Działka budowlana",
+    ) -> None:
+        self.search_url = search_url
+        self.property_type = property_type
+        self.default_title = default_title
         self.session = requests.Session(impersonate="chrome120")
         self.session.headers.update(HEADERS)
 
@@ -58,7 +73,7 @@ class OlxSource(BaseSource):
         if html is None:
             return []
 
-        html = self._get_html(SEARCH_URL)
+        html = self._get_html(self.search_url)
         if html is None:
             return []
 
@@ -159,7 +174,7 @@ class OlxSource(BaseSource):
             price = self._parse_price(price_text)
 
             title_el = card.select_one("h4, h3, [data-testid='ad-title']")
-            title = title_el.get_text(strip=True) if title_el else "Działka"
+            title = title_el.get_text(strip=True) if title_el else self.default_title
 
             location_el = card.select_one("[data-testid='location-date']")
             location = location_el.get_text(strip=True).split("-")[0].strip() if location_el else ""
@@ -191,7 +206,7 @@ class OlxSource(BaseSource):
             elif isinstance(price_data, (int, float)):
                 price = int(price_data)
 
-            title = raw.get("title", "Działka budowlana")
+            title = raw.get("title") or self.default_title
             location = self._extract_location(raw)
             area = self._extract_area(raw)
 
@@ -204,6 +219,7 @@ class OlxSource(BaseSource):
                 price=int(price) if price else None,
                 area=area,
                 utilities={},
+                property_type=self.property_type,
             )
         except Exception as e:
             logger.debug("Failed to build listing from %s: %s", raw.get("id"), e)
