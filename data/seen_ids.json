@@ -5585,5 +5585,35 @@
     "price": 1200000,
     "area": 140,
     "type": "dom"
+  },
+  "1cj2UU": {
+    "price": 255000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "17DdE0": {
+    "price": 420,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-ul-lubawska-ID4yRTW": {
+    "price": 1750000,
+    "area": null,
+    "type": "dom"
+  },
+  "-ID4CKnn": {
+    "price": 1249000,
+    "area": null,
+    "type": "dom"
+  },
+  "67415695": {
+    "price": 1750000,
+    "area": 113,
+    "type": "dom"
+  },
+  "68412898": {
+    "price": 975000,
+    "area": 124,
+    "type": "dom"
   }
 }
