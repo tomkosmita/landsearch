@@ -1742,7 +1742,7 @@
     "type": "dzialka"
   },
   "dzialki-budowlane-nowa-wies-kacka-5-min-katy-wr-25-min-wroclaw-ID4uRnM": {
-    "price": 222000,
+    "price": 191330,
     "area": null,
     "type": "dzialka"
   },
@@ -4162,7 +4162,7 @@
     "type": "dom"
   },
   "68325714": {
-    "price": 1450000,
+    "price": 1500000,
     "area": 180,
     "type": "dom"
   },
@@ -5694,6 +5694,41 @@
   "96841620800067": {
     "price": 1430000,
     "area": 129,
+    "type": "dom"
+  },
+  "dzialka-1000m2-z-warunkami-zabudowy-willowa-dzielnica-lub-inne-dzialki-ID4CBUH": {
+    "price": 490000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68307551": {
+    "price": 490000,
+    "area": 1000,
+    "type": "dzialka"
+  },
+  "96830755100067": {
+    "price": 490000,
+    "area": 1000,
+    "type": "dzialka"
+  },
+  "ladny-dom-szeregowy-z-balkonem-i-garazem-ID4CGDE": {
+    "price": 1500000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowy-dom-w-zabudowie-szeregowej-tuz-przy-klinie-wojszyckim-ID4D4R2": {
+    "price": 1299000,
+    "area": null,
+    "type": "dom"
+  },
+  "68418208": {
+    "price": 1290000,
+    "area": 196,
+    "type": "dom"
+  },
+  "67472861": {
+    "price": 899000,
+    "area": 125,
     "type": "dom"
   }
 }
