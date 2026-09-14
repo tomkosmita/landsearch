@@ -5730,5 +5730,10 @@
     "price": 899000,
     "area": 125,
     "type": "dom"
+  },
+  "domaslaw-wolnostojacy-dom-pod-rozbudowe-na-uslugi-ID4D4XW": {
+    "price": 430000,
+    "area": null,
+    "type": "dom"
   }
 }
