@@ -4877,7 +4877,7 @@
     "type": "dzialka"
   },
   "malownicza-dzialka-pod-budowe-komfortowego-domu-ul-ogrodowa-woda-ID4zIYH": {
-    "price": 429000,
+    "price": 419400,
     "area": null,
     "type": "dzialka"
   },
@@ -5644,6 +5644,56 @@
   "wolnostojacy-dom-z-basenem-ID4CSUt": {
     "price": 2800000,
     "area": null,
+    "type": "dom"
+  },
+  "gajkow-dzialka-budowlana-10ar-10ar-11ar-prad-kanalizacja-gaz-ID4D40t": {
+    "price": 399000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "rezerwacjadom-w-zabudowie-blizniaczej-92-1-m-w-wilkszynie-ID4yPxX": {
+    "price": 850000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-na-lubawskiej-ID4D430": {
+    "price": 1750000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-wilkszynie-tuz-przy-granicy-wroclawia-ID4D48X": {
+    "price": 1485000,
+    "area": null,
+    "type": "dom"
+  },
+  "68416208": {
+    "price": 1430000,
+    "area": 129,
+    "type": "dom"
+  },
+  "68416102": {
+    "price": 1376514,
+    "area": 158,
+    "type": "dom"
+  },
+  "68416067": {
+    "price": 1485000,
+    "area": 194,
+    "type": "dom"
+  },
+  "68415698": {
+    "price": 1750000,
+    "area": 113,
+    "type": "dom"
+  },
+  "68414986": {
+    "price": 999000,
+    "area": 89,
+    "type": "dom"
+  },
+  "96841620800067": {
+    "price": 1430000,
+    "area": 129,
     "type": "dom"
   }
 }
