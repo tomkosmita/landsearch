@@ -5630,5 +5630,20 @@
     "price": 840000,
     "area": 104,
     "type": "dom"
+  },
+  "gotowy-dom-dla-rodziny-w-kielczowie-ID4CYBo": {
+    "price": 1099000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-stanie-deweloperskim-ul-ady-sari-ID4xO4W": {
+    "price": 900000,
+    "area": null,
+    "type": "dom"
+  },
+  "wolnostojacy-dom-z-basenem-ID4CSUt": {
+    "price": 2800000,
+    "area": null,
+    "type": "dom"
   }
 }
