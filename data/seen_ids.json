@@ -3827,7 +3827,7 @@
     "type": "dzialka"
   },
   "przestronny-dom-z-ogrodem-w-radwanicach-na-granicy-wroclawia-ID4CyYR": {
-    "price": 990000,
+    "price": 980000,
     "area": null,
     "type": "dom"
   },
@@ -5764,6 +5764,11 @@
   "68422363": {
     "price": 1200000,
     "area": 140,
+    "type": "dom"
+  },
+  "dom-na-grabiszynku-wroclaw-ok-parku-doskonala-lokalizacja-ID4D5lS": {
+    "price": 2350000,
+    "area": null,
     "type": "dom"
   }
 }
