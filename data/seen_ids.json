@@ -5735,5 +5735,25 @@
     "price": 430000,
     "area": null,
     "type": "dom"
+  },
+  "-ID4D4VN": {
+    "price": 1599000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-wydzielonym-mieszkaniem-magazyn-opcja-zamiany-ID4BiJL": {
+    "price": 1595000,
+    "area": null,
+    "type": "dom"
+  },
+  "68419616": {
+    "price": 1200000,
+    "area": 139,
+    "type": "dom"
+  },
+  "96841961600067": {
+    "price": 1200000,
+    "area": 139,
+    "type": "dom"
   }
 }
