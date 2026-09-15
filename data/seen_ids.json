@@ -5755,5 +5755,10 @@
     "price": 1200000,
     "area": 139,
     "type": "dom"
+  },
+  "1cky35": {
+    "price": 253890,
+    "area": null,
+    "type": "dzialka"
   }
 }
