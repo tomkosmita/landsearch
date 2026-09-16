@@ -5780,5 +5780,30 @@
     "price": 1099000,
     "area": 97,
     "type": "dom"
+  },
+  "dzialka-budowlana-z-mediami-w-spokojnej-wsi-ID4D6oc": {
+    "price": 300000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-986m-przy-lesie-blisko-grzybka-oborniki-slaskie-ID4CVef": {
+    "price": 480000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "blizniak-z-ogrodem-pod-miastem-5-pokoi-116m2-ID4CDGK": {
+    "price": 1199000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-193-m-dzialka-900-m-garaz-psary-pod-wr-ID4CWQA": {
+    "price": 1298000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-219m-z-poddaszem-miekinia-duza-dzialka-garaz-2-stanowiskowy-ID4CWvp": {
+    "price": 1490000,
+    "area": null,
+    "type": "dom"
   }
 }
