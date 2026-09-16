@@ -642,7 +642,7 @@
     "type": "dom"
   },
   "67356415": {
-    "price": 1069000,
+    "price": 1099000,
     "area": 117,
     "type": "dom"
   },
@@ -1377,7 +1377,7 @@
     "type": "dom"
   },
   "96735641500067": {
-    "price": 1069000,
+    "price": 1099000,
     "area": 117,
     "type": "dom"
   },
@@ -5829,6 +5829,21 @@
   "96832571400067": {
     "price": 1500000,
     "area": 180,
+    "type": "dom"
+  },
+  "1c0xjd": {
+    "price": 110000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "nowy-dom-parterowy-cesarzowice-przy-a4-i-s8-ID4CO1v": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-budowie-199-m-poddasze-lozina-dzialka-14-arow-ID4D7k4": {
+    "price": 1590000,
+    "area": null,
     "type": "dom"
   }
 }
