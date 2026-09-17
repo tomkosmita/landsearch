@@ -5875,5 +5875,10 @@
     "price": 1199999,
     "area": 140,
     "type": "dom"
+  },
+  "1cmTNl": {
+    "price": 209000,
+    "area": null,
+    "type": "dzialka"
   }
 }
