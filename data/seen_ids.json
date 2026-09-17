@@ -522,7 +522,7 @@
     "type": "dom"
   },
   "19c3WM": {
-    "price": 835000,
+    "price": 855000,
     "area": null,
     "type": "dom"
   },
@@ -4892,7 +4892,7 @@
     "type": "dom"
   },
   "1bZFK9": {
-    "price": 275000,
+    "price": 285000,
     "area": null,
     "type": "dom"
   },
@@ -5849,6 +5849,31 @@
   "wyjatkowy-dom-w-zabudowie-szeregowej-ID4D73H": {
     "price": 1590000,
     "area": null,
+    "type": "dom"
+  },
+  "1cmKOO": {
+    "price": 480000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cmnKK": {
+    "price": 279000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68429180": {
+    "price": 1199999,
+    "area": 140,
+    "type": "dom"
+  },
+  "68429013": {
+    "price": 988000,
+    "area": 80,
+    "type": "dom"
+  },
+  "96842918000067": {
+    "price": 1199999,
+    "area": 140,
     "type": "dom"
   }
 }
