@@ -3207,7 +3207,7 @@
     "type": "dzialka"
   },
   "wyjatkowa-oferta-dla-najbardziej-wymagajacego-klienta-ID4BXHw": {
-    "price": 2490000,
+    "price": 3090000,
     "area": null,
     "type": "dom"
   },
@@ -5904,6 +5904,51 @@
   "blizniak-w-kielczowie-z-duzym-ogrodem-ID4D89V": {
     "price": 1490000,
     "area": null,
+    "type": "dom"
+  },
+  "swietny-dom-na-rezydencjonalnym-osiedlu-ID4CD80": {
+    "price": 1364500,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-dom-parterowy-260-m-dzialka-1200-m-smart-nowy-ID4D316": {
+    "price": 4995000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-jednorodzinny-w-atrakcyjnej-lokalizacji-ID4D8Re": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
+  },
+  "wojszyce-dom-wolnostojacy-186-m2-ID4D85T": {
+    "price": 1649000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-pietrowy-karlowice-dzialka-616-m-ID4D5Fl": {
+    "price": 1349000,
+    "area": null,
+    "type": "dom"
+  },
+  "68436294": {
+    "price": 1100000,
+    "area": 85,
+    "type": "dom"
+  },
+  "68436241": {
+    "price": 1500000,
+    "area": 122,
+    "type": "dom"
+  },
+  "68436005": {
+    "price": 1099000,
+    "area": 118,
+    "type": "dom"
+  },
+  "96843629400067": {
+    "price": 1100000,
+    "area": 85,
     "type": "dom"
   }
 }
