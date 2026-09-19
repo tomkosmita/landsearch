@@ -6030,5 +6030,10 @@
     "price": 1075000,
     "area": 122,
     "type": "dom"
+  },
+  "dom-jednorodzinny-wolnostojacy-domaslaw-gm-kobierzyce-ID4D9S9": {
+    "price": 1299000,
+    "area": null,
+    "type": "dom"
   }
 }
