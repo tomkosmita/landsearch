@@ -5995,5 +5995,25 @@
     "price": 1500000,
     "area": 122,
     "type": "dom"
+  },
+  "dzialka-budowlana-z-mediami-bogdaszowice-ID4oUHT": {
+    "price": 309000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "gotowy-dom-dla-rodziny-157-m-z-ogrodem-15-min-do-wroclawia-ID4D9Ku": {
+    "price": 1575000,
+    "area": null,
+    "type": "dom"
+  },
+  "67707742": {
+    "price": 1215500,
+    "area": 110,
+    "type": "dom"
+  },
+  "96838146000067": {
+    "price": 950000,
+    "area": 104,
+    "type": "dom"
   }
 }
