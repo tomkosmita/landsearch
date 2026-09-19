@@ -5980,5 +5980,20 @@
     "price": 1100000,
     "area": 85,
     "type": "dom"
+  },
+  "dom-wolnostojacy-z-ogrodem-blisko-stacji-pkp-brzeg-dln-ID4Bl6d": {
+    "price": 1250000,
+    "area": null,
+    "type": "dom"
+  },
+  "zabudowa-blizniacza-4-pokoje-ogrod-2-miejsca-postojowe-ID4CASc": {
+    "price": 779000,
+    "area": null,
+    "type": "dom"
+  },
+  "68437068": {
+    "price": 1500000,
+    "area": 122,
+    "type": "dom"
   }
 }
