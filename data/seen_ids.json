@@ -2282,7 +2282,7 @@
     "type": "dom"
   },
   "96822846800067": {
-    "price": 1049000,
+    "price": 1250000,
     "area": 152,
     "type": "dom"
   },
@@ -6033,6 +6033,16 @@
   },
   "dom-jednorodzinny-wolnostojacy-domaslaw-gm-kobierzyce-ID4D9S9": {
     "price": 1299000,
+    "area": null,
+    "type": "dom"
+  },
+  "piekny-dom-zadbany-i-czysty-dobra-energia-i-dusza-2022-rok-ID4D9UJ": {
+    "price": 1075000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-z-garazem-w-krzykach-wroclaw-ID4D8Ci": {
+    "price": 1750000,
     "area": null,
     "type": "dom"
   }
