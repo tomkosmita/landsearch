@@ -6050,5 +6050,30 @@
     "price": 1249000,
     "area": 166,
     "type": "dom"
+  },
+  "wolne-domy-w-sasiedztwie-kobierzyc-wysoki-standard-spokojna-okolica-ID4Da5F": {
+    "price": 849000,
+    "area": null,
+    "type": "dom"
+  },
+  "68439914": {
+    "price": 729060,
+    "area": 86,
+    "type": "dom"
+  },
+  "68439778": {
+    "price": 1290000,
+    "area": 163,
+    "type": "dom"
+  },
+  "68146867": {
+    "price": 1721488,
+    "area": 126,
+    "type": "dom"
+  },
+  "96827722600067": {
+    "price": 799000,
+    "area": 88,
+    "type": "dom"
   }
 }
