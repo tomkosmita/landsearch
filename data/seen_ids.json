@@ -527,7 +527,7 @@
     "type": "dom"
   },
   "13PzE3": {
-    "price": 835000,
+    "price": 855000,
     "area": null,
     "type": "dom"
   },
@@ -2482,7 +2482,7 @@
     "type": "dom"
   },
   "dzialki-budowlane-jedyne-uzbrojone-w-wojczycach-ID4Cl6s": {
-    "price": 180000,
+    "price": 170000,
     "area": null,
     "type": "dzialka"
   },
@@ -3012,7 +3012,7 @@
     "type": "dom"
   },
   "68267098": {
-    "price": 1490000,
+    "price": 1485000,
     "area": 194,
     "type": "dom"
   },
@@ -3572,7 +3572,7 @@
     "type": "dom"
   },
   "68291749": {
-    "price": 869999,
+    "price": 849999,
     "area": 103,
     "type": "dom"
   },
@@ -6109,6 +6109,36 @@
   "96844070200067": {
     "price": 1050000,
     "area": 152,
+    "type": "dom"
+  },
+  "dzialka-z-domem-w-budowie-prezyce-1600-m2-ID4DaLI": {
+    "price": 380000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "nowoczesne-domy-garaz-ogrod-m-postojowe-ID4ChTA": {
+    "price": 750000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-na-grabiszynku-ID4D84R": {
+    "price": 3599000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-do-zamieszkania-od-zaraz-ID4C0dS": {
+    "price": 1590000,
+    "area": null,
+    "type": "dom"
+  },
+  "68441719": {
+    "price": 1740000,
+    "area": 290,
+    "type": "dom"
+  },
+  "96841606700067": {
+    "price": 1485000,
+    "area": 194,
     "type": "dom"
   }
 }
