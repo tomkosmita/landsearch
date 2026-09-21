@@ -1717,7 +1717,7 @@
     "type": "dzialka"
   },
   "dzialka-914m2-pozwolenie-na-budowe-material-ogrodzona-budynek-ID4Bb4T": {
-    "price": 285000,
+    "price": 269000,
     "area": null,
     "type": "dzialka"
   },
@@ -6159,6 +6159,21 @@
   "67707786": {
     "price": 1420853,
     "area": 132,
+    "type": "dom"
+  },
+  "bawarski-blizniak-premium-duzy-ogrod-garaz-miejsce-parkingowe-ID4wg44": {
+    "price": 855000,
+    "area": null,
+    "type": "dom"
+  },
+  "68444819": {
+    "price": 1799999,
+    "area": 219,
+    "type": "dom"
+  },
+  "96844481900067": {
+    "price": 1799999,
+    "area": 219,
     "type": "dom"
   }
 }
