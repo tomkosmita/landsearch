@@ -3437,7 +3437,7 @@
     "type": "dom"
   },
   "przestronny-dom-6-pokoi-z-garazem-i-ogrzewaniem-gazowym-ID4yjmN": {
-    "price": 1199000,
+    "price": 1079000,
     "area": null,
     "type": "dom"
   },
@@ -3827,7 +3827,7 @@
     "type": "dzialka"
   },
   "przestronny-dom-z-ogrodem-w-radwanicach-na-granicy-wroclawia-ID4CyYR": {
-    "price": 980000,
+    "price": 990000,
     "area": null,
     "type": "dom"
   },
@@ -6139,6 +6139,26 @@
   "96841606700067": {
     "price": 1485000,
     "area": 194,
+    "type": "dom"
+  },
+  "4m-blizniak-dwa-poziomy-taras-ogrod-mp-dzien-otwarty-ID4CYAm": {
+    "price": 1099000,
+    "area": null,
+    "type": "dom"
+  },
+  "68076461": {
+    "price": 1800000,
+    "area": 195,
+    "type": "dom"
+  },
+  "68444158": {
+    "price": 1669000,
+    "area": 210,
+    "type": "dom"
+  },
+  "67707786": {
+    "price": 1420853,
+    "area": 132,
     "type": "dom"
   }
 }
