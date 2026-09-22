@@ -6175,5 +6175,20 @@
     "price": 1799999,
     "area": 219,
     "type": "dom"
+  },
+  "komfortowy-dom-na-wojszycach-ID4D1VN": {
+    "price": 2350000,
+    "area": null,
+    "type": "dom"
+  },
+  "krzyki-ul-okolna-dzialka-897-m-ID4A2dl": {
+    "price": 1997000,
+    "area": null,
+    "type": "dom"
+  },
+  "68446809": {
+    "price": 660000,
+    "area": 114,
+    "type": "dom"
   }
 }
