@@ -1957,7 +1957,7 @@
     "type": "dom"
   },
   "96713882800067": {
-    "price": 1175000,
+    "price": 1285000,
     "area": 131,
     "type": "dom"
   },
@@ -6214,6 +6214,11 @@
   "96839470200067": {
     "price": 1099000,
     "area": 96,
+    "type": "dom"
+  },
+  "okazja-dom-w-cenie-mieszkania-remont-dla-siebie-ID4DcUD": {
+    "price": 1299000,
+    "area": null,
     "type": "dom"
   }
 }
