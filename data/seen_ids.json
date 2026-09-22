@@ -1117,7 +1117,7 @@
     "type": "dom"
   },
   "68063778": {
-    "price": 1590000,
+    "price": 1560000,
     "area": 138,
     "type": "dom"
   },
@@ -3712,7 +3712,7 @@
     "type": "dzialka"
   },
   "dom-przy-lesie-z-sauna-tarasem-i-basenem-ID4Cwuf": {
-    "price": 2900000,
+    "price": 2750000,
     "area": null,
     "type": "dom"
   },
@@ -5532,7 +5532,7 @@
     "type": "dom"
   },
   "1chWbJ": {
-    "price": 200000,
+    "price": 180000,
     "area": null,
     "type": "dzialka"
   },
@@ -6189,6 +6189,31 @@
   "68446809": {
     "price": 660000,
     "area": 114,
+    "type": "dom"
+  },
+  "18Q0oE": {
+    "price": 3300000,
+    "area": null,
+    "type": "dom"
+  },
+  "pol-blizniaka-w-okolicy-bielan-wroclawskich-ID4DbPf": {
+    "price": 550000,
+    "area": null,
+    "type": "dom"
+  },
+  "ta-przestrzen-to-nie-tylko-m2-to-ogrom-mozliwosci-ID4D2KA": {
+    "price": 3180000,
+    "area": null,
+    "type": "dom"
+  },
+  "67812254": {
+    "price": 1114330,
+    "area": 113,
+    "type": "dom"
+  },
+  "96839470200067": {
+    "price": 1099000,
+    "area": 96,
     "type": "dom"
   }
 }
