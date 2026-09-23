@@ -1747,7 +1747,7 @@
     "type": "dzialka"
   },
   "68205491": {
-    "price": 280000,
+    "price": 350000,
     "area": 1000,
     "type": "dzialka"
   },
@@ -3667,7 +3667,7 @@
     "type": "dom"
   },
   "nowoczesny-dom-z-garazem-i-ogrodem-ID4BW3J": {
-    "price": 840000,
+    "price": 827000,
     "area": null,
     "type": "dom"
   },
@@ -4867,7 +4867,7 @@
     "type": "dom"
   },
   "96826709800067": {
-    "price": 1490000,
+    "price": 1485000,
     "area": 194,
     "type": "dom"
   },
@@ -6219,6 +6219,26 @@
   "okazja-dom-w-cenie-mieszkania-remont-dla-siebie-ID4DcUD": {
     "price": 1299000,
     "area": null,
+    "type": "dom"
+  },
+  "68450915": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68450856": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68450815": {
+    "price": 1062950,
+    "area": 104,
+    "type": "dom"
+  },
+  "68450762": {
+    "price": 827000,
+    "area": 104,
     "type": "dom"
   }
 }
