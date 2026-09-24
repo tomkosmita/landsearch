@@ -6255,5 +6255,25 @@
     "price": 1346565,
     "area": 95,
     "type": "dom"
+  },
+  "nowy-dom-136-m-garaz-dzialka-4-ary-ID4D2br": {
+    "price": 1190000,
+    "area": null,
+    "type": "dom"
+  },
+  "68455518": {
+    "price": 1099000,
+    "area": 118,
+    "type": "dom"
+  },
+  "68455387": {
+    "price": 970000,
+    "area": 138,
+    "type": "dom"
+  },
+  "68455348": {
+    "price": 930000,
+    "area": 138,
+    "type": "dom"
   }
 }
