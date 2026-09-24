@@ -6310,5 +6310,20 @@
     "price": 827000,
     "area": 104,
     "type": "dom"
+  },
+  "sprzedam-dzialke-budowlana-1244-m-keblowice-ul-szybowcowa-ID4Df4A": {
+    "price": 450000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "premiera-nowy-85-6-m-z-ogrodkiem-6-min-od-wroclawia-wisznia-mala-ID4D2Yg": {
+    "price": 770000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-z-garazem-w-okolicy-lasu-ID4BYAX": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
   }
 }
