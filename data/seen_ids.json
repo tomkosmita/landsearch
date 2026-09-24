@@ -677,7 +677,7 @@
     "type": "dom"
   },
   "68159110": {
-    "price": 829000,
+    "price": 799000,
     "area": 117,
     "type": "dom"
   },
@@ -6274,6 +6274,41 @@
   "68455348": {
     "price": 930000,
     "area": 138,
+    "type": "dom"
+  },
+  "68456524": {
+    "price": 534000,
+    "area": 891,
+    "type": "dzialka"
+  },
+  "96845652400067": {
+    "price": 534000,
+    "area": 891,
+    "type": "dzialka"
+  },
+  "ostatni-dom-z-prywatnym-ogrodem-128-m2-media-miejskie-wilczyce-ID4DelC": {
+    "price": 669000,
+    "area": null,
+    "type": "dom"
+  },
+  "oltaszyn-piekne-miejsca-dla-rodziny-poddasze-5-pokoi-garaz-ID4CIcx": {
+    "price": 2610000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-dom-na-dzialce-478-m-duze-przeszklenia-marszowice-wroclaw-ID4Depg": {
+    "price": 1099000,
+    "area": null,
+    "type": "dom"
+  },
+  "68457689": {
+    "price": 1099000,
+    "area": 100,
+    "type": "dom"
+  },
+  "68456614": {
+    "price": 827000,
+    "area": 104,
     "type": "dom"
   }
 }
