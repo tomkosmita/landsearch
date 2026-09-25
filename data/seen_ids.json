@@ -2027,7 +2027,7 @@
     "type": "dom"
   },
   "67984580": {
-    "price": 719000,
+    "price": 749000,
     "area": 80,
     "type": "dom"
   },
@@ -3827,7 +3827,7 @@
     "type": "dzialka"
   },
   "przestronny-dom-z-ogrodem-w-radwanicach-na-granicy-wroclawia-ID4CyYR": {
-    "price": 990000,
+    "price": 980000,
     "area": null,
     "type": "dom"
   },
@@ -6349,6 +6349,26 @@
   "68460074": {
     "price": 999000,
     "area": 89,
+    "type": "dom"
+  },
+  "gotowy-dom-z-ogrodem-wroclaw-marszowice-749-000-zl-ID4BfTu": {
+    "price": 749000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-oltaszyn-top-102-m-z-ogrodem-ul-smardzowska-ID4D8lG": {
+    "price": 1599000,
+    "area": null,
+    "type": "dom"
+  },
+  "68461948": {
+    "price": 1630000,
+    "area": 190,
+    "type": "dom"
+  },
+  "96846194800067": {
+    "price": 1630000,
+    "area": 190,
     "type": "dom"
   }
 }
