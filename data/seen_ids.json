@@ -4572,7 +4572,7 @@
     "type": "dom"
   },
   "96645538800067": {
-    "price": 899000,
+    "price": 949000,
     "area": 121,
     "type": "dom"
   },
@@ -6323,6 +6323,16 @@
   },
   "dom-wolnostojacy-z-garazem-w-okolicy-lasu-ID4BYAX": {
     "price": 1200000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-jednorodzinny-208m2-dla-rodziny-spokojna-i-zielona-okolica-ID4CKh5": {
+    "price": 1225000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-do-zamieszkania-dom-z-garazem-ID4Derx": {
+    "price": 1599900,
     "area": null,
     "type": "dom"
   }
