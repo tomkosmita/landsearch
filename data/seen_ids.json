@@ -6370,5 +6370,20 @@
     "price": 1630000,
     "area": 190,
     "type": "dom"
+  },
+  "1bYTPn": {
+    "price": 499000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68462441": {
+    "price": 1790000,
+    "area": 182,
+    "type": "dom"
+  },
+  "96846244100067": {
+    "price": 1790000,
+    "area": 182,
+    "type": "dom"
   }
 }
