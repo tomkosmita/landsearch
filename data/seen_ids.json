@@ -6335,5 +6335,20 @@
     "price": 1599900,
     "area": null,
     "type": "dom"
+  },
+  "dom-przy-lesie-wilkszyn-ID4DfAK": {
+    "price": 999000,
+    "area": null,
+    "type": "dom"
+  },
+  "blisko-pkp-foxconn-teema-5-p-swiatlowod-garaz-ID4BGKp": {
+    "price": 749000,
+    "area": null,
+    "type": "dom"
+  },
+  "68460074": {
+    "price": 999000,
+    "area": 89,
+    "type": "dom"
   }
 }
