@@ -158,8 +158,8 @@
     "type": "dzialka"
   },
   "96792806700067": {
-    "price": 279900,
-    "area": 744,
+    "price": 277720,
+    "area": 722,
     "type": "dzialka"
   },
   "1bdVjF": {
@@ -6420,5 +6420,10 @@
     "price": 1499000,
     "area": 114,
     "type": "dom"
+  },
+  "dzialka-budowlana-domaszczyn-gmina-dlugoleka-powierzchnia-902-m2-ID4DgH2": {
+    "price": 450000,
+    "area": null,
+    "type": "dzialka"
   }
 }
