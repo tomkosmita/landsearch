@@ -1932,7 +1932,7 @@
     "type": "dom"
   },
   "67461849": {
-    "price": 849500,
+    "price": 819700,
     "area": 89,
     "type": "dom"
   },
@@ -5087,7 +5087,7 @@
     "type": "dom"
   },
   "68381460": {
-    "price": 950000,
+    "price": 827000,
     "area": 104,
     "type": "dom"
   },
@@ -6389,6 +6389,31 @@
   "dom-parterowy-4m-taras-50m2-podjazd-na-mp-rezerwacja-ID4CUwk": {
     "price": 1299000,
     "area": null,
+    "type": "dom"
+  },
+  "marszowice-dom-180m2-garaz-dwustanowiskowy-ID4CWR2": {
+    "price": 1330000,
+    "area": null,
+    "type": "dom"
+  },
+  "68463293": {
+    "price": 649000,
+    "area": 79,
+    "type": "dom"
+  },
+  "68463263": {
+    "price": 699000,
+    "area": 79,
+    "type": "dom"
+  },
+  "68462987": {
+    "price": 1499000,
+    "area": 114,
+    "type": "dom"
+  },
+  "96841569800067": {
+    "price": 1750000,
+    "area": 113,
     "type": "dom"
   }
 }
