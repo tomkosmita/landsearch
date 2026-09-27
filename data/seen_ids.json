@@ -6430,5 +6430,30 @@
     "price": 1499000,
     "area": null,
     "type": "dom"
+  },
+  "1ctJ4N": {
+    "price": 300000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cwsiT": {
+    "price": 128000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "skrajny-szereg-5-pokoi-garaz-i-kw-27-ID4CFH6": {
+    "price": 949000,
+    "area": null,
+    "type": "dom"
+  },
+  "bezposrednio-domy-premium-174308-m-wroclaw-marszowice-ID4Dgng": {
+    "price": 2349000,
+    "area": null,
+    "type": "dom"
+  },
+  "96115236400067": {
+    "price": 990000,
+    "area": 135,
+    "type": "dom"
   }
 }
