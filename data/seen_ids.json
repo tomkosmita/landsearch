@@ -767,7 +767,7 @@
     "type": "dom"
   },
   "68167684": {
-    "price": 1235000,
+    "price": 1159000,
     "area": 128,
     "type": "dom"
   },
@@ -6514,6 +6514,21 @@
   "96846851000067": {
     "price": 827000,
     "area": 105,
+    "type": "dom"
+  },
+  "sprzedam-dzialke-budowlana-galow-k-wroclawia-ID4tb46": {
+    "price": 275000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "wyjatkowy-dom-320m-piekny-ogrod-wroclaw-ID4D1Jh": {
+    "price": 2300000,
+    "area": null,
+    "type": "dom"
+  },
+  "68469595": {
+    "price": 1499000,
+    "area": 174,
     "type": "dom"
   }
 }
