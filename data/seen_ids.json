@@ -677,7 +677,7 @@
     "type": "dom"
   },
   "68159110": {
-    "price": 799000,
+    "price": 829000,
     "area": 117,
     "type": "dom"
   },
@@ -6479,6 +6479,16 @@
   "96842901300067": {
     "price": 988000,
     "area": 80,
+    "type": "dom"
+  },
+  "duzy-ogrod-przy-lesie-garaz-swiatlowod-5-pokoi-ID4Dh3D": {
+    "price": 799900,
+    "area": null,
+    "type": "dom"
+  },
+  "wroclaw-kobierzyce-pelczyce-dom-wolnostojacy-bez-prowizji-ID4Dh6y": {
+    "price": 1749900,
+    "area": null,
     "type": "dom"
   }
 }
