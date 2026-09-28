@@ -5613,7 +5613,7 @@
   },
   "68412898": {
     "price": 975000,
-    "area": 124,
+    "area": 117,
     "type": "dom"
   },
   "blizniak-z-ogrodkiem-i-garazem-ID4CS3u": {
@@ -6087,7 +6087,7 @@
     "type": "dzialka"
   },
   "1bUOYU": {
-    "price": 1199000,
+    "price": 1150000,
     "area": null,
     "type": "dom"
   },
@@ -6312,7 +6312,7 @@
     "type": "dom"
   },
   "sprzedam-dzialke-budowlana-1244-m-keblowice-ul-szybowcowa-ID4Df4A": {
-    "price": 450000,
+    "price": 439000,
     "area": null,
     "type": "dzialka"
   },
@@ -6489,6 +6489,31 @@
   "wroclaw-kobierzyce-pelczyce-dom-wolnostojacy-bez-prowizji-ID4Dh6y": {
     "price": 1749900,
     "area": null,
+    "type": "dom"
+  },
+  "68468352": {
+    "price": 599000,
+    "area": 1613,
+    "type": "dzialka"
+  },
+  "96846835200067": {
+    "price": 599000,
+    "area": 1613,
+    "type": "dzialka"
+  },
+  "brzezina-wilkszyn-nowoczesny-blizniak-116-77-m-5-pok-duzy-ogrod-ID4D1H7": {
+    "price": 829000,
+    "area": null,
+    "type": "dom"
+  },
+  "68468510": {
+    "price": 827000,
+    "area": 105,
+    "type": "dom"
+  },
+  "96846851000067": {
+    "price": 827000,
+    "area": 105,
     "type": "dom"
   }
 }
