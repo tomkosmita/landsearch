@@ -225,8 +225,9 @@
     "area": 1200
   },
   "96804848900067": {
-    "price": 399000,
-    "area": 766
+    "price": 405000,
+    "area": 766,
+    "type": "dzialka"
   },
   "wroclaw-sroda-slaska-lutynia-dzialka-budowlana-bez-prowizji-ID4AFCj": {
     "price": 385000,
@@ -5822,7 +5823,7 @@
     "type": "dom"
   },
   "68425786": {
-    "price": 1199000,
+    "price": 1180000,
     "area": 108,
     "type": "dom"
   },
@@ -6534,6 +6535,36 @@
   "1cvQ29": {
     "price": 1090000,
     "area": null,
+    "type": "dom"
+  },
+  "bogdaszowice-smolec-krzeptow-katy-wroclawskie-ID3zzoP": {
+    "price": 299000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-114m-w-brzezinie-pod-wroclawiem-dostepna-ek-ID4Dc8N": {
+    "price": 660000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-blizniak-116-77-m-5-pok-duzy-ogrod-ID4D1H7": {
+    "price": 829000,
+    "area": null,
+    "type": "dom"
+  },
+  "68472250": {
+    "price": 1550000,
+    "area": 148,
+    "type": "dom"
+  },
+  "68466540": {
+    "price": 1330000,
+    "area": 180,
+    "type": "dom"
+  },
+  "96846007400067": {
+    "price": 999000,
+    "area": 89,
     "type": "dom"
   }
 }
