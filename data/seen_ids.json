@@ -6530,5 +6530,10 @@
     "price": 1499000,
     "area": 174,
     "type": "dom"
+  },
+  "1cvQ29": {
+    "price": 1090000,
+    "area": null,
+    "type": "dom"
   }
 }
