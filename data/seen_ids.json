@@ -6566,5 +6566,50 @@
     "price": 999000,
     "area": 89,
     "type": "dom"
+  },
+  "68472850": {
+    "price": 389000,
+    "area": 1041,
+    "type": "dzialka"
+  },
+  "96847285000067": {
+    "price": 389000,
+    "area": 1041,
+    "type": "dzialka"
+  },
+  "przedsprzedaz-dom-premium-garaz-i-miejsce-parkingowe-w-cenie-ID4vSwQ": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-250-m-do-remontu-8-pokoi-dzialka-720-m-do-negocjacji-ID4Di3l": {
+    "price": 890000,
+    "area": null,
+    "type": "dom"
+  },
+  "przedsprzedaz-dom-jednorodzinny-dwulokalowy-w-bawarskim-stylu-ID4twQF": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "68474518": {
+    "price": 827000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68473983": {
+    "price": 1499999,
+    "area": 124,
+    "type": "dom"
+  },
+  "68473981": {
+    "price": 1099999,
+    "area": 87,
+    "type": "dom"
+  },
+  "68473485": {
+    "price": 929000,
+    "area": 85,
+    "type": "dom"
   }
 }
