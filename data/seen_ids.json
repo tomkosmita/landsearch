@@ -6661,5 +6661,20 @@
     "price": 1239000,
     "area": 140,
     "type": "dom"
+  },
+  "oaza-dla-twojej-rodziny-103m2-5-pokoi-ogrod-i-2-miejsca-w-cenie-ID4Dirh": {
+    "price": 1300000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-cenie-mieszkania-589-000-zl-3-km-od-oltaszyn-krzyki-wysoka-ID4Dj1p": {
+    "price": 589000,
+    "area": null,
+    "type": "dom"
+  },
+  "domy-96m2-w-cenie-839tys-ID4B8Ye": {
+    "price": 839000,
+    "area": null,
+    "type": "dom"
   }
 }
