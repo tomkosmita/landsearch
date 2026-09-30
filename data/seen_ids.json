@@ -3668,7 +3668,7 @@
     "type": "dom"
   },
   "nowoczesny-dom-z-garazem-i-ogrodem-ID4BW3J": {
-    "price": 827000,
+    "price": 819000,
     "area": null,
     "type": "dom"
   },
@@ -5153,7 +5153,7 @@
     "type": "dom"
   },
   "wyjatkowy-dom-w-lesie-mikroklimat-ID4Cyyh": {
-    "price": 1380000,
+    "price": 1379000,
     "area": null,
     "type": "dom"
   },
@@ -5488,7 +5488,7 @@
     "type": "dom"
   },
   "bez-posrednikow-dom-148-m-klimatyzacja-garaz-ogrod-ID4CkFZ": {
-    "price": 1169000,
+    "price": 1168000,
     "area": null,
     "type": "dom"
   },
@@ -6615,6 +6615,26 @@
   "dom-wroclaw-148m2-strych-43m2-duzy-ogrod-garaz-zielona-okolica-ID4DiL8": {
     "price": 1550000,
     "area": null,
+    "type": "dom"
+  },
+  "duzy-dom-we-wroclawiu-148m2-strych-43m2-duzy-ogrod-garaz-5-pokoi-ID4DiL8": {
+    "price": 1550000,
+    "area": null,
+    "type": "dom"
+  },
+  "68476405": {
+    "price": 1090000,
+    "area": 102,
+    "type": "dom"
+  },
+  "68475424": {
+    "price": 819000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96847640500067": {
+    "price": 1090000,
+    "area": 102,
     "type": "dom"
   }
 }
