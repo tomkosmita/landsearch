@@ -6636,5 +6636,30 @@
     "price": 1090000,
     "area": 102,
     "type": "dom"
+  },
+  "66869697": {
+    "price": 530000,
+    "area": 1200,
+    "type": "dzialka"
+  },
+  "4-domy-ostatni-etap-wysoki-standard-ID4Cyyh": {
+    "price": 1379000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-dom-w-zabudowie-blizniaczej-bez-prowizji-bez-pcc-ID4Dik9": {
+    "price": 859000,
+    "area": null,
+    "type": "dom"
+  },
+  "blizniak-4m-dwa-poziomy-ogrod-miejsca-post-tylko-u-nas-ID4Dbrs": {
+    "price": 899000,
+    "area": null,
+    "type": "dom"
+  },
+  "68476727": {
+    "price": 1239000,
+    "area": 140,
+    "type": "dom"
   }
 }
