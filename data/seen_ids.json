@@ -3428,8 +3428,8 @@
     "type": "dom"
   },
   "67299318": {
-    "price": 939000,
-    "area": 131,
+    "price": 1219000,
+    "area": 138,
     "type": "dom"
   },
   "96828191200067": {
@@ -5698,12 +5698,12 @@
     "type": "dom"
   },
   "dzialka-1000m2-z-warunkami-zabudowy-willowa-dzielnica-lub-inne-dzialki-ID4CBUH": {
-    "price": 490000,
+    "price": 450000,
     "area": null,
     "type": "dzialka"
   },
   "68307551": {
-    "price": 490000,
+    "price": 450000,
     "area": 1000,
     "type": "dzialka"
   },
@@ -6685,6 +6685,31 @@
   "dom-100m-z-ogrodem-do-500m-idealna-lokalizacja-ID4DeYh": {
     "price": 1099000,
     "area": null,
+    "type": "dom"
+  },
+  "68479229": {
+    "price": 444000,
+    "area": 1200,
+    "type": "dzialka"
+  },
+  "96686969700067": {
+    "price": 530000,
+    "area": 1200,
+    "type": "dzialka"
+  },
+  "68479241": {
+    "price": 849000,
+    "area": 78,
+    "type": "dom"
+  },
+  "68479218": {
+    "price": 899000,
+    "area": 100,
+    "type": "dom"
+  },
+  "96842578600067": {
+    "price": 1180000,
+    "area": 108,
     "type": "dom"
   }
 }
