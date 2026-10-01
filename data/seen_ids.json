@@ -2838,7 +2838,7 @@
     "type": "dom"
   },
   "1bBM4y": {
-    "price": 985000,
+    "price": 999000,
     "area": null,
     "type": "dom"
   },
@@ -4613,12 +4613,12 @@
     "type": "dom"
   },
   "67971805": {
-    "price": 779000,
+    "price": 799000,
     "area": 80,
     "type": "dom"
   },
   "68353845": {
-    "price": 1399000,
+    "price": 949000,
     "area": 119,
     "type": "dom"
   },
@@ -6710,6 +6710,36 @@
   "96842578600067": {
     "price": 1180000,
     "area": 108,
+    "type": "dom"
+  },
+  "19KmoH": {
+    "price": 499000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-kanadyjski-fotowoltaika-kamieniec-wr-ID4DgYH": {
+    "price": 599000,
+    "area": null,
+    "type": "dom"
+  },
+  "kameralny-dom-z-ogrodkiem-pod-wroclawiem-ID4Djre": {
+    "price": 929000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-zabudowie-blizniaczej-133m2-dzialka-300m2-komorowice-karwiany-ID4Dllq": {
+    "price": 1300000,
+    "area": null,
+    "type": "dom"
+  },
+  "68482311": {
+    "price": 1149000,
+    "area": 101,
+    "type": "dom"
+  },
+  "68481412": {
+    "price": 670000,
+    "area": 110,
     "type": "dom"
   }
 }
