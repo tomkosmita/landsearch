@@ -6741,5 +6741,40 @@
     "price": 670000,
     "area": 110,
     "type": "dom"
+  },
+  "4-pokoje-i-dom-i-garaz-i-radwanice-i-gotowe-ID4CIRE": {
+    "price": 836000,
+    "area": null,
+    "type": "dom"
+  },
+  "68484745": {
+    "price": 1599000,
+    "area": 162,
+    "type": "dom"
+  },
+  "68484476": {
+    "price": 885990,
+    "area": 155,
+    "type": "dom"
+  },
+  "68484462": {
+    "price": 840000,
+    "area": 155,
+    "type": "dom"
+  },
+  "68484444": {
+    "price": 990000,
+    "area": 90,
+    "type": "dom"
+  },
+  "67136903": {
+    "price": 1465000,
+    "area": 133,
+    "type": "dom"
+  },
+  "96848474500067": {
+    "price": 1599000,
+    "area": 162,
+    "type": "dom"
   }
 }
