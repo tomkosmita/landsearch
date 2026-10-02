@@ -793,8 +793,8 @@
     "type": "dom"
   },
   "67299283": {
-    "price": 1079000,
-    "area": 140,
+    "price": 1179000,
+    "area": 138,
     "type": "dom"
   },
   "65643978": {
@@ -828,7 +828,7 @@
     "type": "dom"
   },
   "67806105": {
-    "price": 925000,
+    "price": 945000,
     "area": 148,
     "type": "dom"
   },
@@ -2968,12 +2968,12 @@
     "type": "dom"
   },
   "68252973": {
-    "price": 1796144,
+    "price": 1777816,
     "area": 183,
     "type": "dom"
   },
   "96825297300067": {
-    "price": 1796144,
+    "price": 1777816,
     "area": 183,
     "type": "dom"
   },
@@ -6775,6 +6775,31 @@
   "96848474500067": {
     "price": 1599000,
     "area": 162,
+    "type": "dom"
+  },
+  "blizniak-zielone-osiedle-marszowice-ID4Dl8U": {
+    "price": 670000,
+    "area": null,
+    "type": "dom"
+  },
+  "blizniak-z-miejsc-na-dzial-w-zielonej-i-willowej-zabud-zachod-wroc-ID4CU96": {
+    "price": 825000,
+    "area": null,
+    "type": "dom"
+  },
+  "68486063": {
+    "price": 1320000,
+    "area": 130,
+    "type": "dom"
+  },
+  "68486062": {
+    "price": 1430000,
+    "area": 137,
+    "type": "dom"
+  },
+  "68485104": {
+    "price": 1390000,
+    "area": 1065,
     "type": "dom"
   }
 }
