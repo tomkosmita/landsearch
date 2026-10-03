@@ -3188,8 +3188,8 @@
     "type": "dom"
   },
   "67299285": {
-    "price": 1099000,
-    "area": 140,
+    "price": 1199000,
+    "area": 138,
     "type": "dom"
   },
   "1bHdLM": {
@@ -3983,7 +3983,7 @@
     "type": "dom"
   },
   "1bRRIw": {
-    "price": 179000,
+    "price": 150000,
     "area": null,
     "type": "dzialka"
   },
@@ -6830,6 +6830,21 @@
   "68154730": {
     "price": 1713792,
     "area": 133,
+    "type": "dom"
+  },
+  "dzialka-1015-m-z-pieknym-oczkiem-wodnym-kotowice-ID4DmRA": {
+    "price": 315000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cBIl3": {
+    "price": 850000,
+    "area": null,
+    "type": "dom"
+  },
+  "96807646100067": {
+    "price": 1800000,
+    "area": 195,
     "type": "dom"
   }
 }
