@@ -113,7 +113,7 @@
     "area": null
   },
   "1ba9i3": {
-    "price": 399000,
+    "price": 397000,
     "area": null,
     "type": "dzialka"
   },
@@ -6810,6 +6810,26 @@
   "68486980": {
     "price": 990000,
     "area": 73,
+    "type": "dom"
+  },
+  "dzien-otwarty-4-10-dom-wolnostojacy-7m-piekny-ogrod-z-sadem-garaz-ID4DmK2": {
+    "price": 999000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolno-stojacy-super-lokalizacja-ID4zaof": {
+    "price": 1600000,
+    "area": null,
+    "type": "dom"
+  },
+  "68487558": {
+    "price": 999000,
+    "area": 182,
+    "type": "dom"
+  },
+  "68154730": {
+    "price": 1713792,
+    "area": 133,
     "type": "dom"
   }
 }
