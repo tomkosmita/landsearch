@@ -6846,5 +6846,10 @@
     "price": 1800000,
     "area": 195,
     "type": "dom"
+  },
+  "przedsprzedaz-wyjatkowe-mieszkania-z-cegly-klinkierowej-ID4uwlQ": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
   }
 }
