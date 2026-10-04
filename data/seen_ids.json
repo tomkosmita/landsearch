@@ -3143,7 +3143,7 @@
     "type": "dom"
   },
   "68271739": {
-    "price": 1770000,
+    "price": 1750000,
     "area": 188,
     "type": "dom"
   },
@@ -3868,7 +3868,7 @@
     "type": "dom"
   },
   "96827173900067": {
-    "price": 1770000,
+    "price": 1750000,
     "area": 188,
     "type": "dom"
   },
@@ -6849,6 +6849,31 @@
   },
   "przedsprzedaz-wyjatkowe-mieszkania-z-cegly-klinkierowej-ID4uwlQ": {
     "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-ogrodem-i-garazem-tuz-pod-wroclawiem-ID4D6NA": {
+    "price": 1248000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-katy-wdom-pelcznica-gm-katy-wroclawskie-ID4Dn8B": {
+    "price": 760000,
+    "area": null,
+    "type": "dom"
+  },
+  "skrajny-szereg-z-ogrodem-i-garazem-cicha-okolica-ID4DaeP": {
+    "price": 1277000,
+    "area": null,
+    "type": "dom"
+  },
+  "luksusowy-stylowy-dom-z-ogrodem-wielka-wyspa-ID4CUKF": {
+    "price": 2400000,
+    "area": null,
+    "type": "dom"
+  },
+  "68153746": {
+    "price": null,
     "area": null,
     "type": "dom"
   }
