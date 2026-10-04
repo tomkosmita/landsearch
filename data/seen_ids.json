@@ -4928,7 +4928,7 @@
     "type": "dzialka"
   },
   "67299253": {
-    "price": 1079000,
+    "price": 1195000,
     "area": 140,
     "type": "dom"
   },
@@ -6583,7 +6583,7 @@
     "type": "dom"
   },
   "dom-250-m-do-remontu-8-pokoi-dzialka-720-m-do-negocjacji-ID4Di3l": {
-    "price": 890000,
+    "price": 850000,
     "area": null,
     "type": "dom"
   },
@@ -6890,6 +6890,41 @@
   "67137210": {
     "price": 1490000,
     "area": 134,
+    "type": "dom"
+  },
+  "1adD5n": {
+    "price": 280000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-w-szukalicach-ID4DnrY": {
+    "price": 389000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "nowoczesny-dom-parterowy-260-m-dzialka-1200-m-smart-nowy-ID4Dnhb": {
+    "price": 4495000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-swietne-lokalizacja-borek-spokojna-ulica-0-prowizji-ID4Dn9J": {
+    "price": 2050000,
+    "area": null,
+    "type": "dom"
+  },
+  "68490294": {
+    "price": 819000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68154754": {
+    "price": 1700403,
+    "area": 133,
+    "type": "dom"
+  },
+  "96713690300067": {
+    "price": 1465000,
+    "area": 133,
     "type": "dom"
   }
 }
