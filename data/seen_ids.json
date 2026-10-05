@@ -5858,7 +5858,7 @@
     "type": "dzialka"
   },
   "1cmnKK": {
-    "price": 279000,
+    "price": 269000,
     "area": null,
     "type": "dzialka"
   },
@@ -6970,6 +6970,51 @@
   "96849331200067": {
     "price": 1099000,
     "area": 118,
+    "type": "dom"
+  },
+  "19aCw9": {
+    "price": 270000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-premium-garaz-i-miejsce-parkingowe-w-cenie-ID4vSwQ": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "wyjatkowy-dom-wolnostojacy-7m-piekny-ogrod-z-sadem-garaz-ID4DmK2": {
+    "price": 999000,
+    "area": null,
+    "type": "dom"
+  },
+  "1cDODi": {
+    "price": 1700000,
+    "area": null,
+    "type": "dom"
+  },
+  "tyniec-maly-dom-segment-srodkowy-garaz-ID4CTMA": {
+    "price": 1070000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-186-m-z-podwojnym-garazem-wisznia-mala-10-km-od-wroclawia-ID4Do2y": {
+    "price": 1099000,
+    "area": null,
+    "type": "dom"
+  },
+  "wyjatkowe-mieszkania-z-cegly-klinkierowej-ID4uwlQ": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "wilczyce-blizniak-3-pokoje-ogrod-blisko-wroclawia-ID4DowR": {
+    "price": 579000,
+    "area": null,
+    "type": "dom"
+  },
+  "96844054200067": {
+    "price": 1249000,
+    "area": 153,
     "type": "dom"
   }
 }
