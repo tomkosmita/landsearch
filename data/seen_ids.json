@@ -3578,7 +3578,7 @@
     "type": "dom"
   },
   "68021301": {
-    "price": 1495313,
+    "price": 1518789,
     "area": 126,
     "type": "dom"
   },
@@ -6935,6 +6935,41 @@
   "96849056300067": {
     "price": 839000,
     "area": 129,
+    "type": "dom"
+  },
+  "gaj-budynek-wolno-stojacy-na-dzialce-713-m2-ID4DcKh": {
+    "price": 1700000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowy-dom-wykonczony-i-umeblowany-do-wprowadzenia-z-walizka-ID4DnAb": {
+    "price": 1490000,
+    "area": null,
+    "type": "dom"
+  },
+  "68493312": {
+    "price": 1099000,
+    "area": 118,
+    "type": "dom"
+  },
+  "68439622": {
+    "price": 1790000,
+    "area": 133,
+    "type": "dom"
+  },
+  "68491351": {
+    "price": 840000,
+    "area": 120,
+    "type": "dom"
+  },
+  "68154772": {
+    "price": 1354963,
+    "area": 106,
+    "type": "dom"
+  },
+  "96849331200067": {
+    "price": 1099000,
+    "area": 118,
     "type": "dom"
   }
 }
