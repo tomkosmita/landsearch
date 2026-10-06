@@ -5088,7 +5088,7 @@
     "type": "dom"
   },
   "68381460": {
-    "price": 827000,
+    "price": 799000,
     "area": 104,
     "type": "dom"
   },
@@ -7015,6 +7015,61 @@
   "96844054200067": {
     "price": 1249000,
     "area": 153,
+    "type": "dom"
+  },
+  "1cDuIF": {
+    "price": 425000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68497811": {
+    "price": 398000,
+    "area": 1120,
+    "type": "dzialka"
+  },
+  "68497509": {
+    "price": 510000,
+    "area": 1650,
+    "type": "dzialka"
+  },
+  "96849781100067": {
+    "price": 398000,
+    "area": 1120,
+    "type": "dzialka"
+  },
+  "ladny-dom-z-ogrodem-kominkiem-ID4Di4j": {
+    "price": 1499000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-z-garazem-muchobor-maly-ID4DlrL": {
+    "price": 2990000,
+    "area": null,
+    "type": "dom"
+  },
+  "komfortowy-dom-do-sprzedazy-w-cichym-zaulku-ID4DdrX": {
+    "price": 2950000,
+    "area": null,
+    "type": "dom"
+  },
+  "domy-96m2-w-cenie-849tys-ID4B8Ye": {
+    "price": 849000,
+    "area": null,
+    "type": "dom"
+  },
+  "promocja-bez-prowizji-bez-pcc-ID4Dik9": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "68496969": {
+    "price": 949000,
+    "area": 80,
+    "type": "dom"
+  },
+  "96747286100067": {
+    "price": 899000,
+    "area": 125,
     "type": "dom"
   }
 }
