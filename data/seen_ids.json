@@ -5858,7 +5858,7 @@
     "type": "dzialka"
   },
   "1cmnKK": {
-    "price": 269000,
+    "price": 259000,
     "area": null,
     "type": "dzialka"
   },
@@ -7070,6 +7070,36 @@
   "96747286100067": {
     "price": 899000,
     "area": 125,
+    "type": "dom"
+  },
+  "1cEcOo": {
+    "price": 450000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialki-budowlane-w-szewcach-pod-wroclawiem-ID4Dpxv": {
+    "price": 450000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "przestronny-dom-w-otoczeniu-zieleni-pruszowice-ID4DpGC": {
+    "price": 1950000,
+    "area": null,
+    "type": "dom"
+  },
+  "do-sprzedazy-dom-posesja-staw-lasek-sad-winorosla-ID4Ader": {
+    "price": 2150000,
+    "area": null,
+    "type": "dom"
+  },
+  "68499434": {
+    "price": 1420000,
+    "area": 240,
+    "type": "dom"
+  },
+  "68154783": {
+    "price": 1365632,
+    "area": 106,
     "type": "dom"
   }
 }
