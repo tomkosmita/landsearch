@@ -2023,7 +2023,7 @@
     "type": "dom"
   },
   "67984800": {
-    "price": 859000,
+    "price": 879000,
     "area": 93,
     "type": "dom"
   },
@@ -6198,7 +6198,7 @@
     "type": "dom"
   },
   "pol-blizniaka-w-okolicy-bielan-wroclawskich-ID4DbPf": {
-    "price": 550000,
+    "price": 529000,
     "area": null,
     "type": "dom"
   },
@@ -6553,7 +6553,7 @@
     "type": "dom"
   },
   "68472250": {
-    "price": 1550000,
+    "price": 1450000,
     "area": 148,
     "type": "dom"
   },
@@ -7083,7 +7083,7 @@
     "type": "dzialka"
   },
   "przestronny-dom-w-otoczeniu-zieleni-pruszowice-ID4DpGC": {
-    "price": 1950000,
+    "price": 1890000,
     "area": null,
     "type": "dom"
   },
@@ -7115,6 +7115,61 @@
   "96850000700067": {
     "price": 950000,
     "area": 105,
+    "type": "dom"
+  },
+  "na-sprzedaz-dwie-atrakcyjne-dzialki-obok-siebie-1-z-sadem-owocowym-ID4Dqzx": {
+    "price": 298500,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-891-m-wroclaw-ul-komornicka-las-ratynski-ID4Dq9R": {
+    "price": 499000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68502118": {
+    "price": 370000,
+    "area": 1011,
+    "type": "dzialka"
+  },
+  "68500691": {
+    "price": 499000,
+    "area": 891,
+    "type": "dzialka"
+  },
+  "96850211800067": {
+    "price": 370000,
+    "area": 1011,
+    "type": "dzialka"
+  },
+  "wyjatkowy-dom-z-dusza-we-wroclawiu-eko-i-zysk-ID4DjIY": {
+    "price": 1698000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-dom-wroclaw-148m2-strych-43m2-duzy-ogrod-garaz-5-pokoi-ID4DiL8": {
+    "price": 1450000,
+    "area": null,
+    "type": "dom"
+  },
+  "68502472": {
+    "price": 849999,
+    "area": 103,
+    "type": "dom"
+  },
+  "68501189": {
+    "price": 1259900,
+    "area": 240,
+    "type": "dom"
+  },
+  "68500484": {
+    "price": 848990,
+    "area": 95,
+    "type": "dom"
+  },
+  "96850247200067": {
+    "price": 849999,
+    "area": 103,
     "type": "dom"
   }
 }
