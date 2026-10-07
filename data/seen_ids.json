@@ -533,7 +533,7 @@
     "type": "dom"
   },
   "14LdtV": {
-    "price": 1065000,
+    "price": 990000,
     "area": null,
     "type": "dom"
   },
@@ -718,7 +718,7 @@
     "type": "dom"
   },
   "18FwnS": {
-    "price": 855000,
+    "price": 990000,
     "area": null,
     "type": "dom"
   },
@@ -2173,7 +2173,7 @@
     "type": "dom"
   },
   "1bwCme": {
-    "price": 115000,
+    "price": 110000,
     "area": null,
     "type": "dzialka"
   },
@@ -7170,6 +7170,41 @@
   "96850247200067": {
     "price": 849999,
     "area": 103,
+    "type": "dom"
+  },
+  "dzialka-budowlana-1034-m-z-mpzp-ozorowice-15-km-od-wroclawia-ID4Dr8f": {
+    "price": 238000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cFcSS": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-jednorodzinny-w-stanie-deweloperskim-168-m2-bez-prowizji-bez-pcc-ID4DqHa": {
+    "price": 1379999,
+    "area": null,
+    "type": "dom"
+  },
+  "sprzedaz-wyjatkowych-bawarskich-domow-z-garazami-w-pelczycach-ID4CRw6": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "1cEUqj": {
+    "price": 1079000,
+    "area": null,
+    "type": "dom"
+  },
+  "68502659": {
+    "price": 1100000,
+    "area": 120,
+    "type": "dom"
+  },
+  "68502432": {
+    "price": 995000,
+    "area": 80,
     "type": "dom"
   }
 }
