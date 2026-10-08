@@ -7246,5 +7246,45 @@
     "price": 1199000,
     "area": 114,
     "type": "dom"
+  },
+  "1cGCkR": {
+    "price": 230000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cGqoB": {
+    "price": 382400,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cGi94": {
+    "price": 160000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cGe9d": {
+    "price": 407000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cG9Nf": {
+    "price": 100000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-w-szewcach-pod-wroclawiem-1000mkw-ID4Dpxv": {
+    "price": 450000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "nowy-dom-109-63-m2-garaz-ogrodek-15-min-do-centrum-wroclawia-ID4Df7E": {
+    "price": 985000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-prywatna-strefa-relaksu-i-basenem-dzialka-1343-m2-smolec-ID4Dpyb": {
+    "price": 3260000,
+    "area": null,
+    "type": "dom"
   }
 }
