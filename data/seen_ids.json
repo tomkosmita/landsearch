@@ -5563,7 +5563,7 @@
     "type": "dom"
   },
   "67623290": {
-    "price": 1299000,
+    "price": 1199000,
     "area": 114,
     "type": "dom"
   },
@@ -7225,6 +7225,26 @@
   "13ZIlI": {
     "price": 990000,
     "area": null,
+    "type": "dom"
+  },
+  "rezerwacja-dom-pietrowy-karlowice-ID4D5Fl": {
+    "price": 1349000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-dom-dla-rodziny-3-sypialnie-ogrod-80-m-garaz-medlow-ID4Drdm": {
+    "price": 1199000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-pod-lesem-4-pokoje-152-m-25min-od-wroclawia-gmina-miekinia-ID4DrDr": {
+    "price": 949000,
+    "area": null,
+    "type": "dom"
+  },
+  "96762329000067": {
+    "price": 1199000,
+    "area": 114,
     "type": "dom"
   }
 }
