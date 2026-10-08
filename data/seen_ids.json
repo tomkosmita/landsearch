@@ -528,7 +528,7 @@
     "type": "dom"
   },
   "13PzE3": {
-    "price": 855000,
+    "price": 990000,
     "area": null,
     "type": "dom"
   },
@@ -7205,6 +7205,26 @@
   "68502432": {
     "price": 995000,
     "area": 80,
+    "type": "dom"
+  },
+  "nowoczesne-lokale-w-zabudowie-blizniaczej-w-pelczycach-ID4v9OU": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "stylowe-domy-w-pelczycach-ID4zRVc": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "1bnopO": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "13ZIlI": {
+    "price": 990000,
+    "area": null,
     "type": "dom"
   }
 }
