@@ -2404,7 +2404,7 @@
   },
   "66827688": {
     "price": 1600000,
-    "area": 168,
+    "area": 165,
     "type": "dom"
   },
   "67137812": {
@@ -7285,6 +7285,31 @@
   "dom-z-prywatna-strefa-relaksu-i-basenem-dzialka-1343-m2-smolec-ID4Dpyb": {
     "price": 3260000,
     "area": null,
+    "type": "dom"
+  },
+  "197z0j": {
+    "price": 410000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "wyjatkowy-dom-z-historia-i-charakterem-na-ksiezy-malym-ID4Dmrv": {
+    "price": 1850000,
+    "area": null,
+    "type": "dom"
+  },
+  "68510359": {
+    "price": 799000,
+    "area": 105,
+    "type": "dom"
+  },
+  "68510117": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96840883900067": {
+    "price": 1376514,
+    "area": 158,
     "type": "dom"
   }
 }
