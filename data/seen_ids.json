@@ -1833,7 +1833,7 @@
     "type": "dom"
   },
   "sprzedam-dom-5-pokoi-duza-dzialka-zamiana-ID4tqdS": {
-    "price": 2450000,
+    "price": 2290000,
     "area": null,
     "type": "dom"
   },
@@ -7310,6 +7310,36 @@
   "96840883900067": {
     "price": 1376514,
     "area": 158,
+    "type": "dom"
+  },
+  "dzialka-budowlana-w-cichej-i-zielonej-okolicy-kamieniec-wroclawski-ID4Dt7z": {
+    "price": 390000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "-ID4w5AF": {
+    "price": 385000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cwgLY": {
+    "price": 199000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-kardamon-luksusowy-dom-na-dzialce-1000m2-domaslaw-ID4BGjY": {
+    "price": 3390000,
+    "area": null,
+    "type": "dom"
+  },
+  "68511454": {
+    "price": 1284000,
+    "area": 108,
+    "type": "dom"
+  },
+  "68511341": {
+    "price": 975000,
+    "area": 101,
     "type": "dom"
   }
 }
