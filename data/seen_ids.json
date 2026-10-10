@@ -7346,5 +7346,25 @@
     "price": 5400000,
     "area": null,
     "type": "dom"
+  },
+  "parterowy-dom-z-basenem-dzialka-1832m-6-min-wroclaw-ID4DtbQ": {
+    "price": 3399000,
+    "area": null,
+    "type": "dom"
+  },
+  "wolnostojacy-dom-z-4-duzymi-sypialniami-i-salonem-ID4Dg4Y": {
+    "price": 1630000,
+    "area": null,
+    "type": "dom"
+  },
+  "68512941": {
+    "price": 1485000,
+    "area": 194,
+    "type": "dom"
+  },
+  "96851294100067": {
+    "price": 1485000,
+    "area": 194,
+    "type": "dom"
   }
 }
