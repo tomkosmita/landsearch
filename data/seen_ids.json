@@ -7366,5 +7366,20 @@
     "price": 1485000,
     "area": 194,
     "type": "dom"
+  },
+  "zielona-enklawa-pod-wroclawiem-1000-m-prad-mpzp-ID4Dtok": {
+    "price": 330000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68512982": {
+    "price": 1680000,
+    "area": 101,
+    "type": "dom"
+  },
+  "96851298200067": {
+    "price": 1680000,
+    "area": 101,
+    "type": "dom"
   }
 }
