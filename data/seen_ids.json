@@ -6258,7 +6258,7 @@
     "type": "dom"
   },
   "nowy-dom-136-m-garaz-dzialka-4-ary-ID4D2br": {
-    "price": 1190000,
+    "price": 1119000,
     "area": null,
     "type": "dom"
   },
@@ -7340,6 +7340,11 @@
   "68511341": {
     "price": 975000,
     "area": 101,
+    "type": "dom"
+  },
+  "wroclaw-biskupin-dom-wolnostojacy-ogrod-bez-prowizji-ID4Dt4z": {
+    "price": 5400000,
+    "area": null,
     "type": "dom"
   }
 }
