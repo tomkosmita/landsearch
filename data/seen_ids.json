@@ -7386,5 +7386,30 @@
     "price": 1499000,
     "area": null,
     "type": "dom"
+  },
+  "dzialka-budowlana-986-m-blisko-lasu-mpzp-bukowa-ID4CVef": {
+    "price": 419000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-4-pokojowy-o-powierzchni-92-08-m2-ogrod-ID4Boc0": {
+    "price": 719000,
+    "area": null,
+    "type": "dom"
+  },
+  "68514125": {
+    "price": 1349779,
+    "area": 111,
+    "type": "dom"
+  },
+  "68514123": {
+    "price": 998000,
+    "area": 104,
+    "type": "dom"
+  },
+  "96851412500067": {
+    "price": 1349779,
+    "area": 111,
+    "type": "dom"
   }
 }
