@@ -4093,7 +4093,7 @@
     "type": "dom"
   },
   "1bTCRC": {
-    "price": 380000,
+    "price": 390000,
     "area": null,
     "type": "dzialka"
   },
@@ -7435,6 +7435,11 @@
   "68514925": {
     "price": 799000,
     "area": 104,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-na-sprzedaz-ID4DtX9": {
+    "price": 1899000,
+    "area": null,
     "type": "dom"
   }
 }
