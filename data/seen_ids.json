@@ -113,7 +113,7 @@
     "area": null
   },
   "1ba9i3": {
-    "price": 397000,
+    "price": 380000,
     "area": null,
     "type": "dzialka"
   },
@@ -1383,7 +1383,7 @@
     "type": "dom"
   },
   "96810868800067": {
-    "price": 399000,
+    "price": 389000,
     "area": 857,
     "type": "dzialka"
   },
@@ -6628,7 +6628,7 @@
     "type": "dom"
   },
   "68475424": {
-    "price": 819000,
+    "price": 799000,
     "area": 104,
     "type": "dom"
   },
@@ -6983,7 +6983,7 @@
     "type": "dom"
   },
   "wyjatkowy-dom-wolnostojacy-7m-piekny-ogrod-z-sadem-garaz-ID4DmK2": {
-    "price": 999000,
+    "price": 1090000,
     "area": null,
     "type": "dom"
   },
@@ -7440,6 +7440,56 @@
   "dom-wolnostojacy-na-sprzedaz-ID4DtX9": {
     "price": 1899000,
     "area": null,
+    "type": "dom"
+  },
+  "dzialka-budowlana-ramiszow-894-29-aukcja-ID4Bbxj": {
+    "price": 393600,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-ramiszow-894-30-aukcja-ID4BbxI": {
+    "price": 403440,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-ramiszow-894-28-aukcja-ID4Bbvy": {
+    "price": 457560,
+    "area": null,
+    "type": "dzialka"
+  },
+  "atrakcyjne-dzialki-z-mpzp-pod-wroclawiem-zachowice-buduj-od-zaraz-ID4Dqzx": {
+    "price": 298500,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-150-m-i-6-pokoi-i-dzialka-1380-m-i-fotowoltaika-i-bezposrednio-ID4Duly": {
+    "price": 519000,
+    "area": null,
+    "type": "dom"
+  },
+  "68518943": {
+    "price": 1150000,
+    "area": 127,
+    "type": "dom"
+  },
+  "68518929": {
+    "price": 1580000,
+    "area": 190,
+    "type": "dom"
+  },
+  "68516322": {
+    "price": 1790000,
+    "area": 191,
+    "type": "dom"
+  },
+  "68384204": {
+    "price": 1330000,
+    "area": 180,
+    "type": "dom"
+  },
+  "96851894300067": {
+    "price": 1150000,
+    "area": 127,
     "type": "dom"
   }
 }
