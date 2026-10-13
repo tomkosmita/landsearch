@@ -2453,7 +2453,7 @@
     "type": "dom"
   },
   "dzialka-budowlana-dobrzykowice-1108m2-ID4B3s8": {
-    "price": 495000,
+    "price": 460000,
     "area": null,
     "type": "dzialka"
   },
@@ -7273,7 +7273,7 @@
     "type": "dzialka"
   },
   "dzialka-budowlana-w-szewcach-pod-wroclawiem-1000mkw-ID4Dpxv": {
-    "price": 450000,
+    "price": 410000,
     "area": null,
     "type": "dzialka"
   },
@@ -7520,6 +7520,66 @@
   "dom-przy-lesie-z-duza-dzialka-203m-114-m-przestrzeni-ogrod-148-m-ID4D2K0": {
     "price": 1375000,
     "area": null,
+    "type": "dom"
+  },
+  "1cKSHW": {
+    "price": 470000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cL1nw": {
+    "price": 195000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cKW1Z": {
+    "price": 430000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68521212": {
+    "price": 500000,
+    "area": 1000,
+    "type": "dzialka"
+  },
+  "9000062218": {
+    "price": 499000,
+    "area": 891,
+    "type": "dzialka"
+  },
+  "nowy-dom-128-m-wyjatkowa-architektura-z-cegla-ID4D3jQ": {
+    "price": 975000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowe-domy-szeregowe-wroclaw-ul-przejazdowa-pompa-ciepla-garaz-ogrod-ID4Dwnl": {
+    "price": 1350000,
+    "area": null,
+    "type": "dom"
+  },
+  "szczodre-eco-domy-dom-4-pok-1-7-ID4vS7a": {
+    "price": 820000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-centrum-garaz-lokal-uslugowy-ogrod-zimowy-taras-piwnica-priv-ID4DwbO": {
+    "price": 1499000,
+    "area": null,
+    "type": "dom"
+  },
+  "68521967": {
+    "price": 1479000,
+    "area": 183,
+    "type": "dom"
+  },
+  "68521852": {
+    "price": 1740000,
+    "area": 290,
+    "type": "dom"
+  },
+  "68521269": {
+    "price": 984000,
+    "area": 113,
     "type": "dom"
   }
 }
