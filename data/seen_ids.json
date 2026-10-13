@@ -2528,7 +2528,7 @@
     "type": "dom"
   },
   "68153925": {
-    "price": 1499000,
+    "price": 1425000,
     "area": 98,
     "type": "dom"
   },
@@ -4293,7 +4293,7 @@
     "type": "dom"
   },
   "68131957": {
-    "price": 689000,
+    "price": 661000,
     "area": 133,
     "type": "dom"
   },
@@ -5248,7 +5248,7 @@
     "type": "dom"
   },
   "68390655": {
-    "price": 729000,
+    "price": 756000,
     "area": 114,
     "type": "dom"
   },
@@ -5549,7 +5549,7 @@
   },
   "68410676": {
     "price": 1375000,
-    "area": 83,
+    "area": 114,
     "type": "dom"
   },
   "96841067600067": {
@@ -7490,6 +7490,36 @@
   "96851894300067": {
     "price": 1150000,
     "area": 127,
+    "type": "dom"
+  },
+  "1cKwcr": {
+    "price": 225000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062217": {
+    "price": 1630000,
+    "area": 190,
+    "type": "dom"
+  },
+  "wojszyce-dom-ktory-czeka-na-nowy-rozdzial-ID4DmJv": {
+    "price": 1599000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowy-wykonczony-dom-dla-rodziny-os-zamkniete-szkola-przedsz-100-m-ID4Chla": {
+    "price": 1250000,
+    "area": null,
+    "type": "dom"
+  },
+  "polowa-blizniaka-przy-lesie-wroclaw-agrestowa-bez-posrednikow-ID4CyM4": {
+    "price": 1790000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-przy-lesie-z-duza-dzialka-203m-114-m-przestrzeni-ogrod-148-m-ID4D2K0": {
+    "price": 1375000,
+    "area": null,
     "type": "dom"
   }
 }
