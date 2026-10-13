@@ -7581,5 +7581,20 @@
     "price": 984000,
     "area": 113,
     "type": "dom"
+  },
+  "9000062219": {
+    "price": 799000,
+    "area": 80,
+    "type": "dom"
+  },
+  "dom-jednorodzinny-6-km-od-polnocnej-granicy-wroclawia-duza-dzialka-ID4Dg3Q": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
+  },
+  "68523494": {
+    "price": 950000,
+    "area": 85,
+    "type": "dom"
   }
 }
