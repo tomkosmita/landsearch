@@ -7618,8 +7618,8 @@
     "type": "dom"
   },
   "9000062222": {
-    "price": 1266500,
-    "area": 134,
+    "price": 819700,
+    "area": 89,
     "type": "dom"
   },
   "dostepne-ostatnie-domy-na-osiedlu-ID4vCWg": {
@@ -7650,6 +7650,16 @@
   "68527019": {
     "price": 799000,
     "area": 104,
+    "type": "dom"
+  },
+  "nowoczesna-zabudowa-blizniacza-w-pelczycach-komfort-i-prywatnosc-ID4DqVI": {
+    "price": 990000,
+    "area": null,
+    "type": "dom"
+  },
+  "68529085": {
+    "price": 819700,
+    "area": 89,
     "type": "dom"
   }
 }
