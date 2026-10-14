@@ -7616,5 +7616,40 @@
     "price": 999000,
     "area": null,
     "type": "dom"
+  },
+  "9000062222": {
+    "price": 1266500,
+    "area": 134,
+    "type": "dom"
+  },
+  "dostepne-ostatnie-domy-na-osiedlu-ID4vCWg": {
+    "price": 879000,
+    "area": null,
+    "type": "dom"
+  },
+  "1cLXoi": {
+    "price": 2190000,
+    "area": null,
+    "type": "dom"
+  },
+  "68527821": {
+    "price": 1266500,
+    "area": 134,
+    "type": "dom"
+  },
+  "68527820": {
+    "price": 1215500,
+    "area": 128,
+    "type": "dom"
+  },
+  "68527463": {
+    "price": 1135000,
+    "area": 128,
+    "type": "dom"
+  },
+  "68527019": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
   }
 }
