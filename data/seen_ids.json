@@ -273,7 +273,7 @@
     "type": "dzialka"
   },
   "szczodre-domy-dom-4-pok-2-24-ID4AKjI": {
-    "price": 799000,
+    "price": 820000,
     "area": null,
     "type": "dom"
   },
@@ -6553,7 +6553,7 @@
     "type": "dom"
   },
   "68472250": {
-    "price": 1450000,
+    "price": 1399900,
     "area": 148,
     "type": "dom"
   },
@@ -7600,6 +7600,21 @@
   "9000062220": {
     "price": 799000,
     "area": 80,
+    "type": "dom"
+  },
+  "9000062221": {
+    "price": 1399900,
+    "area": 148,
+    "type": "dom"
+  },
+  "dom-z-charakterem-spokojna-okolica-dzialka-670m2-ID4DwCQ": {
+    "price": 899000,
+    "area": null,
+    "type": "dom"
+  },
+  "4m-zab-blizniacza-ogrod-podjazd-na-dwa-auta-dzien-otwarty-ID4DpAU": {
+    "price": 999000,
+    "area": null,
     "type": "dom"
   }
 }
