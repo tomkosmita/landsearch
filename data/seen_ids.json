@@ -6233,7 +6233,7 @@
     "type": "dom"
   },
   "68450815": {
-    "price": 1062950,
+    "price": 998000,
     "area": 104,
     "type": "dom"
   },
@@ -7669,6 +7669,21 @@
   },
   "dom-klasy-premium-las-235-m-1080-m-ID4DmJO": {
     "price": 2799000,
+    "area": null,
+    "type": "dom"
+  },
+  "9000062224": {
+    "price": 998000,
+    "area": 104,
+    "type": "dom"
+  },
+  "1cMM0J": {
+    "price": 650000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-premium-garaz-i-miejsce-parkingowe-w-cenie-gotowy-ogrod-ID4DqVn": {
+    "price": 990000,
     "area": null,
     "type": "dom"
   }
