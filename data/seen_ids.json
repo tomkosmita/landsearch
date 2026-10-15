@@ -7686,5 +7686,40 @@
     "price": 990000,
     "area": null,
     "type": "dom"
+  },
+  "9000062225": {
+    "price": 1099000,
+    "area": 128,
+    "type": "dom"
+  },
+  "duzy-dom-jednorodzinny-z-pieknym-ogrodem-i-garazem-ID4D0ZZ": {
+    "price": 1690000,
+    "area": null,
+    "type": "dom"
+  },
+  "idealny-na-firme-uslugi-biuro-i-do-zamieszkania-ID4Dm2L": {
+    "price": 1490000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-6m-ogrod-mp-balkon-piwnica-dzien-otwarty-ID4DxV9": {
+    "price": 999000,
+    "area": null,
+    "type": "dom"
+  },
+  "wilczyce-100-m-dom-blizniaczy-gotowy-do-zamieszkania-ID4DxFW": {
+    "price": 1350000,
+    "area": null,
+    "type": "dom"
+  },
+  "68531363": {
+    "price": 1250000,
+    "area": 120,
+    "type": "dom"
+  },
+  "68531073": {
+    "price": 1180000,
+    "area": 108,
+    "type": "dom"
   }
 }
