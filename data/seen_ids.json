@@ -7688,9 +7688,9 @@
     "type": "dom"
   },
   "9000062225": {
-    "price": 1099000,
-    "area": 128,
-    "type": "dom"
+    "price": 405000,
+    "area": 766,
+    "type": "dzialka"
   },
   "duzy-dom-jednorodzinny-z-pieknym-ogrodem-i-garazem-ID4D0ZZ": {
     "price": 1690000,
@@ -7720,6 +7720,11 @@
   "68531073": {
     "price": 1180000,
     "area": 108,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-125-m2-teraz-50-tys-taniej-owsianka-kobierzyce-ID4BJ4j": {
+    "price": 1239000,
+    "area": null,
     "type": "dom"
   }
 }
