@@ -7726,5 +7726,25 @@
     "price": 1239000,
     "area": null,
     "type": "dom"
+  },
+  "9000062226": {
+    "price": 405000,
+    "area": 766,
+    "type": "dzialka"
+  },
+  "dom-wolnostojacy-na-krzykach-na-poludniu-wroclawia-sprzedam-ID4DxGR": {
+    "price": 5950000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-ktory-ma-wszystko-gotowy-do-zamieszkania-od-zaraz-ID4DaoB": {
+    "price": 1189000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-cenie-mieszkania-w-bliskim-sasiedztwie-kobierzyc-obok-wroclawia-ID4Da5F": {
+    "price": 849000,
+    "area": null,
+    "type": "dom"
   }
 }
