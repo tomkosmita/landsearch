@@ -7778,8 +7778,8 @@
     "type": "dom"
   },
   "9000062228": {
-    "price": 1250000,
-    "area": 120,
+    "price": 1630000,
+    "area": 190,
     "type": "dom"
   },
   "przestronny-dom-na-krzykach-ID4CWpQ": {
@@ -7815,6 +7815,11 @@
   "68534390": {
     "price": 1149000,
     "area": 115,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-pod-wroclawiem-dzialka-845m-ID4Dz20": {
+    "price": 1290000,
+    "area": null,
     "type": "dom"
   }
 }
