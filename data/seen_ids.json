@@ -7288,7 +7288,7 @@
     "type": "dom"
   },
   "197z0j": {
-    "price": 410000,
+    "price": 390000,
     "area": null,
     "type": "dzialka"
   },
@@ -7703,7 +7703,7 @@
     "type": "dom"
   },
   "dom-wolnostojacy-6m-ogrod-mp-balkon-piwnica-dzien-otwarty-ID4DxV9": {
-    "price": 999000,
+    "price": 1149000,
     "area": null,
     "type": "dom"
   },
@@ -7745,6 +7745,36 @@
   "dom-w-cenie-mieszkania-w-bliskim-sasiedztwie-kobierzyc-obok-wroclawia-ID4Da5F": {
     "price": 849000,
     "area": null,
+    "type": "dom"
+  },
+  "9000062227": {
+    "price": 389000,
+    "area": 857,
+    "type": "dzialka"
+  },
+  "maly-dom-wolnostojacy-3-km-za-oporowem-ID4DyM3": {
+    "price": 398000,
+    "area": null,
+    "type": "dom"
+  },
+  "1cMX8X": {
+    "price": 750000,
+    "area": null,
+    "type": "dom"
+  },
+  "68533167": {
+    "price": 1550000,
+    "area": 138,
+    "type": "dom"
+  },
+  "68533057": {
+    "price": 1070000,
+    "area": 97,
+    "type": "dom"
+  },
+  "68533023": {
+    "price": 990000,
+    "area": 113,
     "type": "dom"
   }
 }
