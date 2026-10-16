@@ -7776,5 +7776,45 @@
     "price": 990000,
     "area": 113,
     "type": "dom"
+  },
+  "9000062228": {
+    "price": 1250000,
+    "area": 120,
+    "type": "dom"
+  },
+  "przestronny-dom-na-krzykach-ID4CWpQ": {
+    "price": 2190000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowy-dom-78-m-blisko-wroclawia-ID4DckR": {
+    "price": 649000,
+    "area": null,
+    "type": "dom"
+  },
+  "gotowy-dom-z-ogrodem-pod-wroclawiem-ID4DxxQ": {
+    "price": 1250000,
+    "area": null,
+    "type": "dom"
+  },
+  "68535070": {
+    "price": 919000,
+    "area": 85,
+    "type": "dom"
+  },
+  "68534800": {
+    "price": 1290000,
+    "area": 131,
+    "type": "dom"
+  },
+  "68534704": {
+    "price": 1200000,
+    "area": 139,
+    "type": "dom"
+  },
+  "68534390": {
+    "price": 1149000,
+    "area": 115,
+    "type": "dom"
   }
 }
