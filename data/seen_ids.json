@@ -7813,7 +7813,7 @@
     "type": "dom"
   },
   "68534390": {
-    "price": 1149000,
+    "price": 1070000,
     "area": 115,
     "type": "dom"
   },
@@ -7833,8 +7833,13 @@
     "type": "dom"
   },
   "9000062230": {
-    "price": 405000,
-    "area": 766,
-    "type": "dzialka"
+    "price": 1680000,
+    "area": 101,
+    "type": "dom"
+  },
+  "blizniak-premium-gotowy-do-zamieszkania-domaszczyn-ID4C323": {
+    "price": 1390000,
+    "area": null,
+    "type": "dom"
   }
 }
