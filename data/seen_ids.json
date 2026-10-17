@@ -7831,5 +7831,10 @@
     "price": 1500000,
     "area": null,
     "type": "dom"
+  },
+  "9000062230": {
+    "price": 405000,
+    "area": 766,
+    "type": "dzialka"
   }
 }
