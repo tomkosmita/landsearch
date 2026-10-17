@@ -4813,7 +4813,7 @@
     "type": "dzialka"
   },
   "68362720": {
-    "price": 920000,
+    "price": 945000,
     "area": 148,
     "type": "dom"
   },
@@ -7839,6 +7839,21 @@
   },
   "blizniak-premium-gotowy-do-zamieszkania-domaszczyn-ID4C323": {
     "price": 1390000,
+    "area": null,
+    "type": "dom"
+  },
+  "9000062231": {
+    "price": 1200000,
+    "area": 130,
+    "type": "dom"
+  },
+  "rezerwacja-dom-kanadyjski-fotowoltaika-kamieniec-wr-ID4DgYH": {
+    "price": 599000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-blizniak-z-ogrodem-we-wroclawiu-stablowice-ID4Dv5E": {
+    "price": 950000,
     "area": null,
     "type": "dom"
   }
