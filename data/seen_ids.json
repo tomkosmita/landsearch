@@ -7863,13 +7863,18 @@
     "type": "dom"
   },
   "9000062233": {
-    "price": 1215500,
-    "area": 128,
+    "price": 690000,
+    "area": 150,
     "type": "dom"
   },
   "68538833": {
     "price": 1215500,
     "area": 128,
     "type": "dom"
+  },
+  "1cPqpW": {
+    "price": 180000,
+    "area": null,
+    "type": "dzialka"
   }
 }
