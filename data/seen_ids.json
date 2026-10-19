@@ -1849,7 +1849,7 @@
   },
   "67905540": {
     "price": 1320000,
-    "area": 150,
+    "area": 142,
     "type": "dom"
   },
   "62496418": {
@@ -5878,7 +5878,7 @@
     "type": "dom"
   },
   "1cmTNl": {
-    "price": 209000,
+    "price": 204990,
     "area": null,
     "type": "dzialka"
   },
@@ -7028,7 +7028,7 @@
     "type": "dzialka"
   },
   "68497509": {
-    "price": 510000,
+    "price": 499000,
     "area": 1650,
     "type": "dzialka"
   },
@@ -7915,6 +7915,26 @@
   "68540704": {
     "price": 799000,
     "area": 105,
+    "type": "dom"
+  },
+  "1cQteo": {
+    "price": 380000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062237": {
+    "price": 1250000,
+    "area": 152,
+    "type": "dom"
+  },
+  "dom-176-m-i-ponad-900-m-dzialki-iwiny-ID4DAPr": {
+    "price": 949999,
+    "area": null,
+    "type": "dom"
+  },
+  "rodzinny-dom-z-duzym-ogrodem-garaz-5-pok-polanowice-ID4DwKZ": {
+    "price": 1599000,
+    "area": null,
     "type": "dom"
   }
 }
