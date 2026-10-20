@@ -2693,7 +2693,7 @@
     "type": "dom"
   },
   "67812282": {
-    "price": 948253,
+    "price": 962475,
     "area": 105,
     "type": "dom"
   },
@@ -7960,6 +7960,26 @@
   "68546512": {
     "price": 899000,
     "area": 80,
+    "type": "dom"
+  },
+  "1cRrbQ": {
+    "price": 420000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68548404": {
+    "price": 590000,
+    "area": 1185,
+    "type": "dzialka"
+  },
+  "9000062240": {
+    "price": 950000,
+    "area": 85,
+    "type": "dom"
+  },
+  "68547708": {
+    "price": 1430000,
+    "area": 129,
     "type": "dom"
   }
 }
