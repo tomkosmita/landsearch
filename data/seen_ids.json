@@ -7973,13 +7973,38 @@
     "type": "dzialka"
   },
   "9000062240": {
-    "price": 950000,
-    "area": 85,
+    "price": 1050000,
+    "area": 152,
     "type": "dom"
   },
   "68547708": {
     "price": 1430000,
     "area": 129,
+    "type": "dom"
+  },
+  "dzialka-budowlana-1-497-m-z-mediami-bogdaszowice-ID4DCDq": {
+    "price": 320000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "maslice-gotowy-dom-do-wprowadzenia-ID4DC4U": {
+    "price": 899000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-do-remontu-dzialka-735m2-widok-na-odre-karlowice-ID4DB4x": {
+    "price": 1999999,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-szereg-z-prywatnym-ogrodem-oltaszyn-ID4DAkP": {
+    "price": 1799000,
+    "area": null,
+    "type": "dom"
+  },
+  "68548146": {
+    "price": 1499000,
+    "area": 174,
     "type": "dom"
   }
 }
