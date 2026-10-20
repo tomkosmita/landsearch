@@ -7941,5 +7941,25 @@
     "price": 1250000,
     "area": 152,
     "type": "dom"
+  },
+  "wyjatkowa-dzialka-budowlana-plus-1ha-ziemi-ID4DBXv": {
+    "price": 450000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062239": {
+    "price": 899000,
+    "area": 80,
+    "type": "dom"
+  },
+  "4m-zab-blizniacza-ogrod-podjazd-na-dwa-auta-tylko-u-nas-ID4DpAU": {
+    "price": 999000,
+    "area": null,
+    "type": "dom"
+  },
+  "68546512": {
+    "price": 899000,
+    "area": 80,
+    "type": "dom"
   }
 }
