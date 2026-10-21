@@ -8016,5 +8016,30 @@
     "price": 1100000,
     "area": null,
     "type": "dom"
+  },
+  "1cSsTu": {
+    "price": 300,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062242": {
+    "price": 1399900,
+    "area": 148,
+    "type": "dom"
+  },
+  "dostepne-ostatnie-2-domy-na-osiedlu-ID4Ca5Q": {
+    "price": 879000,
+    "area": null,
+    "type": "dom"
+  },
+  "komfortowy-dom-pod-wroclawiem-160-m-dzialka-760-m-wilczyce-ID4DgU9": {
+    "price": 1499000,
+    "area": null,
+    "type": "dom"
+  },
+  "68550446": {
+    "price": 990000,
+    "area": 73,
+    "type": "dom"
   }
 }
