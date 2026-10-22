@@ -8061,5 +8061,30 @@
     "price": 1320000,
     "area": 142,
     "type": "dom"
+  },
+  "1cTLG5": {
+    "price": 98000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1cU0Y4": {
+    "price": 200000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-miejscowosc-swiete-gmina-sroda-slaska-ID4DDQZ": {
+    "price": 207000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062245": {
+    "price": 389000,
+    "area": 857,
+    "type": "dzialka"
+  },
+  "nie-szukaj-dalej-idealny-dom-parterowy-pod-lasem-garaz-2-auta-1500m2-ID4DDO6": {
+    "price": 1980000,
+    "area": null,
+    "type": "dom"
   }
 }
