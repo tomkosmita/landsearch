@@ -1263,7 +1263,7 @@
     "type": "dzialka"
   },
   "66906732": {
-    "price": 400000,
+    "price": 370000,
     "area": 1011,
     "type": "dzialka"
   },
@@ -8086,5 +8086,10 @@
     "price": 1980000,
     "area": null,
     "type": "dom"
+  },
+  "9000062246": {
+    "price": 370000,
+    "area": 1011,
+    "type": "dzialka"
   }
 }
