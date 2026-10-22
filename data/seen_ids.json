@@ -8088,8 +8088,23 @@
     "type": "dom"
   },
   "9000062246": {
-    "price": 370000,
-    "area": 1011,
-    "type": "dzialka"
+    "price": 729060,
+    "area": 86,
+    "type": "dom"
+  },
+  "klimatyczny-dom-wolnostojacy-z-duza-dzialka-oltaszyn-ID4DEnY": {
+    "price": 2990000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-201-m-z-niezwykla-historia-karlowice-ul-boya-zelenskiego-37-ID4DEwh": {
+    "price": 1490000,
+    "area": null,
+    "type": "dom"
+  },
+  "68556719": {
+    "price": 729060,
+    "area": 86,
+    "type": "dom"
   }
 }
