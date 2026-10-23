@@ -8123,8 +8123,8 @@
     "type": "dzialka"
   },
   "9000062249": {
-    "price": 1320000,
-    "area": 142,
+    "price": 669000,
+    "area": 86,
     "type": "dom"
   },
   "5-pokoi-garaz-natura-35-km-od-wroclawia-ID4vQ8F": {
@@ -8145,6 +8145,26 @@
   "68558541": {
     "price": 1465000,
     "area": 194,
+    "type": "dom"
+  },
+  "19tN2j": {
+    "price": 480000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dom-z-ogrodem-przedpsrzedaz-promocyjna-cena-na-start-poludnie-ID4DFoy": {
+    "price": 629000,
+    "area": null,
+    "type": "dom"
+  },
+  "komfortowy-przestronny-dom-wolnostojacy-garaz-na-2-auta-piekny-ogrod-ID4DFuK": {
+    "price": 2699000,
+    "area": null,
+    "type": "dom"
+  },
+  "68561117": {
+    "price": 669000,
+    "area": 86,
     "type": "dom"
   }
 }
