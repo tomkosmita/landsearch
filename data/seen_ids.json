@@ -8116,5 +8116,35 @@
     "price": 949000,
     "area": 165,
     "type": "dom"
+  },
+  "1alfUW": {
+    "price": 435000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062249": {
+    "price": 1320000,
+    "area": 142,
+    "type": "dom"
+  },
+  "5-pokoi-garaz-natura-35-km-od-wroclawia-ID4vQ8F": {
+    "price": 499000,
+    "area": null,
+    "type": "dom"
+  },
+  "twoj-dom-marzen-5-pokoi-standard-premium-ID4DsQA": {
+    "price": 890000,
+    "area": null,
+    "type": "dom"
+  },
+  "68558726": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68558541": {
+    "price": 1465000,
+    "area": 194,
+    "type": "dom"
   }
 }
