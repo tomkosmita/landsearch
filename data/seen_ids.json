@@ -2333,7 +2333,7 @@
     "type": "dom"
   },
   "67812259": {
-    "price": 948253,
+    "price": 962475,
     "area": 105,
     "type": "dom"
   },
@@ -8175,6 +8175,16 @@
   "9000062251": {
     "price": 1420000,
     "area": 240,
+    "type": "dom"
+  },
+  "9000062252": {
+    "price": 729060,
+    "area": 86,
+    "type": "dom"
+  },
+  "bez-posrednikow-dom-148m-klima-finansowanie-wykonczenie-ID4CdRb": {
+    "price": 1168000,
+    "area": null,
     "type": "dom"
   }
 }
