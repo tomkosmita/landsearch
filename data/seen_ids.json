@@ -5653,7 +5653,7 @@
     "type": "dzialka"
   },
   "rezerwacjadom-w-zabudowie-blizniaczej-92-1-m-w-wilkszynie-ID4yPxX": {
-    "price": 850000,
+    "price": 890000,
     "area": null,
     "type": "dom"
   },
@@ -8190,6 +8190,11 @@
   "9000062253": {
     "price": 1099000,
     "area": 117,
+    "type": "dom"
+  },
+  "9000062254": {
+    "price": 1070000,
+    "area": 97,
     "type": "dom"
   }
 }
