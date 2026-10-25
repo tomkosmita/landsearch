@@ -4688,7 +4688,7 @@
     "type": "dzialka"
   },
   "1aI5FW": {
-    "price": 415000,
+    "price": 350000,
     "area": null,
     "type": "dzialka"
   },
@@ -8193,8 +8193,33 @@
     "type": "dom"
   },
   "9000062254": {
-    "price": 1070000,
-    "area": 97,
+    "price": 499000,
+    "area": 891,
+    "type": "dzialka"
+  },
+  "1cVILT": {
+    "price": 960000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-pod-wroclawiem-120-m-ogrod-400-m-kobierzyce-zorawina-wilczkow-ID4CVRz": {
+    "price": 899000,
+    "area": null,
+    "type": "dom"
+  },
+  "sadkow-10-min-od-wroclawia-dom-z-ogrodem-ID4DG5Q": {
+    "price": 1148000,
+    "area": null,
+    "type": "dom"
+  },
+  "przestronny-dom-5-pokojow-duza-dzialka-ogrod-cicha-kameralna-okolica-ID4DGug": {
+    "price": 1549000,
+    "area": null,
+    "type": "dom"
+  },
+  "willa-conrada-helbiga-na-prestizowym-zalesiu-ID4BOYS": {
+    "price": 8990000,
+    "area": null,
     "type": "dom"
   }
 }
