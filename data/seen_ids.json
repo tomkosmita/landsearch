@@ -8266,5 +8266,45 @@
     "price": 796800,
     "area": 171,
     "type": "dom"
+  },
+  "sprzedaz-dzialki-budowlanej-z-mediami-ID4DHAT": {
+    "price": 160000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062258": {
+    "price": 1375000,
+    "area": 114,
+    "type": "dom"
+  },
+  "kameralny-dom-na-duzej-dzialce-przy-granicy-miasta-ID4DHDJ": {
+    "price": 599000,
+    "area": null,
+    "type": "dom"
+  },
+  "wrocil-do-sprzedazy-rewelacyjny-blizniak-w-zielonej-okolicy-okazja-ID4CPNE": {
+    "price": 599000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-garazem-otulony-zielenia-idealny-dla-twojej-rodziny-blisko-las-ID4DBob": {
+    "price": 2110000,
+    "area": null,
+    "type": "dom"
+  },
+  "68567803": {
+    "price": 995000,
+    "area": 70,
+    "type": "dom"
+  },
+  "68566802": {
+    "price": 949000,
+    "area": 121,
+    "type": "dom"
+  },
+  "68566623": {
+    "price": 1200000,
+    "area": 140,
+    "type": "dom"
   }
 }
