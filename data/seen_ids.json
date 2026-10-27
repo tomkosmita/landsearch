@@ -8348,8 +8348,8 @@
     "type": "dzialka"
   },
   "9000062261": {
-    "price": 1299000,
-    "area": 168,
+    "price": 1285000,
+    "area": 131,
     "type": "dom"
   },
   "dom-wolnostojacy-6m-ogrod-mp-balkon-piwnica-tylko-u-nas-ID4DxV9": {
@@ -8375,6 +8375,16 @@
   "68571365": {
     "price": 1390000,
     "area": 300,
+    "type": "dom"
+  },
+  "komfortowy-dom-z-ogrodem-437m2-narozna-dzialka-ID4Bl46": {
+    "price": 2600000,
+    "area": null,
+    "type": "dom"
+  },
+  "-ID4DI9P": {
+    "price": 999000,
+    "area": null,
     "type": "dom"
   }
 }
