@@ -4693,7 +4693,7 @@
     "type": "dzialka"
   },
   "wroclaw-suchy-dwor-piekny-dom-wolnostojacy-bez-prowizji-ID4CPLp": {
-    "price": 1800000,
+    "price": 1799000,
     "area": null,
     "type": "dom"
   },
@@ -8305,6 +8305,21 @@
   "68566623": {
     "price": 1200000,
     "area": 140,
+    "type": "dom"
+  },
+  "9000062259": {
+    "price": 829000,
+    "area": 117,
+    "type": "dom"
+  },
+  "4-pokoje-i-radwanice-i-dom-i-garaz-i-ogrodek-ID4CIQG": {
+    "price": 864500,
+    "area": null,
+    "type": "dom"
+  },
+  "blizniak-140m2-garaz-mp-ogrod-500m2-ID4DGzw": {
+    "price": 1079000,
+    "area": null,
     "type": "dom"
   }
 }
