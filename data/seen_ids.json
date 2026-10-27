@@ -1263,7 +1263,7 @@
     "type": "dzialka"
   },
   "66906732": {
-    "price": 370000,
+    "price": 350000,
     "area": 1011,
     "type": "dzialka"
   },
@@ -7643,7 +7643,7 @@
     "type": "dom"
   },
   "68527463": {
-    "price": 1135000,
+    "price": 1099000,
     "area": 128,
     "type": "dom"
   },
@@ -8073,7 +8073,7 @@
     "type": "dzialka"
   },
   "dzialka-budowlana-miejscowosc-swiete-gmina-sroda-slaska-ID4DDQZ": {
-    "price": 207000,
+    "price": 200000,
     "area": null,
     "type": "dzialka"
   },
@@ -8340,6 +8340,41 @@
   "68569881": {
     "price": 999000,
     "area": 135,
+    "type": "dom"
+  },
+  "68570663": {
+    "price": 599000,
+    "area": 1613,
+    "type": "dzialka"
+  },
+  "9000062261": {
+    "price": 1299000,
+    "area": 168,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-6m-ogrod-mp-balkon-piwnica-tylko-u-nas-ID4DxV9": {
+    "price": 1149000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-parterowy-dzialka-1142-m-owsianka-ID4DDxF": {
+    "price": 1389000,
+    "area": null,
+    "type": "dom"
+  },
+  "1bc9Ml": {
+    "price": 1190000,
+    "area": null,
+    "type": "dom"
+  },
+  "68571592": {
+    "price": 1299000,
+    "area": 168,
+    "type": "dom"
+  },
+  "68571365": {
+    "price": 1390000,
+    "area": 300,
     "type": "dom"
   }
 }
