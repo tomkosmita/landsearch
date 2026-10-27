@@ -8321,5 +8321,25 @@
     "price": 1079000,
     "area": null,
     "type": "dom"
+  },
+  "9000062260": {
+    "price": 999000,
+    "area": 135,
+    "type": "dom"
+  },
+  "duzy-dom-dla-rodziny-z-ogrodem-i-garazem-wroclaw-stablowice-ID4DwH1": {
+    "price": 1479000,
+    "area": null,
+    "type": "dom"
+  },
+  "wroclaw-2-km-dzialka-1180-m-6-pokoi-163-m-fotowoltaika-ID4DGJG": {
+    "price": 1290000,
+    "area": null,
+    "type": "dom"
+  },
+  "68569881": {
+    "price": 999000,
+    "area": 135,
+    "type": "dom"
   }
 }
