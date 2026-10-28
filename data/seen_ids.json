@@ -8386,5 +8386,20 @@
     "price": 999000,
     "area": null,
     "type": "dom"
+  },
+  "9000062262": {
+    "price": 1285000,
+    "area": 131,
+    "type": "dom"
+  },
+  "nowoczesny-dom-w-zabudowie-dwulokalowej-w-keblowicach-pod-wroclawiem-ID4Ck64": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
+  },
+  "czesciowo-wykonczony-blizniak-przy-parku-krajobrazowym-katy-wro-ID4DAZQ": {
+    "price": 899000,
+    "area": null,
+    "type": "dom"
   }
 }
