@@ -5083,7 +5083,7 @@
     "type": "dom"
   },
   "68381767": {
-    "price": 1062950,
+    "price": 998000,
     "area": 104,
     "type": "dom"
   },
@@ -8399,6 +8399,16 @@
   },
   "czesciowo-wykonczony-blizniak-przy-parku-krajobrazowym-katy-wro-ID4DAZQ": {
     "price": 899000,
+    "area": null,
+    "type": "dom"
+  },
+  "9000062263": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "0-prowizji-obnizka-o-30tys-ogrod-4-miejsca-postojowe-ID4DrZ8": {
+    "price": 969999,
     "area": null,
     "type": "dom"
   }
