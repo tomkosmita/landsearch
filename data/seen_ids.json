@@ -7128,7 +7128,7 @@
     "type": "dzialka"
   },
   "68502118": {
-    "price": 370000,
+    "price": 350000,
     "area": 1011,
     "type": "dzialka"
   },
@@ -8343,7 +8343,7 @@
     "type": "dom"
   },
   "68570663": {
-    "price": 599000,
+    "price": 549000,
     "area": 1613,
     "type": "dzialka"
   },
@@ -8409,6 +8409,16 @@
   },
   "0-prowizji-obnizka-o-30tys-ogrod-4-miejsca-postojowe-ID4DrZ8": {
     "price": 969999,
+    "area": null,
+    "type": "dom"
+  },
+  "9000062264": {
+    "price": 1394001,
+    "area": 111,
+    "type": "dom"
+  },
+  "wyjatkowy-dom-wolnostojacy-ID4DJi6": {
+    "price": 2100000,
     "area": null,
     "type": "dom"
   }
