@@ -145,8 +145,9 @@
     "area": null
   },
   "1b84fh": {
-    "price": 250000,
-    "area": null
+    "price": 240000,
+    "area": null,
+    "type": "dzialka"
   },
   "1aqGp1": {
     "price": 295000,
@@ -8430,6 +8431,41 @@
   "68577006": {
     "price": 1699000,
     "area": 329,
+    "type": "dom"
+  },
+  "1d15Nx": {
+    "price": 369000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062266": {
+    "price": 799000,
+    "area": 105,
+    "type": "dom"
+  },
+  "1d15VR": {
+    "price": 2100000,
+    "area": null,
+    "type": "dom"
+  },
+  "-ID4DKmt": {
+    "price": 879000,
+    "area": null,
+    "type": "dom"
+  },
+  "68578649": {
+    "price": 799000,
+    "area": 105,
+    "type": "dom"
+  },
+  "68578353": {
+    "price": 879000,
+    "area": 93,
+    "type": "dom"
+  },
+  "68577967": {
+    "price": 799000,
+    "area": 104,
     "type": "dom"
   }
 }
