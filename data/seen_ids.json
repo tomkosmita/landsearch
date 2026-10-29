@@ -8467,5 +8467,25 @@
     "price": 799000,
     "area": 104,
     "type": "dom"
+  },
+  "9000062267": {
+    "price": 1285000,
+    "area": 131,
+    "type": "dom"
+  },
+  "cena-tylko-w-przedsprzedazy-589-000-zl-3-km-od-oltaszyn-krzyki-wysoka-ID4Dj1p": {
+    "price": 589000,
+    "area": null,
+    "type": "dom"
+  },
+  "1d1ohV": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "reprezentacyjna-willa-z-ogrodem-borek-ul-raclawicka-ID4DKiK": {
+    "price": 5950000,
+    "area": null,
+    "type": "dom"
   }
 }
