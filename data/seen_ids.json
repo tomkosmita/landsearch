@@ -8512,5 +8512,45 @@
     "price": 1745000,
     "area": 168,
     "type": "dom"
+  },
+  "1d2OV5": {
+    "price": 350000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1d2LZ2": {
+    "price": 380000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68583042": {
+    "price": 499999,
+    "area": 1002,
+    "type": "dzialka"
+  },
+  "9000062270": {
+    "price": 1050000,
+    "area": 152,
+    "type": "dom"
+  },
+  "68584471": {
+    "price": 1599000,
+    "area": 190,
+    "type": "dom"
+  },
+  "68583040": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68583037": {
+    "price": 1349770,
+    "area": 111,
+    "type": "dom"
+  },
+  "68583038": {
+    "price": 998000,
+    "area": 104,
+    "type": "dom"
   }
 }
