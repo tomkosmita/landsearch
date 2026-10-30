@@ -5854,7 +5854,7 @@
     "type": "dom"
   },
   "1cmKOO": {
-    "price": 480000,
+    "price": 465000,
     "area": null,
     "type": "dzialka"
   },
@@ -7984,7 +7984,7 @@
     "type": "dom"
   },
   "dzialka-budowlana-1-497-m-z-mediami-bogdaszowice-ID4DCDq": {
-    "price": 320000,
+    "price": 300000,
     "area": null,
     "type": "dzialka"
   },
@@ -8496,6 +8496,21 @@
   "68580781": {
     "price": 945000,
     "area": 146,
+    "type": "dom"
+  },
+  "1d2eJv": {
+    "price": 150000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062269": {
+    "price": 1745000,
+    "area": 168,
+    "type": "dom"
+  },
+  "68582098": {
+    "price": 1745000,
+    "area": 168,
     "type": "dom"
   }
 }
