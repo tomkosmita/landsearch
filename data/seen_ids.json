@@ -8579,8 +8579,8 @@
     "type": "dom"
   },
   "9000062273": {
-    "price": 822900,
-    "area": 123,
+    "price": 1420000,
+    "area": 240,
     "type": "dom"
   },
   "1d3gB2": {
@@ -8596,6 +8596,26 @@
   "dom-193m-5-pokoi-duza-dzialka-pod-wroclawiem-ID4DAZS": {
     "price": 1890000,
     "area": null,
+    "type": "dom"
+  },
+  "wyjatkowy-dom-premium-230-m-zdjecia-wnetrz-nie-byly-modyfikowane-ai-ID4DM6A": {
+    "price": 3450000,
+    "area": null,
+    "type": "dom"
+  },
+  "ostatni-wolny-mpk-wroclawskie-szkola-rolety-elektryczne-gotowy-ID4CPNz": {
+    "price": 649000,
+    "area": null,
+    "type": "dom"
+  },
+  "68585829": {
+    "price": 1390000,
+    "area": 1065,
+    "type": "dom"
+  },
+  "68585809": {
+    "price": 1740000,
+    "area": 290,
     "type": "dom"
   }
 }
