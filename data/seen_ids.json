@@ -2029,7 +2029,7 @@
     "type": "dom"
   },
   "67984580": {
-    "price": 749000,
+    "price": 819000,
     "area": 80,
     "type": "dom"
   },
@@ -8575,6 +8575,26 @@
   },
   "dom-w-smolcu-podwojny-garaz-osobne-mieszkanie-ID4Cq2v": {
     "price": 1849000,
+    "area": null,
+    "type": "dom"
+  },
+  "9000062273": {
+    "price": 822900,
+    "area": 123,
+    "type": "dom"
+  },
+  "1d3gB2": {
+    "price": 620000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-dom-parterowy-w-galowie-174-48-dzialka-806-m-ID4DCwg": {
+    "price": 1499000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-193m-5-pokoi-duza-dzialka-pod-wroclawiem-ID4DAZS": {
+    "price": 1890000,
     "area": null,
     "type": "dom"
   }
