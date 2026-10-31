@@ -8562,5 +8562,20 @@
     "price": 2499000,
     "area": null,
     "type": "dom"
+  },
+  "9000062272": {
+    "price": 879000,
+    "area": 93,
+    "type": "dom"
+  },
+  "prywatny-ogrodek-swiatlowod-garaz-pozwolenia-na-uzytkowanie-ID4CW8M": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-w-smolcu-podwojny-garaz-osobne-mieszkanie-ID4Cq2v": {
+    "price": 1849000,
+    "area": null,
+    "type": "dom"
   }
 }
