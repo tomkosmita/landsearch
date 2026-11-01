@@ -122,7 +122,7 @@
     "area": 900
   },
   "1baqur": {
-    "price": 430000,
+    "price": 450000,
     "area": null,
     "type": "dzialka"
   },
@@ -8631,6 +8631,31 @@
   "67784748": {
     "price": 1069000,
     "area": 96,
+    "type": "dom"
+  },
+  "1d4bZJ": {
+    "price": 138000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062276": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "dom-blizniak-we-wroclawiu-ratyn-ID4ApUo": {
+    "price": 1069000,
+    "area": null,
+    "type": "dom"
+  },
+  "68587203": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "67831122": {
+    "price": 1470000,
+    "area": 154,
     "type": "dom"
   }
 }
