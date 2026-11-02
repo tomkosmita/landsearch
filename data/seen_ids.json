@@ -5889,8 +5889,8 @@
     "type": "dzialka"
   },
   "68432365": {
-    "price": 790000,
-    "area": 85,
+    "price": 850000,
+    "area": 100,
     "type": "dom"
   },
   "68432264": {
@@ -7359,7 +7359,7 @@
     "type": "dom"
   },
   "68512941": {
-    "price": 1485000,
+    "price": 1465000,
     "area": 194,
     "type": "dom"
   },
@@ -8661,6 +8661,46 @@
   "9000062277": {
     "price": 799000,
     "area": 104,
+    "type": "dom"
+  },
+  "dzialka-budowlana-1500m2-ID4DNc0": {
+    "price": 470000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1d4vz7": {
+    "price": 290000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062278": {
+    "price": 499000,
+    "area": 891,
+    "type": "dzialka"
+  },
+  "dom-z-ogrodem-garazem-i-fotowoltaika-domaslaw-ID4DxWX": {
+    "price": 1799999,
+    "area": null,
+    "type": "dom"
+  },
+  "wojszyce-blizniak-do-generalnego-remontu-5-pokoi-ID4DMSt": {
+    "price": 1159000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowe-budownictwo-cisza-spokoj-zielen-ID4CJJN": {
+    "price": 899000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-135-m-z-sauna-ogrodem-i-garazem-wroclaw-opatowice-nad-odra-ID4DNbu": {
+    "price": 2950000,
+    "area": null,
+    "type": "dom"
+  },
+  "68587636": {
+    "price": 1465000,
+    "area": 133,
     "type": "dom"
   }
 }
