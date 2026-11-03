@@ -8702,5 +8702,35 @@
     "price": 1465000,
     "area": 133,
     "type": "dom"
+  },
+  "dzialka-budowlana-12-arow-pelne-media-3-km-od-wroclawia-pkp-ID4DHMR": {
+    "price": 399000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062280": {
+    "price": 1375000,
+    "area": 114,
+    "type": "dom"
+  },
+  "1d4Nq8": {
+    "price": 1089000,
+    "area": null,
+    "type": "dom"
+  },
+  "przestronny-dom-w-ciszy-i-zieleni-garaz-ID4Dtlr": {
+    "price": 1465000,
+    "area": null,
+    "type": "dom"
+  },
+  "w-pelni-wyposazony-dom-z-2021-fv-sauna-smart-home-lux-ID4DyBF": {
+    "price": 1550000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-z-duza-dzialka-i-2020-rok-ID4DMI6": {
+    "price": 4999999,
+    "area": null,
+    "type": "dom"
   }
 }
