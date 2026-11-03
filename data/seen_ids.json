@@ -7969,7 +7969,7 @@
     "type": "dzialka"
   },
   "68548404": {
-    "price": 590000,
+    "price": 570000,
     "area": 1185,
     "type": "dzialka"
   },
@@ -8761,6 +8761,21 @@
   "68593476": {
     "price": 1250000,
     "area": 152,
+    "type": "dom"
+  },
+  "9000062282": {
+    "price": 1479000,
+    "area": 183,
+    "type": "dom"
+  },
+  "energooszczedny-nowoczesny-na-granicy-wroclawia-ID4DHVQ": {
+    "price": 1499930,
+    "area": null,
+    "type": "dom"
+  },
+  "68596364": {
+    "price": 1215500,
+    "area": 145,
     "type": "dom"
   }
 }
