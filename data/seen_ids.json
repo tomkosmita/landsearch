@@ -2474,7 +2474,7 @@
     "type": "dom"
   },
   "67137181": {
-    "price": 1430000,
+    "price": 1199000,
     "area": 128,
     "type": "dom"
   },
@@ -6584,7 +6584,7 @@
     "type": "dom"
   },
   "dom-250-m-do-remontu-8-pokoi-dzialka-720-m-do-negocjacji-ID4Di3l": {
-    "price": 850000,
+    "price": 799000,
     "area": null,
     "type": "dom"
   },
@@ -8791,6 +8791,31 @@
   "68598102": {
     "price": 839000,
     "area": 129,
+    "type": "dom"
+  },
+  "9000062284": {
+    "price": 1399000,
+    "area": 108,
+    "type": "dom"
+  },
+  "68600759": {
+    "price": 1399000,
+    "area": 108,
+    "type": "dom"
+  },
+  "68599493": {
+    "price": 1099000,
+    "area": 118,
+    "type": "dom"
+  },
+  "68598892": {
+    "price": 1149000,
+    "area": 140,
+    "type": "dom"
+  },
+  "68598834": {
+    "price": 699999,
+    "area": 78,
     "type": "dom"
   }
 }
