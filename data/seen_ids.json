@@ -8777,5 +8777,20 @@
     "price": 1215500,
     "area": 145,
     "type": "dom"
+  },
+  "atrakcyjna-dzialka-zawonia-1500-m-opcja-3000-m-media-ID4DPwt": {
+    "price": 337500,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062283": {
+    "price": 839000,
+    "area": 129,
+    "type": "dom"
+  },
+  "68598102": {
+    "price": 839000,
+    "area": 129,
+    "type": "dom"
   }
 }
