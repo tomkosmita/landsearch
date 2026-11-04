@@ -8817,5 +8817,50 @@
     "price": 699999,
     "area": 78,
     "type": "dom"
+  },
+  "1d783E": {
+    "price": 320000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68601380": {
+    "price": 398000,
+    "area": 1120,
+    "type": "dzialka"
+  },
+  "9000062285": {
+    "price": 1420000,
+    "area": 240,
+    "type": "dom"
+  },
+  "nowoczesny-parterowy-dom-w-pruszowicach-ID4CwaW": {
+    "price": 2100000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-pietrowy-z-garazem-owsianka-gm-kobierzyce-ID4BJ53": {
+    "price": 1179000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-145-m-z-ogrodem-tanie-ogrzewanie-42-ID4DNxk": {
+    "price": 1499000,
+    "area": null,
+    "type": "dom"
+  },
+  "prywatnosc-wsrod-zieleni-dom-z-tarasem-medlow-ID4DMov": {
+    "price": 1970000,
+    "area": null,
+    "type": "dom"
+  },
+  "68600957": {
+    "price": 1500000,
+    "area": 122,
+    "type": "dom"
+  },
+  "68600934": {
+    "price": 1100000,
+    "area": 85,
+    "type": "dom"
   }
 }
