@@ -4429,7 +4429,7 @@
     "type": "dom"
   },
   "68339940": {
-    "price": 738000,
+    "price": 749000,
     "area": 97,
     "type": "dom"
   },
@@ -8891,6 +8891,26 @@
   "68603988": {
     "price": 1500000,
     "area": 122,
+    "type": "dom"
+  },
+  "9000062288": {
+    "price": 1285000,
+    "area": 131,
+    "type": "dom"
+  },
+  "dom-z-dzialka-2466-m-turow-gm-zorawina-ID4DkTr": {
+    "price": 980000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-najwiekszymi-ogrodem-w-okolicy-3-mp-strych-deweloperski-ID4DQHk": {
+    "price": 799000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-154-8-m-4-sypialnie-ogrod-garaz-wojszyce-ID4DRc8": {
+    "price": 1590000,
+    "area": null,
     "type": "dom"
   }
 }
