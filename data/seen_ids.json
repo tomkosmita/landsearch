@@ -5879,7 +5879,7 @@
     "type": "dom"
   },
   "1cmTNl": {
-    "price": 204990,
+    "price": 199000,
     "area": null,
     "type": "dzialka"
   },
@@ -8434,7 +8434,7 @@
     "type": "dom"
   },
   "1d15Nx": {
-    "price": 369000,
+    "price": 349000,
     "area": null,
     "type": "dzialka"
   },
@@ -8871,6 +8871,26 @@
   "68602710": {
     "price": 799000,
     "area": 92,
+    "type": "dom"
+  },
+  "9000062287": {
+    "price": 1100000,
+    "area": 85,
+    "type": "dom"
+  },
+  "dom-dwurodzinny-z-mozliwoscia-prowadzenia-dzialalnosci-ID4DEYQ": {
+    "price": 1190000,
+    "area": null,
+    "type": "dom"
+  },
+  "68604028": {
+    "price": 1100000,
+    "area": 85,
+    "type": "dom"
+  },
+  "68603988": {
+    "price": 1500000,
+    "area": 122,
     "type": "dom"
   }
 }
