@@ -8937,5 +8937,25 @@
     "price": 799000,
     "area": 104,
     "type": "dom"
+  },
+  "9000062291": {
+    "price": 999000,
+    "area": 135,
+    "type": "dom"
+  },
+  "nizsza-cena-dom-w-zernikach-wroclawskich-na-duzej-dzialce-1238-m2-ID4DKhG": {
+    "price": 1185000,
+    "area": null,
+    "type": "dom"
+  },
+  "68608978": {
+    "price": 649900,
+    "area": 80,
+    "type": "dom"
+  },
+  "68608969": {
+    "price": 669000,
+    "area": 80,
+    "type": "dom"
   }
 }
