@@ -7219,7 +7219,7 @@
     "type": "dom"
   },
   "1bnopO": {
-    "price": 990000,
+    "price": 950000,
     "area": null,
     "type": "dom"
   },
@@ -7424,7 +7424,7 @@
     "type": "dom"
   },
   "1cDPZp": {
-    "price": 2390000,
+    "price": 2250000,
     "area": null,
     "type": "dom"
   },
@@ -8916,6 +8916,26 @@
   "9000062289": {
     "price": 1285000,
     "area": 131,
+    "type": "dom"
+  },
+  "9000062290": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "rezerwacja-dom-w-smolcu-podwojny-garaz-osobne-mieszkanie-ID4Cq2v": {
+    "price": 1849000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowoczesny-dom-szukalice-5-min-od-wroclawia-oltaszyn-ID4DSbZ": {
+    "price": 2590000,
+    "area": null,
+    "type": "dom"
+  },
+  "68608169": {
+    "price": 799000,
+    "area": 104,
     "type": "dom"
   }
 }
