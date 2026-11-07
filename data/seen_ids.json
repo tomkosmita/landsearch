@@ -8962,5 +8962,20 @@
     "price": 749000,
     "area": 146,
     "type": "dom"
+  },
+  "sprzedam-dzialke-w-malowniczej-i-cichej-okolicy-ID4DSM4": {
+    "price": 350000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062293": {
+    "price": 660000,
+    "area": 114,
+    "type": "dom"
+  },
+  "parterowy-dom-dla-ciebie-pasywny-duzy-garaz-dzialka-1500m2-ID4DysL": {
+    "price": 1980000,
+    "area": null,
+    "type": "dom"
   }
 }
