@@ -8987,5 +8987,20 @@
     "price": 1394001,
     "area": 111,
     "type": "dom"
+  },
+  "9000062295": {
+    "price": 1394001,
+    "area": 111,
+    "type": "dom"
+  },
+  "dom-w-zabudowie-blizniaczej-na-kameralnym-osiedlu-ID4B5De": {
+    "price": 1970000,
+    "area": null,
+    "type": "dom"
+  },
+  "polowa-blizniaka-przy-lesie-wroclaw-agrestowa-bez-posrednikow-ID4DT3I": {
+    "price": 1690000,
+    "area": null,
+    "type": "dom"
   }
 }
