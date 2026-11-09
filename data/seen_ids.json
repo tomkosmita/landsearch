@@ -5564,7 +5564,7 @@
     "type": "dom"
   },
   "67623290": {
-    "price": 1199000,
+    "price": 1149000,
     "area": 114,
     "type": "dom"
   },
@@ -7219,7 +7219,7 @@
     "type": "dom"
   },
   "1bnopO": {
-    "price": 950000,
+    "price": 949000,
     "area": null,
     "type": "dom"
   },
@@ -9021,6 +9021,86 @@
   "9000062298": {
     "price": 749000,
     "area": 146,
+    "type": "dom"
+  },
+  "dzialka-brzezia-laka-przy-lesie-ID4DUcv": {
+    "price": 360000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062299": {
+    "price": 1399900,
+    "area": 148,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-6m-ogrod-mp-balkon-piwnica-rezerwacja-ID4DxV9": {
+    "price": 1149000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-eko-dzialka606-m-pompa-fotowoltaika-magazyn-energii-wiata-taras-ID4zJUe": {
+    "price": 1149000,
+    "area": null,
+    "type": "dom"
+  },
+  "szczodre-domy-dom-4-pok-1-11-ID4vS7P": {
+    "price": 820000,
+    "area": null,
+    "type": "dom"
+  },
+  "nowy-dom-z-garazem-165m-i-5-pokoi-i-dzialka-536-m-i-wilkszyn-ID4DTLo": {
+    "price": 849000,
+    "area": null,
+    "type": "dom"
+  },
+  "szczodre-domy-dom-4-pok-32-2-ID4DKnT": {
+    "price": 810000,
+    "area": null,
+    "type": "dom"
+  },
+  "1dbdaq": {
+    "price": 1899900,
+    "area": null,
+    "type": "dom"
+  },
+  "68615940": {
+    "price": 1386970,
+    "area": 106,
+    "type": "dom"
+  },
+  "68615824": {
+    "price": 1430000,
+    "area": 137,
+    "type": "dom"
+  },
+  "68615213": {
+    "price": 700000,
+    "area": 79,
+    "type": "dom"
+  },
+  "68615165": {
+    "price": 699900,
+    "area": 79,
+    "type": "dom"
+  },
+  "68615085": {
+    "price": 699900,
+    "area": 80,
+    "type": "dom"
+  },
+  "68615065": {
+    "price": 649000,
+    "area": 79,
+    "type": "dom"
+  },
+  "68614879": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68614494": {
+    "price": 849000,
+    "area": 165,
     "type": "dom"
   }
 }
