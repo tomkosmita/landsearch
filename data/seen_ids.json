@@ -9132,5 +9132,35 @@
     "price": 1200000,
     "area": 140,
     "type": "dom"
+  },
+  "dzialka-budowlana-1107-m-brzezia-laka-gm-dlugoleka-ID4DWbd": {
+    "price": 350000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062302": {
+    "price": 1125000,
+    "area": 108,
+    "type": "dom"
+  },
+  "1dcewb": {
+    "price": 1690000,
+    "area": null,
+    "type": "dom"
+  },
+  "68620411": {
+    "price": 1125000,
+    "area": 108,
+    "type": "dom"
+  },
+  "68619890": {
+    "price": 819700,
+    "area": 89,
+    "type": "dom"
+  },
+  "68619367": {
+    "price": 1465000,
+    "area": 133,
+    "type": "dom"
   }
 }
