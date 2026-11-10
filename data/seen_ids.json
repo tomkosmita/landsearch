@@ -6399,7 +6399,7 @@
     "type": "dom"
   },
   "68463293": {
-    "price": 649000,
+    "price": 659000,
     "area": 79,
     "type": "dom"
   },
@@ -9161,6 +9161,51 @@
   "68619367": {
     "price": 1465000,
     "area": 133,
+    "type": "dom"
+  },
+  "1dcFm9": {
+    "price": 240000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062303": {
+    "price": 799000,
+    "area": 105,
+    "type": "dom"
+  },
+  "uwaga-ostatni-dom-w-zabudowie-blizniaczej-ID4BCu2": {
+    "price": 949000,
+    "area": null,
+    "type": "dom"
+  },
+  "5-pokoi-obnizka-ceny-do-wprowadzenia-maslice-ID4DWiP": {
+    "price": 1125000,
+    "area": null,
+    "type": "dom"
+  },
+  "elegancki-dom-parterowy-i-260-m-poludnie-wroclawia-ID4DW9w": {
+    "price": 3999990,
+    "area": null,
+    "type": "dom"
+  },
+  "68621809": {
+    "price": 799000,
+    "area": 105,
+    "type": "dom"
+  },
+  "68621332": {
+    "price": 999000,
+    "area": 156,
+    "type": "dom"
+  },
+  "68621007": {
+    "price": 899000,
+    "area": 130,
+    "type": "dom"
+  },
+  "68620982": {
+    "price": 990000,
+    "area": 90,
     "type": "dom"
   }
 }
