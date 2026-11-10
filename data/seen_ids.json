@@ -9102,5 +9102,35 @@
     "price": 849000,
     "area": 165,
     "type": "dom"
+  },
+  "1dbvNj": {
+    "price": 300000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "1dbmeW": {
+    "price": 139000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062301": {
+    "price": 1050000,
+    "area": 152,
+    "type": "dom"
+  },
+  "wolnostojacy-dom-oltaszyn-nowa-cena-ID4BKqe": {
+    "price": 1590000,
+    "area": null,
+    "type": "dom"
+  },
+  "ostatni-wolny-dom-fabryczna-148m2-strych-43m2-duzy-ogrod-garaz-5-pokoi-ID4DiL8": {
+    "price": 1399900,
+    "area": null,
+    "type": "dom"
+  },
+  "68617108": {
+    "price": 1200000,
+    "area": 140,
+    "type": "dom"
   }
 }
