@@ -5549,7 +5549,7 @@
     "type": "dom"
   },
   "68410676": {
-    "price": 1375000,
+    "price": 1395000,
     "area": 114,
     "type": "dom"
   },
@@ -7019,7 +7019,7 @@
     "type": "dom"
   },
   "1cDuIF": {
-    "price": 425000,
+    "price": 399000,
     "area": null,
     "type": "dzialka"
   },
@@ -9215,6 +9215,21 @@
   },
   "piekny-dom-w-spokojnej-okolicy-4-sypialnie-ogrod-garaz-ID4Dxu5": {
     "price": 2390000,
+    "area": null,
+    "type": "dom"
+  },
+  "zagrodowa-mpzp-pozw-na-bud-dla-osoby-fizycznej-nie-bedacej-rolnikiem-ID4D2UU": {
+    "price": 370000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062305": {
+    "price": 1499000,
+    "area": 114,
+    "type": "dom"
+  },
+  "gotowy-dom-na-dzialce-478-m-duze-przeszklenia-marszowice-0-ID4Depg": {
+    "price": 1099000,
     "area": null,
     "type": "dom"
   }
