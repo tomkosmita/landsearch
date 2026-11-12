@@ -9252,5 +9252,55 @@
     "price": 780000,
     "area": null,
     "type": "dom"
+  },
+  "1deOe8": {
+    "price": 320000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68627501": {
+    "price": 271250,
+    "area": 775,
+    "type": "dzialka"
+  },
+  "68627477": {
+    "price": 262500,
+    "area": 750,
+    "type": "dzialka"
+  },
+  "9000062309": {
+    "price": 949000,
+    "area": 121,
+    "type": "dom"
+  },
+  "blizniak-z-duzym-ogrodem-dobra-ID4DV0U": {
+    "price": 1499000,
+    "area": null,
+    "type": "dom"
+  },
+  "wyjatkowy-2-poziomowy-apartament-willowy-ID4DmIi": {
+    "price": 745000,
+    "area": null,
+    "type": "dom"
+  },
+  "68626881": {
+    "price": 1599000,
+    "area": 160,
+    "type": "dom"
+  },
+  "68626082": {
+    "price": 1200000,
+    "area": 139,
+    "type": "dom"
+  },
+  "68625659": {
+    "price": 960000,
+    "area": 73,
+    "type": "dom"
+  },
+  "68624540": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
   }
 }
