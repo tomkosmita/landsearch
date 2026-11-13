@@ -9302,5 +9302,20 @@
     "price": 799000,
     "area": 104,
     "type": "dom"
+  },
+  "9000062310": {
+    "price": 1250000,
+    "area": 152,
+    "type": "dom"
+  },
+  "dom-blizniak-blisko-zamku-topacz-109-7-m2-ID4DQWO": {
+    "price": 1399000,
+    "area": null,
+    "type": "dom"
+  },
+  "wroclaw-fabryczna-lesnica-dom-duza-dzialka-bez-prowizji-ID4DVZb": {
+    "price": 1599000,
+    "area": null,
+    "type": "dom"
   }
 }
