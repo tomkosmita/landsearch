@@ -9317,5 +9317,25 @@
     "price": 1599000,
     "area": null,
     "type": "dom"
+  },
+  "68630210": {
+    "price": 128248,
+    "area": 1564,
+    "type": "dzialka"
+  },
+  "9000062311": {
+    "price": 1499000,
+    "area": 114,
+    "type": "dom"
+  },
+  "zalesie-willa-z-ogrodem-289-m2-ID4DJbU": {
+    "price": 4190000,
+    "area": null,
+    "type": "dom"
+  },
+  "rodzinny-dom-z-duzym-ogrodem-dzialka-1343-m2-basen-2022-smolec-ID4Dpyb": {
+    "price": 3260000,
+    "area": null,
+    "type": "dom"
   }
 }
