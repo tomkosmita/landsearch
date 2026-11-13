@@ -2949,7 +2949,7 @@
     "type": "dom"
   },
   "dzialka-budowlana-15-arow-budziszow-gm-kostomloty-powiat-sroda-sl-ID4CqFf": {
-    "price": 158000,
+    "price": 138000,
     "area": null,
     "type": "dzialka"
   },
@@ -3899,7 +3899,7 @@
     "type": "dom"
   },
   "67137779": {
-    "price": 1499000,
+    "price": 1275150,
     "area": 133,
     "type": "dom"
   },
@@ -8004,7 +8004,7 @@
     "type": "dom"
   },
   "68548146": {
-    "price": 1499000,
+    "price": 1449000,
     "area": 174,
     "type": "dom"
   },
@@ -8514,12 +8514,12 @@
     "type": "dom"
   },
   "1d2OV5": {
-    "price": 350000,
+    "price": 300000,
     "area": null,
     "type": "dzialka"
   },
   "1d2LZ2": {
-    "price": 380000,
+    "price": 330000,
     "area": null,
     "type": "dzialka"
   },
@@ -9335,6 +9335,31 @@
   },
   "rodzinny-dom-z-duzym-ogrodem-dzialka-1343-m2-basen-2022-smolec-ID4Dpyb": {
     "price": 3260000,
+    "area": null,
+    "type": "dom"
+  },
+  "9000062312": {
+    "price": 840000,
+    "area": 123,
+    "type": "dom"
+  },
+  "wolnostojacy-dom-po-kapitalnym-remoncie-ID4DYkc": {
+    "price": 3500000,
+    "area": null,
+    "type": "dom"
+  },
+  "przestronny-dom-z-potencjalem-17-arow-po-termomodernizacji-ID4DOtH": {
+    "price": 1140000,
+    "area": null,
+    "type": "dom"
+  },
+  "25-km-od-wroclawia-i-dom-150-m-i-dzialka-1380-m-i-bezposrednio-ID4DUi4": {
+    "price": 509000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-kielczow-duza-dzialka-932m2-starodrzew-ID4DLwP": {
+    "price": 1549000,
     "area": null,
     "type": "dom"
   }
