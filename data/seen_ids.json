@@ -7094,7 +7094,7 @@
     "type": "dom"
   },
   "68499434": {
-    "price": 1420000,
+    "price": 1200000,
     "area": 240,
     "type": "dom"
   },
@@ -9386,6 +9386,41 @@
   "nowy-dom-we-wroclawiu-oferta-nr-2-ID4DYBw": {
     "price": 962475,
     "area": null,
+    "type": "dom"
+  },
+  "1dgFkV": {
+    "price": 315000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "twoja-oaza-spokoju-w-miekini-malownicza-dzialka-1338-m-blisko-pkp-ID4CRsR": {
+    "price": 499000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062315": {
+    "price": 1200000,
+    "area": 240,
+    "type": "dom"
+  },
+  "w-pelni-wykonczony-super-ustawny-i-przestronny-dom-84m2-ID4DSKX": {
+    "price": 1029000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-w-cichej-uliczce-do-wykonczenia-ID4DpPA": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
+  },
+  "68634696": {
+    "price": 1579000,
+    "area": 190,
+    "type": "dom"
+  },
+  "68634304": {
+    "price": 1150000,
+    "area": 119,
     "type": "dom"
   }
 }
