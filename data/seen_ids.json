@@ -9362,5 +9362,15 @@
     "price": 1549000,
     "area": null,
     "type": "dom"
+  },
+  "9000062313": {
+    "price": 840000,
+    "area": 123,
+    "type": "dom"
+  },
+  "dom-w-smolcu-garaz-w-bryle-duzy-ogrodek-ID4DNYN": {
+    "price": 1590000,
+    "area": null,
+    "type": "dom"
   }
 }
