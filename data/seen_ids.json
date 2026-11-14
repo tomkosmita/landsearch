@@ -7424,7 +7424,7 @@
     "type": "dom"
   },
   "1cDPZp": {
-    "price": 2250000,
+    "price": 1990000,
     "area": null,
     "type": "dom"
   },
@@ -9370,6 +9370,21 @@
   },
   "dom-w-smolcu-garaz-w-bryle-duzy-ogrodek-ID4DNYN": {
     "price": 1590000,
+    "area": null,
+    "type": "dom"
+  },
+  "1dgaG4": {
+    "price": 439000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062314": {
+    "price": 1600000,
+    "area": 165,
+    "type": "dom"
+  },
+  "nowy-dom-we-wroclawiu-oferta-nr-2-ID4DYBw": {
+    "price": 962475,
     "area": null,
     "type": "dom"
   }
