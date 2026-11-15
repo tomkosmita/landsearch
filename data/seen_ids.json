@@ -9427,5 +9427,40 @@
     "price": 1200000,
     "area": 240,
     "type": "dom"
+  },
+  "1dgCf7": {
+    "price": 150,
+    "area": null,
+    "type": "dzialka"
+  },
+  "przy-granicy-wroclawia-dzialka-w-swietnej-lokalizacji-ID4AA7Y": {
+    "price": 420000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "67824030": {
+    "price": 420000,
+    "area": 1100,
+    "type": "dzialka"
+  },
+  "9000062317": {
+    "price": 669000,
+    "area": 86,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-35-km-od-wroclawia-ID4vBzQ": {
+    "price": 1270000,
+    "area": null,
+    "type": "dom"
+  },
+  "68635225": {
+    "price": 619000,
+    "area": 135,
+    "type": "dom"
+  },
+  "68635006": {
+    "price": 1070000,
+    "area": 97,
+    "type": "dom"
   }
 }
