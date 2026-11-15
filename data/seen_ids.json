@@ -9462,5 +9462,25 @@
     "price": 1070000,
     "area": 97,
     "type": "dom"
+  },
+  "sprzedam-dwie-dzialki-626-m2-i-802-m2-w-stanowicach-k-olawy-ID4DZeS": {
+    "price": 470000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062318": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "dom-z-ogrodem-i-garazem-5-min-wroclaw-ID4DM7D": {
+    "price": 1198000,
+    "area": null,
+    "type": "dom"
+  },
+  "68636636": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
   }
 }
