@@ -9487,5 +9487,30 @@
     "price": 799000,
     "area": 104,
     "type": "dom"
+  },
+  "9000062320": {
+    "price": 699900,
+    "area": 79,
+    "type": "dom"
+  },
+  "nowoczesny-dom-dla-rodziny-ponad-300-m-sufity-6m-pompa-ciepla-ID4E08c": {
+    "price": 2499000,
+    "area": null,
+    "type": "dom"
+  },
+  "68639671": {
+    "price": 699900,
+    "area": 79,
+    "type": "dom"
+  },
+  "68638775": {
+    "price": 1200000,
+    "area": 138,
+    "type": "dom"
+  },
+  "67855674": {
+    "price": 1039000,
+    "area": 124,
+    "type": "dom"
   }
 }
