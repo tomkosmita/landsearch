@@ -5249,7 +5249,7 @@
     "type": "dom"
   },
   "68390655": {
-    "price": 756000,
+    "price": 738000,
     "area": 114,
     "type": "dom"
   },
@@ -9541,6 +9541,46 @@
   "68639865": {
     "price": 699900,
     "area": 79,
+    "type": "dom"
+  },
+  "1diU6e": {
+    "price": 350,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062323": {
+    "price": 1680000,
+    "area": 116,
+    "type": "dom"
+  },
+  "dom-szeregowy-z-ogrod-garaz-150-m-wroclaw-ul-belgradzka-zakrzow-ID4DD6H": {
+    "price": 1600000,
+    "area": null,
+    "type": "dom"
+  },
+  "68644861": {
+    "price": 1680000,
+    "area": 116,
+    "type": "dom"
+  },
+  "68644510": {
+    "price": 1149000,
+    "area": 114,
+    "type": "dom"
+  },
+  "68644444": {
+    "price": 1229000,
+    "area": 124,
+    "type": "dom"
+  },
+  "68643437": {
+    "price": 1290000,
+    "area": 76,
+    "type": "dom"
+  },
+  "68641457": {
+    "price": 1050000,
+    "area": 127,
     "type": "dom"
   }
 }
