@@ -9512,5 +9512,35 @@
     "price": 1039000,
     "area": 124,
     "type": "dom"
+  },
+  "ostatnie-3-dzialki-budowlane-przy-katach-wroclawskich-25-min-wroclaw-ID4uRnM": {
+    "price": 220000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062322": {
+    "price": 1200000,
+    "area": 240,
+    "type": "dom"
+  },
+  "nowy-wykonczony-dom-dla-rodziny-os-zamkniete-szkola-przedsz-100-m-ID4DOio": {
+    "price": 1250000,
+    "area": null,
+    "type": "dom"
+  },
+  "energooszczedny-dom-parterowy-pod-lasem-duza-dzialka-garaz-2-auta-ID4E0so": {
+    "price": 1980000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-duza-dzialka-pod-lasem-mrozow-gm-miekinia-150-m-12a-ID4E0zv": {
+    "price": 999000,
+    "area": null,
+    "type": "dom"
+  },
+  "68639865": {
+    "price": 699900,
+    "area": 79,
+    "type": "dom"
   }
 }
