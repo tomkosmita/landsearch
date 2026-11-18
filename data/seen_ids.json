@@ -9617,5 +9617,45 @@
     "price": 900000,
     "area": null,
     "type": "dom"
+  },
+  "1dkh98": {
+    "price": 320000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68648037": {
+    "price": 499000,
+    "area": 1650,
+    "type": "dzialka"
+  },
+  "9000062326": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "sadkow-10-min-wroclaw-nowa-pompa-ciepla-ID4DG5Q": {
+    "price": 1148000,
+    "area": null,
+    "type": "dom"
+  },
+  "rodzinny-dom-z-ogrodem-5-pokoi-157-m-15-min-od-wroclawia-ID4DGyT": {
+    "price": 1509000,
+    "area": null,
+    "type": "dom"
+  },
+  "68648417": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68648395": {
+    "price": 1299000,
+    "area": 168,
+    "type": "dom"
+  },
+  "67707758": {
+    "price": 1550000,
+    "area": 126,
+    "type": "dom"
   }
 }
