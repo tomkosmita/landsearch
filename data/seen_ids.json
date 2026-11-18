@@ -9657,5 +9657,15 @@
     "price": 1550000,
     "area": 126,
     "type": "dom"
+  },
+  "9000062327": {
+    "price": 1200000,
+    "area": 240,
+    "type": "dom"
+  },
+  "kostka-na-firme-druga-dzialka-w-dzierzawie-od-gm-ID4DXDL": {
+    "price": 1390000,
+    "area": null,
+    "type": "dom"
   }
 }
