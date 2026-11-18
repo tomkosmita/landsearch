@@ -3204,7 +3204,7 @@
     "type": "dzialka"
   },
   "1bGZTL": {
-    "price": 350000,
+    "price": 310000,
     "area": null,
     "type": "dzialka"
   },
@@ -6374,7 +6374,7 @@
     "type": "dom"
   },
   "1bYTPn": {
-    "price": 499000,
+    "price": 489000,
     "area": null,
     "type": "dzialka"
   },
@@ -6624,7 +6624,7 @@
     "type": "dom"
   },
   "68476405": {
-    "price": 1090000,
+    "price": 1049000,
     "area": 102,
     "type": "dom"
   },
@@ -9581,6 +9581,41 @@
   "68641457": {
     "price": 1050000,
     "area": 127,
+    "type": "dom"
+  },
+  "9000062325": {
+    "price": 1394001,
+    "area": 111,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-z-uzytkowym-poddaszem-ID4vVlg": {
+    "price": 1350000,
+    "area": null,
+    "type": "dom"
+  },
+  "parterowy-dom-z-pieknym-ogrodem-zerniki-ID4E1id": {
+    "price": 1290000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-kominkiem-ogrod-jak-marzenie-i-zero-kompromisow-ID4E1ys": {
+    "price": 1229000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-z-pieknym-ogrodem-ID4E1B7": {
+    "price": 1559000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-premium-zorawina-nowoczesna-stodola-wyjatkowy-standard-ID4E0Em": {
+    "price": 2349000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-10-pokoi-2-osobne-mieszkania-ID4D72y": {
+    "price": 900000,
+    "area": null,
     "type": "dom"
   }
 }
