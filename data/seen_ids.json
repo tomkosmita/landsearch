@@ -9672,5 +9672,45 @@
     "price": 984000,
     "area": 113,
     "type": "dom"
+  },
+  "dzialki-pod-wroclawiem-15minut-media-w-drodze-11-5a-oraz-14a-ID4E3S9": {
+    "price": 389000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062329": {
+    "price": 1229000,
+    "area": 124,
+    "type": "dom"
+  },
+  "68652901": {
+    "price": 699900,
+    "area": 79,
+    "type": "dom"
+  },
+  "68652325": {
+    "price": 1584450,
+    "area": 176,
+    "type": "dom"
+  },
+  "68652282": {
+    "price": 1455624,
+    "area": 158,
+    "type": "dom"
+  },
+  "68652246": {
+    "price": 1455624,
+    "area": 158,
+    "type": "dom"
+  },
+  "68652226": {
+    "price": 1584450,
+    "area": 176,
+    "type": "dom"
+  },
+  "68651401": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
   }
 }
