@@ -7424,7 +7424,7 @@
     "type": "dom"
   },
   "1cDPZp": {
-    "price": 1990000,
+    "price": 1950000,
     "area": null,
     "type": "dom"
   },
@@ -7794,7 +7794,7 @@
     "type": "dom"
   },
   "gotowy-dom-z-ogrodem-pod-wroclawiem-ID4DxxQ": {
-    "price": 1250000,
+    "price": 1199000,
     "area": null,
     "type": "dom"
   },
@@ -9711,6 +9711,31 @@
   "68651401": {
     "price": 799000,
     "area": 104,
+    "type": "dom"
+  },
+  "dzialki-budowlane-w-brzeziej-lacepod-dom-blizniaki-wjazd-z-asfaltu-ID4DZUe": {
+    "price": 499000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062331": {
+    "price": 1049000,
+    "area": 102,
+    "type": "dom"
+  },
+  "dom-wolnostojacy-super-lokalizacja-ID4E3Fe": {
+    "price": 1590000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-135-m-z-sauna-ogrodem-i-garazem-wroclaw-ul-opatowicka-ID4E409": {
+    "price": 2690000,
+    "area": null,
+    "type": "dom"
+  },
+  "energooszczedny-dom-parterowy-pod-lasem-ogrod-1500m2-garaz-2-auta-ID4E0so": {
+    "price": 1980000,
+    "area": null,
     "type": "dom"
   }
 }
