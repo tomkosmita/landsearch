@@ -6114,7 +6114,7 @@
     "type": "dom"
   },
   "dzialka-z-domem-w-budowie-prezyce-1600-m2-ID4DaLI": {
-    "price": 380000,
+    "price": 345000,
     "area": null,
     "type": "dzialka"
   },
@@ -9736,6 +9736,41 @@
   "energooszczedny-dom-parterowy-pod-lasem-ogrod-1500m2-garaz-2-auta-ID4E0so": {
     "price": 1980000,
     "area": null,
+    "type": "dom"
+  },
+  "1dmGOF": {
+    "price": 450000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "9000062332": {
+    "price": 890000,
+    "area": 89,
+    "type": "dom"
+  },
+  "dom-z-ogrodkiem-127-94-m-wroclaw-jagodno-osiedle-9-nuta-ID4DPGU": {
+    "price": 1270000,
+    "area": null,
+    "type": "dom"
+  },
+  "sprzedam-do-w-dlugolece-pompa-ciepla-generalny-remont24-25-dlugoleka-ID4DPjN": {
+    "price": 1299000,
+    "area": null,
+    "type": "dom"
+  },
+  "milin-dom-149-m-dzialka-1900-m-2-niezalezne-strefy-mieszkalne-ID4E0MX": {
+    "price": 1200000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-klasy-premium-las-235-m-1080-m-ID4DQ2l": {
+    "price": 2799000,
+    "area": null,
+    "type": "dom"
+  },
+  "68657399": {
+    "price": 890000,
+    "area": 89,
     "type": "dom"
   }
 }
