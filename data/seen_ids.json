@@ -9812,5 +9812,35 @@
     "price": 650000,
     "area": 61,
     "type": "dom"
+  },
+  "68660139": {
+    "price": 499990,
+    "area": 1000,
+    "type": "dzialka"
+  },
+  "9000062336": {
+    "price": 1049000,
+    "area": 102,
+    "type": "dom"
+  },
+  "dom-blizniak-100m2-dzialka-522m2-mozliwosc-zrobienia-zlobka-lub-inne-ID4E3zB": {
+    "price": 700000,
+    "area": null,
+    "type": "dom"
+  },
+  "-ID4E5uF": {
+    "price": 1349000,
+    "area": null,
+    "type": "dom"
+  },
+  "poludnie-wroclawia-5-pokoi-salon-7-m-duza-dzialka-1253-m-ID4E1N7": {
+    "price": 4300000,
+    "area": null,
+    "type": "dom"
+  },
+  "68660138": {
+    "price": 998000,
+    "area": 104,
+    "type": "dom"
   }
 }
