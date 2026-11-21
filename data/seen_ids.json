@@ -1979,7 +1979,7 @@
     "type": "dom"
   },
   "68142819": {
-    "price": 840000,
+    "price": 799000,
     "area": 104,
     "type": "dom"
   },
@@ -9749,7 +9749,7 @@
     "type": "dom"
   },
   "dom-z-ogrodkiem-127-94-m-wroclaw-jagodno-osiedle-9-nuta-ID4DPGU": {
-    "price": 1270000,
+    "price": 1273000,
     "area": null,
     "type": "dom"
   },
@@ -9791,6 +9791,26 @@
   "dom-138-m-4-pokoje-garaz-25-m-ogrod-200-m-wysoki-standard-ID4E54L": {
     "price": 1590000,
     "area": null,
+    "type": "dom"
+  },
+  "9000062335": {
+    "price": 405000,
+    "area": 766,
+    "type": "dzialka"
+  },
+  "funkcjonalny-dom-wolnostojacy-brak-skosow-duze-przeszklenia-rogoz-ID4E30H": {
+    "price": 1050000,
+    "area": null,
+    "type": "dom"
+  },
+  "68659585": {
+    "price": 1349000,
+    "area": 118,
+    "type": "dom"
+  },
+  "68659519": {
+    "price": 650000,
+    "area": 61,
     "type": "dom"
   }
 }
