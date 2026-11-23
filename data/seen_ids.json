@@ -5879,7 +5879,7 @@
     "type": "dom"
   },
   "1cmTNl": {
-    "price": 199000,
+    "price": 190000,
     "area": null,
     "type": "dzialka"
   },
@@ -6559,7 +6559,7 @@
     "type": "dom"
   },
   "68466540": {
-    "price": 1330000,
+    "price": 1239000,
     "area": 180,
     "type": "dom"
   },
@@ -8229,7 +8229,7 @@
     "type": "dom"
   },
   "1cXqF3": {
-    "price": 999000,
+    "price": 949000,
     "area": null,
     "type": "dom"
   },
@@ -9734,7 +9734,7 @@
     "type": "dom"
   },
   "energooszczedny-dom-parterowy-pod-lasem-ogrod-1500m2-garaz-2-auta-ID4E0so": {
-    "price": 1980000,
+    "price": 1880000,
     "area": null,
     "type": "dom"
   },
@@ -9896,6 +9896,71 @@
   "9000062340": {
     "price": 1250000,
     "area": 152,
+    "type": "dom"
+  },
+  "1dpyQP": {
+    "price": 360000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "dzialka-budowlana-1300-m-w-skalce-mpzp-blisko-wroclawia-ID4E7h4": {
+    "price": 190000,
+    "area": null,
+    "type": "dzialka"
+  },
+  "68665563": {
+    "price": 535000,
+    "area": 761,
+    "type": "dzialka"
+  },
+  "68664370": {
+    "price": 499000,
+    "area": 891,
+    "type": "dzialka"
+  },
+  "9000062342": {
+    "price": 699999,
+    "area": 100,
+    "type": "dom"
+  },
+  "dom-138-m-4-pokoje-garaz-ogrod-200-m-wysoki-standard-ID4E54L": {
+    "price": 1590000,
+    "area": null,
+    "type": "dom"
+  },
+  "68666128": {
+    "price": 699999,
+    "area": 100,
+    "type": "dom"
+  },
+  "68666088": {
+    "price": 699999,
+    "area": 100,
+    "type": "dom"
+  },
+  "68665868": {
+    "price": 699999,
+    "area": 100,
+    "type": "dom"
+  },
+  "68665195": {
+    "price": 540000,
+    "area": 48,
+    "type": "dom"
+  },
+  "68664375": {
+    "price": 1699000,
+    "area": 290,
+    "type": "dom"
+  },
+  "68088547": {
+    "price": 1149000,
+    "area": 169,
+    "type": "dom"
+  },
+  "68662728": {
+    "price": 669000,
+    "area": 86,
     "type": "dom"
   }
 }
