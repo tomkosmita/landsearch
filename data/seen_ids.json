@@ -8714,7 +8714,7 @@
     "type": "dom"
   },
   "1d4Nq8": {
-    "price": 1089000,
+    "price": 1110101,
     "area": null,
     "type": "dom"
   },
@@ -9966,6 +9966,41 @@
   "9000062343": {
     "price": 699999,
     "area": 100,
+    "type": "dom"
+  },
+  "9000062345": {
+    "price": 1399900,
+    "area": 148,
+    "type": "dom"
+  },
+  "dom-179-m-4-sypialnie-ogrod-i-garaz-wojszyc-ID4DRc8": {
+    "price": 1490000,
+    "area": null,
+    "type": "dom"
+  },
+  "dom-z-bali-i-z-duza-dzialka-zrodla-rezerwacja-ID4Bp0Y": {
+    "price": 749000,
+    "area": null,
+    "type": "dom"
+  },
+  "1dq3WX": {
+    "price": 1270000,
+    "area": null,
+    "type": "dom"
+  },
+  "1dqke2": {
+    "price": 470000,
+    "area": null,
+    "type": "dom"
+  },
+  "poludnie-wroclawia-5-pokoi-salon-6-m-duza-dzialka-1253-m-ID4E1N7": {
+    "price": 4300000,
+    "area": null,
+    "type": "dom"
+  },
+  "68670010": {
+    "price": 1470000,
+    "area": 250,
     "type": "dom"
   }
 }
