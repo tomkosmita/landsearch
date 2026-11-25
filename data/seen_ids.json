@@ -5615,7 +5615,7 @@
   },
   "68412898": {
     "price": 975000,
-    "area": 117,
+    "area": 128,
     "type": "dom"
   },
   "blizniak-z-ogrodkiem-i-garazem-ID4CS3u": {
@@ -9354,7 +9354,7 @@
     "type": "dom"
   },
   "25-km-od-wroclawia-i-dom-150-m-i-dzialka-1380-m-i-bezposrednio-ID4DUi4": {
-    "price": 509000,
+    "price": 499000,
     "area": null,
     "type": "dom"
   },
@@ -10011,6 +10011,31 @@
   "1dqpHV": {
     "price": 1390000,
     "area": null,
+    "type": "dom"
+  },
+  "9000062348": {
+    "price": 1449000,
+    "area": 174,
+    "type": "dom"
+  },
+  "ostatni-dom-101m3-poziomy-40-90m-42-10m-18m-2xpark-ogrod-125m-ID4zu9L": {
+    "price": 1000000,
+    "area": null,
+    "type": "dom"
+  },
+  "68673152": {
+    "price": 1399000,
+    "area": 108,
+    "type": "dom"
+  },
+  "68672637": {
+    "price": 799000,
+    "area": 104,
+    "type": "dom"
+  },
+  "68637370": {
+    "price": 1455624,
+    "area": 158,
     "type": "dom"
   }
 }
