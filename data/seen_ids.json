@@ -7424,7 +7424,7 @@
     "type": "dom"
   },
   "1cDPZp": {
-    "price": 1950000,
+    "price": 1999000,
     "area": null,
     "type": "dom"
   },
@@ -10001,6 +10001,16 @@
   "68670010": {
     "price": 1470000,
     "area": 250,
+    "type": "dom"
+  },
+  "9000062346": {
+    "price": 749000,
+    "area": 146,
+    "type": "dom"
+  },
+  "1dqpHV": {
+    "price": 1390000,
+    "area": null,
     "type": "dom"
   }
 }
