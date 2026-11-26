@@ -6104,7 +6104,7 @@
     "type": "dom"
   },
   "68440542": {
-    "price": 1249000,
+    "price": 1199000,
     "area": 153,
     "type": "dom"
   },
@@ -10051,6 +10051,26 @@
   "przestronny-dom-5-pokojow-duza-dzialka-ogrod-cicha-kameralna-okolica-ID4E9zz": {
     "price": 1549000,
     "area": null,
+    "type": "dom"
+  },
+  "68584784": {
+    "price": 499000,
+    "area": 1000,
+    "type": "dzialka"
+  },
+  "9000062351": {
+    "price": 1299000,
+    "area": 168,
+    "type": "dom"
+  },
+  "dom-na-jagodnie-920-tys-wartosc-1-45-mln-zl-ID4DZ71": {
+    "price": 920000,
+    "area": null,
+    "type": "dom"
+  },
+  "68675704": {
+    "price": 940000,
+    "area": 130,
     "type": "dom"
   }
 }
