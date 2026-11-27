@@ -5879,7 +5879,7 @@
     "type": "dom"
   },
   "1cmTNl": {
-    "price": 190000,
+    "price": 185000,
     "area": null,
     "type": "dzialka"
   },
@@ -7804,7 +7804,7 @@
     "type": "dom"
   },
   "68534800": {
-    "price": 1290000,
+    "price": 1249000,
     "area": 131,
     "type": "dom"
   },
@@ -9199,7 +9199,7 @@
     "type": "dom"
   },
   "68621007": {
-    "price": 899000,
+    "price": 897000,
     "area": 130,
     "type": "dom"
   },
@@ -10101,6 +10101,16 @@
   "68678616": {
     "price": 1149000,
     "area": 130,
+    "type": "dom"
+  },
+  "9000062354": {
+    "price": 1200000,
+    "area": 240,
+    "type": "dom"
+  },
+  "komfortowy-dom-5-pokoi-ogrod-1000m-mirkow-przy-granicy-wroclawia-ID4CGlu": {
+    "price": 1880000,
+    "area": null,
     "type": "dom"
   }
 }
