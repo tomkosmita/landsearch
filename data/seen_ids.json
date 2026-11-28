@@ -113,7 +113,7 @@
     "area": null
   },
   "1ba9i3": {
-    "price": 399000,
+    "price": 385000,
     "area": null,
     "type": "dzialka"
   },
@@ -10110,6 +10110,16 @@
   },
   "komfortowy-dom-5-pokoi-ogrod-1000m-mirkow-przy-granicy-wroclawia-ID4CGlu": {
     "price": 1880000,
+    "area": null,
+    "type": "dom"
+  },
+  "9000062355": {
+    "price": 1394001,
+    "area": 111,
+    "type": "dom"
+  },
+  "duzy-dom-parterowy-5-pokoi-dzialka-800-m-garaz-na-2-auta-ID4Eb1J": {
+    "price": 1499000,
     "area": null,
     "type": "dom"
   }
